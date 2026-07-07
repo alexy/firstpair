@@ -190,12 +190,12 @@ make_versioned_links() {
   local stem
   for stem in "$typst_stem" "$neatroff_stem" "$groff_stem" "$utmac_stem"; do
     if [[ -f "$dist_dir/$stem.pdf" ]]; then
-      rm -f "$dist_dir/$stem ($version_stamp).pdf"
+      find "$dist_dir" -maxdepth 1 -type l -name "$stem (*).pdf" -delete
       ln -s "$stem.pdf" "$dist_dir/$stem ($version_stamp).pdf"
     fi
   done
   if [[ -f "$dist_dir/$typst_stem.epub" ]]; then
-    rm -f "$dist_dir/$typst_stem ($version_stamp).epub"
+    find "$dist_dir" -maxdepth 1 -type l -name "$typst_stem (*).epub" -delete
     ln -s "$typst_stem.epub" "$dist_dir/$typst_stem ($version_stamp).epub"
   fi
 }

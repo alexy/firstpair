@@ -23,7 +23,8 @@ this shell because of macOS permissions, so the proof used the pushed
 - Propose chapter order.
 - Convert Markdown into `.ms` and `.tr` forms.
 - Check generated artifact names and page counts.
-- Note toolchain warnings, especially from utmac font configuration.
+- Note toolchain warnings, especially when the local Neatroff font aliases are
+  missing or the utmac macro checkout has not been generated.
 
 ## What AI Must Not Do
 

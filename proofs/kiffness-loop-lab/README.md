@@ -6,10 +6,9 @@ manual idea and rebuilds it through a Bell Labs-style workflow:
 - Markdown as semantic source;
 - Pandoc as linker;
 - Typst for the modern PDF and EPUB path;
-- Pandoc `ms` plus Neatroff for the classic path;
-- utmac source generated from the same Markdown for the macro experiment;
-- groff retained as a compatibility fallback, matching the usavenice shipping
-  pipeline.
+- generated utmac `.tr` plus Neatroff for the classic path;
+- groff retained as a Pandoc `ms` compatibility fallback, matching the
+  usavenice shipping pipeline.
 
 Build it from the repo root or from this directory:
 
@@ -29,6 +28,6 @@ firstpair-loop-lab-utmac.tr
 VERSION.md
 ```
 
-The utmac PDF may contain warnings until Libertinus is added to the local
-Neatroff font set. The generated `.tr` source and `.log` stay next to the PDF so
-the issue is visible and reproducible.
+`firstpair-loop-lab-neatroff.pdf` and `firstpair-loop-lab-utmac.pdf` are both
+Neatroff builds of the generated utmac source. `firstpair-loop-lab-groff.pdf` is
+the Pandoc `ms` fallback.

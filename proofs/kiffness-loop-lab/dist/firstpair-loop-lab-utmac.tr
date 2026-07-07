@@ -1,4 +1,5 @@
 .\" Generated from Markdown by publishing/scripts/md-to-utmac.py
+.ds data-file manuscript
 .DA Alexy Khrabrov and Codex
 .DT First Pair Loop Lab
 .DS A Kiffness-derived proof book for human-AI publishing

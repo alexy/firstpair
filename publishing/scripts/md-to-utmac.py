@@ -90,6 +90,17 @@ def roff_line(text: str) -> str:
     return text
 
 
+def roff_identifier(text: str) -> str:
+    keep: list[str] = []
+    for char in text:
+        if char.isalnum() or char in {"-", "_"}:
+            keep.append(char)
+        else:
+            keep.append("-")
+    ident = "".join(keep).strip("-")
+    return ident or "firstpair-book"
+
+
 def wrapped(text: str) -> list[str]:
     text = " ".join(text.split())
     if not text:
@@ -180,6 +191,7 @@ def main() -> int:
 
     lines = [
         r".\" Generated from Markdown by publishing/scripts/md-to-utmac.py",
+        f".ds data-file {roff_identifier(source.stem)}",
         f".DA {roff_line(author)}",
         f".DT {roff_line(title)}",
     ]

@@ -52,6 +52,25 @@ has_neatroff() {
   [[ -x "$neatroff_root/neatroff/roff" && -x "$neatroff_root/neatpost/pdf" ]]
 }
 
+ensure_neatroff_font_aliases() {
+  local devutf="$neatroff_root/devutf"
+  [[ -d "$devutf" ]] || return 0
+
+  local pair src dst
+  for pair in \
+    "LibertinusSerif-Regular:NimbusRoman-Regular" \
+    "LibertinusSerif-Italic:NimbusRoman-Italic" \
+    "LibertinusSerif-Semibold:NimbusRoman-Bold" \
+    "LibertinusSerif-SemiboldItalic:NimbusRoman-BoldItalic" \
+    "LibertinusMono-Regular:NimbusMonoPS-Regular"; do
+    dst="${pair%%:*}"
+    src="${pair##*:}"
+    if [[ ! -e "$devutf/$dst" && -e "$devutf/$src" ]]; then
+      ln -s "$src" "$devutf/$dst"
+    fi
+  done
+}
+
 render_cover() {
   local kindle_name="$1"
   local output="$2"
@@ -136,15 +155,33 @@ build_ms_sources() {
   cat "$cover_ms" "$body_stripped_ms" > "$full_ms"
 }
 
-build_neatroff_ms() {
-  local full_ms="$build_dir/full.ms"
+prepare_utmac_source() {
+  local utmac_source="$build_dir/$base_stem.utmac.tr"
+  "$repo_root/publishing/scripts/setup-utmac.sh" "$utmac_dir" >/dev/null
+  "$repo_root/publishing/scripts/md-to-utmac.py" "$manuscript" "$utmac_source"
+  cp "$utmac_source" "$dist_dir/$utmac_stem.tr"
+  printf '%s\n' "$utmac_source"
+}
+
+run_utmac_neatroff_pdf() {
+  local utmac_source="$1"
+  local output_pdf="$2"
+  local output_log="$3"
+
+  ensure_neatroff_font_aliases
+  (
+    export PATH
+    PATH="$(neatroff_path)"
+    roff -M"$utmac_dir" -mu-en -mus "$utmac_source" | pdf > "$output_pdf"
+  ) 2>"$output_log"
+}
+
+build_neatroff_pdf() {
   local log="$dist_dir/$neatroff_stem.log"
   if has_neatroff; then
-    (
-      export PATH
-      PATH="$(neatroff_path)"
-      roff -ms "$full_ms" | pdf > "$dist_dir/$neatroff_stem.pdf"
-    ) 2>"$log"
+    local utmac_source
+    utmac_source="$(prepare_utmac_source)"
+    run_utmac_neatroff_pdf "$utmac_source" "$dist_dir/$neatroff_stem.pdf" "$log"
   else
     printf 'Neatroff not found under %s\n' "$neatroff_root" > "$dist_dir/$neatroff_stem.skipped"
   fi
@@ -157,18 +194,12 @@ build_groff_ms() {
 }
 
 build_utmac() {
-  local utmac_source="$build_dir/$base_stem.utmac.tr"
+  local utmac_source
   local utmac_log="$dist_dir/$utmac_stem.log"
-  "$repo_root/publishing/scripts/setup-utmac.sh" "$utmac_dir" >/dev/null
-  "$repo_root/publishing/scripts/md-to-utmac.py" "$manuscript" "$utmac_source"
-  cp "$utmac_source" "$dist_dir/$utmac_stem.tr"
+  utmac_source="$(prepare_utmac_source)"
 
   if has_neatroff; then
-    if (
-      export PATH
-      PATH="$(neatroff_path)"
-      roff -M"$utmac_dir" -mu-en -mus "$utmac_source" | pdf > "$dist_dir/$utmac_stem.pdf"
-    ) 2>"$utmac_log"; then
+    if run_utmac_neatroff_pdf "$utmac_source" "$dist_dir/$utmac_stem.pdf" "$utmac_log"; then
       :
     else
       printf 'utmac/neatroff failed; see %s\n' "$utmac_log" >&2
@@ -214,14 +245,14 @@ version: $version
 version_stamp: $version_stamp
 source_commit: $source_hash
 built_at: $built_at
-toolchain: pandoc typst neatroff groff utmac
+toolchain: pandoc typst neatroff-utmac groff utmac
 neatroff_root: $neatroff_root
 utmac_dir: $utmac_dir
 pdf_pages_typst: $(page_count "$dist_dir/$typst_stem.pdf")
 pdf_pages_neatroff: $(page_count "$dist_dir/$neatroff_stem.pdf")
 pdf_pages_groff: $(page_count "$dist_dir/$groff_stem.pdf")
 pdf_pages_utmac: $(page_count "$dist_dir/$utmac_stem.pdf")
-status_neatroff_ms: $neatroff_status
+status_neatroff_utmac: $neatroff_status
 status_utmac_pdf: $utmac_status
 kindle_name_typst: $typst_stem ($version_stamp)
 epub_file_typst: $typst_stem.epub
@@ -276,7 +307,7 @@ kindle_name_typst="$typst_stem ($version_stamp)"
 
 build_typst
 build_ms_sources
-build_neatroff_ms
+build_neatroff_pdf
 build_groff_ms
 build_utmac
 make_versioned_links

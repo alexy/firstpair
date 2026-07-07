@@ -2,28 +2,28 @@ title: First Pair Loop Lab
 subtitle: A Kiffness-derived proof book for human-AI publishing
 title_stem: firstpair-loop-lab
 version: 0.1.0
-version_stamp: 0.1.0-733662f
-source_commit: 733662f
-built_at: 2026-07-07T06:59:56Z
-toolchain: pandoc typst neatroff groff utmac
+version_stamp: 0.1.0-252be93
+source_commit: 252be93
+built_at: 2026-07-07T07:21:34Z
+toolchain: pandoc typst neatroff-utmac groff utmac
 neatroff_root: /Users/alexy/src/neatroff_make
 utmac_dir: /Users/alexy/src/firstpair/.tools/utmac
 pdf_pages_typst: 5
-pdf_pages_neatroff: 14
+pdf_pages_neatroff: 8
 pdf_pages_groff: 4
 pdf_pages_utmac: 8
-status_neatroff_ms: built
+status_neatroff_utmac: built
 status_utmac_pdf: built
-kindle_name_typst: firstpair-loop-lab-typst (0.1.0-733662f)
+kindle_name_typst: firstpair-loop-lab-typst (0.1.0-252be93)
 epub_file_typst: firstpair-loop-lab-typst.epub
 pdf_file_typst: firstpair-loop-lab-typst.pdf
-epub_link_typst: firstpair-loop-lab-typst (0.1.0-733662f).epub
-pdf_link_typst: firstpair-loop-lab-typst (0.1.0-733662f).pdf
+epub_link_typst: firstpair-loop-lab-typst (0.1.0-252be93).epub
+pdf_link_typst: firstpair-loop-lab-typst (0.1.0-252be93).pdf
 pdf_file_neatroff: firstpair-loop-lab-neatroff.pdf
-pdf_link_neatroff: firstpair-loop-lab-neatroff (0.1.0-733662f).pdf
+pdf_link_neatroff: firstpair-loop-lab-neatroff (0.1.0-252be93).pdf
 pdf_file_groff: firstpair-loop-lab-groff.pdf
-pdf_link_groff: firstpair-loop-lab-groff (0.1.0-733662f).pdf
+pdf_link_groff: firstpair-loop-lab-groff (0.1.0-252be93).pdf
 pdf_file_utmac: firstpair-loop-lab-utmac.pdf
-pdf_link_utmac: firstpair-loop-lab-utmac (0.1.0-733662f).pdf
+pdf_link_utmac: firstpair-loop-lab-utmac (0.1.0-252be93).pdf
 utmac_source: firstpair-loop-lab-utmac.tr
 utmac_log: firstpair-loop-lab-utmac.log

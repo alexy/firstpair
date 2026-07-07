@@ -328,8 +328,9 @@ It uses the current local book practice from QueryGraph and usavenice:
 
 - Pandoc links semantic Markdown to every renderer.
 - Typst builds the modern reader PDF and EPUB.
-- Pandoc `ms` builds the classic troff source.
-- Neatroff, from `~/src/neatroff_make`, builds the Bell Labs PDF.
+- Pandoc `ms` builds the groff fallback source.
+- Neatroff, from `~/src/neatroff_make`, builds the Bell Labs PDF from the
+  generated utmac source.
 - groff remains a compatibility fallback because the usavenice shipping
   pipeline already proves it at book scale.
 - utmac adds a richer macro vocabulary for metadata, headings, notes,

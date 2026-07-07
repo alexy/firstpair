@@ -8,6 +8,7 @@ build_dir="${BOOK_BUILD_DIR:-$book_dir/build}"
 dist_dir="${BOOK_DIST_DIR:-$book_dir/dist}"
 metadata="${BOOK_METADATA:-$book_dir/metadata.yaml}"
 manuscript="${BOOK_MANUSCRIPT:-$book_dir/manuscript.md}"
+firstpair_source="${BOOK_FIRSTPAIR_SOURCE:-$book_dir/source.fp.tr}"
 cover="${BOOK_COVER:-$book_dir/cover.md}"
 version_file="${BOOK_VERSION_FILE:-$book_dir/VERSION}"
 epub_css="${BOOK_EPUB_CSS:-$book_dir/epub.css}"
@@ -214,6 +215,32 @@ build_utmac() {
   fi
 }
 
+build_firstpair_troff() {
+  local firstpair_log="$dist_dir/$firstpair_stem.log"
+  local firstpair_source_base
+  local firstpair_source_dir
+  firstpair_source_base="$(basename "$firstpair_source")"
+  firstpair_source_dir="$(cd "$(dirname "$firstpair_source")" && pwd)"
+  "$repo_root/publishing/scripts/setup-utmac.sh" "$utmac_dir" >/dev/null
+  cp "$firstpair_source" "$dist_dir/$firstpair_stem.tr"
+
+  if ! has_neatroff && [[ -x "$setup_neatroff" ]]; then
+    NEATROFF_ROOT="$neatroff_root" "$setup_neatroff" >/dev/null
+  fi
+  if has_neatroff; then
+    ensure_neatroff_font_aliases
+    (
+      export PATH
+      PATH="$(neatroff_path)"
+      cd "$firstpair_source_dir"
+      roff -M"$utmac_dir" -mu-en -mus -m"$repo_root/publishing/tmac/fp.tmac" "$firstpair_source_base" |
+        pdf > "$dist_dir/$firstpair_stem.pdf"
+    ) 2>"$firstpair_log"
+  else
+    printf 'Neatroff not found under %s\n' "$neatroff_root" > "$firstpair_log"
+  fi
+}
+
 page_count() {
   local file="$1"
   if [[ -f "$file" ]] && command -v pdfinfo >/dev/null 2>&1; then
@@ -223,7 +250,7 @@ page_count() {
 
 make_versioned_links() {
   local stem
-  for stem in "$typst_stem" "$neatroff_stem" "$groff_stem" "$utmac_stem"; do
+  for stem in "$typst_stem" "$firstpair_stem" "$neatroff_stem" "$groff_stem" "$utmac_stem"; do
     if [[ -f "$dist_dir/$stem.pdf" ]]; then
       find "$dist_dir" -maxdepth 1 -type l -name "$stem (*).pdf" -delete
       ln -s "$stem.pdf" "$dist_dir/$stem ($version_stamp).pdf"
@@ -236,8 +263,10 @@ make_versioned_links() {
 }
 
 write_version_manifest() {
+  local firstpair_status="missing"
   local neatroff_status="missing"
   local utmac_status="missing"
+  [[ -f "$dist_dir/$firstpair_stem.pdf" ]] && firstpair_status="built"
   [[ -f "$dist_dir/$neatroff_stem.pdf" ]] && neatroff_status="built"
   [[ -f "$dist_dir/$utmac_stem.pdf" ]] && utmac_status="built"
 
@@ -249,13 +278,15 @@ version: $version
 version_stamp: $version_stamp
 source_commit: $source_hash
 built_at: $built_at
-toolchain: pandoc typst neatroff-utmac groff utmac
+toolchain: pandoc typst firstpair-troff neatroff-utmac groff utmac
 neatroff_root: $neatroff_root
 utmac_dir: $utmac_dir
 pdf_pages_typst: $(page_count "$dist_dir/$typst_stem.pdf")
+pdf_pages_firstpair: $(page_count "$dist_dir/$firstpair_stem.pdf")
 pdf_pages_neatroff: $(page_count "$dist_dir/$neatroff_stem.pdf")
 pdf_pages_groff: $(page_count "$dist_dir/$groff_stem.pdf")
 pdf_pages_utmac: $(page_count "$dist_dir/$utmac_stem.pdf")
+status_firstpair_troff: $firstpair_status
 status_neatroff_utmac: $neatroff_status
 status_utmac_pdf: $utmac_status
 kindle_name_typst: $typst_stem ($version_stamp)
@@ -263,6 +294,10 @@ epub_file_typst: $typst_stem.epub
 pdf_file_typst: $typst_stem.pdf
 epub_link_typst: $typst_stem ($version_stamp).epub
 pdf_link_typst: $typst_stem ($version_stamp).pdf
+pdf_file_firstpair: $firstpair_stem.pdf
+pdf_link_firstpair: $firstpair_stem ($version_stamp).pdf
+firstpair_source: $firstpair_stem.tr
+firstpair_log: $firstpair_stem.log
 pdf_file_neatroff: $neatroff_stem.pdf
 pdf_link_neatroff: $neatroff_stem ($version_stamp).pdf
 pdf_file_groff: $groff_stem.pdf
@@ -274,7 +309,7 @@ utmac_log: $utmac_stem.log
 EOF
 }
 
-for file in "$metadata" "$manuscript" "$cover" "$version_file" "$epub_css"; do
+for file in "$metadata" "$manuscript" "$firstpair_source" "$cover" "$version_file" "$epub_css"; do
   if [[ ! -f "$file" ]]; then
     printf 'missing required book file: %s\n' "$file" >&2
     exit 2
@@ -307,10 +342,12 @@ typst_stem="$base_stem-typst"
 neatroff_stem="$base_stem-neatroff"
 groff_stem="$base_stem-groff"
 utmac_stem="$base_stem-utmac"
+firstpair_stem="$base_stem-firstpair"
 kindle_name_typst="$typst_stem ($version_stamp)"
 
 build_typst
 build_ms_sources
+build_firstpair_troff
 build_neatroff_pdf
 build_groff_ms
 build_utmac

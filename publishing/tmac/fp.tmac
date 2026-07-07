@@ -1,0 +1,93 @@
+.\" First Pair Press macros for utmac/neatroff.
+.\" Load after utmac:
+.\"   roff -M .tools/utmac -mu-en -mus -mpublishing/tmac/fp.tmac book.fp.tr | pdf
+.\"
+.\" The macros are intentionally thin. They give authors a readable First Pair
+.\" vocabulary while leaving page composition to utmac.
+.
+.de FP.TITLE
+.	ds FP:title \\$*
+.	DT \\$*
+.	rs
+.	par:init
+.	sp 12v
+.	ps 25p
+.	vs 35p
+.	ad c
+.	ce 1
+\fB\\$*\fP
+.	ps
+.	vs
+.	par:init
+.	sp 3v
+..
+.de FP.SUBTITLE
+.	ds FP:subtitle \\$*
+.	DS \\$*
+.	ps 12p
+.	vs 18p
+.	ad c
+.	ce 1
+\\$*
+.	ps
+.	vs
+.	sp 2v
+.	ce 1
+\\*[FP:author]
+.	sp 1v
+.	ce 1
+\\*[FP:press]
+.	par:init
+.	sp 4v
+..
+.de FP.AUTHOR
+.	ds FP:author \\$*
+.	DA \\$*
+..
+.de FP.PRESS
+.	ds FP:press \\$*
+..
+.de FP.KEYWORDS
+.	DK \\$*
+..
+.de FP.ID
+.	DI \\$*
+..
+.de FP.CHAPTER
+.	H2 \\$*
+..
+.de FP.SECTION
+.	H3 \\$*
+..
+.de FP.SUBSECTION
+.	H4 \\$*
+..
+.de FP.P
+.	PP
+..
+.de FP.QUOTE
+.	PQ
+..
+.de FP.EPIGRAPH
+.	PQ
+..
+.de FP.SIDEBAR
+.	H4 \\$*
+.	PQ
+..
+.de FP.ITEM
+.	ie \\n(.$ .PI \\$*
+.	el .PI \(bu
+..
+.de FP.NUMITEM
+.	PI \\$*
+..
+.de FP.CODE
+.	PX
+..
+.de FP.END
+.	PP
+..
+.de FP.AI
+.	ig FP.END
+..

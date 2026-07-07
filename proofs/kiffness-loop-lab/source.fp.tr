@@ -1,0 +1,233 @@
+.\" Hand-authored First Pair troff source.
+.\" Build path:
+.\"   roff -M .tools/utmac -mu-en -mus -mpublishing/tmac/fp.tmac source.fp.tr | pdf
+.\"
+.\" This is not generated from Markdown. It is the proof that First Pair Press
+.\" can author directly in readable troff while using utmac for page craft.
+.
+.FP.AUTHOR "Alexy Khrabrov and Codex"
+.FP.PRESS "First Pair Press"
+.FP.KEYWORDS "First Pair Press human AI troff neatroff utmac music workflow"
+.FP.ID "firstpair-loop-lab-source"
+.FP.TITLE "First Pair Loop Lab"
+.FP.SUBTITLE "A Kiffness-derived proof book for human-AI publishing"
+.
+.FP.AI "Build Note"
+This block is for the workshop, not the reader.
+The macro layer should omit it from the PDF while preserving it in source.
+.FP.END
+.
+.FP.CHAPTER "Start Here"
+.FP.P
+This proof book is small on purpose.
+.
+.FP.P
+The source idea comes from the Kiffness controller-manual workflow: teach a
+musician how to turn a compact MIDI controller into an actual practice loop.
+The publishing idea comes from First Pair Press: make the book itself a visible
+collaboration between a human and an AI.
+.
+.FP.P
+The human brings intention:
+.FP.ITEM
+this should feel practical, not ceremonial;
+.FP.ITEM
+the reader should know what to do with their hands;
+.FP.ITEM
+the source should remain readable years from now;
+.FP.ITEM
+the pipeline should explain itself.
+.
+.FP.P
+The AI brings friction removal:
+.FP.ITEM
+convert source into renderer formats;
+.FP.ITEM
+check that artifacts were produced;
+.FP.ITEM
+preserve exact warnings;
+.FP.ITEM
+keep the workflow legible for the next collaborator.
+.
+.FP.P
+That is the first pair.
+.
+.FP.CHAPTER "The Rig"
+.FP.P
+The musical rig is deliberately modest:
+.FP.ITEM
+an Akai MPK mini or similar small controller;
+.FP.ITEM
+GarageBand or Ableton Live;
+.FP.ITEM
+one drum sound;
+.FP.ITEM
+one bass sound;
+.FP.ITEM
+one chord sound;
+.FP.ITEM
+one lead or sample sound.
+.
+.FP.P
+The publishing rig is equally modest:
+.FP.ITEM
+First Pair troff source for the Bell Labs path;
+.FP.ITEM
+Markdown for the portable semantic path;
+.FP.ITEM
+Pandoc for structured conversion;
+.FP.ITEM
+Typst for the modern PDF;
+.FP.ITEM
+EPUB for readers;
+.FP.ITEM
+Neatroff and utmac for the classic page.
+.
+.FP.P
+Neither rig tries to impress by size. The point is repeatability.
+.
+.FP.CHAPTER "A First Loop"
+.FP.P
+Set the tempo to something slow enough to hear your mistakes. Ninety-two beats
+per minute is a good beginner speed.
+.
+.FP.P
+Make four tracks.
+.FP.NUMITEM "1."
+Drums.
+.FP.NUMITEM "2."
+Bass.
+.FP.NUMITEM "3."
+Chords.
+.FP.NUMITEM "4."
+Lead or sample.
+.
+.FP.P
+Record one bar of drums first. Use the pads if the controller has pads. Use the
+keyboard if it does not. The pattern can be simple: kick on one and three,
+snare on two and four, closed hat on every eighth note.
+.
+.FP.P
+Now record one bar of bass. Use only the root and fifth. If the song is in A
+minor, that means A and E. Do not chase cleverness. Make the loop stable.
+.
+.FP.P
+Add two-note chords. A minor can be A and C. F can be F and A. C can be C and E.
+G can be G and B. Two notes are enough to teach the hand what harmony feels
+like.
+.
+.FP.P
+Finally add a lead sound or a sample. Give it space. One short answer every two
+bars is better than a flood of notes.
+.
+.FP.CHAPTER "What The Controller Teaches"
+.FP.P
+A small controller is useful because it refuses to let you hide.
+.
+.FP.P
+The keys teach pitch. The pads teach rhythm. The knobs teach motion. The octave
+buttons teach range. The transport buttons teach the difference between
+recording and performing.
+.
+.FP.P
+The beginner mistake is to map everything at once. The better workflow is to
+assign one job at a time:
+.FP.ITEM
+keys play notes;
+.FP.ITEM
+pads play drums or launch clips;
+.FP.ITEM
+knobs shape one filter and one reverb;
+.FP.ITEM
+transport starts, stops, and records;
+.FP.ITEM
+the computer screen confirms what happened.
+.
+.FP.P
+When the mapping is boring, the practice becomes musical.
+.
+.FP.CHAPTER "What The Publishing Pipeline Teaches"
+.FP.P
+The book pipeline follows the same rule.
+.
+.FP.P
+First Pair troff is the studio patch sheet: direct, plain, and explicit.
+Markdown is the portable sketchbook. Pandoc is the hub. Typst is the polished
+software instrument. Neatroff is the classic instrument: terse, programmable,
+and close to the Bell Labs tradition.
+.
+.FP.P
+utmac is the macro layer: it gives troff a more book-like vocabulary, with
+headings, metadata, summaries, links, notes, and typography decisions living in
+plain text.
+.
+.FP.SIDEBAR "Source Contract"
+The final PDF does not need to show every workshop note. The repository does.
+AI notes, generated files, warning logs, and manifests are part of the source
+contract because they tell the next collaborator what actually happened.
+.FP.END
+.
+.FP.P
+The result is not one perfect renderer. The result is a system where renderers
+can disagree without threatening the source.
+.
+.FP.CHAPTER "How A Human And AI Should Work"
+.FP.P
+The human should write what matters.
+.
+.FP.P
+The AI should make the workshop easier to use.
+.
+.FP.P
+A good AI collaborator can draft a table of contents, convert a chapter into
+utmac, notice a missing artifact, or explain why a PDF has warning output. A
+bad AI collaborator hides uncertainty and produces a polished artifact whose
+source nobody can inspect.
+.
+.FP.P
+First Pair Press chooses the first kind.
+.
+.FP.P
+For every build, leave evidence:
+.FP.ITEM
+the Markdown source;
+.FP.ITEM
+the pure First Pair troff source;
+.FP.ITEM
+the generated ms source;
+.FP.ITEM
+the generated utmac source;
+.FP.ITEM
+the Typst PDF;
+.FP.ITEM
+the Neatroff PDF;
+.FP.ITEM
+the EPUB;
+.FP.ITEM
+the VERSION.md manifest;
+.FP.ITEM
+the warning log when an engine complains.
+.
+.FP.P
+That evidence is not bureaucracy. It is trust.
+.
+.FP.CHAPTER "The Practice Page"
+.FP.P
+Use this page as a rehearsal.
+.
+.FP.P
+Read the source. Build the book. Open the PDF. Open the EPUB. Inspect the First
+Pair troff source, then inspect the generated utmac source. Read the log. Then
+change one sentence and build again.
+.
+.FP.P
+If the sentence changes everywhere, the pipeline works.
+.
+.FP.P
+If the source remains clear, the human can keep writing.
+.
+.FP.P
+If the generated files explain what happened, the AI can keep helping.
+.
+.FP.P
+That is the whole proof.

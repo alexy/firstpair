@@ -22,6 +22,8 @@ publishing/
     build-firstpair-book.sh
     md-to-utmac.py
     setup-utmac.sh
+  tmac/
+    fp.tmac
 
 proofs/<book>/
   README.md
@@ -30,6 +32,7 @@ proofs/<book>/
   metadata.yaml
   cover.md
   manuscript.md
+  source.fp.tr
   epub.css
   build.sh
   build/                  # ignored generated intermediates
@@ -42,14 +45,20 @@ engines without burying the reader in ceremony.
 
 ## Source Contract
 
-The manuscript is plain Markdown with YAML metadata. It should be pleasant to
-read in a terminal, in a text editor, and through Pandoc.
+The portable manuscript is plain Markdown with YAML metadata. It should be
+pleasant to read in a terminal, in a text editor, and through Pandoc.
+
+The Bell Labs manuscript is `source.fp.tr`: hand-authored troff using the
+First Pair `.FP.*` macros from `publishing/tmac/fp.tmac`. That source is not
+generated from Markdown. It exists so a human and an AI can author directly in
+troff while still leaning on utmac for typography.
 
 Every proof book should include:
 
 - `metadata.yaml`: reader-facing title, subtitle, author, publisher, and
   `title_stem`.
 - `manuscript.md`: the semantic source.
+- `source.fp.tr`: the pure First Pair troff source.
 - `AI.md`: collaboration rules for future agents.
 - `README.md`: human build notes and current artifact inventory.
 - `VERSION`: the book's semantic version.
@@ -72,13 +81,17 @@ Markdown source
   +-- Pandoc JSON -> utmac .tr -> Neatroff PDF
   |
   +-- Pandoc JSON -> utmac .tr -> explicit utmac proof PDF
+
+First Pair troff source
+  |
+  +-- fp.tmac + utmac -> Neatroff PDF
 ```
 
 Pandoc is the linker. Typst is the contemporary book renderer. Neatroff is the
 Bell Labs lineage rendered with current local tools. In this proof, Neatroff
-runs the generated utmac `.tr` source. Raw Pandoc `ms` is kept for the groff
-fallback because Pandoc's groff-oriented `ms` output is not a good Neatroff
-dialect.
+has two paths: the hand-authored `.FP.*` troff source and the generated utmac
+`.tr` source. Raw Pandoc `ms` is kept for the groff fallback because Pandoc's
+groff-oriented `ms` output is not a good Neatroff dialect.
 
 ## Neatroff And Utmac
 
@@ -163,6 +176,8 @@ The script writes stable files under `proofs/kiffness-loop-lab/dist/`:
 ```text
 firstpair-loop-lab-typst.pdf
 firstpair-loop-lab-typst.epub
+firstpair-loop-lab-firstpair.pdf
+firstpair-loop-lab-firstpair.tr
 firstpair-loop-lab-neatroff.pdf
 firstpair-loop-lab-groff.pdf
 firstpair-loop-lab-utmac.pdf
@@ -172,6 +187,17 @@ VERSION.md
 
 It also creates versioned symlinks using `<stem> (<version>-<hash>)` names. When
 there is no commit yet, the hash is `draft`.
+
+`firstpair-loop-lab-firstpair.pdf` is the pure First Pair troff proof:
+
+```sh
+roff -M .tools/utmac -mu-en -mus -mpublishing/tmac/fp.tmac \
+  proofs/kiffness-loop-lab/source.fp.tr | pdf
+```
+
+`firstpair-loop-lab-utmac.pdf` and `firstpair-loop-lab-neatroff.pdf` are
+Neatroff builds of the Markdown-derived utmac source. They are useful renderer
+checks, but they are not the hand-authored `.FP.*` source.
 
 ## Human-AI Pairing Rules
 
@@ -200,6 +226,7 @@ Useful artifact probes:
 
 ```sh
 pdfinfo proofs/kiffness-loop-lab/dist/firstpair-loop-lab-typst.pdf
+pdfinfo proofs/kiffness-loop-lab/dist/firstpair-loop-lab-firstpair.pdf
 pdfinfo proofs/kiffness-loop-lab/dist/firstpair-loop-lab-neatroff.pdf
 unzip -l proofs/kiffness-loop-lab/dist/firstpair-loop-lab-typst.epub | head
 sed -n '1,120p' proofs/kiffness-loop-lab/dist/VERSION.md

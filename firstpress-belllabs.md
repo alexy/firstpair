@@ -321,7 +321,9 @@ publishing/PUBLISH.md
 publishing/scripts/build-firstpair-book.sh
 publishing/scripts/md-to-utmac.py
 publishing/scripts/setup-utmac.sh
+publishing/tmac/fp.tmac
 proofs/kiffness-loop-lab/
+proofs/kiffness-loop-lab/source.fp.tr
 ```
 
 It uses the current local book practice from QueryGraph and usavenice:
@@ -329,6 +331,8 @@ It uses the current local book practice from QueryGraph and usavenice:
 - Pandoc links semantic Markdown to every renderer.
 - Typst builds the modern reader PDF and EPUB.
 - Pandoc `ms` builds the groff fallback source.
+- A hand-authored `.FP.*` troff source builds the pure First Pair/Bell Labs
+  proof through `fp.tmac`, utmac, and Neatroff.
 - Neatroff, from `~/src/neatroff_make`, builds the Bell Labs PDF from the
   generated utmac source.
 - groff remains a compatibility fallback because the usavenice shipping
@@ -356,6 +360,8 @@ The build emits:
 ``` text
 firstpair-loop-lab-typst.pdf
 firstpair-loop-lab-typst.epub
+firstpair-loop-lab-firstpair.pdf
+firstpair-loop-lab-firstpair.tr
 firstpair-loop-lab-neatroff.pdf
 firstpair-loop-lab-groff.pdf
 firstpair-loop-lab-utmac.pdf
@@ -363,11 +369,17 @@ firstpair-loop-lab-utmac.tr
 VERSION.md
 ```
 
+`firstpair-loop-lab-firstpair.pdf` is the source-level implementation of the
+macro sketch above. It is built from `source.fp.tr`, a hand-authored troff file
+using `.FP.TITLE`, `.FP.CHAPTER`, `.FP.ITEM`, `.FP.SIDEBAR`, and `.FP.AI`.
+The `.FP.AI` blocks remain visible in source and are omitted from the rendered
+PDF.
+
 The utmac path is real, not merely a notation experiment. The setup
 script fetches the current utmac upstream into `.tools/utmac`, runs its
 makefile so generated macros such as `u-idx.tmac` and `u-ref.tmac`
-exist, and then runs the Markdown-derived `.tr` source through
-Neatroff.
+exist, and then supports both the hand-authored `.FP.*` source and the
+Markdown-derived `.tr` source through Neatroff.
 
 ## Human-AI Source Discipline
 
@@ -377,6 +389,8 @@ It should be visible in the workshop:
 
 - `AI.md` says how future agents should reason about the proof.
 - `manuscript.md` remains readable by a person.
+- `source.fp.tr` remains readable as direct Bell Labs source.
+- `publishing/tmac/fp.tmac` is the inspectable First Pair macro layer.
 - generated `.ms` and `.tr` files remain inspectable.
 - `VERSION.md` records artifact names and page counts.
 - renderer warnings are preserved as logs.

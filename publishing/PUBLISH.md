@@ -191,8 +191,9 @@ there is no commit yet, the hash is `draft`.
 `firstpair-loop-lab-firstpair.pdf` is the pure First Pair troff proof:
 
 ```sh
-roff -M .tools/utmac -mu-en -mus -mpublishing/tmac/fp.tmac \
-  proofs/kiffness-loop-lab/source.fp.tr | pdf
+cd proofs/kiffness-loop-lab
+neatroff -M ../../.tools/utmac -mu-en -mus -m../../publishing/tmac/fp.tmac \
+  source.fp.tr | neatpdf > dist/firstpair-loop-lab-firstpair.pdf
 ```
 
 `firstpair-loop-lab-utmac.pdf` and `firstpair-loop-lab-neatroff.pdf` are

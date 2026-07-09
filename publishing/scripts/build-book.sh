@@ -231,6 +231,27 @@ build_epub() {
   fi
 }
 
+build_html() {
+  local stem="$1"
+  local kindle_name="$2"
+  local cover_md="$tmpdir/$stem.cover.html.md"
+  render_cover "$kindle_name" "$cover_md"
+  REPO_ROOT="$repo_root" \
+    BOOK_ROOT="$book_root" \
+    BOOK_DIST_DIR="$dist_dir" \
+    BOOK_BUILD_DIR="$build_dir" \
+    BOOK_METADATA="$metadata" \
+    BOOK_HTML_COVER="$cover_md" \
+    BOOK_HTML_MANUSCRIPT="$rendered_manuscript" \
+    BOOK_HTML_CSS="$book_dir/epub.css" \
+    BOOK_STEM="$stem" \
+    BOOK_VISIBLE_TITLE="$visible_title" \
+    BOOK_VERSION="$version" \
+    BOOK_VERSION_STAMP="$version_stamp" \
+    BOOK_HTML_RESOURCE_PATH="$build_dir:$book_dir:$repo_root" \
+    "$script_dir/emit-html-book.sh"
+}
+
 write_version_marker
 find "$dist_dir" -maxdepth 1 -name "$title_stem (*).epub" -o -name "$title_stem (*).pdf" | xargs rm -f 2>/dev/null || true
 IFS=',' read -ra format_list <<< "$formats"
@@ -247,6 +268,7 @@ for format in "${format_list[@]}"; do
     *) echo "unknown BOOK_FORMATS entry: $format" >&2; exit 2 ;;
   esac
   build_epub "$stem" "$kindle_name"
+  build_html "$stem" "$kindle_name"
   rm -f "$dist_dir/$stem ("*").epub" "$dist_dir/$stem ("*").pdf"
   ln -s "$(basename "$dist_dir/$stem.epub")" "$dist_dir/$kindle_name.epub"
   ln -s "$(basename "$dist_dir/$stem.pdf")" "$dist_dir/$kindle_name.pdf"

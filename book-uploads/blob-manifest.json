@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T06:24:24.965Z",
+  "updatedAt": "2026-07-10T17:51:54.697Z",
   "books": {
     "typesec": {
       "updatedAt": "2026-07-10T03:46:00.383Z",
@@ -2212,6 +2212,902 @@
           ]
         }
       }
+    },
+    "invented-enemy": {
+      "updatedAt": "2026-07-10T17:44:53.266Z",
+      "dryRun": false,
+      "units": {
+        "pdf": {
+          "kind": "pdf",
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview.pdf",
+          "sha256": "7f532e7a46b37a2bb3386fb138d8460460861ce4d2b56f72f7d10f28134359b5",
+          "size": 219112,
+          "pathname": "books/invented-enemy/pdf/7f532e7a46b37a2b-invented-enemy-preview.pdf",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/pdf/7f532e7a46b37a2b-invented-enemy-preview.pdf",
+          "skipped": false
+        },
+        "epub": {
+          "kind": "epub",
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview.epub",
+          "sha256": "3f74062d52702d31e22ec2a238b579f878e98af08ef79fa0d6e3206088e070e6",
+          "size": 221850,
+          "pathname": "books/invented-enemy/epub/3f74062d52702d31-invented-enemy-preview.epub",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/epub/3f74062d52702d31-invented-enemy-preview.epub",
+          "skipped": false
+        },
+        "html": {
+          "kind": "html",
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview.html",
+          "sha256": "b06840d84d1a31bfd9a7d63a836aad247eee741fd536c4c444eca39df665fbe6",
+          "size": 541403,
+          "pathname": "books/invented-enemy/html/b06840d84d1a31bf-invented-enemy-preview.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/html/b06840d84d1a31bf-invented-enemy-preview.html",
+          "skipped": false
+        },
+        "htmlChapters": {
+          "kind": "htmlChapters",
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters",
+          "sha256": "8b12cf8a218d17c9223deed7b8176b1a517e008d6d36af124e847f655f612564",
+          "pathnamePrefix": "books/invented-enemy/chapters/8b12cf8a218d17c9",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/index.html",
+          "skipped": false,
+          "files": [
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-001.html",
+              "relativePath": "chapter-001.html",
+              "sha256": "5f885de5969c7d7cc80c0dcc395ed2e725370c97308c55bbb2a2abc556d18237",
+              "size": 5959,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-001.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-001.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-002.html",
+              "relativePath": "chapter-002.html",
+              "sha256": "5976392749329a690cad009f6c5e7b7eef9f83ec28c88a20dc52129f571ad1f4",
+              "size": 10645,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-002.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-002.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-003.html",
+              "relativePath": "chapter-003.html",
+              "sha256": "f28b5808c903c78d872459573452dd6e8fc5de3561ccb09184f2cbf2d41bcf3d",
+              "size": 5209,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-003.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-003.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-004.html",
+              "relativePath": "chapter-004.html",
+              "sha256": "4a4b5d9a12f1ed762e2d22d74c3620c71bc4c3f80ef96090b5970f077ddb32a1",
+              "size": 5895,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-004.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-004.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-005.html",
+              "relativePath": "chapter-005.html",
+              "sha256": "e8e38e9f4817db7ba43311231673a0109b22abaf6732422a9ed1246577f84cbe",
+              "size": 5224,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-005.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-005.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-006.html",
+              "relativePath": "chapter-006.html",
+              "sha256": "eb5a8a8be9ede0010a844e6fcfb70097f62fb66f987a928d39db6e8e666d7ecb",
+              "size": 5345,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-006.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-006.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-007.html",
+              "relativePath": "chapter-007.html",
+              "sha256": "ae01a254ba7148c3948a599445f385d0f2ae9879adde93d4eaf4fb0e3c29347f",
+              "size": 5240,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-007.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-007.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-008.html",
+              "relativePath": "chapter-008.html",
+              "sha256": "1b5e05aaf2181c83e0f2790b8aade510715a95dcab8793a69b9e2f92beae12cf",
+              "size": 20780,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-008.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-008.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-009.html",
+              "relativePath": "chapter-009.html",
+              "sha256": "6899bd295a9246dc23714e9f03417a7464bba7efb166e54fdbf385f94b74344f",
+              "size": 5259,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-009.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-009.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-010.html",
+              "relativePath": "chapter-010.html",
+              "sha256": "a795279bba39d93bd53afd2217c3c988506ce8cbb29bc03ec19d69e7d16f5d68",
+              "size": 5397,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-010.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-010.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-011.html",
+              "relativePath": "chapter-011.html",
+              "sha256": "f9c7f1407d706725f1634e02c594c803a2812ea9f0f942885bb07e08334b087a",
+              "size": 5276,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-011.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-011.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-012.html",
+              "relativePath": "chapter-012.html",
+              "sha256": "b1429f4c0429af302f571dd637c3b437684de762e84fd835c4cc70d38b191026",
+              "size": 5557,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-012.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-012.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-013.html",
+              "relativePath": "chapter-013.html",
+              "sha256": "e23c8db8531e0e8d53dd32d87130757814f4d23886e3250205452c8ab9895d7b",
+              "size": 5286,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-013.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-013.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-014.html",
+              "relativePath": "chapter-014.html",
+              "sha256": "3dc497b3a9aeed9cdd524b5914b81f69de6ab3ae89062bd5b182c3f731cc20cc",
+              "size": 5427,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-014.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-014.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-015.html",
+              "relativePath": "chapter-015.html",
+              "sha256": "01a8254394d0924481921e35da8e41c68d6f18f27238d333bd2e87a4e9e4b21b",
+              "size": 5311,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-015.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-015.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-016.html",
+              "relativePath": "chapter-016.html",
+              "sha256": "667bd376e9100aa2a4f86ca66f879d047602d3703a9059be43842d25140adba9",
+              "size": 5633,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-016.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-016.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-017.html",
+              "relativePath": "chapter-017.html",
+              "sha256": "abb314f4ba01410c28ab10b41a4ba70177140bf2320bbee04089a1687b8085d1",
+              "size": 5311,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-017.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-017.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-018.html",
+              "relativePath": "chapter-018.html",
+              "sha256": "bd5a74115b5a08b23236f378b44b0279a1b84b41e91ea509d8c2ad6845d2b9e0",
+              "size": 5427,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-018.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-018.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-019.html",
+              "relativePath": "chapter-019.html",
+              "sha256": "3791db87f5e9d15301fb08e956b18b7114e936456f752df25bcaca5f548be286",
+              "size": 5317,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-019.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-019.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-020.html",
+              "relativePath": "chapter-020.html",
+              "sha256": "45d3cc9d00c3ff911446b0c1985e7802404750e4f2c17f5673a2d1a0d01f077f",
+              "size": 5651,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-020.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-020.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-021.html",
+              "relativePath": "chapter-021.html",
+              "sha256": "3a3bf55382b74e49c6edf44444d83d2f398e98955ff82576e9adf65c5123a83b",
+              "size": 5310,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-021.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-021.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-022.html",
+              "relativePath": "chapter-022.html",
+              "sha256": "cddfc01aedf3b69314a009deefbc12796eed0c4e1fc4be47ad9d6f71d5fb1f36",
+              "size": 5406,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-022.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-022.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-023.html",
+              "relativePath": "chapter-023.html",
+              "sha256": "258366174eadc0aaf6c29ed0a31459338a1de50714543593348e3d7a58652dc8",
+              "size": 5317,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-023.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-023.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-024.html",
+              "relativePath": "chapter-024.html",
+              "sha256": "f5c1fa79142cd09f8e91479b743a54e32139e785394ac626879e2d2b0039bcf7",
+              "size": 5673,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-024.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-024.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-025.html",
+              "relativePath": "chapter-025.html",
+              "sha256": "ef256bf361afe18d5d8e06233df82f698bea3d696d9f8d4e1d40ed24dcf81f2e",
+              "size": 5312,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-025.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-025.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-026.html",
+              "relativePath": "chapter-026.html",
+              "sha256": "70a660e6050a52af33711e5f657ab1443d544c9a82763bd2b6a90bcb86841e59",
+              "size": 5524,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-026.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-026.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-027.html",
+              "relativePath": "chapter-027.html",
+              "sha256": "4c27857a9687ac58b4d072bae69be6c1a7bc00f2c1d8d04e899295eda7a7ee75",
+              "size": 5289,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-027.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-027.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-028.html",
+              "relativePath": "chapter-028.html",
+              "sha256": "4273832b78de3dd0ce5180a9b675e05011d83e790b5767d741689097ea9f0322",
+              "size": 5472,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-028.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-028.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-029.html",
+              "relativePath": "chapter-029.html",
+              "sha256": "d6719574553af1fa89d48d27753bae0d7c65d2638fcb9f08199c6ec46d344c81",
+              "size": 5299,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-029.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-029.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-030.html",
+              "relativePath": "chapter-030.html",
+              "sha256": "c94f53c68bbdbefb92ed03fc2cebdbe014beca0459a344fa7f04693d772a35ac",
+              "size": 5554,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-030.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-030.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-031.html",
+              "relativePath": "chapter-031.html",
+              "sha256": "6ca98a4f51955fc22e5a028dc9c7491b4c6ebff3cf13a6708832fafeeb56491b",
+              "size": 5282,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-031.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-031.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-032.html",
+              "relativePath": "chapter-032.html",
+              "sha256": "771a159d3ae5bf056f44cdd66efc62c58116341a80fd04c8d2875e34637da136",
+              "size": 5421,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-032.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-032.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-033.html",
+              "relativePath": "chapter-033.html",
+              "sha256": "b47626d47365b9658e718c25f0e729da9b021b69a138700b7890d276b7ae3293",
+              "size": 5316,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-033.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-033.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-034.html",
+              "relativePath": "chapter-034.html",
+              "sha256": "49cbf8e3944e9fb08a96526ff02bc6ff0ee6acf2da81d9dd70a0425e8a294feb",
+              "size": 5654,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-034.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-034.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-035.html",
+              "relativePath": "chapter-035.html",
+              "sha256": "a4b7105d8341e599f736a8e57a040b258170ebc6fd498f6e49cc62989a30de93",
+              "size": 5317,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-035.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-035.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-036.html",
+              "relativePath": "chapter-036.html",
+              "sha256": "3ebf50362a730a81db83db4fff4d7ee9eff75a27c629c3d591af3a941f08ed10",
+              "size": 5424,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-036.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-036.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-037.html",
+              "relativePath": "chapter-037.html",
+              "sha256": "0321e1bae1fc585fad6349092c007b3ee1094a3435985a605dad913dbbe5a8a3",
+              "size": 5305,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-037.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-037.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-038.html",
+              "relativePath": "chapter-038.html",
+              "sha256": "9e68515402e2f6ceb6196f898408f4d814ed08d8683ff2f86f97175d2e956f75",
+              "size": 5616,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-038.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-038.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-039.html",
+              "relativePath": "chapter-039.html",
+              "sha256": "b863931088e1eb0ac9a1fa491a0a34eb13261c92086f3a6a12cdd46dff188a11",
+              "size": 5301,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-039.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-039.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-040.html",
+              "relativePath": "chapter-040.html",
+              "sha256": "9574acdf6dccf7ed100ca01e8379d664d1cf0796c36529c2f5e13e566e357e6b",
+              "size": 5548,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-040.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-040.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-041.html",
+              "relativePath": "chapter-041.html",
+              "sha256": "0b06b63f617088773e4701b5d9378667d1b730dfbb74e285c319c04624561e8c",
+              "size": 5263,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-041.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-041.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-042.html",
+              "relativePath": "chapter-042.html",
+              "sha256": "1d38bfc35804e5fa6430a67cfa01fa8f6478fdbc986d910bb4399b26f5cfd012",
+              "size": 5373,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-042.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-042.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-043.html",
+              "relativePath": "chapter-043.html",
+              "sha256": "5969b89bb7ebab48060e9caf84234021ec2e70d4c61d7b7c4ba17ab3a160af76",
+              "size": 5274,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-043.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-043.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-044.html",
+              "relativePath": "chapter-044.html",
+              "sha256": "bea2d4da0aaaed266fc12f1fe2bc051f33999d046b7b2cd8a47c896a13bf531c",
+              "size": 5580,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-044.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-044.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-045.html",
+              "relativePath": "chapter-045.html",
+              "sha256": "e6124fd0b04a4c86cac7b9560e7587e922873c8360b04dceb81318f11eecf449",
+              "size": 5264,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-045.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-045.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-046.html",
+              "relativePath": "chapter-046.html",
+              "sha256": "8706720e23f62d698580c5457e70afe7cabfc9a73dc67c6c49e60c7ca1d14541",
+              "size": 5348,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-046.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-046.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-047.html",
+              "relativePath": "chapter-047.html",
+              "sha256": "25862d9919cc02f5fd559f08d9a7acdb04f4ed58514b6c635d7f8b6f1f8cc046",
+              "size": 5254,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-047.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-047.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-048.html",
+              "relativePath": "chapter-048.html",
+              "sha256": "4427f09405f64818d8295b2cd0d402bbcebb2c198843c1986c84a145e588fe14",
+              "size": 5556,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-048.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-048.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-049.html",
+              "relativePath": "chapter-049.html",
+              "sha256": "bc27808f71f2b08f0b2106c194e7ee4b1f8708d9caa517384886fcd950783227",
+              "size": 5262,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-049.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-049.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-050.html",
+              "relativePath": "chapter-050.html",
+              "sha256": "d752219a091667c8da9dc5bcbd22cd6afc193f2d4dbedb7134518a980520a396",
+              "size": 5372,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-050.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-050.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-051.html",
+              "relativePath": "chapter-051.html",
+              "sha256": "b8b4b4597948aa702d7de5230fdb00e27b80806282944c47fdf8d5cee3a562f5",
+              "size": 5278,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-051.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-051.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-052.html",
+              "relativePath": "chapter-052.html",
+              "sha256": "c25ebcd8cb69ef45d13a7ee4b55b28b0af8954601d47f5430f6c7cf401cb0f16",
+              "size": 5601,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-052.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-052.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-053.html",
+              "relativePath": "chapter-053.html",
+              "sha256": "addd99632c377d2d33423d006e8df5e13fddbcc5f210fcd0513765a2b38cd4e3",
+              "size": 5324,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-053.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-053.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-054.html",
+              "relativePath": "chapter-054.html",
+              "sha256": "f95da223f43f87f5c1a6576eb7969cbe74e83099f8ea6f3c0a6d6248c23e512d",
+              "size": 5643,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-054.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-054.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-055.html",
+              "relativePath": "chapter-055.html",
+              "sha256": "24ac6babedd7026bef7c085f35cd9adea3cf7dc791dcc873b0d701c1becf8902",
+              "size": 5345,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-055.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-055.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-056.html",
+              "relativePath": "chapter-056.html",
+              "sha256": "cf427869dc4b1c4ec8046d543c92c96ec544f7cb46b235c089ecff587ba07e63",
+              "size": 5666,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-056.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-056.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-057.html",
+              "relativePath": "chapter-057.html",
+              "sha256": "8abcbb278dbd6021eb84e667a79a2436cc464e3cdcace03592ba93da00adee9f",
+              "size": 5331,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-057.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-057.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-058.html",
+              "relativePath": "chapter-058.html",
+              "sha256": "090c25aebd05a912683ed7c102235daa8241d10044ee7484a6744cb350526e92",
+              "size": 5603,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-058.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-058.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-059.html",
+              "relativePath": "chapter-059.html",
+              "sha256": "c593c704224735718806fb201d5ce7a4475d09152c2fc07de9ddfa99afc3a429",
+              "size": 5344,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-059.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-059.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-060.html",
+              "relativePath": "chapter-060.html",
+              "sha256": "bb297cf17d3fc8a0a087e693b9223b93c3bcdb66f28b1050442b01b9b90ee4ef",
+              "size": 5703,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-060.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-060.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-061.html",
+              "relativePath": "chapter-061.html",
+              "sha256": "0102b0ca743c1021214500a1dc05873899da27a0e66eb8dc3c9d8ee4be287858",
+              "size": 5304,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-061.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-061.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-062.html",
+              "relativePath": "chapter-062.html",
+              "sha256": "e3932ef867f1a52131e7f1432de4f4123705ecdb5aaf46308a547988337f03d1",
+              "size": 5348,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-062.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-062.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-063.html",
+              "relativePath": "chapter-063.html",
+              "sha256": "c1d75888425c89b2cc34955b50682d5a48189ce8d0daea3b82c041f13ffe3cba",
+              "size": 5258,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-063.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-063.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-064.html",
+              "relativePath": "chapter-064.html",
+              "sha256": "0aba59a6bc3c2bd3e763f9bff61256571921e90a878e9cc1ee32c56de0047f93",
+              "size": 5567,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-064.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-064.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-065.html",
+              "relativePath": "chapter-065.html",
+              "sha256": "c6a03bdc6ca5e934f00df99fe17cb448b5b1703d8255fa12690c77d37259c8bd",
+              "size": 5296,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-065.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-065.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-066.html",
+              "relativePath": "chapter-066.html",
+              "sha256": "19c612ed098560fbf091a6cfe26abe7c998d0424c9d22074cf46770856a185e5",
+              "size": 5554,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-066.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-066.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-067.html",
+              "relativePath": "chapter-067.html",
+              "sha256": "44de105782dda6712e7fae4720f3421ff2402bc8e3cdcfbbb79d48eeaf6ca2f0",
+              "size": 5319,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-067.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-067.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-068.html",
+              "relativePath": "chapter-068.html",
+              "sha256": "88bd7ed2c5c34fa83af78218f2a7104e90cc42c60fe819729aae0bb9fc74770e",
+              "size": 5596,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-068.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-068.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-069.html",
+              "relativePath": "chapter-069.html",
+              "sha256": "080d05fe0961615bd6c24ddaab679b926093e41b65617f7989d1863974503817",
+              "size": 5295,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-069.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-069.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-070.html",
+              "relativePath": "chapter-070.html",
+              "sha256": "c3ac882c512d0865a1287d941263faed1082464bc32e66e4705142bfa618c877",
+              "size": 5486,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-070.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-070.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-071.html",
+              "relativePath": "chapter-071.html",
+              "sha256": "62fff6dae31bf9978b3ed7d9247126b44f3e6d280ed7d816153e1ff333279b4a",
+              "size": 5233,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-071.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-071.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-072.html",
+              "relativePath": "chapter-072.html",
+              "sha256": "613f04ff94ddeb46cbad0fb3a3cd5716011ba69f81a843a62a7bd06ee68f10e7",
+              "size": 5417,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-072.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-072.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/index.html",
+              "relativePath": "index.html",
+              "sha256": "a991ec8c52396112e44f36a9c946ebb146dd65e0adcc1fc88a4327df805b8cc9",
+              "size": 14796,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/index.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/index.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/media/file0.png",
+              "relativePath": "media/file0.png",
+              "sha256": "08670f36d7a88240388a1c586008821db0fd4ec2ecc2abd37b20bd02d986f9a1",
+              "size": 371866,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/media/file0.png",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/media/file0.png",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/sitemap.json",
+              "relativePath": "sitemap.json",
+              "sha256": "ecb1d4347248030c6d25c0f562b4b94301bd75012e163aa6c76be2fddc1f8f1b",
+              "size": 10795,
+              "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/sitemap.json",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/sitemap.json",
+              "skipped": false
+            }
+          ]
+        }
+      }
+    },
+    "from-1-to-0": {
+      "updatedAt": "2026-07-10T17:51:54.696Z",
+      "dryRun": false,
+      "units": {
+        "pdf": {
+          "kind": "pdf",
+          "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview.pdf",
+          "sha256": "5d0add95822763da2d1b6127693c4d3131d3497ade6f019fbcebab066f36c0e9",
+          "size": 95605,
+          "pathname": "books/from-1-to-0/pdf/5d0add95822763da-from-1-to-0-preview.pdf",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/pdf/5d0add95822763da-from-1-to-0-preview.pdf",
+          "skipped": true
+        },
+        "epub": {
+          "kind": "epub",
+          "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview.epub",
+          "sha256": "69e3d5cfa67af592ae10f4c88109f36a7d610b6e885f17b594dd031dba71c11d",
+          "size": 308235,
+          "pathname": "books/from-1-to-0/epub/69e3d5cfa67af592-from-1-to-0-preview.epub",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/epub/69e3d5cfa67af592-from-1-to-0-preview.epub",
+          "skipped": true
+        },
+        "html": {
+          "kind": "html",
+          "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview.html",
+          "sha256": "f940a42ee077a5fa5be072eb94a48f3d21ff9d558ef30c05c9f64ced6df318b5",
+          "size": 1156944,
+          "pathname": "books/from-1-to-0/html/f940a42ee077a5fa-from-1-to-0-preview.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/html/f940a42ee077a5fa-from-1-to-0-preview.html",
+          "skipped": true
+        },
+        "htmlChapters": {
+          "kind": "htmlChapters",
+          "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters",
+          "sha256": "6cb22c96dd7804835d1ea6ca1a593dd41e4b3654fe21455c3722462ddd92ec92",
+          "pathnamePrefix": "books/from-1-to-0/chapters/6cb22c96dd780483",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/index.html",
+          "skipped": false,
+          "files": [
+            {
+              "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-001.html",
+              "relativePath": "chapter-001.html",
+              "sha256": "002f287e9cb22801bd61978e110e23c1ddb325c2361e64dcee04fa5a05a8fc48",
+              "size": 5958,
+              "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-001.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-001.html",
+              "skipped": true
+            },
+            {
+              "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-002.html",
+              "relativePath": "chapter-002.html",
+              "sha256": "fe3f8e48212ace83792e6bf5e4538b879db0478e8c717fffd5e08c84bf6f8f79",
+              "size": 5890,
+              "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-002.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-002.html",
+              "skipped": true
+            },
+            {
+              "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-003.html",
+              "relativePath": "chapter-003.html",
+              "sha256": "ffdcf5d607c4d202e3c2a3cc99052af84087b762048bc662f68ba5f75c08e908",
+              "size": 5215,
+              "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-003.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-003.html",
+              "skipped": true
+            },
+            {
+              "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-004.html",
+              "relativePath": "chapter-004.html",
+              "sha256": "8e04aabd7e1a76b6d4c59663e9bf89ca9d85e1dc7a0ea0c2bae805754994c55a",
+              "size": 6103,
+              "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-004.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-004.html",
+              "skipped": true
+            },
+            {
+              "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-005.html",
+              "relativePath": "chapter-005.html",
+              "sha256": "0224e2c93211d50fc3594865d34df2b2d9fc8c9441d9e170c19d2956c4ed366c",
+              "size": 5217,
+              "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-005.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-005.html",
+              "skipped": true
+            },
+            {
+              "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-006.html",
+              "relativePath": "chapter-006.html",
+              "sha256": "3830204294a3036671ae91ac171f27873323d6fd383e6dc0242cbd444f5c4486",
+              "size": 7364,
+              "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-006.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-006.html",
+              "skipped": true
+            },
+            {
+              "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-007.html",
+              "relativePath": "chapter-007.html",
+              "sha256": "0c426abb30726fd909ed02c1f78febb4a733f07402c57dfcff795bdb3c22f99a",
+              "size": 5241,
+              "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-007.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-007.html",
+              "skipped": true
+            },
+            {
+              "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-008.html",
+              "relativePath": "chapter-008.html",
+              "sha256": "78ba7363215c8de50443bfe937ad3391b72edb693a9c48caa2032f9556a2c6ae",
+              "size": 12151,
+              "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-008.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-008.html",
+              "skipped": true
+            },
+            {
+              "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-009.html",
+              "relativePath": "chapter-009.html",
+              "sha256": "fc36fc5e9b670ec54fa3820d41f106be802136dea7b0ebb89023b6bde81f666c",
+              "size": 5255,
+              "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-009.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-009.html",
+              "skipped": true
+            },
+            {
+              "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-010.html",
+              "relativePath": "chapter-010.html",
+              "sha256": "9d61019ca27a0789a8299e2584b920c63cd129a19c99c3c7e3f5278824a6694c",
+              "size": 15317,
+              "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-010.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-010.html",
+              "skipped": true
+            },
+            {
+              "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-011.html",
+              "relativePath": "chapter-011.html",
+              "sha256": "a3b8036e7b0eac1cec2a9b96559011836399cdbdc904da8154fae4d309b7ddfb",
+              "size": 5236,
+              "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-011.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-011.html",
+              "skipped": true
+            },
+            {
+              "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-012.html",
+              "relativePath": "chapter-012.html",
+              "sha256": "5260115bdc62d532fe0697243f941f6d9d895a5fae08f65c4cff35a9ac9ca7e0",
+              "size": 5616,
+              "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-012.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-012.html",
+              "skipped": true
+            },
+            {
+              "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/index.html",
+              "relativePath": "index.html",
+              "sha256": "30717401453d2cff7e4dafa5e05148f24e836031b5d459cca91513231e5e3588",
+              "size": 5932,
+              "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/index.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/index.html",
+              "skipped": true
+            },
+            {
+              "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/media/file0.png",
+              "relativePath": "media/file0.png",
+              "sha256": "7a5759c6ab78d3d646342ef77d39ebf32d98c3a30eb441ad11f934afd43f2755",
+              "size": 847759,
+              "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/media/file0.png",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/media/file0.png",
+              "skipped": true
+            },
+            {
+              "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/sitemap.json",
+              "relativePath": "sitemap.json",
+              "sha256": "26b372e3262874e2da21e598af728f4078f100c70ee98b3d48c6557eeed68b40",
+              "size": 1257,
+              "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/sitemap.json",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/sitemap.json",
+              "skipped": true
+            }
+          ]
+        }
+      }
     }
   },
   "objects": {
@@ -2304,6 +3200,36 @@
       "pathname": "books/lighthouse-republics/html/89cb3abb1265fc36-lighthouse-republics-preview.html",
       "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/html/89cb3abb1265fc36-lighthouse-republics-preview.html",
       "size": 22892813
+    },
+    "7f532e7a46b37a2bb3386fb138d8460460861ce4d2b56f72f7d10f28134359b5:219112": {
+      "pathname": "books/invented-enemy/pdf/7f532e7a46b37a2b-invented-enemy-preview.pdf",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/pdf/7f532e7a46b37a2b-invented-enemy-preview.pdf",
+      "size": 219112
+    },
+    "3f74062d52702d31e22ec2a238b579f878e98af08ef79fa0d6e3206088e070e6:221850": {
+      "pathname": "books/invented-enemy/epub/3f74062d52702d31-invented-enemy-preview.epub",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/epub/3f74062d52702d31-invented-enemy-preview.epub",
+      "size": 221850
+    },
+    "b06840d84d1a31bfd9a7d63a836aad247eee741fd536c4c444eca39df665fbe6:541403": {
+      "pathname": "books/invented-enemy/html/b06840d84d1a31bf-invented-enemy-preview.html",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/html/b06840d84d1a31bf-invented-enemy-preview.html",
+      "size": 541403
+    },
+    "5d0add95822763da2d1b6127693c4d3131d3497ade6f019fbcebab066f36c0e9:95605": {
+      "pathname": "books/from-1-to-0/pdf/5d0add95822763da-from-1-to-0-preview.pdf",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/pdf/5d0add95822763da-from-1-to-0-preview.pdf",
+      "size": 95605
+    },
+    "69e3d5cfa67af592ae10f4c88109f36a7d610b6e885f17b594dd031dba71c11d:308235": {
+      "pathname": "books/from-1-to-0/epub/69e3d5cfa67af592-from-1-to-0-preview.epub",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/epub/69e3d5cfa67af592-from-1-to-0-preview.epub",
+      "size": 308235
+    },
+    "f940a42ee077a5fa5be072eb94a48f3d21ff9d558ef30c05c9f64ced6df318b5:1156944": {
+      "pathname": "books/from-1-to-0/html/f940a42ee077a5fa-from-1-to-0-preview.html",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/html/f940a42ee077a5fa-from-1-to-0-preview.html",
+      "size": 1156944
     }
   },
   "chapterPackages": {
@@ -4293,6 +5219,828 @@
           "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/sitemap.json",
           "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/sitemap.json",
           "skipped": false
+        }
+      ]
+    },
+    "8b12cf8a218d17c9223deed7b8176b1a517e008d6d36af124e847f655f612564": {
+      "pathnamePrefix": "books/invented-enemy/chapters/8b12cf8a218d17c9",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/index.html",
+      "files": [
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-001.html",
+          "relativePath": "chapter-001.html",
+          "sha256": "5f885de5969c7d7cc80c0dcc395ed2e725370c97308c55bbb2a2abc556d18237",
+          "size": 5959,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-001.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-001.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-002.html",
+          "relativePath": "chapter-002.html",
+          "sha256": "5976392749329a690cad009f6c5e7b7eef9f83ec28c88a20dc52129f571ad1f4",
+          "size": 10645,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-002.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-002.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-003.html",
+          "relativePath": "chapter-003.html",
+          "sha256": "f28b5808c903c78d872459573452dd6e8fc5de3561ccb09184f2cbf2d41bcf3d",
+          "size": 5209,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-003.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-003.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-004.html",
+          "relativePath": "chapter-004.html",
+          "sha256": "4a4b5d9a12f1ed762e2d22d74c3620c71bc4c3f80ef96090b5970f077ddb32a1",
+          "size": 5895,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-004.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-004.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-005.html",
+          "relativePath": "chapter-005.html",
+          "sha256": "e8e38e9f4817db7ba43311231673a0109b22abaf6732422a9ed1246577f84cbe",
+          "size": 5224,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-005.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-005.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-006.html",
+          "relativePath": "chapter-006.html",
+          "sha256": "eb5a8a8be9ede0010a844e6fcfb70097f62fb66f987a928d39db6e8e666d7ecb",
+          "size": 5345,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-006.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-006.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-007.html",
+          "relativePath": "chapter-007.html",
+          "sha256": "ae01a254ba7148c3948a599445f385d0f2ae9879adde93d4eaf4fb0e3c29347f",
+          "size": 5240,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-007.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-007.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-008.html",
+          "relativePath": "chapter-008.html",
+          "sha256": "1b5e05aaf2181c83e0f2790b8aade510715a95dcab8793a69b9e2f92beae12cf",
+          "size": 20780,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-008.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-008.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-009.html",
+          "relativePath": "chapter-009.html",
+          "sha256": "6899bd295a9246dc23714e9f03417a7464bba7efb166e54fdbf385f94b74344f",
+          "size": 5259,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-009.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-009.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-010.html",
+          "relativePath": "chapter-010.html",
+          "sha256": "a795279bba39d93bd53afd2217c3c988506ce8cbb29bc03ec19d69e7d16f5d68",
+          "size": 5397,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-010.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-010.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-011.html",
+          "relativePath": "chapter-011.html",
+          "sha256": "f9c7f1407d706725f1634e02c594c803a2812ea9f0f942885bb07e08334b087a",
+          "size": 5276,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-011.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-011.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-012.html",
+          "relativePath": "chapter-012.html",
+          "sha256": "b1429f4c0429af302f571dd637c3b437684de762e84fd835c4cc70d38b191026",
+          "size": 5557,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-012.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-012.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-013.html",
+          "relativePath": "chapter-013.html",
+          "sha256": "e23c8db8531e0e8d53dd32d87130757814f4d23886e3250205452c8ab9895d7b",
+          "size": 5286,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-013.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-013.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-014.html",
+          "relativePath": "chapter-014.html",
+          "sha256": "3dc497b3a9aeed9cdd524b5914b81f69de6ab3ae89062bd5b182c3f731cc20cc",
+          "size": 5427,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-014.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-014.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-015.html",
+          "relativePath": "chapter-015.html",
+          "sha256": "01a8254394d0924481921e35da8e41c68d6f18f27238d333bd2e87a4e9e4b21b",
+          "size": 5311,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-015.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-015.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-016.html",
+          "relativePath": "chapter-016.html",
+          "sha256": "667bd376e9100aa2a4f86ca66f879d047602d3703a9059be43842d25140adba9",
+          "size": 5633,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-016.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-016.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-017.html",
+          "relativePath": "chapter-017.html",
+          "sha256": "abb314f4ba01410c28ab10b41a4ba70177140bf2320bbee04089a1687b8085d1",
+          "size": 5311,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-017.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-017.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-018.html",
+          "relativePath": "chapter-018.html",
+          "sha256": "bd5a74115b5a08b23236f378b44b0279a1b84b41e91ea509d8c2ad6845d2b9e0",
+          "size": 5427,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-018.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-018.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-019.html",
+          "relativePath": "chapter-019.html",
+          "sha256": "3791db87f5e9d15301fb08e956b18b7114e936456f752df25bcaca5f548be286",
+          "size": 5317,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-019.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-019.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-020.html",
+          "relativePath": "chapter-020.html",
+          "sha256": "45d3cc9d00c3ff911446b0c1985e7802404750e4f2c17f5673a2d1a0d01f077f",
+          "size": 5651,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-020.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-020.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-021.html",
+          "relativePath": "chapter-021.html",
+          "sha256": "3a3bf55382b74e49c6edf44444d83d2f398e98955ff82576e9adf65c5123a83b",
+          "size": 5310,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-021.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-021.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-022.html",
+          "relativePath": "chapter-022.html",
+          "sha256": "cddfc01aedf3b69314a009deefbc12796eed0c4e1fc4be47ad9d6f71d5fb1f36",
+          "size": 5406,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-022.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-022.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-023.html",
+          "relativePath": "chapter-023.html",
+          "sha256": "258366174eadc0aaf6c29ed0a31459338a1de50714543593348e3d7a58652dc8",
+          "size": 5317,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-023.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-023.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-024.html",
+          "relativePath": "chapter-024.html",
+          "sha256": "f5c1fa79142cd09f8e91479b743a54e32139e785394ac626879e2d2b0039bcf7",
+          "size": 5673,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-024.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-024.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-025.html",
+          "relativePath": "chapter-025.html",
+          "sha256": "ef256bf361afe18d5d8e06233df82f698bea3d696d9f8d4e1d40ed24dcf81f2e",
+          "size": 5312,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-025.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-025.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-026.html",
+          "relativePath": "chapter-026.html",
+          "sha256": "70a660e6050a52af33711e5f657ab1443d544c9a82763bd2b6a90bcb86841e59",
+          "size": 5524,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-026.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-026.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-027.html",
+          "relativePath": "chapter-027.html",
+          "sha256": "4c27857a9687ac58b4d072bae69be6c1a7bc00f2c1d8d04e899295eda7a7ee75",
+          "size": 5289,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-027.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-027.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-028.html",
+          "relativePath": "chapter-028.html",
+          "sha256": "4273832b78de3dd0ce5180a9b675e05011d83e790b5767d741689097ea9f0322",
+          "size": 5472,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-028.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-028.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-029.html",
+          "relativePath": "chapter-029.html",
+          "sha256": "d6719574553af1fa89d48d27753bae0d7c65d2638fcb9f08199c6ec46d344c81",
+          "size": 5299,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-029.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-029.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-030.html",
+          "relativePath": "chapter-030.html",
+          "sha256": "c94f53c68bbdbefb92ed03fc2cebdbe014beca0459a344fa7f04693d772a35ac",
+          "size": 5554,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-030.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-030.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-031.html",
+          "relativePath": "chapter-031.html",
+          "sha256": "6ca98a4f51955fc22e5a028dc9c7491b4c6ebff3cf13a6708832fafeeb56491b",
+          "size": 5282,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-031.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-031.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-032.html",
+          "relativePath": "chapter-032.html",
+          "sha256": "771a159d3ae5bf056f44cdd66efc62c58116341a80fd04c8d2875e34637da136",
+          "size": 5421,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-032.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-032.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-033.html",
+          "relativePath": "chapter-033.html",
+          "sha256": "b47626d47365b9658e718c25f0e729da9b021b69a138700b7890d276b7ae3293",
+          "size": 5316,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-033.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-033.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-034.html",
+          "relativePath": "chapter-034.html",
+          "sha256": "49cbf8e3944e9fb08a96526ff02bc6ff0ee6acf2da81d9dd70a0425e8a294feb",
+          "size": 5654,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-034.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-034.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-035.html",
+          "relativePath": "chapter-035.html",
+          "sha256": "a4b7105d8341e599f736a8e57a040b258170ebc6fd498f6e49cc62989a30de93",
+          "size": 5317,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-035.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-035.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-036.html",
+          "relativePath": "chapter-036.html",
+          "sha256": "3ebf50362a730a81db83db4fff4d7ee9eff75a27c629c3d591af3a941f08ed10",
+          "size": 5424,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-036.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-036.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-037.html",
+          "relativePath": "chapter-037.html",
+          "sha256": "0321e1bae1fc585fad6349092c007b3ee1094a3435985a605dad913dbbe5a8a3",
+          "size": 5305,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-037.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-037.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-038.html",
+          "relativePath": "chapter-038.html",
+          "sha256": "9e68515402e2f6ceb6196f898408f4d814ed08d8683ff2f86f97175d2e956f75",
+          "size": 5616,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-038.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-038.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-039.html",
+          "relativePath": "chapter-039.html",
+          "sha256": "b863931088e1eb0ac9a1fa491a0a34eb13261c92086f3a6a12cdd46dff188a11",
+          "size": 5301,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-039.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-039.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-040.html",
+          "relativePath": "chapter-040.html",
+          "sha256": "9574acdf6dccf7ed100ca01e8379d664d1cf0796c36529c2f5e13e566e357e6b",
+          "size": 5548,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-040.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-040.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-041.html",
+          "relativePath": "chapter-041.html",
+          "sha256": "0b06b63f617088773e4701b5d9378667d1b730dfbb74e285c319c04624561e8c",
+          "size": 5263,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-041.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-041.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-042.html",
+          "relativePath": "chapter-042.html",
+          "sha256": "1d38bfc35804e5fa6430a67cfa01fa8f6478fdbc986d910bb4399b26f5cfd012",
+          "size": 5373,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-042.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-042.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-043.html",
+          "relativePath": "chapter-043.html",
+          "sha256": "5969b89bb7ebab48060e9caf84234021ec2e70d4c61d7b7c4ba17ab3a160af76",
+          "size": 5274,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-043.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-043.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-044.html",
+          "relativePath": "chapter-044.html",
+          "sha256": "bea2d4da0aaaed266fc12f1fe2bc051f33999d046b7b2cd8a47c896a13bf531c",
+          "size": 5580,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-044.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-044.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-045.html",
+          "relativePath": "chapter-045.html",
+          "sha256": "e6124fd0b04a4c86cac7b9560e7587e922873c8360b04dceb81318f11eecf449",
+          "size": 5264,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-045.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-045.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-046.html",
+          "relativePath": "chapter-046.html",
+          "sha256": "8706720e23f62d698580c5457e70afe7cabfc9a73dc67c6c49e60c7ca1d14541",
+          "size": 5348,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-046.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-046.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-047.html",
+          "relativePath": "chapter-047.html",
+          "sha256": "25862d9919cc02f5fd559f08d9a7acdb04f4ed58514b6c635d7f8b6f1f8cc046",
+          "size": 5254,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-047.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-047.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-048.html",
+          "relativePath": "chapter-048.html",
+          "sha256": "4427f09405f64818d8295b2cd0d402bbcebb2c198843c1986c84a145e588fe14",
+          "size": 5556,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-048.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-048.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-049.html",
+          "relativePath": "chapter-049.html",
+          "sha256": "bc27808f71f2b08f0b2106c194e7ee4b1f8708d9caa517384886fcd950783227",
+          "size": 5262,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-049.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-049.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-050.html",
+          "relativePath": "chapter-050.html",
+          "sha256": "d752219a091667c8da9dc5bcbd22cd6afc193f2d4dbedb7134518a980520a396",
+          "size": 5372,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-050.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-050.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-051.html",
+          "relativePath": "chapter-051.html",
+          "sha256": "b8b4b4597948aa702d7de5230fdb00e27b80806282944c47fdf8d5cee3a562f5",
+          "size": 5278,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-051.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-051.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-052.html",
+          "relativePath": "chapter-052.html",
+          "sha256": "c25ebcd8cb69ef45d13a7ee4b55b28b0af8954601d47f5430f6c7cf401cb0f16",
+          "size": 5601,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-052.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-052.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-053.html",
+          "relativePath": "chapter-053.html",
+          "sha256": "addd99632c377d2d33423d006e8df5e13fddbcc5f210fcd0513765a2b38cd4e3",
+          "size": 5324,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-053.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-053.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-054.html",
+          "relativePath": "chapter-054.html",
+          "sha256": "f95da223f43f87f5c1a6576eb7969cbe74e83099f8ea6f3c0a6d6248c23e512d",
+          "size": 5643,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-054.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-054.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-055.html",
+          "relativePath": "chapter-055.html",
+          "sha256": "24ac6babedd7026bef7c085f35cd9adea3cf7dc791dcc873b0d701c1becf8902",
+          "size": 5345,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-055.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-055.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-056.html",
+          "relativePath": "chapter-056.html",
+          "sha256": "cf427869dc4b1c4ec8046d543c92c96ec544f7cb46b235c089ecff587ba07e63",
+          "size": 5666,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-056.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-056.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-057.html",
+          "relativePath": "chapter-057.html",
+          "sha256": "8abcbb278dbd6021eb84e667a79a2436cc464e3cdcace03592ba93da00adee9f",
+          "size": 5331,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-057.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-057.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-058.html",
+          "relativePath": "chapter-058.html",
+          "sha256": "090c25aebd05a912683ed7c102235daa8241d10044ee7484a6744cb350526e92",
+          "size": 5603,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-058.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-058.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-059.html",
+          "relativePath": "chapter-059.html",
+          "sha256": "c593c704224735718806fb201d5ce7a4475d09152c2fc07de9ddfa99afc3a429",
+          "size": 5344,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-059.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-059.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-060.html",
+          "relativePath": "chapter-060.html",
+          "sha256": "bb297cf17d3fc8a0a087e693b9223b93c3bcdb66f28b1050442b01b9b90ee4ef",
+          "size": 5703,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-060.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-060.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-061.html",
+          "relativePath": "chapter-061.html",
+          "sha256": "0102b0ca743c1021214500a1dc05873899da27a0e66eb8dc3c9d8ee4be287858",
+          "size": 5304,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-061.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-061.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-062.html",
+          "relativePath": "chapter-062.html",
+          "sha256": "e3932ef867f1a52131e7f1432de4f4123705ecdb5aaf46308a547988337f03d1",
+          "size": 5348,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-062.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-062.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-063.html",
+          "relativePath": "chapter-063.html",
+          "sha256": "c1d75888425c89b2cc34955b50682d5a48189ce8d0daea3b82c041f13ffe3cba",
+          "size": 5258,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-063.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-063.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-064.html",
+          "relativePath": "chapter-064.html",
+          "sha256": "0aba59a6bc3c2bd3e763f9bff61256571921e90a878e9cc1ee32c56de0047f93",
+          "size": 5567,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-064.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-064.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-065.html",
+          "relativePath": "chapter-065.html",
+          "sha256": "c6a03bdc6ca5e934f00df99fe17cb448b5b1703d8255fa12690c77d37259c8bd",
+          "size": 5296,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-065.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-065.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-066.html",
+          "relativePath": "chapter-066.html",
+          "sha256": "19c612ed098560fbf091a6cfe26abe7c998d0424c9d22074cf46770856a185e5",
+          "size": 5554,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-066.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-066.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-067.html",
+          "relativePath": "chapter-067.html",
+          "sha256": "44de105782dda6712e7fae4720f3421ff2402bc8e3cdcfbbb79d48eeaf6ca2f0",
+          "size": 5319,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-067.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-067.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-068.html",
+          "relativePath": "chapter-068.html",
+          "sha256": "88bd7ed2c5c34fa83af78218f2a7104e90cc42c60fe819729aae0bb9fc74770e",
+          "size": 5596,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-068.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-068.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-069.html",
+          "relativePath": "chapter-069.html",
+          "sha256": "080d05fe0961615bd6c24ddaab679b926093e41b65617f7989d1863974503817",
+          "size": 5295,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-069.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-069.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-070.html",
+          "relativePath": "chapter-070.html",
+          "sha256": "c3ac882c512d0865a1287d941263faed1082464bc32e66e4705142bfa618c877",
+          "size": 5486,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-070.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-070.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-071.html",
+          "relativePath": "chapter-071.html",
+          "sha256": "62fff6dae31bf9978b3ed7d9247126b44f3e6d280ed7d816153e1ff333279b4a",
+          "size": 5233,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-071.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-071.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-072.html",
+          "relativePath": "chapter-072.html",
+          "sha256": "613f04ff94ddeb46cbad0fb3a3cd5716011ba69f81a843a62a7bd06ee68f10e7",
+          "size": 5417,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-072.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/chapter-072.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/index.html",
+          "relativePath": "index.html",
+          "sha256": "a991ec8c52396112e44f36a9c946ebb146dd65e0adcc1fc88a4327df805b8cc9",
+          "size": 14796,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/index.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/index.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/media/file0.png",
+          "relativePath": "media/file0.png",
+          "sha256": "08670f36d7a88240388a1c586008821db0fd4ec2ecc2abd37b20bd02d986f9a1",
+          "size": 371866,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/media/file0.png",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/media/file0.png",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/sitemap.json",
+          "relativePath": "sitemap.json",
+          "sha256": "ecb1d4347248030c6d25c0f562b4b94301bd75012e163aa6c76be2fddc1f8f1b",
+          "size": 10795,
+          "pathname": "books/invented-enemy/chapters/8b12cf8a218d17c9/sitemap.json",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/sitemap.json",
+          "skipped": false
+        }
+      ]
+    },
+    "6cb22c96dd7804835d1ea6ca1a593dd41e4b3654fe21455c3722462ddd92ec92": {
+      "pathnamePrefix": "books/from-1-to-0/chapters/6cb22c96dd780483",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/index.html",
+      "files": [
+        {
+          "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-001.html",
+          "relativePath": "chapter-001.html",
+          "sha256": "002f287e9cb22801bd61978e110e23c1ddb325c2361e64dcee04fa5a05a8fc48",
+          "size": 5958,
+          "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-001.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-001.html",
+          "skipped": true
+        },
+        {
+          "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-002.html",
+          "relativePath": "chapter-002.html",
+          "sha256": "fe3f8e48212ace83792e6bf5e4538b879db0478e8c717fffd5e08c84bf6f8f79",
+          "size": 5890,
+          "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-002.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-002.html",
+          "skipped": true
+        },
+        {
+          "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-003.html",
+          "relativePath": "chapter-003.html",
+          "sha256": "ffdcf5d607c4d202e3c2a3cc99052af84087b762048bc662f68ba5f75c08e908",
+          "size": 5215,
+          "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-003.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-003.html",
+          "skipped": true
+        },
+        {
+          "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-004.html",
+          "relativePath": "chapter-004.html",
+          "sha256": "8e04aabd7e1a76b6d4c59663e9bf89ca9d85e1dc7a0ea0c2bae805754994c55a",
+          "size": 6103,
+          "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-004.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-004.html",
+          "skipped": true
+        },
+        {
+          "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-005.html",
+          "relativePath": "chapter-005.html",
+          "sha256": "0224e2c93211d50fc3594865d34df2b2d9fc8c9441d9e170c19d2956c4ed366c",
+          "size": 5217,
+          "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-005.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-005.html",
+          "skipped": true
+        },
+        {
+          "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-006.html",
+          "relativePath": "chapter-006.html",
+          "sha256": "3830204294a3036671ae91ac171f27873323d6fd383e6dc0242cbd444f5c4486",
+          "size": 7364,
+          "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-006.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-006.html",
+          "skipped": true
+        },
+        {
+          "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-007.html",
+          "relativePath": "chapter-007.html",
+          "sha256": "0c426abb30726fd909ed02c1f78febb4a733f07402c57dfcff795bdb3c22f99a",
+          "size": 5241,
+          "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-007.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-007.html",
+          "skipped": true
+        },
+        {
+          "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-008.html",
+          "relativePath": "chapter-008.html",
+          "sha256": "78ba7363215c8de50443bfe937ad3391b72edb693a9c48caa2032f9556a2c6ae",
+          "size": 12151,
+          "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-008.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-008.html",
+          "skipped": true
+        },
+        {
+          "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-009.html",
+          "relativePath": "chapter-009.html",
+          "sha256": "fc36fc5e9b670ec54fa3820d41f106be802136dea7b0ebb89023b6bde81f666c",
+          "size": 5255,
+          "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-009.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-009.html",
+          "skipped": true
+        },
+        {
+          "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-010.html",
+          "relativePath": "chapter-010.html",
+          "sha256": "9d61019ca27a0789a8299e2584b920c63cd129a19c99c3c7e3f5278824a6694c",
+          "size": 15317,
+          "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-010.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-010.html",
+          "skipped": true
+        },
+        {
+          "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-011.html",
+          "relativePath": "chapter-011.html",
+          "sha256": "a3b8036e7b0eac1cec2a9b96559011836399cdbdc904da8154fae4d309b7ddfb",
+          "size": 5236,
+          "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-011.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-011.html",
+          "skipped": true
+        },
+        {
+          "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/chapter-012.html",
+          "relativePath": "chapter-012.html",
+          "sha256": "5260115bdc62d532fe0697243f941f6d9d895a5fae08f65c4cff35a9ac9ca7e0",
+          "size": 5616,
+          "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/chapter-012.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/chapter-012.html",
+          "skipped": true
+        },
+        {
+          "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/index.html",
+          "relativePath": "index.html",
+          "sha256": "30717401453d2cff7e4dafa5e05148f24e836031b5d459cca91513231e5e3588",
+          "size": 5932,
+          "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/index.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/index.html",
+          "skipped": true
+        },
+        {
+          "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/media/file0.png",
+          "relativePath": "media/file0.png",
+          "sha256": "7a5759c6ab78d3d646342ef77d39ebf32d98c3a30eb441ad11f934afd43f2755",
+          "size": 847759,
+          "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/media/file0.png",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/media/file0.png",
+          "skipped": true
+        },
+        {
+          "localPath": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters/sitemap.json",
+          "relativePath": "sitemap.json",
+          "sha256": "26b372e3262874e2da21e598af728f4078f100c70ee98b3d48c6557eeed68b40",
+          "size": 1257,
+          "pathname": "books/from-1-to-0/chapters/6cb22c96dd780483/sitemap.json",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/sitemap.json",
+          "skipped": true
         }
       ]
     }

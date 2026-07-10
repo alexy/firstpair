@@ -34,5 +34,17 @@ export const readerBooks = [
     "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/html/56c2cddb31d026ee-sail-rust-book.html",
     "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/chapters/1730f34f3a4fce10/index.html",
     "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/chapters/1730f34f3a4fce10"
+  },
+  {
+    "slug": "invented-enemy",
+    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/html/b06840d84d1a31bf-invented-enemy-preview.html",
+    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9/index.html",
+    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8b12cf8a218d17c9"
+  },
+  {
+    "slug": "from-1-to-0",
+    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/html/f940a42ee077a5fa-from-1-to-0-preview.html",
+    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/index.html",
+    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483"
   }
 ]

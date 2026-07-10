@@ -35,6 +35,18 @@
       "epub": "book-uploads/staging/sail-rust-book/sail-rust-book.epub",
       "html": "book-uploads/staging/sail-rust-book/sail-rust-book.html",
       "htmlChapters": "book-uploads/staging/sail-rust-book/sail-rust-book-chapters"
+    },
+    "invented-enemy": {
+      "pdf": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview.pdf",
+      "epub": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview.epub",
+      "html": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview.html",
+      "htmlChapters": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters"
+    },
+    "from-1-to-0": {
+      "pdf": "book-uploads/staging/from-1-to-0/from-1-to-0-preview.pdf",
+      "epub": "book-uploads/staging/from-1-to-0/from-1-to-0-preview.epub",
+      "html": "book-uploads/staging/from-1-to-0/from-1-to-0-preview.html",
+      "htmlChapters": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters"
     }
   }
 }

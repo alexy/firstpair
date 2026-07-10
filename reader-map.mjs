@@ -1,0 +1,38 @@
+export const readerBooks = [
+  {
+    "slug": "lighthouse-republics",
+    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/html/89cb3abb1265fc36-lighthouse-republics-preview.html",
+    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/index.html",
+    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620"
+  },
+  {
+    "slug": "rio-grande",
+    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/rio-grande/html/b010ffb13fdb76e4-historia_riograndense_brasil-alexy-preview.html",
+    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/rio-grande/chapters/9403b1f5b300e2e4/index.html",
+    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/rio-grande/chapters/9403b1f5b300e2e4"
+  },
+  {
+    "slug": "typesec",
+    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/typesec/html/c58609a83927e4ec-typesec.html",
+    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/typesec/chapters/7510198a8e8a03fb/index.html",
+    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/typesec/chapters/7510198a8e8a03fb"
+  },
+  {
+    "slug": "grust",
+    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/grust/html/2626cb94c23dd68c-grust.html",
+    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/grust/chapters/650f96054516dd9d/index.html",
+    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/grust/chapters/650f96054516dd9d"
+  },
+  {
+    "slug": "lakecat",
+    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lakecat/html/a06d1d74963e9d5f-lakecat.html",
+    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lakecat/chapters/74e23ed171a0cd10/index.html",
+    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lakecat/chapters/74e23ed171a0cd10"
+  },
+  {
+    "slug": "sail-rust-book",
+    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/html/56c2cddb31d026ee-sail-rust-book.html",
+    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/chapters/1730f34f3a4fce10/index.html",
+    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/chapters/1730f34f3a4fce10"
+  }
+]

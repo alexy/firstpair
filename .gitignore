@@ -11,3 +11,6 @@ proofs/*/build/
 __pycache__/
 **/__pycache__/
 
+.vercel
+.env*
+book-uploads/staging/

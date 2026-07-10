@@ -1,0 +1,120 @@
+{
+  "books": [
+    {
+      "slug": "lighthouse-republics",
+      "title": "Lighthouse Republics",
+      "kicker": "Preview edition",
+      "description": "A public preview of the Venezia history, with the full table of contents and opening movement available as PDF, EPUB, and hosted web readers.",
+      "accent": "#7d4e23",
+      "source": "https://github.com/firstpair/two-republics",
+      "homepage": "/lighthouse-republics/preview/",
+      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/pdf/7cf617ce3b7f4ef8-lighthouse-republics-preview.pdf",
+      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/epub/aa43a743ae396b1c-lighthouse-republics-preview.epub",
+      "html": "/read/lighthouse-republics/",
+      "htmlChapters": "/read/lighthouse-republics/chapters/",
+      "tags": [
+        "preview",
+        "history",
+        "South"
+      ],
+      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/html/89cb3abb1265fc36-lighthouse-republics-preview.html",
+      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/index.html"
+    },
+    {
+      "slug": "rio-grande",
+      "title": "Rio Grande",
+      "kicker": "Preview edition",
+      "description": "A public preview of the revised English reading edition, with cover, front matter, contents, and prefatory opening in PDF, EPUB, and browser editions.",
+      "accent": "#1f6f68",
+      "source": "https://github.com/alexy/books/tree/main/rio-grande",
+      "homepage": "/rio-grande/preview/",
+      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/rio-grande/pdf/ab811cfd364fe6bf-historia_riograndense_brasil-alexy-preview.pdf",
+      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/rio-grande/epub/96c66ac959f1d904-historia_riograndense_brasil-alexy-preview.epub",
+      "html": "/read/rio-grande/",
+      "htmlChapters": "/read/rio-grande/chapters/",
+      "tags": [
+        "preview",
+        "history",
+        "translation"
+      ],
+      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/rio-grande/html/b010ffb13fdb76e4-historia_riograndense_brasil-alexy-preview.html",
+      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/rio-grande/chapters/9403b1f5b300e2e4/index.html"
+    },
+    {
+      "slug": "typesec",
+      "title": "TypeSec",
+      "kicker": "Finished book",
+      "description": "Type-Level Security for Agentic AI, delivered as stable public PDF, EPUB, and hosted web readers.",
+      "accent": "#394f85",
+      "source": "https://github.com/querygraph/typesec",
+      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/typesec/pdf/7a4d8faa319200d7-typesec.pdf",
+      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/typesec/epub/5cc093e7cb4a19bc-typesec.epub",
+      "html": "/read/typesec/",
+      "htmlChapters": "/read/typesec/chapters/",
+      "tags": [
+        "finished",
+        "AI",
+        "security"
+      ],
+      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/typesec/html/c58609a83927e4ec-typesec.html",
+      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/typesec/chapters/7510198a8e8a03fb/index.html"
+    },
+    {
+      "slug": "grust",
+      "title": "Grust",
+      "kicker": "Finished book",
+      "description": "A short technical book for the Grust project, delivered as PDF, EPUB, and hosted web readers.",
+      "accent": "#6a4b2d",
+      "source": "https://github.com/querygraph/grust",
+      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/grust/pdf/c650c6689d855509-grust.pdf",
+      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/grust/epub/35ed2bdf19ef6291-grust.epub",
+      "html": "/read/grust/",
+      "htmlChapters": "/read/grust/chapters/",
+      "tags": [
+        "finished",
+        "graphs",
+        "Rust"
+      ],
+      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/grust/html/2626cb94c23dd68c-grust.html",
+      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/grust/chapters/650f96054516dd9d/index.html"
+    },
+    {
+      "slug": "lakecat",
+      "title": "LakeCat",
+      "kicker": "Finished book",
+      "description": "The Iceberg-compatible catalog foundation for QueryGraph, delivered as public PDF, EPUB, and hosted web readers.",
+      "accent": "#2f667d",
+      "source": "https://github.com/querygraph/lakecat",
+      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lakecat/pdf/8ab287a7d35a3843-lakecat.pdf",
+      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lakecat/epub/f4f9ec050149ffed-lakecat.epub",
+      "html": "/read/lakecat/",
+      "htmlChapters": "/read/lakecat/chapters/",
+      "tags": [
+        "finished",
+        "Iceberg",
+        "catalog"
+      ],
+      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lakecat/html/a06d1d74963e9d5f-lakecat.html",
+      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lakecat/chapters/74e23ed171a0cd10/index.html"
+    },
+    {
+      "slug": "sail-rust-book",
+      "title": "Sail: The Rust, Arrow, and DataFusion Guide",
+      "kicker": "Finished book",
+      "description": "A public guide to Sail, Rust, Arrow, and DataFusion, delivered as PDF, EPUB, and hosted web readers.",
+      "accent": "#4f5e46",
+      "source": "https://github.com/lakehq/sail",
+      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/pdf/43fc6f76a1e3cf63-sail-rust-book.pdf",
+      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/epub/a4319c63d469d44d-sail-rust-book.epub",
+      "html": "/read/sail-rust-book/",
+      "htmlChapters": "/read/sail-rust-book/chapters/",
+      "tags": [
+        "finished",
+        "Rust",
+        "DataFusion"
+      ],
+      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/html/56c2cddb31d026ee-sail-rust-book.html",
+      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/chapters/1730f34f3a4fce10/index.html"
+    }
+  ]
+}

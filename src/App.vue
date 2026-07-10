@@ -1,11 +1,11 @@
 <script setup lang="ts">
+import { computed, onMounted, ref } from 'vue'
 import {
   ArrowRight,
   BookOpen,
   Braces,
   BrainCircuit,
   ExternalLink,
-  FileText,
   Library,
   Link as LinkIcon,
   PenLine,
@@ -15,40 +15,48 @@ import {
 } from '@lucide/vue'
 
 type Book = {
+  slug: string
   title: string
   kicker: string
   description: string
   accent: string
   source: string
+  homepage?: string
   pdf: string
   epub: string
+  html: string
+  htmlChapters: string
+  htmlSource?: string
+  htmlChaptersSource?: string
   tags: string[]
 }
 
-const books: Book[] = [
-  {
-    title: 'Rio Grande',
-    kicker: 'Preview edition',
-    description:
-      'A public preview of the Rio Grande edition, with the contents and opening chapter available as PDF and EPUB.',
-    accent: '#1f6f68',
-    source: 'https://github.com/alexy/rio-grande',
-    pdf: '/books/rio-grande/rio-grande-preview.pdf',
-    epub: '/books/rio-grande/rio-grande-preview.epub',
-    tags: ['preview', 'toc', 'sources'],
-  },
-  {
-    title: 'Lighthouse Republics',
-    kicker: 'Preview edition',
-    description:
-      'A public preview of the Venezia history, with the full table of contents and opening chapters available as PDF and EPUB.',
-    accent: '#7d4e23',
-    source: 'https://github.com/alexy/two-republics',
-    pdf: '/books/lighthouse-republics/lighthouse-republics-preview.pdf',
-    epub: '/books/lighthouse-republics/lighthouse-republics-preview.epub',
-    tags: ['preview', 'toc', 'history'],
-  },
-]
+type Catalog = {
+  books: Book[]
+}
+
+const books = ref<Book[]>([])
+const catalogError = ref('')
+
+const catalogUrl = computed(() => `${import.meta.env.BASE_URL}catalog.json`)
+const previewCount = computed(() => books.value.filter((book) => book.homepage).length)
+const finishedCount = computed(() => books.value.length - previewCount.value)
+
+onMounted(async () => {
+  try {
+    const response = await fetch(catalogUrl.value)
+
+    if (!response.ok) {
+      throw new Error(`Catalog request failed: ${response.status}`)
+    }
+
+    const catalog = (await response.json()) as Catalog
+    books.value = catalog.books
+  } catch (error) {
+    catalogError.value = 'The library catalog is temporarily unavailable.'
+    console.error(error)
+  }
+})
 
 const sources = [
   { label: 'First principles', icon: Braces },
@@ -67,7 +75,7 @@ const fragments = [
   'Rosetta Scored review',
   'citations and links',
   'editorial voice',
-  'preview PDF  EPUB',
+  'PDF EPUB HTML',
 ]
 </script>
 
@@ -76,12 +84,12 @@ const fragments = [
     <header class="topbar" aria-label="First Pair">
       <a class="brand" href="/">
         <span class="brand-mark"><Library :size="18" /></span>
-        <span>firstpair.ai</span>
+        <span>firstpair.org</span>
       </a>
       <nav class="nav-links" aria-label="Primary">
         <a href="#books">Books</a>
         <a href="#sources">Sources</a>
-        <a href="https://github.com/alexy/firstpair" target="_blank" rel="noreferrer">
+        <a href="https://github.com/firstpair/firstpair" target="_blank" rel="noreferrer">
           GitHub
           <ExternalLink :size="14" />
         </a>
@@ -91,19 +99,20 @@ const fragments = [
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="eyebrow">First Pair Press</p>
-        <h1 id="hero-title">First-principles books, AI-researched.</h1>
+        <h1 id="hero-title">First-principles books, AI-researched</h1>
         <p class="lede">
           First Pair makes First Principles AI-Researched Books. Human authorship
           and AI research work as a pair: questions are reduced to first
           principles, sources are traced, and Rosetta Scored review turns the
-          collaboration into beautiful, easy-to-review PDF and EPUB editions.
+          collaboration into beautiful, easy-to-review PDF, EPUB, and web
+          editions.
         </p>
         <div class="hero-actions">
           <a class="primary-link" href="#books">
             Browse books
             <ArrowRight :size="17" />
           </a>
-          <a class="secondary-link" href="https://github.com/alexy/firstpair/tree/main/publishing" target="_blank" rel="noreferrer">
+          <a class="secondary-link" href="https://github.com/firstpair/firstpair/tree/main/publishing" target="_blank" rel="noreferrer">
             Publishing sources
             <LinkIcon :size="16" />
           </a>
@@ -158,6 +167,8 @@ const fragments = [
           <div class="format-badges">
             <span>PDF</span>
             <span>EPUB</span>
+            <span>HTML</span>
+            <span>Chapters</span>
           </div>
         </div>
       </div>
@@ -173,11 +184,19 @@ const fragments = [
     <section id="books" class="library-section" aria-labelledby="books-title">
       <div class="section-heading">
         <p class="eyebrow">Library</p>
-        <h2 id="books-title">Coauthored previews, beautifully typeset.</h2>
+        <h2 id="books-title">Public books and previews, beautifully typeset.</h2>
       </div>
 
+      <div v-if="books.length" class="library-summary" aria-label="Library totals">
+        <span>{{ books.length }} public titles</span>
+        <span>{{ previewCount }} previews</span>
+        <span>{{ finishedCount }} finished books</span>
+      </div>
+
+      <p v-if="catalogError" class="catalog-error">{{ catalogError }}</p>
+
       <div class="book-grid">
-        <article v-for="book in books" :key="book.title" class="book-card" :style="{ '--book-accent': book.accent }">
+        <article v-for="book in books" :key="book.slug" class="book-card" :style="{ '--book-accent': book.accent }">
           <div class="book-card__cover">
             <Sparkles :size="24" />
             <span>{{ book.kicker }}</span>
@@ -193,8 +212,11 @@ const fragments = [
               <span v-for="tag in book.tags" :key="tag">{{ tag }}</span>
             </div>
             <div class="book-links">
+              <a v-if="book.homepage" :href="book.homepage">Preview</a>
               <a :href="book.pdf">PDF</a>
               <a :href="book.epub">EPUB</a>
+              <a :href="book.html">Read</a>
+              <a :href="book.htmlChapters">Chapters</a>
               <a :href="book.source" target="_blank" rel="noreferrer">
                 Source
                 <ExternalLink :size="14" />

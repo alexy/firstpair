@@ -1,0 +1,15 @@
+node_modules/
+site-dist/
+dist-prod/
+.tools/
+.DS_Store
+*.tsbuildinfo
+proofs/*/build/
+__pycache__/
+**/__pycache__/
+book-uploads/
+public/*/*.pdf
+public/*/*.epub
+public/*/*.html
+public/*/*-chapters/
+public/*/preview/artifacts/

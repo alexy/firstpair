@@ -215,8 +215,8 @@ const fragments = [
               <a v-if="book.homepage" :href="book.homepage">Preview</a>
               <a :href="book.pdf">PDF</a>
               <a :href="book.epub">EPUB</a>
-              <a :href="book.html">Read</a>
-              <a :href="book.htmlChapters">Chapters</a>
+              <a :href="book.html" target="_blank" rel="noopener noreferrer">Read</a>
+              <a :href="book.htmlChapters" target="_blank" rel="noopener noreferrer">Chapters</a>
               <a :href="book.source" target="_blank" rel="noreferrer">
                 Source
                 <ExternalLink :size="14" />

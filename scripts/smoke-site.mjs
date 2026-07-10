@@ -9,6 +9,7 @@ await page.screenshot({ path: 'dist-prod/firstpair-site-smoke.png', fullPage: tr
 
 const checks = await page.evaluate(() => {
   const links = [...document.querySelectorAll('a')].map((link) => link.getAttribute('href') ?? '')
+  const readerLinks = [...document.querySelectorAll('a[href^="/read/"]')]
   const stage = document.querySelector('.press-stage')?.getBoundingClientRect()
   const cardCount = document.querySelectorAll('.book-card').length
 
@@ -23,6 +24,9 @@ const checks = await page.evaluate(() => {
     ),
     hasExternalChapterDownloadLink: links.some(
       (href) => href.includes('public.blob.vercel-storage.com/books/') && href.includes('/chapters/'),
+    ),
+    readerLinksOpenInNewTabs: readerLinks.every(
+      (link) => link.target === '_blank' && link.relList.contains('noopener'),
     ),
     cardCount,
     stageWidth: Math.round(stage?.width ?? 0),
@@ -127,6 +131,10 @@ if (!checks.hasPdfLink || !checks.hasEpubLink || !checks.hasHostedHtmlLink || !c
 
 if (checks.hasExternalHtmlDownloadLink || checks.hasExternalChapterDownloadLink) {
   throw new Error(`HTML reader links should stay on firstpair.org routes: ${JSON.stringify(checks)}`)
+}
+
+if (!checks.readerLinksOpenInNewTabs) {
+  throw new Error(`HTML reader links should open in new tabs: ${JSON.stringify(checks)}`)
 }
 
 if (checks.cardCount < 6 || checks.stageWidth < 300 || checks.stageHeight < 400) {

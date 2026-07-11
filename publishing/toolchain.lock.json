@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-11",
+  "homebrew": {
+    "formulae": {
+      "asdf": {
+        "version": "0.18.0",
+        "command": "asdf",
+        "args": ["--version"]
+      },
+      "ghostscript": {
+        "version": "10.07.1",
+        "command": "gs",
+        "args": ["--version"]
+      },
+      "groff": {
+        "version": "1.24.1",
+        "command": "groff",
+        "args": ["--version"]
+      },
+      "node": {
+        "version": "26.3.1",
+        "command": "node",
+        "args": ["--version"]
+      },
+      "pandoc": {
+        "version": "3.9.0.2",
+        "command": "pandoc",
+        "args": ["--version"]
+      },
+      "poppler": {
+        "version": "26.06.0",
+        "command": "pdfinfo",
+        "args": ["-v"]
+      },
+      "typst": {
+        "version": "0.14.2",
+        "command": "typst",
+        "args": ["--version"]
+      },
+      "uv": {
+        "version": "0.11.14",
+        "command": "uv",
+        "args": ["--version"]
+      }
+    },
+    "casks": {
+      "calibre": {
+        "version": "9.11.0",
+        "command": "/Applications/calibre.app/Contents/MacOS/ebook-convert",
+        "args": ["--version"]
+      }
+    }
+  },
+  "requiredCommands": [
+    "git",
+    "make",
+    "cc",
+    "pdfunite",
+    "pdfseparate",
+    "pdftoppm",
+    "pdftotext",
+    "unzip",
+    "zip"
+  ],
+  "python": {
+    "versionManager": "asdf",
+    "environmentManager": "uv",
+    "helperVersion": "3.12.3",
+    "policy": "Each Python-owning source repository pins Python in .tool-versions and locks dependencies with uv.lock."
+  },
+  "neatroff": {
+    "root": {
+      "repository": "https://github.com/aligrudi/neatroff_make.git",
+      "commit": "9c72045f2cd3556a8df3171ea0af3a8940b5ebbd"
+    },
+    "components": {
+      "neatroff": "3a0f4da6c6f699ac1f8ed1dd5eebba3dfc4c22f3",
+      "neatpost": "48dc8a09e823b8a1606953ded621e6b60ecc28a1",
+      "neatmkfn": "0bc55057f9ec80a46ee784c98c0843676200452b",
+      "neateqn": "d182414457da5bee66996d6ea92a368b1718ccbd",
+      "neatrefer": "0cc4ee1f7206ea0b9218d2ce798ea50344b537f4",
+      "troff": "9d709c759b3b5e5ef2c52ccc848a7ae42bf09263"
+    }
+  },
+  "utmac": {
+    "repository": "https://codeberg.org/pjfichet/utmac.git",
+    "commit": "92c362b041a97178662a595d2223cfc3af6921c2"
+  }
+}

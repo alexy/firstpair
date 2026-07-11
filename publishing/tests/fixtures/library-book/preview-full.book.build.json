@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "bookRoot": ".",
+  "metadata": "metadata.yaml",
+  "cover": "cover.md",
+  "css": "epub.css",
+  "version": "1.0.0",
+  "defaultEdition": "preview",
+  "mobi": false,
+  "pandoc": {
+    "reader": "markdown+smart",
+    "tocDepth": 2
+  },
+  "editions": {
+    "preview": {
+      "manuscript": "preview.md",
+      "stem": "firstpair-build-fixture-preview",
+      "dist": "dist-preview",
+      "buildDir": "build-preview"
+    },
+    "full": {
+      "manuscript": "full.md",
+      "stem": "firstpair-build-fixture",
+      "dist": "dist-full",
+      "buildDir": "build-full"
+    }
+  }
+}

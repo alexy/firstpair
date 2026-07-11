@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "bookRoot": ".",
+  "manuscript": "manuscript.md",
+  "metadata": "metadata.yaml",
+  "cover": "cover.md",
+  "css": "epub.css",
+  "stem": "firstpair-build-fixture",
+  "version": "1.0.0",
+  "dist": "dist-single",
+  "buildDir": "build-single",
+  "edition": "full",
+  "primaryFormat": "typst",
+  "mobi": false,
+  "pandoc": {
+    "reader": "markdown+smart",
+    "tocDepth": 2
+  }
+}

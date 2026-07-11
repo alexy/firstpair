@@ -1,0 +1,10 @@
+brew "asdf"
+brew "ghostscript"
+brew "groff"
+brew "node"
+brew "pandoc"
+brew "poppler"
+brew "typst"
+brew "uv"
+
+cask "calibre"

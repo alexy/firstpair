@@ -65,8 +65,10 @@ Publishes a built book directory into the First Pair library.
 The input may be a dist directory or a repo/book directory containing one of:
   dist/
   build/dist/
+  book/
   docs/book/dist/
   docs/book/build/dist/
+  docs/books/<slug>/dist/
 
 A book may split its build output into dist-preview/ and dist-full/ (each a
 publish-complete directory with a VERSION.md carrying "edition: preview|full").
@@ -249,7 +251,7 @@ async function scoreDistCandidate(path) {
   return { path, score }
 }
 
-async function resolveDistDir(inputDir, wantFull) {
+async function resolveDistDir(inputDir, wantFull, slug) {
   // Prefer the safe edition by default: dist-preview unless --full is passed.
   // A book may split its output into dist-preview/ and dist-full/ (each a
   // publish-complete dir). Fall back to a generic dist/ for books that don't.
@@ -264,6 +266,7 @@ async function resolveDistDir(inputDir, wantFull) {
 
   ordered.push(
     inputDir,
+    join(inputDir, 'book'),
     join(inputDir, 'dist'),
     join(inputDir, 'build', 'dist'),
     join(inputDir, 'book', 'dist'),
@@ -271,6 +274,22 @@ async function resolveDistDir(inputDir, wantFull) {
     join(inputDir, 'docs', 'book', 'dist'),
     join(inputDir, 'docs', 'book', 'build', 'dist'),
   )
+
+  if (slug) {
+    ordered.push(
+      join(inputDir, 'docs', 'books', slug, 'dist'),
+      join(inputDir, 'docs', 'books', slug, 'build', 'dist'),
+    )
+  } else {
+    const booksDir = join(inputDir, 'docs', 'books')
+    const bookEntries = await readdir(booksDir, { withFileTypes: true }).catch(() => [])
+    for (const entry of bookEntries.filter((candidate) => candidate.isDirectory())) {
+      ordered.push(
+        join(booksDir, entry.name, 'dist'),
+        join(booksDir, entry.name, 'build', 'dist'),
+      )
+    }
+  }
 
   const seen = new Set()
 
@@ -331,6 +350,25 @@ function titleFromSlug(slug) {
 
 function firstValue(...values) {
   return values.find((value) => typeof value === 'string' && value.trim())
+}
+
+function normalizeVersionAliases(version) {
+  const primary = firstValue(version.primary_format, version.public_format)
+  const primaryValue = (kind) => primary ? version[`${kind}_${primary}`] : null
+
+  return {
+    ...version,
+    primary_format: primary,
+    pdf_file: firstValue(version.pdf_file, version.stable_pdf, primaryValue('pdf_file')),
+    epub_file: firstValue(version.epub_file, version.stable_epub, primaryValue('epub_file')),
+    pdf_link: firstValue(version.pdf_link, version.versioned_pdf, primaryValue('pdf_link')),
+    epub_link: firstValue(
+      version.epub_link,
+      version.kindle_link,
+      version.versioned_epub,
+      primaryValue('epub_link'),
+    ),
+  }
 }
 
 function preferredAccent(slug) {
@@ -953,8 +991,8 @@ async function deployProduction(plan) {
 }
 
 async function buildPlan(inputDir, options) {
-  const distDir = await resolveDistDir(inputDir, options.full)
-  const version = await readKeyValueFile(join(distDir, 'VERSION.md'))
+  const distDir = await resolveDistDir(inputDir, options.full, options.slug)
+  const version = normalizeVersionAliases(await readKeyValueFile(join(distDir, 'VERSION.md')))
   const edition = editionOf(distDir, version)
   const metadata = await metadataFor(inputDir, distDir)
   const source = options.source ?? (await sourceUrlFromGit(inputDir))
@@ -1050,6 +1088,7 @@ function printablePlan(plan, sourceMap = null, icloudCopies = []) {
     slug: plan.slug,
     title: plan.title,
     distDir: plan.distDir,
+    edition: plan.edition,
     stageDir: repoRelative(plan.stageDir),
     publicDir: repoRelative(plan.publicDir),
     source: plan.source,

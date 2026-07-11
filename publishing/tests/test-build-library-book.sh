@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+firstpair_root="$(cd "$(dirname "$0")/../.." && pwd)"
+fixture_source="$firstpair_root/publishing/tests/fixtures/library-book"
+builder="$firstpair_root/publishing/scripts/build-library-book.sh"
+work="$(mktemp -d)"
+trap 'rm -rf "$work"' EXIT
+
+cp -R "$fixture_source/." "$work/"
+
+"$builder" --repo-root "$work" --config single.book.build.json
+"$builder" --repo-root "$work" --config dual.book.build.json
+"$builder" both --repo-root "$work" --config preview-full.book.build.json
+
+for dist in dist-single dist-dual dist-preview dist-full; do
+  "$firstpair_root/publishing/scripts/verify-library-book.sh" "$work/$dist"
+done
+
+grep -q '^primary_format: typst$' "$work/dist-dual/VERSION.md"
+grep -q '^pdf_file_troff: firstpair-build-fixture-troff.pdf$' "$work/dist-dual/VERSION.md"
+grep -q '^edition: preview$' "$work/dist-preview/VERSION.md"
+grep -q '^edition: full$' "$work/dist-full/VERSION.md"
+
+mkdir -p "$work/resolution-book" "$work/resolution-multi/docs/books/firstpair-build-fixture"
+cp -R "$work/dist-single" "$work/resolution-book/book"
+cp -R "$work/dist-single" "$work/resolution-multi/docs/books/firstpair-build-fixture/dist"
+
+node "$firstpair_root/scripts/publish-book-to-library.mjs" \
+  "$work/resolution-book" \
+  --slug firstpair-build-fixture \
+  --dry-run --no-build --no-smoke --no-deploy --no-icloud \
+  > "$work/book-plan.json"
+node "$firstpair_root/scripts/publish-book-to-library.mjs" \
+  "$work/resolution-multi" \
+  --slug firstpair-build-fixture \
+  --dry-run --no-build --no-smoke --no-deploy --no-icloud \
+  > "$work/multi-plan.json"
+
+grep -q '"edition": "full"' "$work/book-plan.json"
+grep -q '/resolution-book/book"' "$work/book-plan.json"
+grep -q '/docs/books/firstpair-build-fixture/dist"' "$work/multi-plan.json"
+
+echo "Unified library book fixtures passed"

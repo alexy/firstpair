@@ -11,6 +11,7 @@ cover="${BOOK_HTML_COVER:-${BOOK_COVER_RENDERED:-$book_dir/cover.md}}"
 manuscript="${BOOK_HTML_MANUSCRIPT:-${BOOK_RENDERED_MANUSCRIPT:-$book_dir/manuscript.md}}"
 css="${BOOK_HTML_CSS:-${BOOK_CSS:-$book_dir/epub.css}}"
 resource_path="${BOOK_HTML_RESOURCE_PATH:-$build_dir:$book_dir:$repo_root}"
+reader="${BOOK_HTML_READER:-markdown+smart}"
 
 mkdir -p "$dist_dir" "$build_dir"
 
@@ -94,7 +95,7 @@ fi
 sources+=("$manuscript")
 
 pandoc_args=(
-  --from markdown+smart
+  --from "$reader"
   --standalone
   --embed-resources
   --toc
@@ -126,7 +127,7 @@ if [[ "${BOOK_HTML_SPLIT:-1}" != "0" ]]; then
   mkdir -p "$chunk_work"
 
   chunk_args=(
-    --from markdown+smart
+    --from "$reader"
     --to chunkedhtml
     --standalone
     --toc

@@ -3,7 +3,9 @@ set -euo pipefail
 
 firstpair_root="$(cd "$(dirname "$0")/../.." && pwd)"
 neatroff_root="${NEATROFF_ROOT:-$HOME/src/neatroff_make}"
-neatroff_repo="${NEATROFF_MAKE_REPO:-https://github.com/aligrudi/neatroff_make.git}"
+toolchain_lock="$firstpair_root/publishing/toolchain.lock.json"
+neatroff_repo="${NEATROFF_MAKE_REPO:-$(node -e 'const l=require(process.argv[1]); process.stdout.write(l.neatroff.root.repository)' "$toolchain_lock")}"
+neatroff_commit="${NEATROFF_MAKE_COMMIT:-$(node -e 'const l=require(process.argv[1]); process.stdout.write(l.neatroff.root.commit)' "$toolchain_lock")}"
 local_bin="${LOCAL_BIN:-$HOME/.local/bin}"
 local_share="${LOCAL_SHARE:-$HOME/.local/share/firstpair}"
 
@@ -24,6 +26,36 @@ link_cmd() {
   ln -sfn "$target" "$local_bin/$name"
 }
 
+locked_component_commit() {
+  node -e '
+    const lock = require(process.argv[1])
+    const value = lock.neatroff.components[process.argv[2]]
+    if (!value) process.exit(2)
+    process.stdout.write(value)
+  ' "$toolchain_lock" "$1"
+}
+
+checkout_locked_commit() {
+  local repo_dir="$1"
+  local commit="$2"
+  local label="$3"
+  local current
+
+  current="$(git -C "$repo_dir" rev-parse HEAD 2>/dev/null || true)"
+  if [[ "$current" == "$commit" ]]; then
+    return
+  fi
+
+  if [[ -n "$(git -C "$repo_dir" status --porcelain)" ]]; then
+    printf '%s is dirty and cannot be moved from %s to pinned commit %s\n' \
+      "$label" "${current:-unknown}" "$commit" >&2
+    exit 1
+  fi
+
+  git -C "$repo_dir" fetch origin "$commit"
+  git -C "$repo_dir" checkout --detach "$commit"
+}
+
 need git
 need make
 need cc
@@ -31,13 +63,32 @@ need cc
 mkdir -p "$(dirname "$neatroff_root")" "$local_bin" "$local_share"
 
 if [[ ! -d "$neatroff_root/.git" ]]; then
+  if [[ -e "$neatroff_root" && -n "$(find "$neatroff_root" -mindepth 1 -maxdepth 1 -print -quit 2>/dev/null)" ]]; then
+    printf 'refusing to replace non-Git Neatroff directory: %s\n' "$neatroff_root" >&2
+    exit 1
+  fi
   rm -rf "$neatroff_root"
   git clone "$neatroff_repo" "$neatroff_root"
 fi
 
+checkout_locked_commit "$neatroff_root" "$neatroff_commit" "neatroff_make"
+
 if [[ ! -d "$neatroff_root/neatroff" ]]; then
   make -C "$neatroff_root" init
 fi
+
+for component in neatroff neatpost neatmkfn neateqn neatrefer troff; do
+  component_dir="$neatroff_root/$component"
+  if [[ ! -d "$component_dir/.git" ]]; then
+    printf 'missing Neatroff component checkout: %s\n' "$component_dir" >&2
+    exit 1
+  fi
+  checkout_locked_commit \
+    "$component_dir" \
+    "$(locked_component_commit "$component")" \
+    "neatroff/$component"
+done
+
 make -C "$neatroff_root" neat
 
 for exe in \

@@ -81,6 +81,6 @@ done < <(suffixes_for epub)
 while IFS= read -r suffix; do
   [[ -n "$suffix" ]] || continue
   check_pair "pdf_file_$suffix" "pdf_link_$suffix"
-done
+done < <(suffixes_for pdf)
 
 echo "VERSION.md artifact contract passed: $version_file"

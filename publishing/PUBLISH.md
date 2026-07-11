@@ -17,8 +17,12 @@ human and an AI can collaborate without hiding the handoff.
 
 ```text
 publishing/
+  Brewfile
   PUBLISH.md
+  book.build.schema.json
+  toolchain.lock.json
   scripts/
+    build-library-book.sh
     build-founding-docs.sh
     build-book.sh
     build-firstpair-book.sh
@@ -137,15 +141,17 @@ The active local Neatroff source lives at:
 ~/src/neatroff_make
 ```
 
-Install or refresh that tree through FirstPair, not through individual book
+Install or verify that tree through FirstPair, not through individual book
 projects:
 
 ```sh
-~/src/firstpair/publishing/scripts/setup-neatroff.sh
+~/src/firstpair/publishing/scripts/install-toolchain.sh
 ```
 
-The setup script clones or updates `~/src/neatroff_make`, runs `make init` when
-needed, runs `make neat`, and exposes stable user-level wrappers under
+The installer uses `publishing/Brewfile`, pins the installed formulae with
+Homebrew, verifies their exact versions against `toolchain.lock.json`, checks
+out the locked `neatroff_make` root and component commits, runs `make neat`, and
+exposes stable user-level wrappers under
 `~/.local/bin`:
 
 ```text
@@ -184,15 +190,87 @@ make neat
 
 The utmac macro set comes from Pierre Jean Fichet's `utmac`. The GitHub repo is
 archived and points to Codeberg as the current upstream, so the setup script
-uses Codeberg by default:
+uses Codeberg at the commit recorded in `toolchain.lock.json`:
 
 ```sh
 publishing/scripts/setup-utmac.sh
 ```
 
-That script clones `utmac` into `.tools/utmac`, runs the utmac makefile to
+That script clones `utmac` into `.tools/utmac`, refuses to move a dirty checkout
+to another commit, runs the utmac makefile to
 generate `u-idx.tmac` and `u-ref.tmac`, and leaves the checkout untracked. It
 does not vendor the macro source into this repo.
+
+## Unified Library Book Builds
+
+Every catalog book now converges on one source-repository entrypoint:
+
+```sh
+~/src/firstpair/publishing/scripts/build-library-book.sh \
+  --repo-root "$PWD"
+```
+
+The source repository checks in `book.build.json`, validated against
+`publishing/book.build.schema.json`. That JSON file is the only canonical
+configuration surface. Command-line flags select or override an edition;
+environment variables remain available to hooks and legacy scripts but do not
+duplicate the build configuration.
+
+A source wrapper should only locate its repository and delegate:
+
+```sh
+#!/usr/bin/env bash
+set -euo pipefail
+repo_root="$(cd "$(dirname "$0")/../.." && pwd)"
+exec "$HOME/src/firstpair/publishing/scripts/build-library-book.sh" \
+  --repo-root "$repo_root" "$@"
+```
+
+The shared builder owns:
+
+- exact toolchain verification before rendering;
+- Git or deterministic content-hash source stamps;
+- Pandoc/Typst PDF, EPUB3, single-file HTML, chapter HTML, and optional MOBI;
+- source-pinned utmac/Neatroff PDF variants;
+- stable and versioned artifact links plus key-value `VERSION.md`;
+- mandatory PDF geometry/raster checks and EPUB/HTML package checks; and
+- the final `check-version-marker.sh` gate.
+
+Source-owned hooks retain assembly, diagrams, EPUB repair, specialist format
+variants, preview limits, and title-specific validators. Python hooks declare a
+project path and are run through that repository's asdf-pinned, uv-locked
+environment. Working Python book builders are wrapped, not translated into
+shell or JavaScript.
+
+For preview/full books:
+
+```sh
+book/build.sh preview
+book/build.sh full
+book/build.sh both
+```
+
+Each selected edition must be publish-complete and carry `edition: preview` or
+`edition: full`. A build never publishes. A publisher dry-run is the only
+allowed automatic handoff during migration:
+
+```sh
+npm run library:publish -- /path/to/source-repo --slug <slug> \
+  --dry-run --no-build --no-smoke --no-deploy --no-icloud
+```
+
+The dry-run output includes both `distDir` and `edition`. Publishing a full
+edition over a preview remains guarded by `--full` and explicit human approval.
+
+Run the shared regression fixtures with:
+
+```sh
+npm run test:book-build
+```
+
+They perform real single-format, Typst/Neatroff dual-format, and preview/full
+builds, then exercise publisher discovery for `book/` and
+`docs/books/<slug>/dist` layouts.
 
 Current local caveat: Neatroff itself builds and runs. When Libertinus font
 descriptions are not present in `~/src/neatroff_make/devutf`, the build creates
@@ -276,9 +354,9 @@ The imported workflow cards live under:
 publishing/skills/
 ```
 
-Use these scripts from FirstPair against a target repo by setting `REPO_ROOT`.
-The scripts keep helper lookup local to FirstPair while reading manuscripts,
-metadata, versions, and validators from the target repo.
+The older environment-configured `build-book.sh` remains a compatibility path
+for repositories not yet migrated. New and migrated library books use
+`book.build.json` plus `build-library-book.sh`.
 
 Book build, single formatter:
 

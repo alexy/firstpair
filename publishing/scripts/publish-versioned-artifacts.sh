@@ -77,4 +77,4 @@ done < <(suffixes_for epub)
 while IFS= read -r suffix; do
   [[ -n "$suffix" ]] || continue
   publish_pair "pdf_file_$suffix" "pdf_link_$suffix"
-done
+done < <(suffixes_for pdf)

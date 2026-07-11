@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "bookRoot": ".",
+  "manuscript": "manuscript.md",
+  "metadata": "metadata.yaml",
+  "cover": "cover.md",
+  "css": "epub.css",
+  "stem": "firstpair-build-fixture",
+  "version": "1.0.0",
+  "dist": "dist-dual",
+  "buildDir": "build-dual",
+  "edition": "full",
+  "primaryFormat": "typst",
+  "mobi": false,
+  "pdfFormats": [
+    {
+      "name": "typst",
+      "renderer": "typst",
+      "stem": "firstpair-build-fixture",
+      "primary": true
+    },
+    {
+      "name": "troff",
+      "renderer": "neatroff",
+      "stem": "firstpair-build-fixture-troff"
+    }
+  ],
+  "pandoc": {
+    "reader": "markdown+smart",
+    "tocDepth": 2
+  }
+}

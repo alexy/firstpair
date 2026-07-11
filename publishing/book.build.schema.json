@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://firstpair.org/schemas/book.build.schema.json",
+  "title": "FirstPair unified book build",
+  "type": "object",
+  "required": ["schemaVersion", "bookRoot", "metadata", "version"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "const": 1 },
+    "bookRoot": { "type": "string" },
+    "manuscript": { "type": "string" },
+    "metadata": { "type": "string" },
+    "cover": { "type": "string" },
+    "css": { "type": "string" },
+    "stem": { "type": "string" },
+    "title": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "author": { "type": "string" },
+    "edition": { "enum": ["preview", "full"] },
+    "defaultEdition": { "enum": ["preview", "full", "both"] },
+    "version": {
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "object",
+          "required": ["source"],
+          "properties": {
+            "source": { "enum": ["literal", "file", "cargo", "package"] },
+            "value": { "type": ["string", "number"] },
+            "file": { "type": "string" }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "versionStamp": { "type": "string" },
+    "kindleName": { "type": "string" },
+    "versionedStem": { "type": "string" },
+    "dist": { "type": "string" },
+    "buildDir": { "type": "string" },
+    "cleanDist": { "type": "boolean" },
+    "mobi": { "type": "boolean" },
+    "tutorial": { "type": "string" },
+    "primaryFormat": { "type": "string" },
+    "sourceFiles": { "type": "array", "items": { "type": "string" } },
+    "environment": {
+      "type": "object",
+      "additionalProperties": { "type": ["string", "number", "boolean"] }
+    },
+    "pandoc": {
+      "type": "object",
+      "properties": {
+        "reader": { "type": "string" },
+        "toc": { "type": "boolean" },
+        "tocDepth": { "type": "integer", "minimum": 1 },
+        "numberSections": { "type": "boolean" },
+        "resourcePaths": { "type": "array", "items": { "type": "string" } },
+        "commonArgs": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "pdf": {
+      "type": "object",
+      "properties": {
+        "separateCover": { "type": "boolean" },
+        "includeInHeader": { "type": "array", "items": { "type": "string" } },
+        "variables": { "type": "object" },
+        "args": { "type": "array", "items": { "type": "string" } },
+        "coverArgs": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "epub": {
+      "type": "object",
+      "properties": {
+        "titlePage": { "type": "boolean" },
+        "coverImage": { "type": "string" },
+        "args": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "html": {
+      "type": "object",
+      "properties": {
+        "splitLevel": { "type": "integer", "minimum": 1 },
+        "luaFilter": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "pdfFormats": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "renderer"],
+        "properties": {
+          "name": { "type": "string" },
+          "renderer": { "enum": ["typst", "neatroff", "hook"] },
+          "stem": { "type": "string" },
+          "primary": { "type": "boolean" },
+          "source": { "type": "string" },
+          "run": { "type": "string" },
+          "trimLeadingBlankPages": { "type": "boolean" },
+          "args": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": false
+      }
+    },
+    "hooks": { "$ref": "#/$defs/hooks" },
+    "validators": { "$ref": "#/$defs/hookList" },
+    "editions": {
+      "type": "object",
+      "properties": {
+        "preview": { "type": "object" },
+        "full": { "type": "object" }
+      },
+      "additionalProperties": false,
+      "minProperties": 1
+    }
+  },
+  "allOf": [
+    {
+      "if": { "not": { "required": ["editions"] } },
+      "then": { "required": ["manuscript"] }
+    }
+  ],
+  "$defs": {
+    "hook": {
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "object",
+          "properties": {
+            "run": { "type": "string" },
+            "python": { "type": "string" },
+            "project": { "type": "string" },
+            "args": { "type": "array", "items": { "type": "string" } },
+            "cwd": { "type": "string" },
+            "env": { "type": "object" }
+          },
+          "anyOf": [{ "required": ["run"] }, { "required": ["python"] }],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "hookList": {
+      "oneOf": [
+        { "$ref": "#/$defs/hook" },
+        { "type": "array", "items": { "$ref": "#/$defs/hook" } }
+      ]
+    },
+    "hooks": {
+      "type": "object",
+      "properties": {
+        "prebuild": { "$ref": "#/$defs/hookList" },
+        "prepare": { "$ref": "#/$defs/hookList" },
+        "postPdf": { "$ref": "#/$defs/hookList" },
+        "postEpub": { "$ref": "#/$defs/hookList" },
+        "postBuild": { "$ref": "#/$defs/hookList" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

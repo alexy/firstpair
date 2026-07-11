@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-repo_root="$(cd "${REPO_ROOT:-.}" && pwd)"
+repo_root="$(cd "${1:-${REPO_ROOT:-.}}" && pwd)"
 python_path="${PUBLISHING_PYTHON:-$repo_root/.venv/bin/python}"
 
 if [[ -x "$python_path" ]]; then
@@ -24,7 +24,7 @@ if ! command -v uv >/dev/null 2>&1; then
   exit 1
 fi
 
-asdf_python="$(asdf which python 2>/dev/null || true)"
+asdf_python="$(cd "$repo_root" && asdf which python 2>/dev/null || true)"
 if [[ -n "$asdf_python" && -x "$asdf_python" ]]; then
   uv sync --project "$repo_root" --no-dev --python "$asdf_python" >/dev/null
 else

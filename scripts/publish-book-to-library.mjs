@@ -40,6 +40,7 @@ const booleanFlags = new Set([
   'no-smoke',
   'no-deploy',
   'smoke',
+  'full',
   'verbose',
   'help',
 ])
@@ -67,7 +68,14 @@ The input may be a dist directory or a repo/book directory containing one of:
   docs/book/dist/
   docs/book/build/dist/
 
+A book may split its build output into dist-preview/ and dist-full/ (each a
+publish-complete directory with a VERSION.md carrying "edition: preview|full").
+Without --full the preview edition is selected; --full selects the full edition.
+Publishing the FULL edition over an existing PREVIEW listing REQUIRES --full.
+
 Options:
+  --full                    Select/authorize the full edition. Required to
+                            replace a book's existing preview listing.
   --slug <slug>             Catalog slug. Defaults to title_stem or title.
   --title <title>           Catalog title. Defaults to metadata/VERSION.
   --description <text>      Catalog description for new or updated entry.
@@ -241,20 +249,34 @@ async function scoreDistCandidate(path) {
   return { path, score }
 }
 
-async function resolveDistDir(inputDir) {
-  const candidates = [
+async function resolveDistDir(inputDir, wantFull) {
+  // Prefer the safe edition by default: dist-preview unless --full is passed.
+  // A book may split its output into dist-preview/ and dist-full/ (each a
+  // publish-complete dir). Fall back to a generic dist/ for books that don't.
+  const editionDirs = wantFull ? ['dist-full', 'dist-preview'] : ['dist-preview', 'dist-full']
+  const ordered = []
+
+  for (const base of [inputDir, join(inputDir, 'book')]) {
+    for (const dir of editionDirs) {
+      ordered.push(join(base, dir))
+    }
+  }
+
+  ordered.push(
     inputDir,
     join(inputDir, 'dist'),
     join(inputDir, 'build', 'dist'),
-    join(inputDir, 'docs', 'book', 'dist'),
-    join(inputDir, 'docs', 'book', 'build', 'dist'),
     join(inputDir, 'book', 'dist'),
     join(inputDir, 'book', 'build', 'dist'),
-  ]
-  const scored = []
+    join(inputDir, 'docs', 'book', 'dist'),
+    join(inputDir, 'docs', 'book', 'build', 'dist'),
+  )
+
   const seen = new Set()
 
-  for (const candidate of candidates) {
+  // Return the first viable dist in preference order (edition-aware), rather
+  // than the highest-scoring one, so --full deterministically selects dist-full.
+  for (const candidate of ordered) {
     const resolved = resolve(candidate)
 
     if (seen.has(resolved)) {
@@ -266,17 +288,29 @@ async function resolveDistDir(inputDir) {
     const score = await scoreDistCandidate(resolved)
 
     if (score && score.score > 0) {
-      scored.push(score)
+      return resolved
     }
   }
 
-  scored.sort((left, right) => right.score - left.score)
+  throw new Error(`could not find a book dist directory under ${inputDir}`)
+}
 
-  if (!scored[0]) {
-    throw new Error(`could not find a book dist directory under ${inputDir}`)
+function editionOf(distDir, version) {
+  if (version.edition === 'full' || version.edition === 'preview') {
+    return version.edition
   }
 
-  return scored[0].path
+  const name = basename(distDir)
+
+  if (name.includes('full')) {
+    return 'full'
+  }
+
+  if (name.includes('preview')) {
+    return 'preview'
+  }
+
+  return 'full'
 }
 
 function slugify(value) {
@@ -919,8 +953,9 @@ async function deployProduction(plan) {
 }
 
 async function buildPlan(inputDir, options) {
-  const distDir = await resolveDistDir(inputDir)
+  const distDir = await resolveDistDir(inputDir, options.full)
   const version = await readKeyValueFile(join(distDir, 'VERSION.md'))
+  const edition = editionOf(distDir, version)
   const metadata = await metadataFor(inputDir, distDir)
   const source = options.source ?? (await sourceUrlFromGit(inputDir))
   const stem = firstValue(
@@ -976,11 +1011,12 @@ async function buildPlan(inputDir, options) {
     distDir,
     version,
     metadata,
+    edition,
     slug,
     title,
     description,
     source,
-    kicker: options.kicker ?? 'Finished book',
+    kicker: options.kicker ?? (edition === 'preview' ? 'Preview edition' : 'Finished book'),
     accent: options.accent ?? preferredAccent(slug),
     tags,
     pdf,
@@ -1079,6 +1115,25 @@ async function main() {
 
   const plan = await buildPlan(inputDir, options)
   const dryRun = Boolean(options['dry-run'])
+
+  // Safety gate: never replace a preview listing with the full edition unless
+  // --full is passed. See AGENTS.md ("Preview → full publishing").
+  const gateCatalog = await readJson(join(root, 'public', 'catalog.json'), { books: [] })
+  const gateEntry = gateCatalog.books.find((book) => book.slug === plan.slug)
+  const existingIsPreview = Boolean(
+    gateEntry &&
+      (/preview/i.test(gateEntry.kicker ?? '') || (gateEntry.homepage ?? '').includes('/preview/')),
+  )
+
+  if (plan.edition === 'full' && existingIsPreview && !options.full) {
+    fail(
+      `Refusing to publish the FULL edition of "${plan.slug}" over its existing preview listing.\n` +
+        `The library currently lists "${plan.slug}" as a preview` +
+        `${gateEntry?.kicker ? ` ("${gateEntry.kicker}")` : ''}. Publishing the full book will\n` +
+        `replace that public listing and push the complete text to the library and iCloud.\n` +
+        `Re-run with --full to confirm you intend to push the complete book.`,
+    )
+  }
 
   await refreshStaging(plan, dryRun)
   const sourceMap = await refreshSourceMap(plan, dryRun)

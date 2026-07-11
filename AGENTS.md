@@ -73,6 +73,28 @@ when only the ignored staging package and source map should be prepared, and
 `--no-deploy` when the package should be uploaded without changing the live
 site.
 
+### Preview → full publishing (the `--full` gate)
+
+A book may split its build output into two publish-complete directories,
+`dist-preview/` and `dist-full/`, each carrying a `VERSION.md` with
+`edition: preview` or `edition: full`. Without `--full`, `library:publish`
+selects the **preview** edition; `--full` selects the **full** edition.
+
+Publishing the **full** edition over a book whose catalog entry is currently a
+**preview** REQUIRES `--full`. The script refuses without it, because that
+publish replaces the public preview listing and pushes the complete text to the
+library and to `~/icloud/books`.
+
+**Warning — mandatory for agents:** pushing the full book is a hard-to-reverse,
+outward-facing action. If there is any chance a publish run would push the full
+version — the target resolves to `dist-full`, `--full` is (or would need to be)
+passed, or the book is currently listed as a preview — STOP, warn the user in
+plain terms that this will make the **complete book** public and overwrite the
+preview, and ask for explicit confirmation first. Never add `--full` on the
+user's behalf to get past the gate. When unsure which edition a run would
+publish, do a `--dry-run` and show the resolved `distDir`/`edition` before doing
+anything live.
+
 Hosted HTML readers must include a visible link back to the First Pair library.
 Implement that navigation in the FirstPair reader proxy, not by rewriting and
 reuploading every generated HTML artifact. The link should point to `/`, render

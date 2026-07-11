@@ -25,7 +25,7 @@ complete text.
 
 | Edition | Purpose | PDF | EPUB | Reader | Chapters | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| Main preview | Draft edition v1.3 opening-chapter preview. | [PDF](https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/pdf/8ce1358bbad92323-invented-enemy-preview.pdf) | [EPUB](https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/epub/68dbcebfaa30b9d1-invented-enemy-preview.epub) | [Read](/read/invented-enemy/) | [Chapter reader](/read/invented-enemy/chapters/) | Built with pandoc 3.9 (EPUB, chunked HTML) and the Typst 0.14 PDF engine from the same preview manuscript. |
+| Main preview | Draft edition v1.3 opening-chapter preview. | [PDF](https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/pdf/30abb20b14716ca8-invented-enemy-preview.pdf) | [EPUB](https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/epub/63cb146fb6c3c60e-invented-enemy-preview.epub) | [Read](/read/invented-enemy/) | [Chapter reader](/read/invented-enemy/chapters/) | Built with pandoc 3.9 (EPUB, chunked HTML) and the Typst 0.14 PDF engine from the same preview manuscript. |
 
 The book has one reading edition. No South/East/West or Rosetta comparison
 outputs exist for this title.
@@ -44,8 +44,8 @@ citations.
 
 | Artifact | Format | Size | SHA-256 |
 | --- | --- | ---: | --- |
-| [PDF preview](https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/pdf/8ce1358bbad92323-invented-enemy-preview.pdf) | PDF (11 pages) | 231,504 bytes | `8ce1358bbad9232386bc05531ab04071c558c8081749f01bee54e599bb485ab3` |
-| [EPUB preview](https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/epub/68dbcebfaa30b9d1-invented-enemy-preview.epub) | EPUB | 225,172 bytes | `68dbcebfaa30b9d1fcceb9f826d6e6ba615da0328cfeac5d125ade72dc5d42d7` |
+| [PDF preview](https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/pdf/30abb20b14716ca8-invented-enemy-preview.pdf) | PDF (11 pages) | 231,504 bytes | `30abb20b14716ca856c068c199b60098441a83792988eddc14439edbd6a29452` |
+| [EPUB preview](https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/epub/63cb146fb6c3c60e-invented-enemy-preview.epub) | EPUB | 225,171 bytes | `63cb146fb6c3c60e1396810ee2fb67214df15b74b6836c7e23e1a69eed70fdee` |
 | `/read/invented-enemy/` | Hosted HTML reader | 544,399 bytes | `593c5b569f6dbef84834d13b989bb8df82a32e5306f3e8b59ecea0f6006afa9e` |
 | `/read/invented-enemy/chapters/` | Hosted chapter reader | 85 files | `64193be858fafba39e196597b06570933dcc1f0ae5bb55fbe72c60364bf8c366` (package digest) |
 | `assets/invented-enemy-cover.png` | PNG | 371,974 bytes | `57ecb0a807ca2cd954e4361a5cdb2e956356575ab48df229763b45b5aa09db0c` |

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-11T01:46:05.557Z",
+  "updatedAt": "2026-07-11T02:48:16.765Z",
   "books": {
     "typesec": {
       "updatedAt": "2026-07-10T03:46:00.383Z",
@@ -2214,25 +2214,25 @@
       }
     },
     "invented-enemy": {
-      "updatedAt": "2026-07-11T01:46:05.557Z",
+      "updatedAt": "2026-07-11T02:48:16.764Z",
       "dryRun": false,
       "units": {
         "pdf": {
           "kind": "pdf",
           "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview.pdf",
-          "sha256": "8ce1358bbad9232386bc05531ab04071c558c8081749f01bee54e599bb485ab3",
+          "sha256": "30abb20b14716ca856c068c199b60098441a83792988eddc14439edbd6a29452",
           "size": 231504,
-          "pathname": "books/invented-enemy/pdf/8ce1358bbad92323-invented-enemy-preview.pdf",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/pdf/8ce1358bbad92323-invented-enemy-preview.pdf",
+          "pathname": "books/invented-enemy/pdf/30abb20b14716ca8-invented-enemy-preview.pdf",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/pdf/30abb20b14716ca8-invented-enemy-preview.pdf",
           "skipped": false
         },
         "epub": {
           "kind": "epub",
           "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview.epub",
-          "sha256": "68dbcebfaa30b9d1fcceb9f826d6e6ba615da0328cfeac5d125ade72dc5d42d7",
-          "size": 225172,
-          "pathname": "books/invented-enemy/epub/68dbcebfaa30b9d1-invented-enemy-preview.epub",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/epub/68dbcebfaa30b9d1-invented-enemy-preview.epub",
+          "sha256": "63cb146fb6c3c60e1396810ee2fb67214df15b74b6836c7e23e1a69eed70fdee",
+          "size": 225171,
+          "pathname": "books/invented-enemy/epub/63cb146fb6c3c60e-invented-enemy-preview.epub",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/epub/63cb146fb6c3c60e-invented-enemy-preview.epub",
           "skipped": false
         },
         "html": {
@@ -2242,7 +2242,7 @@
           "size": 544399,
           "pathname": "books/invented-enemy/html/593c5b569f6dbef8-invented-enemy-preview.html",
           "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/html/593c5b569f6dbef8-invented-enemy-preview.html",
-          "skipped": false
+          "skipped": true
         },
         "htmlChapters": {
           "kind": "htmlChapters",
@@ -2250,7 +2250,7 @@
           "sha256": "64193be858fafba39e196597b06570933dcc1f0ae5bb55fbe72c60364bf8c366",
           "pathnamePrefix": "books/invented-enemy/chapters/64193be858fafba3",
           "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/64193be858fafba3/index.html",
-          "skipped": false,
+          "skipped": true,
           "files": [
             {
               "localPath": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters/chapter-001.html",
@@ -4411,6 +4411,21 @@
       "pathname": "books/zucchero/html/8a3227cb87d1bdbc-zucchero.html",
       "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/html/8a3227cb87d1bdbc-zucchero.html",
       "size": 16243
+    },
+    "30abb20b14716ca856c068c199b60098441a83792988eddc14439edbd6a29452:231504": {
+      "pathname": "books/invented-enemy/pdf/30abb20b14716ca8-invented-enemy-preview.pdf",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/pdf/30abb20b14716ca8-invented-enemy-preview.pdf",
+      "size": 231504
+    },
+    "63cb146fb6c3c60e1396810ee2fb67214df15b74b6836c7e23e1a69eed70fdee:225171": {
+      "pathname": "books/invented-enemy/epub/63cb146fb6c3c60e-invented-enemy-preview.epub",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/epub/63cb146fb6c3c60e-invented-enemy-preview.epub",
+      "size": 225171
+    },
+    "593c5b569f6dbef84834d13b989bb8df82a32e5306f3e8b59ecea0f6006afa9e:544399": {
+      "pathname": "books/invented-enemy/html/593c5b569f6dbef8-invented-enemy-preview.html",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/html/593c5b569f6dbef8-invented-enemy-preview.html",
+      "size": 544399
     }
   },
   "chapterPackages": {

@@ -8,8 +8,8 @@ Dedicated URL: `/invented-enemy/preview/` on firstpair.org.
 
 ## Read or download
 
-- [PDF preview](https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/pdf/8ce1358bbad92323-invented-enemy-preview.pdf)
-- [EPUB preview](https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/epub/68dbcebfaa30b9d1-invented-enemy-preview.epub)
+- [PDF preview](https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/pdf/30abb20b14716ca8-invented-enemy-preview.pdf)
+- [EPUB preview](https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/epub/63cb146fb6c3c60e-invented-enemy-preview.epub)
 - [Read in the browser](/read/invented-enemy/) — single page
 - [Chapter reader](/read/invented-enemy/chapters/)
 

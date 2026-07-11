@@ -147,17 +147,29 @@ def render_blocks(blocks: list[Any]) -> list[str]:
                 out.extend(wrapped(text))
         elif tag == "BulletList":
             for item in c:
-                text = " ".join(block_text(child) for child in item)
-                if text:
-                    out.append(r".PI \(bu")
-                    out.extend(wrapped(text))
+                first_text = True
+                for child in item:
+                    if child.get("t") in {"BulletList", "OrderedList"}:
+                        out.extend(render_blocks([child]))
+                        continue
+                    text = block_text(child)
+                    if text:
+                        out.append(r".PI \(bu" if first_text else ".PP")
+                        out.extend(wrapped(text))
+                        first_text = False
         elif tag == "OrderedList":
             start = int(c[0][0])
             for index, item in enumerate(c[1], start=start):
-                text = " ".join(block_text(child) for child in item)
-                if text:
-                    out.append(f'.PI "{index}."')
-                    out.extend(wrapped(text))
+                first_text = True
+                for child in item:
+                    if child.get("t") in {"BulletList", "OrderedList"}:
+                        out.extend(render_blocks([child]))
+                        continue
+                    text = block_text(child)
+                    if text:
+                        out.append(f'.PI "{index}."' if first_text else ".PP")
+                        out.extend(wrapped(text))
+                        first_text = False
         elif tag == "CodeBlock":
             out.append(".PX")
             for line in str(c[1]).splitlines():

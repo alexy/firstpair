@@ -358,20 +358,17 @@ function trimLeadingBlankPages(pdf, context) {
   }
 
   if (firstContentPage === 1) return
-  const splitDir = join(context.tmpDir, 'trim-neatroff')
-  mkdirSync(splitDir, { recursive: true })
-  run('pdfseparate', [
-    '-f', String(firstContentPage),
-    '-l', String(pages),
-    pdf,
-    join(splitDir, 'page-%d.pdf'),
-  ], { cwd: context.repoRoot })
-  const inputs = []
-  for (let page = firstContentPage; page <= pages; page += 1) {
-    inputs.push(join(splitDir, `page-${page}.pdf`))
-  }
   const trimmed = join(context.tmpDir, 'neatroff-trimmed.pdf')
-  run('pdfunite', [...inputs, trimmed], { cwd: context.repoRoot })
+  run('gs', [
+    '-q',
+    '-dBATCH',
+    '-dNOPAUSE',
+    '-sDEVICE=pdfwrite',
+    `-dFirstPage=${firstContentPage}`,
+    `-dLastPage=${pages}`,
+    `-sOutputFile=${trimmed}`,
+    pdf,
+  ], { cwd: context.repoRoot })
   copyFileSync(trimmed, pdf)
   console.error(`Trimmed ${firstContentPage - 1} leading blank Neatroff page(s) from ${basename(pdf)}`)
 }

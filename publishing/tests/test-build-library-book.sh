@@ -50,6 +50,12 @@ printf '%s\n' \
   '  "version": "1.0.0",' \
   '  "dist": "nested/sail/book"' \
   '}' > "$work/resolution-config/book.build.json"
+printf '%s\n' \
+  '# FirstPair Library Contract' \
+  '' \
+  'slug: firstpair-build-fixture' \
+  'shelf: testing' \
+  > "$work/resolution-config/FIRSTPAIR.md"
 
 node "$firstpair_root/scripts/publish-book-to-library.mjs" \
   "$work/resolution-book" \
@@ -58,7 +64,6 @@ node "$firstpair_root/scripts/publish-book-to-library.mjs" \
   > "$work/book-plan.json"
 node "$firstpair_root/scripts/publish-book-to-library.mjs" \
   "$work/resolution-config" \
-  --slug firstpair-build-fixture \
   --dry-run --no-build --no-smoke --no-deploy --no-icloud \
   > "$work/config-plan.json"
 node "$firstpair_root/scripts/publish-book-to-library.mjs" \
@@ -72,7 +77,18 @@ grep -q '/resolution-book/book"' "$work/book-plan.json"
 grep -q '"source": ".*/resolution-book/book/tutorial.html"' "$work/book-plan.json"
 grep -q 'book-uploads/staging/firstpair-build-fixture/tutorial.html' "$work/book-plan.json"
 grep -q '/resolution-config/nested/sail/book"' "$work/config-plan.json"
+grep -q '"shelf": "testing"' "$work/config-plan.json"
 grep -q '/docs/books/firstpair-build-fixture/dist"' "$work/multi-plan.json"
+
+if node "$firstpair_root/scripts/publish-book-to-library.mjs" \
+  "$work/resolution-config" \
+  --slug wrong-slug \
+  --dry-run --no-build --no-smoke --no-deploy --no-icloud \
+  > "$work/conflicting-contract.log" 2>&1; then
+  echo "conflicting FIRSTPAIR.md slug unexpectedly passed" >&2
+  exit 1
+fi
+grep -q 'conflicts with FIRSTPAIR.md slug' "$work/conflicting-contract.log"
 
 cp -R "$work/dist-single" "$work/dist-bad-link"
 perl -0pi -e 's#</body>#<a href="missing.md">broken</a></body>#' \

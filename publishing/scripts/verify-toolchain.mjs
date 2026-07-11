@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 import { spawnSync } from 'node:child_process'
-import { readFileSync } from 'node:fs'
-import { dirname, join } from 'node:path'
+import { existsSync, readFileSync } from 'node:fs'
+import { basename, dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const scriptDir = dirname(fileURLToPath(import.meta.url))
@@ -22,11 +22,24 @@ function run(command, args, cwd) {
 }
 
 function checkVersion(kind, name, specification) {
-  const result = run(specification.command, specification.args)
+  let command = specification.command
+
+  if (kind === 'formula' && !command.includes('/')) {
+    const prefix = run('brew', ['--prefix', name])
+    const candidate = prefix.status === 0
+      ? join(prefix.stdout.trim(), 'bin', basename(command))
+      : null
+
+    if (candidate && existsSync(candidate)) {
+      command = candidate
+    }
+  }
+
+  const result = run(command, specification.args)
   const output = `${result.stdout ?? ''}${result.stderr ?? ''}`.trim()
 
   if (result.error || result.status !== 0) {
-    failures.push(`${kind} ${name}: command failed: ${specification.command}`)
+    failures.push(`${kind} ${name}: command failed: ${command}`)
     return
   }
 

@@ -154,6 +154,10 @@ out the locked `neatroff_make` root and component commits, runs `make neat`, and
 exposes stable user-level wrappers under
 `~/.local/bin`:
 
+The unified build wrapper also prepends each pinned formula's Homebrew bin
+directory before launching Node. This keeps desktop runtimes, language
+managers, and other PATH shims from shadowing verified publishing binaries.
+
 ```text
 neatroff
 neatpdf
@@ -214,11 +218,20 @@ Every catalog book now converges on one source-repository entrypoint:
   --repo-root "$PWD"
 ```
 
-The source repository checks in `book.build.json`, validated against
-`publishing/book.build.schema.json`. That JSON file is the only canonical
+The source repository checks in both `FIRSTPAIR.md` and `book.build.json`.
+`FIRSTPAIR.md` is the required library deployment contract: its key-value
+header owns the catalog `slug` and `shelf`, while the rest of the file tells
+source-repository agents how to build and hand the result to FirstPair.
+`book.build.json` is validated against
+`publishing/book.build.schema.json` and remains the only canonical build
 configuration surface. Command-line flags select or override an edition;
 environment variables remain available to hooks and legacy scripts but do not
 duplicate the build configuration.
+
+When `library:publish` is given a source repository containing
+`book.build.json`, it requires `FIRSTPAIR.md`, reads `slug` and `shelf` from it,
+and rejects conflicting `--slug` or `--shelf` values. Direct dist-directory
+publishing remains available for recovery and external packages.
 
 When an HTML cover and EPUB thumbnail use the same image, set
 `epub.coverImage` and `epub.includeRenderedCover: false`. The image remains the
@@ -265,7 +278,7 @@ Each selected edition must be publish-complete and carry `edition: preview` or
 allowed automatic handoff during migration:
 
 ```sh
-npm run library:publish -- /path/to/source-repo --slug <slug> \
+npm run library:publish -- /path/to/source-repo \
   --dry-run --no-build --no-smoke --no-deploy --no-icloud
 ```
 

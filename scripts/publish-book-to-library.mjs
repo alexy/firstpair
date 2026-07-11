@@ -49,6 +49,7 @@ const valueFlags = new Set([
   'title',
   'description',
   'source',
+  'shelf',
   'kicker',
   'accent',
   'tags',
@@ -79,7 +80,8 @@ Publishing the FULL edition over an existing PREVIEW listing REQUIRES --full.
 Options:
   --full                    Select/authorize the full edition. Required to
                             replace a book's existing preview listing.
-  --slug <slug>             Catalog slug. Defaults to title_stem or title.
+  --slug <slug>             Catalog slug. Defaults to FIRSTPAIR.md, then build metadata.
+  --shelf <shelf>           Catalog shelf. Defaults to FIRSTPAIR.md.
   --title <title>           Catalog title. Defaults to metadata/VERSION.
   --description <text>      Catalog description for new or updated entry.
   --source <url>            Source repository URL.
@@ -222,6 +224,43 @@ async function readKeyValueFile(path) {
     }
     throw error
   }
+}
+
+async function firstPairContract(inputDir, options) {
+  const contractPath = join(inputDir, 'FIRSTPAIR.md')
+  const hasBuildConfig = await exists(join(inputDir, 'book.build.json'))
+  const hasContract = await exists(contractPath)
+  const contract = await readKeyValueFile(contractPath)
+
+  if (hasBuildConfig && !hasContract) {
+    throw new Error(
+      `source repository is missing required FirstPair deployment metadata: ${contractPath}`,
+    )
+  }
+
+  if (hasContract) {
+    for (const key of ['slug', 'shelf']) {
+      if (!contract[key]) {
+        throw new Error(`FIRSTPAIR.md is missing required metadata: ${key}`)
+      }
+    }
+
+    for (const key of ['slug', 'shelf']) {
+      if (slugify(contract[key]) !== contract[key]) {
+        throw new Error(`FIRSTPAIR.md ${key} must be a lowercase URL-safe slug`)
+      }
+    }
+  }
+
+  for (const key of ['slug', 'shelf']) {
+    if (options[key] && contract[key] && options[key] !== contract[key]) {
+      throw new Error(
+        `--${key} ${options[key]} conflicts with FIRSTPAIR.md ${key}: ${contract[key]}`,
+      )
+    }
+  }
+
+  return contract
 }
 
 async function scoreDistCandidate(path) {
@@ -732,6 +771,10 @@ function catalogEntryFromPlan(plan, existing = {}) {
     tags: plan.explicit.tags ? plan.tags : (existing.tags ?? plan.tags),
   }
 
+  if (plan.shelf) {
+    entry.shelf = plan.explicit.shelf ? plan.shelf : (existing.shelf ?? plan.shelf)
+  }
+
   if (source) {
     entry.source = source
   } else {
@@ -1017,13 +1060,15 @@ async function deployProduction(plan) {
 }
 
 async function buildPlan(inputDir, options) {
-  const distDir = await resolveDistDir(inputDir, options.full, options.slug)
+  const firstpair = await firstPairContract(inputDir, options)
+  const contractSlug = options.slug ?? firstpair.slug
+  const distDir = await resolveDistDir(inputDir, options.full, contractSlug)
   const version = normalizeVersionAliases(await readKeyValueFile(join(distDir, 'VERSION.md')))
   const edition = editionOf(distDir, version)
   const metadata = await metadataFor(inputDir, distDir)
   const source = options.source ?? (await sourceUrlFromGit(inputDir))
   const stem = firstValue(
-    options.slug,
+    contractSlug,
     version.title_stem,
     metadata.title_stem,
     version.html_title,
@@ -1032,7 +1077,8 @@ async function buildPlan(inputDir, options) {
     basename(dirname(distDir)),
     basename(inputDir),
   )
-  const slug = slugify(options.slug ?? version.title_stem ?? metadata.title_stem ?? stem)
+  const slug = slugify(contractSlug ?? version.title_stem ?? metadata.title_stem ?? stem)
+  const shelf = options.shelf ?? firstpair.shelf
   const title = firstValue(options.title, version.html_title, version.title, metadata.title, titleFromSlug(slug))
   const subtitle = firstValue(version.subtitle, metadata.subtitle)
   const description = firstValue(
@@ -1077,6 +1123,7 @@ async function buildPlan(inputDir, options) {
     metadata,
     edition,
     slug,
+    shelf,
     title,
     description,
     source,
@@ -1101,6 +1148,7 @@ async function buildPlan(inputDir, options) {
       title: Boolean(options.title),
       description: Boolean(options.description),
       source: Boolean(options.source),
+      shelf: Boolean(options.shelf || firstpair.shelf),
       kicker: Boolean(options.kicker),
       accent: Boolean(options.accent),
       tags: options.tags.length > 0,
@@ -1112,6 +1160,7 @@ async function buildPlan(inputDir, options) {
 function printablePlan(plan, sourceMap = null, icloudCopies = []) {
   return {
     slug: plan.slug,
+    shelf: plan.shelf,
     title: plan.title,
     distDir: plan.distDir,
     edition: plan.edition,

@@ -92,8 +92,8 @@ APC40 follows once its authoritative local checkout is located.
 | 3 | `lakecat` | `/Users/alexy/src/lakecat` | `firstpair` | passed | passed | complete (`a07c773e`, `6108aa39`) |
 | 4 | `invented-enemy` | `/Users/alexy/src/russophobia` | `firstpair` | passed | passed | complete (`7ec9e4d`) |
 | 5 | `sail-rust-book` | `/Users/alexy/src/book-sources/sail-rust-book` | `firstpair` | passed | passed | complete (`08fda92`, `af0cffa`, `344e879`) |
-| 6 | `zucchero` | `/Users/alexy/src/zucchero` | `firstpair` | pending | pending | pending |
-| 7 | `from-1-to-0` | `/Users/alexy/from-1-to-0` | `firstpair` | pending | pending | pending |
+| 6 | `zucchero` | `/Users/alexy/src/zucchero` | `firstpair` | passed | passed | complete (`42791a2`, `31e876d`) |
+| 7 | `from-1-to-0` | `/Users/alexy/from-1-to-0` | `firstpair` | passed | passed | complete (`7d20d75`, `e669830`) |
 | 8 | `rio-grande` | `/Users/alexy/src/book-sources/rio-grande-history` | `firstpair` | pending | pending | pending |
 | 9 | `omnighost` | `/Users/alexy/src/omnighost` | `firstpair` | pending | pending | pending |
 | 10 | `lighthouse-republics` | `/Users/alexy/src/venezia/usavenice` | `firstpair` | pending | pending | pending |
@@ -197,3 +197,20 @@ This goal is complete only when:
   shared verifier now checks relative HTML/EPUB resources and rejects leaked
   source `.md` links. Both behaviors have regression fixtures, and the complete
   Typst/Neatroff/preview-full fixture matrix passes.
+- 2026-07-11: Zucchero migrated on branch `firstpair` without modifying or
+  staging its active caption/private-book work. A source-owned asdf 3.12.3 plus
+  uv wrapper imports the existing Python manuscript generator with private
+  lyrics forcibly disabled; FirstPair renders the public package. The 5-page
+  bilingual PDF, EPUB, single HTML, chapter package, manifest/links, and
+  publisher dry-run (`edition: full`) passed. SHA-256 manifests proved every
+  ignored private artifact remained byte-identical, and private appendix
+  markers were absent from all public formats.
+- 2026-07-11: From 1 to 0 migrated on branch `firstpair` with preview as the
+  default and separate publish-complete `book/dist-preview` and
+  `book/dist-full` packages. Its source validator preserves the 2,684-word
+  preview under the 2,865-word ceiling. Verification found that raw file
+  concatenation violated Pandoc's blank-before-header rule and collapsed the
+  full chapter reader; the assembler now inserts explicit chapter boundaries.
+  The corrected 7-page preview and 59-page full PDFs, EPUBs, 7-page preview and
+  11-page full HTML readers, manifests/links, and preview-safe publisher
+  dry-run all passed. The unrelated `PROMPTS.md` change remains untouched.

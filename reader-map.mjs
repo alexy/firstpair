@@ -44,9 +44,9 @@ export const readerBooks = [
   },
   {
     "slug": "zucchero",
-    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/html/707e9c990117d2d6-zucchero.html",
-    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/59cf2e416fd3bed6/index.html",
-    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/59cf2e416fd3bed6"
+    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/html/0955de8401b530c2-zucchero.html",
+    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/ae110c5bce5e9042/index.html",
+    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/ae110c5bce5e9042"
   },
   {
     "slug": "omnighost",
@@ -56,9 +56,9 @@ export const readerBooks = [
   },
   {
     "slug": "invented-enemy",
-    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/html/593c5b569f6dbef8-invented-enemy-preview.html",
-    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/64193be858fafba3/index.html",
-    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/64193be858fafba3"
+    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/html/72bb171e5b06cc8f-invented-enemy-preview.html",
+    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/index.html",
+    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9"
   },
   {
     "slug": "from-1-to-0",

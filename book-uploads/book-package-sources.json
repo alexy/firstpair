@@ -50,10 +50,10 @@
       "htmlChapters": "book-uploads/staging/omnighost/omnighost-chapters"
     },
     "invented-enemy": {
-      "pdf": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview.pdf",
-      "epub": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview.epub",
-      "html": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview.html",
-      "htmlChapters": "book-uploads/staging/invented-enemy/preview/artifacts/main/invented-enemy-preview-chapters"
+      "pdf": "book-uploads/staging/invented-enemy/invented-enemy-preview.pdf",
+      "epub": "book-uploads/staging/invented-enemy/invented-enemy-preview.epub",
+      "html": "book-uploads/staging/invented-enemy/invented-enemy-preview.html",
+      "htmlChapters": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters"
     },
     "from-1-to-0": {
       "pdf": "book-uploads/staging/from-1-to-0/from-1-to-0-preview.pdf",

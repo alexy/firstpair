@@ -150,8 +150,8 @@
       "accent": "#8b2e25",
       "shelf": "music",
       "source": "https://github.com/alexy/zucchero",
-      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/pdf/e2ade256f06214d0-zucchero.pdf",
-      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/epub/40901acd0b3e9c16-zucchero.epub",
+      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/pdf/567a8eeefd8e2783-zucchero.pdf",
+      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/epub/37b11169442a5ffd-zucchero.epub",
       "html": "/read/zucchero/",
       "htmlChapters": "/read/zucchero/chapters/",
       "tags": [
@@ -159,8 +159,8 @@
         "Italian",
         "music"
       ],
-      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/html/707e9c990117d2d6-zucchero.html",
-      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/59cf2e416fd3bed6/index.html"
+      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/html/0955de8401b530c2-zucchero.html",
+      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/ae110c5bce5e9042/index.html"
     },
     {
       "slug": "omnighost",
@@ -186,12 +186,12 @@
       "slug": "invented-enemy",
       "title": "The Invented Enemy",
       "kicker": "Preview edition",
-      "description": "A public preview of the history of Russophobia and the anti-Slavic imagination — front matter, the complete twenty-chapter table of contents, and the opening chapter, as PDF, EPUB, and hosted web readers.",
+      "description": "A public preview of the history of Russophobia and the anti-Slavic imagination \u2014 front matter, the complete twenty-chapter table of contents, and the opening chapter, as PDF, EPUB, and hosted web readers.",
       "accent": "#3b4a68",
       "shelf": "history",
       "homepage": "/invented-enemy/preview/",
-      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/pdf/30abb20b14716ca8-invented-enemy-preview.pdf",
-      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/epub/63cb146fb6c3c60e-invented-enemy-preview.epub",
+      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/pdf/845cde2d828806a4-invented-enemy-preview.pdf",
+      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/epub/0e757b5d5acb3a9e-invented-enemy-preview.epub",
       "html": "/read/invented-enemy/",
       "htmlChapters": "/read/invented-enemy/chapters/",
       "tags": [
@@ -199,14 +199,14 @@
         "history",
         "ideas"
       ],
-      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/html/593c5b569f6dbef8-invented-enemy-preview.html",
-      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/64193be858fafba3/index.html"
+      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/html/72bb171e5b06cc8f-invented-enemy-preview.html",
+      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/index.html"
     },
     {
       "slug": "from-1-to-0",
       "title": "From 1 to 0",
       "kicker": "Preview edition",
-      "description": "A public preview of the anti-history of Silicon Valley — Notes on Startups, or How to Lose the Future — with the full plan of the book, the Introduction, and the Anti-Naval Ontology of Failure as PDF, EPUB, and hosted web readers.",
+      "description": "A public preview of the anti-history of Silicon Valley \u2014 Notes on Startups, or How to Lose the Future \u2014 with the full plan of the book, the Introduction, and the Anti-Naval Ontology of Failure as PDF, EPUB, and hosted web readers.",
       "accent": "#8a6d3b",
       "shelf": "technology",
       "homepage": "/from-1-to-0/preview/",

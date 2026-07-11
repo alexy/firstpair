@@ -126,11 +126,17 @@ for (let index = 0; index < pageMatches.length; index += 1) {
   })
   const shortRatio = lineStats.filter((line) => line.wordCount <= 2).length / lineStats.length
   const medianWidthRatio = median(lineStats.map((line) => line.width)) / pageBox.width
+  const lineBoxes = lines.map((line) => attributes(line[1]))
+  const occupiedWidthRatio = (
+    Math.max(...lineBoxes.map((line) => line.xMax)) -
+    Math.min(...lineBoxes.map((line) => line.xMin))
+  ) / pageBox.width
 
-  if (shortRatio >= 0.65 && medianWidthRatio <= 0.28) {
+  if (shortRatio >= 0.65 && medianWidthRatio <= 0.28 && occupiedWidthRatio <= 0.45) {
     failures.push(
       `page ${pageNumber} resembles a one-word column ` +
-        `(short-line ratio ${shortRatio.toFixed(2)}, median width ${medianWidthRatio.toFixed(2)})`,
+        `(short-line ratio ${shortRatio.toFixed(2)}, median width ${medianWidthRatio.toFixed(2)}, ` +
+        `occupied width ${occupiedWidthRatio.toFixed(2)})`,
     )
   }
 }

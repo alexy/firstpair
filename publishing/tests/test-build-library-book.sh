@@ -45,4 +45,12 @@ grep -q '"edition": "full"' "$work/book-plan.json"
 grep -q '/resolution-book/book"' "$work/book-plan.json"
 grep -q '/docs/books/firstpair-build-fixture/dist"' "$work/multi-plan.json"
 
+typst compile "$work/narrow-column.typ" "$work/narrow-column.pdf"
+if "$firstpair_root/publishing/scripts/check-pdf-layout.mjs" \
+  "$work/narrow-column.pdf" > "$work/narrow-column.log" 2>&1; then
+  echo "narrow-column PDF unexpectedly passed layout verification" >&2
+  exit 1
+fi
+grep -q 'one-word column' "$work/narrow-column.log"
+
 echo "Unified library book fixtures passed"

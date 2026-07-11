@@ -87,7 +87,7 @@ APC40 follows once its authoritative local checkout is located.
 
 | Order | Catalog slug | Source repository | Branch | Shared build | Verification | Status |
 | ---: | --- | --- | --- | --- | --- | --- |
-| 1 | `typesec` | `/Users/alexy/src/typesec` | `firstpair` | passed | passed | complete (`888af9e`, `41a31f5`) |
+| 1 | `typesec` | `/Users/alexy/src/typesec` | `firstpair` | passed | passed | complete (`888af9e`..`2045a92`) |
 | 2 | `grust` | `/Users/alexy/src/grust` | `firstpair` | pending | pending | pending |
 | 3 | `lakecat` | `/Users/alexy/src/lakecat` | `firstpair` | pending | pending | pending |
 | 4 | `invented-enemy` | `/Users/alexy/src/russophobia` | non-Git source tree; record changes locally | pending | pending | pending |
@@ -162,3 +162,7 @@ This goal is complete only when:
   HTML/CSS whitespace. Mermaid CLI 11.15.0 is npm-lock-pinned and preferred by
   source hooks. The manifest/link contract also preserves version-only Kindle
   EPUB aliases alongside hash-stamped delivery aliases.
+- 2026-07-11: PDF geometry checks were refined after visual inspection of
+  Grust's code-heavy pages 6, 7, and 26. Narrow median code lines are accepted
+  only when the page still occupies the normal text measure; a synthetic
+  60-line narrow-column PDF remains a required failing regression fixture.

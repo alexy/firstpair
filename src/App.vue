@@ -135,7 +135,10 @@ const fragments = [
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="eyebrow">First Pair Press</p>
-        <h1 id="hero-title">First-principles books, AI-researched</h1>
+        <h1 id="hero-title">
+          <span class="title-phrase">First-principles</span> books,
+          <span class="title-phrase">AI-researched</span>
+        </h1>
         <p class="lede">
           First Pair makes First Principles AI-Researched Books. Human authorship
           and AI research work as a pair: questions are reduced to first

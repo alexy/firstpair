@@ -334,10 +334,10 @@ function buildNeatroffPdf(variant, config, context) {
   }
 
   const pipeline = [
-    `${shellQuote(join(root, 'neatroff', 'roff'))} -M${shellQuote(utmac)} -mu-en -mus ${shellQuote(source)}`,
+    `${shellQuote(join(root, 'neatroff', 'roff'))} -M${shellQuote(utmac)} -mu-en -mus ${shellQuote(basename(source))}`,
     `${shellQuote(join(root, 'neatpost', 'pdf'))} > ${shellQuote(output)}`,
   ].join(' | ')
-  run('/bin/bash', ['-euo', 'pipefail', '-c', pipeline], { cwd: context.repoRoot, display: pipeline })
+  run('/bin/bash', ['-euo', 'pipefail', '-c', pipeline], { cwd: dirname(source), display: pipeline })
   if (variant.trimLeadingBlankPages !== false) trimLeadingBlankPages(output, context)
   return output
 }

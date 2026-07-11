@@ -15,6 +15,10 @@ cp -R "$fixture_source/." "$work/"
 
 for dist in dist-single dist-dual dist-preview dist-full; do
   "$firstpair_root/publishing/scripts/verify-library-book.sh" "$work/$dist"
+  if grep -RInE '[[:blank:]]+$' "$work/$dist" --include='*.html' --include='*.css'; then
+    echo "generated HTML/CSS contains trailing whitespace: $dist" >&2
+    exit 1
+  fi
 done
 
 grep -q '^primary_format: typst$' "$work/dist-dual/VERSION.md"

@@ -116,6 +116,7 @@ if [[ -n "${BOOK_HTML_LUA_FILTER:-}" ]]; then
 fi
 
 pandoc "${sources[@]}" "${pandoc_args[@]}"
+perl -pi -e 's/[ \t]+$//' "$html_file"
 
 find "$dist_dir" -maxdepth 1 -name "$title_stem (*).html" -exec rm -f {} +
 ln -s "$(basename "$html_file")" "$html_link"
@@ -217,6 +218,9 @@ for html_file in chapter_dir.glob("*.html"):
     if rewritten != text:
         html_file.write_text(rewritten, encoding="utf-8")
 PY
+  find "$html_chapters_dir" -type f \
+    \( -name '*.html' -o -name '*.css' \) \
+    -exec perl -pi -e 's/[ \t]+$//' {} +
   find "$dist_dir" -maxdepth 1 -name "$title_stem (*)-chapters" -exec rm -rf {} +
   ln -s "$(basename "$html_chapters_dir")" "$html_chapters_link"
 fi

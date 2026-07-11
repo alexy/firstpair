@@ -551,24 +551,54 @@ h1 {
   gap: 16px;
 }
 
-.library-summary {
+.library-filters {
   margin-top: 24px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.library-summary span {
+.library-filter {
   min-height: 36px;
   padding: 0 12px;
   display: inline-flex;
   align-items: center;
+  gap: 8px;
   border: 1px solid rgba(23, 23, 20, 0.12);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.78);
   color: #30372f;
   font-size: 13px;
   font-weight: 900;
+  cursor: pointer;
+  transition:
+    background 0.16s ease,
+    border-color 0.16s ease,
+    color 0.16s ease;
+}
+
+.library-filter:hover {
+  border-color: rgba(23, 23, 20, 0.28);
+}
+
+.library-filter--active {
+  background: #171714;
+  border-color: #171714;
+  color: #fffdf6;
+}
+
+.library-filter__count {
+  min-width: 20px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: rgba(23, 23, 20, 0.1);
+  color: inherit;
+  font-size: 11px;
+  text-align: center;
+}
+
+.library-filter--active .library-filter__count {
+  background: rgba(255, 255, 255, 0.22);
 }
 
 .catalog-error {
@@ -662,6 +692,16 @@ h1 {
   background: #ffffff;
   color: #1f241f;
   font-size: 14px;
+}
+
+.book-link--learn {
+  border-color: var(--book-accent, #171714);
+  background: var(--book-accent, #171714);
+  color: #fffdf6;
+}
+
+.book-link--learn:hover {
+  filter: brightness(1.08);
 }
 
 @keyframes pageLaunch {

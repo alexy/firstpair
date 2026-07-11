@@ -6,6 +6,7 @@ import {
   Braces,
   BrainCircuit,
   ExternalLink,
+  GraduationCap,
   Library,
   Link as LinkIcon,
   PenLine,
@@ -20,7 +21,7 @@ type Book = {
   kicker: string
   description: string
   accent: string
-  source: string
+  source?: string
   homepage?: string
   pdf: string
   epub: string
@@ -28,6 +29,8 @@ type Book = {
   htmlChapters: string
   htmlSource?: string
   htmlChaptersSource?: string
+  tutorial?: string
+  tutorialSource?: string
   tags: string[]
 }
 
@@ -35,12 +38,36 @@ type Catalog = {
   books: Book[]
 }
 
+type LibraryFilter = 'all' | 'finished' | 'previews' | 'tutorials'
+
 const books = ref<Book[]>([])
 const catalogError = ref('')
+const activeFilter = ref<LibraryFilter>('all')
 
 const catalogUrl = computed(() => `${import.meta.env.BASE_URL}catalog.json`)
 const previewCount = computed(() => books.value.filter((book) => book.homepage).length)
 const finishedCount = computed(() => books.value.length - previewCount.value)
+const tutorialCount = computed(() => books.value.filter((book) => book.tutorial).length)
+
+const filters = computed(() => [
+  { id: 'all' as const, label: 'All titles', count: books.value.length },
+  { id: 'finished' as const, label: 'Finished', count: finishedCount.value },
+  { id: 'previews' as const, label: 'Previews', count: previewCount.value },
+  { id: 'tutorials' as const, label: 'Learn', count: tutorialCount.value },
+])
+
+const filteredBooks = computed(() => {
+  switch (activeFilter.value) {
+    case 'finished':
+      return books.value.filter((book) => !book.homepage)
+    case 'previews':
+      return books.value.filter((book) => book.homepage)
+    case 'tutorials':
+      return books.value.filter((book) => book.tutorial)
+    default:
+      return books.value
+  }
+})
 
 onMounted(async () => {
   try {
@@ -169,6 +196,7 @@ const fragments = [
             <span>EPUB</span>
             <span>HTML</span>
             <span>Chapters</span>
+            <span>Learn</span>
           </div>
         </div>
       </div>
@@ -187,17 +215,28 @@ const fragments = [
         <h2 id="books-title">Public books and previews, beautifully typeset.</h2>
       </div>
 
-      <div v-if="books.length" class="library-summary" aria-label="Library totals">
-        <span>{{ books.length }} public titles</span>
-        <span>{{ previewCount }} previews</span>
-        <span>{{ finishedCount }} finished books</span>
+      <div v-if="books.length" class="library-filters" role="tablist" aria-label="Filter the library">
+        <button
+          v-for="filter in filters"
+          :key="filter.id"
+          type="button"
+          role="tab"
+          class="library-filter"
+          :class="{ 'library-filter--active': activeFilter === filter.id }"
+          :aria-selected="activeFilter === filter.id"
+          @click="activeFilter = filter.id"
+        >
+          <GraduationCap v-if="filter.id === 'tutorials'" :size="15" />
+          <span>{{ filter.label }}</span>
+          <span class="library-filter__count">{{ filter.count }}</span>
+        </button>
       </div>
 
       <p v-if="catalogError" class="catalog-error">{{ catalogError }}</p>
 
       <div class="book-grid">
         <article
-          v-for="book in books"
+          v-for="book in filteredBooks"
           :id="book.slug"
           :key="book.slug"
           class="book-card"
@@ -223,7 +262,17 @@ const fragments = [
               <a :href="book.epub">EPUB</a>
               <a :href="book.html" target="_blank" rel="noopener noreferrer">Read</a>
               <a :href="book.htmlChapters" target="_blank" rel="noopener noreferrer">Chapters</a>
-              <a :href="book.source" target="_blank" rel="noreferrer">
+              <a
+                v-if="book.tutorial"
+                class="book-link--learn"
+                :href="book.tutorial"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GraduationCap :size="15" />
+                Learn
+              </a>
+              <a v-if="book.source" :href="book.source" target="_blank" rel="noreferrer">
                 Source
                 <ExternalLink :size="14" />
               </a>

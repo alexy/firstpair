@@ -168,7 +168,7 @@ function setResponseHeaders(upstream, response, { modifiedHtml = false, area = n
   }
 
   response.setHeader('Content-Disposition', 'inline')
-  response.setHeader('Content-Security-Policy', contentSecurityPolicy())
+  response.setHeader('Content-Security-Policy', contentSecurityPolicy(area))
 
   if (modifiedHtml) {
     response.setHeader('Content-Type', 'text/html; charset=utf-8')

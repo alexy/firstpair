@@ -12,6 +12,8 @@ const routeDestinations = new Map(
   (vercel.routes ?? []).filter((route) => route.src).map((route) => [route.src, route.dest]),
 )
 const hasReaderProxyRoute = routeDestinations.get('^/read(?:/(.*))?$') === '/api/reader?path=$1'
+const hasTutorialProxyRoute =
+  routeDestinations.get('^/learn(?:/(.*))?$') === '/api/reader?path=$1&area=tutorial'
 const hasFilesystemRoute = (vercel.routes ?? []).some((route) => route.handle === 'filesystem')
 const hasAppFallbackRoute = routeDestinations.get('^/(.*)$') === '/index.html'
 const { readerBooks } = await import('../reader-map.mjs')
@@ -43,14 +45,32 @@ const missingLocalPaths = []
 const invalidReaderRoutes = []
 const staleReaderMap = []
 const invalidSourceUrls = []
+const invalidTutorialRoutes = []
+const invalidPreviewSources = []
 
 for (const book of catalog.books) {
+  if ((book.homepage || book.tags?.includes('preview')) && book.source) {
+    invalidPreviewSources.push({ slug: book.slug, source: book.source })
+  }
+
   if (book.html !== `/read/${book.slug}/`) {
     invalidReaderRoutes.push({ slug: book.slug, field: 'html', path: book.html })
   }
 
   if (book.htmlChapters !== `/read/${book.slug}/chapters/`) {
     invalidReaderRoutes.push({ slug: book.slug, field: 'htmlChapters', path: book.htmlChapters })
+  }
+
+  // Tutorial is an optional deliverable. When present, the hosted route and its
+  // backing Blob source must both be set and consistent.
+  if (book.tutorial || book.tutorialSource) {
+    if (book.tutorial !== `/learn/${book.slug}/`) {
+      invalidTutorialRoutes.push({ slug: book.slug, field: 'tutorial', path: book.tutorial })
+    }
+
+    if (!book.tutorialSource?.startsWith('https://')) {
+      invalidSourceUrls.push({ slug: book.slug, field: 'tutorialSource', url: book.tutorialSource })
+    }
   }
 
   for (const field of ['htmlSource', 'htmlChaptersSource']) {
@@ -63,12 +83,14 @@ for (const book of catalog.books) {
   const expectedChaptersBase = expectedChaptersIndex.replace(/\/index\.html$/, '')
 
   const readerMapEntry = readerMapEntries.get(book.slug)
+  const expectedTutorialSource = book.tutorialSource ?? undefined
 
   if (
     !readerMapEntry ||
     readerMapEntry.htmlSource !== book.htmlSource ||
     readerMapEntry.htmlChaptersSource !== expectedChaptersIndex ||
-    readerMapEntry.htmlChaptersBase !== expectedChaptersBase
+    readerMapEntry.htmlChaptersBase !== expectedChaptersBase ||
+    (readerMapEntry.tutorialSource ?? undefined) !== expectedTutorialSource
   ) {
     staleReaderMap.push({
       slug: book.slug,
@@ -76,6 +98,7 @@ for (const book of catalog.books) {
         htmlSource: book.htmlSource,
         htmlChaptersSource: expectedChaptersIndex,
         htmlChaptersBase: expectedChaptersBase,
+        tutorialSource: expectedTutorialSource,
       },
       actual: readerMapEntry,
     })
@@ -88,7 +111,7 @@ for (const book of catalog.books) {
       continue
     }
 
-    if (value.startsWith('/read/')) {
+    if (value.startsWith('/read/') || value.startsWith('/learn/')) {
       continue
     }
 
@@ -110,9 +133,12 @@ if (
   hasMissingFields ||
   missingLocalPaths.length ||
   invalidReaderRoutes.length ||
+  invalidTutorialRoutes.length ||
+  invalidPreviewSources.length ||
   staleReaderMap.length ||
   invalidSourceUrls.length ||
   !hasReaderProxyRoute ||
+  !hasTutorialProxyRoute ||
   !hasFilesystemRoute ||
   !hasAppFallbackRoute
 ) {
@@ -124,9 +150,12 @@ if (
         missingFields,
         missingLocalPaths,
         invalidReaderRoutes,
+        invalidTutorialRoutes,
+        invalidPreviewSources,
         staleReaderMap,
         invalidSourceUrls,
         hasReaderProxyRoute,
+        hasTutorialProxyRoute,
         hasFilesystemRoute,
         hasAppFallbackRoute,
       },

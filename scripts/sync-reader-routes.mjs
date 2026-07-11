@@ -99,6 +99,10 @@ for (const book of catalog.books) {
 
   book.html = hostedHtmlPath(book.slug)
   book.htmlChapters = hostedChaptersPath(book.slug)
+
+  if (book.tutorialSource?.startsWith('https://')) {
+    book.tutorial = `/learn/${book.slug}/`
+  }
 }
 
 const vercel = JSON.parse(await readFile(vercelPath, 'utf8'))

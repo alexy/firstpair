@@ -1,5 +1,12 @@
 export const readerBooks = [
   {
+    "slug": "apc40-mk2-ableton-start",
+    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/html/5c73b1dd66d47ef0-apc40-mk2-ableton-start.html",
+    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/index.html",
+    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf",
+    "tutorialSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/tutorial/6a3fd60da334b81f-apc40-dont-cry-tonight-ableton-animated.html"
+  },
+  {
     "slug": "lighthouse-republics",
     "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/html/89cb3abb1265fc36-lighthouse-republics-preview.html",
     "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/index.html",

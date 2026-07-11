@@ -1,12 +1,32 @@
 {
   "books": [
     {
+      "slug": "apc40-mk2-ableton-start",
+      "title": "APC40 MK2 Ableton Live 12 Getting Started",
+      "kicker": "Finished book",
+      "description": "A zero-to-one, complete-newbie guide to live-looping on the Akai APC40 MK2 in Ableton Live 12, ending in a legal practice rebuild of the Savage / John E.S \"Don't Cry Tonight\" remix. Delivered as PDF, EPUB, hosted web readers, and an interactive Learn tutorial.",
+      "accent": "#b0357f",
+      "source": "https://github.com/alexy/music/tree/master/codex/docs/books/apc40-mk2-ableton-start",
+      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/pdf/215e85aad9ab8cc3-apc40-mk2-ableton-start-0.2.0-dd45fa.pdf",
+      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/epub/2b277c1dc2a0dc64-apc40-mk2-ableton-start-0.2.0-dd45fa.epub",
+      "html": "/read/apc40-mk2-ableton-start/",
+      "htmlChapters": "/read/apc40-mk2-ableton-start/chapters/",
+      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/html/5c73b1dd66d47ef0-apc40-mk2-ableton-start.html",
+      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/index.html",
+      "tutorial": "/learn/apc40-mk2-ableton-start/",
+      "tutorialSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/tutorial/6a3fd60da334b81f-apc40-dont-cry-tonight-ableton-animated.html",
+      "tags": [
+        "finished",
+        "music",
+        "Ableton"
+      ]
+    },
+    {
       "slug": "lighthouse-republics",
       "title": "Lighthouse Republics",
       "kicker": "Preview edition",
       "description": "A public preview of the Venezia history, with the full table of contents and opening movement available as PDF, EPUB, and hosted web readers.",
       "accent": "#7d4e23",
-      "source": "https://github.com/firstpair/two-republics",
       "homepage": "/lighthouse-republics/preview/",
       "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/pdf/7cf617ce3b7f4ef8-lighthouse-republics-preview.pdf",
       "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/epub/aa43a743ae396b1c-lighthouse-republics-preview.epub",
@@ -26,7 +46,6 @@
       "kicker": "Preview edition",
       "description": "A public preview of the revised English reading edition, with cover, front matter, contents, and prefatory opening in PDF, EPUB, and browser editions.",
       "accent": "#1f6f68",
-      "source": "https://github.com/alexy/books/tree/main/rio-grande",
       "homepage": "/rio-grande/preview/",
       "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/rio-grande/pdf/ab811cfd364fe6bf-historia_riograndense_brasil-alexy-preview.pdf",
       "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/rio-grande/epub/96c66ac959f1d904-historia_riograndense_brasil-alexy-preview.epub",
@@ -190,8 +209,7 @@
         "preview",
         "startups",
         "Silicon Valley"
-      ],
-      "source": "https://github.com/firstpair/from-1-to-0"
+      ]
     }
   ]
 }

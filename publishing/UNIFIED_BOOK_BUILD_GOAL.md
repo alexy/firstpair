@@ -95,8 +95,8 @@ APC40 follows once its authoritative local checkout is located.
 | 6 | `zucchero` | `/Users/alexy/src/zucchero` | `firstpair` | passed | passed | complete (`42791a2`, `31e876d`) |
 | 7 | `from-1-to-0` | `/Users/alexy/from-1-to-0` | `firstpair` | passed | passed | complete (`7d20d75`, `e669830`) |
 | 8 | `rio-grande` | `/Users/alexy/src/book-sources/rio-grande-history` | `firstpair` | passed | passed | complete (`f8409f1`, `e3f2013`, `b46ca96`) |
-| 9 | `omnighost` | `/Users/alexy/src/omnighost` | `firstpair` | pending | pending | pending |
-| 10 | `lighthouse-republics` | `/Users/alexy/src/venezia/usavenice` | `firstpair` | pending | pending | pending |
+| 9 | `omnighost` | `/Users/alexy/src/omnighost` | `firstpair` | passed | passed | complete (`7e35022`, `c742fd5`) |
+| 10 | `lighthouse-republics` | `/Users/alexy/src/venezia/usavenice` | `firstpair` | passed | passed | complete (`cf11416`, `37c0da3`) |
 | 11 | `apc40-mk2-ableton-start` | authoritative checkout to be resolved from `alexy/music` | `firstpair` | pending | pending | pending |
 
 If the Sail book root is itself a nested Git repository, branch and record the
@@ -235,3 +235,15 @@ This goal is complete only when:
   EPUB passed its source validator, and the publisher dry-run resolved the full
   `docs/book/dist` package without delivery. The shared Neatroff runner now
   executes beside generated source files so utmac sidecars remain portable.
+- 2026-07-11: Lighthouse Republics migrated on branch `firstpair` while its
+  authored source files and pre-existing legacy dist work remained untouched.
+  Its source-owned asdf 3.12.3 plus uv preparation hook assembles a 10.66
+  percent South preview and the complete book, sanitizes machine-local audit
+  pointers only in generated reader inputs, and retains the established custom
+  full-bleed Typst cover. The 60-page preview and 479-page full Typst PDFs,
+  40-page preview and 334-page full source-built Neatroff PDFs, EPUB/MOBI/HTML
+  packages, manifests, source-reference checks, shared verifiers, and visual
+  checks passed. Because the two local dist trees total roughly 410 MB, their
+  heavy payloads remain ignored while both `VERSION.md` manifests are tracked.
+  The final publisher dry-run selected `book/dist-preview`, reported
+  `edition: preview` and stamp `2.1.0-cf114169`, and performed no delivery.

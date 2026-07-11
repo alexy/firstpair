@@ -37,9 +37,9 @@ export const readerBooks = [
   },
   {
     "slug": "zucchero",
-    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/html/f2f527d3dcb05c68-zucchero.html",
-    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/56d1c56b8a816ac6/index.html",
-    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/56d1c56b8a816ac6"
+    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/html/8d1e36f3c8b3d734-zucchero.html",
+    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/0e5e30f25166544e/index.html",
+    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/0e5e30f25166544e"
   },
   {
     "slug": "omnighost",

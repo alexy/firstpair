@@ -399,6 +399,7 @@ function buildEpub(config, context) {
     '--to=epub3',
     ...pandocBaseArgs(config, context),
   ]
+  args.push('--metadata', `title=${context.title}`)
   if (context.css) args.push('--css', context.css)
   if (epub.titlePage !== true) args.push('--epub-title-page=false')
   if (epub.coverImage) args.push('--epub-cover-image', resolvePath(epub.coverImage, context))

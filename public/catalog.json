@@ -228,6 +228,25 @@
       "vault": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/vault/55f5e4400fbabb46-from-1-to-0-full-vault%20%281.0.0-35d3afa9%29.zip",
       "vaultGuide": "/read/from-1-to-0/guide/",
       "vaultGuideSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/vault-guide/9a6161dceda547da-from-1-to-0-vault-guide%20%281.0.0-35d3afa9%29.html"
+    },
+    {
+      "slug": "querygraph",
+      "title": "The QueryGraph Stack",
+      "kicker": "Finished book",
+      "description": "The QueryGraph Stack: The Definitive Guide to the Governed Semantic Lakehouse, delivered as PDF, EPUB, and hosted web readers.",
+      "accent": "#7a6a3e",
+      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/querygraph/pdf/02c983636be0c471-querygraph-stack.pdf",
+      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/querygraph/epub/367634aa816ebecb-querygraph-stack.epub",
+      "html": "/read/querygraph/",
+      "htmlChapters": "/read/querygraph/chapters/",
+      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/querygraph/html/79e412b36cc52a12-querygraph-stack.html",
+      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/querygraph/chapters/7dcdc8af985c4e42/index.html",
+      "tags": [
+        "finished"
+      ],
+      "shelf": "querygraph",
+      "source": "https://github.com/querygraph/qg-rust",
+      "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/querygraph/cover/d56a81bcbdca6dfd-querygraph-cover.png"
     }
   ]
 }

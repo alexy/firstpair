@@ -118,6 +118,8 @@ function contentType(path) {
   if (path.endsWith('.svg')) return 'image/svg+xml'
   if (path.endsWith('.png')) return 'image/png'
   if (path.endsWith('.jpg') || path.endsWith('.jpeg')) return 'image/jpeg'
+  if (path.endsWith('.zip')) return 'application/zip'
+  if (path.endsWith('.md')) return 'text/markdown; charset=utf-8'
   return 'application/octet-stream'
 }
 
@@ -389,6 +391,24 @@ if (tutorialSource) {
   units.tutorial = await uploadFileUnit(manifest, 'tutorial', tutorialSource)
 }
 
+const coverSource = sourcePath(sourceBook.cover)
+
+if (coverSource) {
+  units.cover = await uploadFileUnit(manifest, 'cover', coverSource)
+}
+
+const vaultSource = sourcePath(sourceBook.vault)
+
+if (vaultSource) {
+  units.vault = await uploadFileUnit(manifest, 'vault', vaultSource)
+}
+
+const vaultGuideSource = sourcePath(sourceBook.vaultGuide)
+
+if (vaultGuideSource) {
+  units.vaultGuide = await uploadFileUnit(manifest, 'vault-guide', vaultGuideSource)
+}
+
 const chaptersSource = sourcePath(sourceBook.htmlChapters)
 
 if (!chaptersSource) {
@@ -415,6 +435,18 @@ if (!dryRun) {
   if (units.tutorial) {
     book.tutorialSource = units.tutorial.url
     book.tutorial = `/learn/${slug}/`
+  }
+
+  if (units.cover) {
+    book.cover = units.cover.url
+  }
+
+  if (units.vault) {
+    book.vault = units.vault.url
+  }
+
+  if (units.vaultGuide) {
+    book.vaultGuide = units.vaultGuide.url
   }
 
   await mkdir(uploadsDir, { recursive: true })

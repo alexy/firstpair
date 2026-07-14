@@ -67,6 +67,9 @@ type Book = {
   htmlChaptersSource?: string
   tutorial?: string
   tutorialSource?: string
+  cover?: string
+  vault?: string
+  vaultGuide?: string
   tags: string[]
 }
 
@@ -336,15 +339,26 @@ const fragments = [
               class="book-card"
               :style="{ '--book-accent': book.accent }"
             >
-              <div class="book-card__cover">
-                <Sparkles :size="24" />
-                <span>{{ book.kicker }}</span>
-                <strong>{{ book.title }}</strong>
-              </div>
+              <component
+                :is="book.homepage || book.html ? 'a' : 'div'"
+                class="book-card__cover"
+                :class="{ 'book-card__cover--image': book.cover }"
+                :href="book.homepage || book.html || undefined"
+              >
+                <img v-if="book.cover" :src="book.cover" :alt="`${book.title} cover`" loading="lazy" />
+                <template v-else>
+                  <Sparkles :size="24" />
+                  <span>{{ book.kicker }}</span>
+                  <strong>{{ book.title }}</strong>
+                </template>
+              </component>
               <div class="book-card__body">
                 <div>
                   <p class="book-kicker">{{ book.kicker }}</p>
-                  <h3>{{ book.title }}</h3>
+                  <h3>
+                    <a v-if="book.homepage || book.html" :href="book.homepage || book.html">{{ book.title }}</a>
+                    <template v-else>{{ book.title }}</template>
+                  </h3>
                   <p>{{ book.description }}</p>
                 </div>
                 <div class="tag-row">
@@ -356,6 +370,8 @@ const fragments = [
                   <a :href="book.epub">EPUB</a>
                   <a :href="book.html" target="_blank" rel="noopener noreferrer">Read</a>
                   <a :href="book.htmlChapters" target="_blank" rel="noopener noreferrer">Chapters</a>
+                  <a v-if="book.vault" :href="book.vault" download>Vault</a>
+                  <a v-if="book.vaultGuide" :href="book.vaultGuide" target="_blank" rel="noopener noreferrer">Vault guide</a>
                   <a
                     v-if="book.tutorial"
                     class="book-link--learn"

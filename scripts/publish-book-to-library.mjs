@@ -876,6 +876,17 @@ async function refreshSourceMap(plan, dryRun) {
     sources.books[plan.slug].tutorial = repoRelative(join(plan.stageDir, plan.tutorial.stableName))
   }
 
+  if (plan.cover) {
+    sources.books[plan.slug].cover = repoRelative(join(plan.stageDir, plan.cover.stableName))
+  }
+
+  if (plan.vault) {
+    sources.books[plan.slug].vault = repoRelative(join(plan.stageDir, plan.vault.zipName))
+    if (plan.vault.guideName) {
+      sources.books[plan.slug].vaultGuide = repoRelative(join(plan.stageDir, plan.vault.guideName))
+    }
+  }
+
   if (!dryRun) {
     await writeJsonAtomic(sourcesPath, sources)
   }
@@ -1064,33 +1075,65 @@ async function zipVault(vaultDir, destinationZip) {
   }
 }
 
-async function deliverVault(plan, dryRun) {
-  if (!plan.vault) {
-    return []
-  }
-  const stagedZip = join(plan.stageDir, plan.vault.zipName)
-  const delivered = [{ role: 'vault', path: join(plan.icloudDir, plan.vault.zipName) }]
-  if (plan.vault.guideName) {
-    delivered.push({ role: 'guide', path: join(plan.icloudDir, plan.vault.guideName) })
-  }
+// Stage the cover and (when requested) the vault zip and its guide into the
+// staging directory BEFORE the source map and upload run, so the Blob
+// uploader publishes them like any other artifact and the catalog gains
+// their public URLs. Runs after refreshStaging (which resets stageDir).
+async function stageCompanions(plan, dryRun) {
   if (dryRun) {
+    return
+  }
+  if (plan.cover) {
+    await copyFile(plan.cover.sourcePath, join(plan.stageDir, plan.cover.stableName))
+  }
+  if (plan.vault) {
+    await zipVault(plan.vault.dir, join(plan.stageDir, plan.vault.zipName))
+    if (plan.vault.guideName) {
+      await copyFile(plan.vault.guideSource, join(plan.stageDir, plan.vault.guideName))
+    }
+  }
+}
+
+// Copy the already-staged companions to iCloud beside the book.
+async function copyCompanionsToIcloud(plan, dryRun) {
+  const delivered = []
+  if (plan.vault) {
+    delivered.push({ role: 'vault', path: join(plan.icloudDir, plan.vault.zipName) })
+    if (plan.vault.guideName) {
+      delivered.push({ role: 'guide', path: join(plan.icloudDir, plan.vault.guideName) })
+    }
+  }
+  if (dryRun || !plan.copyIcloud) {
     return delivered
   }
-  if (plan.copyIcloud && !(await exists(plan.icloudDir))) {
+  if (delivered.length && !(await exists(plan.icloudDir))) {
     throw new Error(`iCloud Books destination does not exist: ${plan.icloudDir}`)
   }
-  await zipVault(plan.vault.dir, stagedZip)
-  if (plan.copyIcloud) {
-    await copyFile(stagedZip, join(plan.icloudDir, plan.vault.zipName))
-  }
-  if (plan.vault.guideName) {
-    const stagedGuide = join(plan.stageDir, plan.vault.guideName)
-    await copyFile(plan.vault.guideSource, stagedGuide)
-    if (plan.copyIcloud) {
-      await copyFile(stagedGuide, join(plan.icloudDir, plan.vault.guideName))
+  if (plan.vault) {
+    await copyFile(join(plan.stageDir, plan.vault.zipName), join(plan.icloudDir, plan.vault.zipName))
+    if (plan.vault.guideName) {
+      await copyFile(join(plan.stageDir, plan.vault.guideName), join(plan.icloudDir, plan.vault.guideName))
     }
   }
   return delivered
+}
+
+async function resolveCover(inputDir, distDir, metadata, slug) {
+  const named = metadata.cover_image || metadata.cover
+  const candidates = []
+  if (named) {
+    candidates.push(
+      isAbsolute(named) ? named : join(inputDir, named),
+      join(dirname(distDir), named),
+    )
+  }
+  candidates.push(join(distDir, 'cover.png'), join(dirname(distDir), 'cover.png'))
+  for (const candidate of candidates) {
+    if (await exists(candidate)) {
+      return { sourcePath: candidate, stableName: `${slug}-cover${extname(candidate)}` }
+    }
+  }
+  return null
 }
 
 async function copyIcloud(plan, dryRun) {
@@ -1309,6 +1352,7 @@ async function buildPlan(inputDir, options) {
   const chapters = await resolveChaptersDir(distDir, version, slug)
   const tutorial = await resolveTutorial(inputDir, distDir, options.tutorial ?? version.tutorial_file)
   const vault = await resolveVault(inputDir, distDir, edition, version, slug, options)
+  const cover = await resolveCover(inputDir, distDir, metadata, slug)
 
   return {
     inputDir,
@@ -1330,6 +1374,7 @@ async function buildPlan(inputDir, options) {
     chapters,
     tutorial,
     vault,
+    cover,
     stageDir: join(root, 'book-uploads', 'staging', slug),
     publicDir: join(root, 'public', slug),
     icloudDir: resolve(options['icloud-dir'] ?? join(homedir(), 'icloud', 'books')),
@@ -1394,6 +1439,12 @@ function printablePlan(plan, sourceMap = null, icloudCopies = [], vaultCopies = 
             guide: plan.vault.guideName,
           }
         : null,
+      cover: plan.cover
+        ? {
+            source: plan.cover.sourcePath,
+            staged: repoRelative(join(plan.stageDir, plan.cover.stableName)),
+          }
+        : null,
     },
     sourceMap,
     icloudCopies: icloudCopies.map((copy) => copy.path),
@@ -1454,6 +1505,7 @@ async function main() {
   }
 
   await refreshStaging(plan, dryRun)
+  await stageCompanions(plan, dryRun)
   const sourceMap = await refreshSourceMap(plan, dryRun)
 
   if (plan.stageOnly) {
@@ -1464,7 +1516,7 @@ async function main() {
   await refreshCatalog(plan, dryRun)
 
   if (dryRun) {
-    const vaultPreview = await deliverVault(plan, dryRun)
+    const vaultPreview = await copyCompanionsToIcloud(plan, dryRun)
     console.log(JSON.stringify(printablePlan(plan, sourceMap, [], vaultPreview), null, 2))
     return
   }
@@ -1479,7 +1531,7 @@ async function main() {
   await runChecked(process.execPath, ['scripts/sync-reader-routes.mjs'])
   await writePublicReadme(plan, dryRun)
   const icloudCopies = await copyIcloud(plan, dryRun)
-  const vaultCopies = await deliverVault(plan, dryRun)
+  const vaultCopies = await copyCompanionsToIcloud(plan, dryRun)
 
   if (plan.runCheck) {
     await runChecked('npm', ['run', 'check:catalog'])

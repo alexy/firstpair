@@ -706,6 +706,31 @@ h1 {
     linear-gradient(150deg, rgba(255, 255, 255, 0.2), transparent 40%),
     linear-gradient(140deg, var(--book-accent), #171714);
   color: #fffdf6;
+  text-decoration: none;
+}
+
+a.book-card__cover:hover strong {
+  text-decoration: underline;
+}
+
+/* Real cover art: fill the panel edge to edge, no padding or gradient. */
+.book-card__cover--image {
+  padding: 0;
+  background: #171714;
+}
+
+.book-card__cover--image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* Give cards that carry real cover art a taller cover row so the portrait
+   artwork reads as a cover rather than a cropped strip. */
+.book-card:has(.book-card__cover--image) {
+  grid-template-rows: minmax(340px, auto) minmax(0, 1fr);
 }
 
 .book-card__cover span {
@@ -735,6 +760,15 @@ h1 {
   font-size: 25px;
   line-height: 1.06;
   overflow-wrap: break-word;
+}
+
+.book-card__body h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.book-card__body h3 a:hover {
+  text-decoration: underline;
 }
 
 .book-card__body p:not(.book-kicker) {

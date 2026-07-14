@@ -165,17 +165,19 @@ if [[ "${BOOK_HTML_SPLIT:-1}" != "0" ]]; then
     cp "$chunk_css" "$html_chapters_dir/book.css"
   fi
   python_bin="$("$script_dir/ensure-python-env.sh" "$script_dir/../python")"
-  "$python_bin" - "$html_chapters_dir" <<'PY'
+  "$python_bin" - "$html_chapters_dir" "$resource_path" <<'PY'
 from __future__ import annotations
 
 import hashlib
 import html
+import os
 import re
 import sys
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
 chapter_dir = Path(sys.argv[1])
+resource_roots = [Path(root) for root in sys.argv[2].split(os.pathsep) if root]
 asset_dir = chapter_dir / "assets"
 attr_re = re.compile(r'\b(src|href)="([^"]+)"')
 
@@ -187,9 +189,19 @@ def local_path(url: str) -> Path | None:
     if parsed.scheme == "file":
         path = Path(unquote(parsed.path))
     else:
-        if not parsed.path.startswith("/"):
-            return None
         path = Path(unquote(parsed.path))
+        if not path.is_absolute():
+            # Pandoc's chunked HTML writer can leave source-relative media
+            # references intact even with --embed-resources. Keep resources
+            # already present in the package; otherwise resolve them exactly
+            # as Pandoc does through its configured resource path.
+            if (chapter_dir / path).is_file():
+                return None
+            for root in resource_roots:
+                candidate = root / path
+                if candidate.is_file():
+                    return candidate
+            return None
     if path.is_file():
         return path
     return None

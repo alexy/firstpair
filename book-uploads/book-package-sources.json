@@ -44,7 +44,11 @@
       "pdf": "book-uploads/staging/sail-rust-book/sail-rust-book.pdf",
       "epub": "book-uploads/staging/sail-rust-book/sail-rust-book.epub",
       "html": "book-uploads/staging/sail-rust-book/sail-rust-book.html",
-      "htmlChapters": "book-uploads/staging/sail-rust-book/sail-rust-book-chapters"
+      "htmlChapters": "book-uploads/staging/sail-rust-book/sail-rust-book-chapters",
+      "cover": "book-uploads/staging/sail-rust-book/sail-rust-book-cover.png",
+      "vault": "book-uploads/staging/sail-rust-book/sail-rust-book-full-vault (2026.07.14.1-ad4488e3).zip",
+      "vaultGuideMarkdown": "book-uploads/staging/sail-rust-book/sail-rust-book-vault-guide (2026.07.14.1-ad4488e3).md",
+      "vaultGuideHtml": "book-uploads/staging/sail-rust-book/sail-rust-book-vault-guide (2026.07.14.1-ad4488e3).html"
     },
     "omnighost": {
       "pdf": "book-uploads/staging/omnighost/omnighost.pdf",

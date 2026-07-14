@@ -1435,13 +1435,40 @@ async function copyCompanionsToIcloud(plan, dryRun) {
   return delivered
 }
 
+function resolveConfiguredAssetPath(name, inputDir, distDir) {
+  return name
+    .replaceAll('${repoRoot}', inputDir)
+    .replaceAll('${distDir}', distDir)
+    .replaceAll('${buildDir}', dirname(distDir))
+}
+
+async function coverNamesFromBuildConfig(inputDir, distDir) {
+  const config = await readJson(join(inputDir, 'book.build.json'), null)
+  if (!config) {
+    return []
+  }
+
+  return [
+    config.coverImage,
+    config.cover,
+    config.pdf?.coverImage,
+    config.epub?.coverImage,
+  ]
+    .filter(Boolean)
+    .map((name) => resolveConfiguredAssetPath(name, inputDir, distDir))
+}
+
 async function resolveCover(inputDir, distDir, metadata, slug) {
-  const named = metadata.cover_image || metadata.cover
+  const named = [
+    metadata.cover_image,
+    metadata.cover,
+    ...(await coverNamesFromBuildConfig(inputDir, distDir)),
+  ].filter(Boolean)
   const candidates = []
-  if (named) {
+  for (const name of named) {
     candidates.push(
-      isAbsolute(named) ? named : join(inputDir, named),
-      join(dirname(distDir), named),
+      isAbsolute(name) ? name : join(inputDir, name),
+      join(dirname(distDir), name),
     )
   }
   candidates.push(join(distDir, 'cover.png'), join(dirname(distDir), 'cover.png'))

@@ -38,9 +38,10 @@ export const readerBooks = [
   },
   {
     "slug": "sail-rust-book",
-    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/html/56c2cddb31d026ee-sail-rust-book.html",
-    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/chapters/1730f34f3a4fce10/index.html",
-    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/chapters/1730f34f3a4fce10"
+    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/html/26923fc510dfa74a-sail-rust-book.html",
+    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/chapters/f1026c44a7185c34/index.html",
+    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/chapters/f1026c44a7185c34",
+    "vaultGuideSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/vault-guide/f111e876d615c17f-sail-rust-book-vault-guide%20%282026.07.14.1-ad4488e3%29.html"
   },
   {
     "slug": "zucchero",

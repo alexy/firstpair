@@ -127,23 +127,30 @@
     },
     {
       "slug": "sail-rust-book",
-      "title": "Sail: The Rust, Arrow, and DataFusion Guide",
+      "title": "Sail Rust Book",
       "kicker": "Finished book",
-      "description": "A public guide to Sail, Rust, Arrow, and DataFusion, delivered as PDF, EPUB, and hosted web readers.",
+      "description": "Sail Rust Book is a codebase-first guide to Sail, Rust, Arrow, and DataFusion, delivered as PDF, EPUB, hosted readers, and an Obsidian Vault.",
       "accent": "#4f5e46",
       "shelf": "querygraph",
       "source": "https://github.com/lakehq/sail",
-      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/pdf/43fc6f76a1e3cf63-sail-rust-book.pdf",
-      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/epub/a4319c63d469d44d-sail-rust-book.epub",
+      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/pdf/4b0e3c74798d945d-sail-rust-book.pdf",
+      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/epub/e7e97c4f79c8c8ff-sail-rust-book.epub",
       "html": "/read/sail-rust-book/",
       "htmlChapters": "/read/sail-rust-book/chapters/",
       "tags": [
         "finished",
-        "Rust",
-        "DataFusion"
+        "sail",
+        "rust",
+        "datafusion",
+        "obsidian",
+        "first-pair"
       ],
-      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/html/56c2cddb31d026ee-sail-rust-book.html",
-      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/chapters/1730f34f3a4fce10/index.html"
+      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/html/26923fc510dfa74a-sail-rust-book.html",
+      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/chapters/f1026c44a7185c34/index.html",
+      "vault": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/vault/808baed2385167d0-sail-rust-book-full-vault%20%282026.07.14.1-ad4488e3%29.zip",
+      "vaultGuide": "/read/sail-rust-book/guide/",
+      "vaultGuideSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/vault-guide/f111e876d615c17f-sail-rust-book-vault-guide%20%282026.07.14.1-ad4488e3%29.html",
+      "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-rust-book/cover/63b7dd0c5d66abdd-sail-rust-book-cover.png"
     },
     {
       "slug": "zucchero",

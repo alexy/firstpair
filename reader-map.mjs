@@ -62,8 +62,9 @@ export const readerBooks = [
   },
   {
     "slug": "from-1-to-0",
-    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/html/f940a42ee077a5fa-from-1-to-0-preview.html",
-    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/index.html",
-    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483"
+    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/html/7fd7d2bd39bfb7d2-from-1-to-0.html",
+    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/1482347fd2ab5940/index.html",
+    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/1482347fd2ab5940",
+    "vaultGuideSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/vault-guide/9a6161dceda547da-from-1-to-0-vault-guide%20%281.0.0-35d3afa9%29.html"
   }
 ]

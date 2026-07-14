@@ -59,10 +59,14 @@
       "htmlChapters": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters"
     },
     "from-1-to-0": {
-      "pdf": "book-uploads/staging/from-1-to-0/from-1-to-0-preview.pdf",
-      "epub": "book-uploads/staging/from-1-to-0/from-1-to-0-preview.epub",
-      "html": "book-uploads/staging/from-1-to-0/from-1-to-0-preview.html",
-      "htmlChapters": "book-uploads/staging/from-1-to-0/from-1-to-0-preview-chapters"
+      "pdf": "book-uploads/staging/from-1-to-0/from-1-to-0.pdf",
+      "epub": "book-uploads/staging/from-1-to-0/from-1-to-0.epub",
+      "html": "book-uploads/staging/from-1-to-0/from-1-to-0.html",
+      "htmlChapters": "book-uploads/staging/from-1-to-0/from-1-to-0-chapters",
+      "cover": "book-uploads/staging/from-1-to-0/from-1-to-0-cover.jpg",
+      "vault": "book-uploads/staging/from-1-to-0/from-1-to-0-full-vault (1.0.0-35d3afa9).zip",
+      "vaultGuideMarkdown": "book-uploads/staging/from-1-to-0/from-1-to-0-vault-guide (1.0.0-35d3afa9).md",
+      "vaultGuideHtml": "book-uploads/staging/from-1-to-0/from-1-to-0-vault-guide (1.0.0-35d3afa9).html"
     },
     "zucchero": {
       "pdf": "book-uploads/staging/zucchero/zucchero.pdf",

@@ -208,22 +208,26 @@
     {
       "slug": "from-1-to-0",
       "title": "From 1 to 0",
-      "kicker": "Preview edition",
-      "description": "A public preview of the anti-history of Silicon Valley — Notes on Startups, or How to Lose the Future — with the full plan of the book, the Introduction, and the Anti-Naval Ontology of Failure as PDF, EPUB, and hosted web readers.",
+      "kicker": "Finished book",
+      "description": "An anti-history of Silicon Valley — the deliberate opposite of Zero to One. The spectacular crashes, the fateful decisions that ripped failure from the jaws of victory, the infighting, the giant egos, and the venture capitalists who financed all of it and then wrote the eulogies as if they had been mere bystanders. Braided in six movements: Genesis, Ascension, Apotheosis, Fissures, Gravity, Ashes.",
       "accent": "#8a6d3b",
       "shelf": "technology",
-      "homepage": "/from-1-to-0/preview/",
-      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/pdf/5d0add95822763da-from-1-to-0-preview.pdf",
-      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/epub/69e3d5cfa67af592-from-1-to-0-preview.epub",
+      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/pdf/c2dcd50ab18d355d-from-1-to-0.pdf",
+      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/epub/e05794bf48b064e0-from-1-to-0.epub",
       "html": "/read/from-1-to-0/",
       "htmlChapters": "/read/from-1-to-0/chapters/",
-      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/html/f940a42ee077a5fa-from-1-to-0-preview.html",
-      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/6cb22c96dd780483/index.html",
+      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/html/7fd7d2bd39bfb7d2-from-1-to-0.html",
+      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/1482347fd2ab5940/index.html",
       "tags": [
-        "preview",
+        "finished",
         "startups",
         "Silicon Valley"
-      ]
+      ],
+      "source": "https://github.com/firstpair/from-1-to-0/tree/codex/sol",
+      "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/cover/d5006b21184b9b13-from-1-to-0-cover.jpg",
+      "vault": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/vault/55f5e4400fbabb46-from-1-to-0-full-vault%20%281.0.0-35d3afa9%29.zip",
+      "vaultGuide": "/read/from-1-to-0/guide/",
+      "vaultGuideSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/vault-guide/9a6161dceda547da-from-1-to-0-vault-guide%20%281.0.0-35d3afa9%29.html"
     }
   ]
 }

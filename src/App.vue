@@ -95,6 +95,12 @@ const filters = computed(() => [
   { id: 'tutorials' as const, label: 'Learn', count: tutorialCount.value },
 ])
 
+// The book page: a preview homepage (an internal route, opened same-tab)
+// when present, otherwise the hosted reader (a /read/ route, which the site
+// convention — and the smoke test — require to open in a new tab).
+const bookPageHref = (book: Book): string | undefined => book.homepage || book.html || undefined
+const bookPageNewTab = (book: Book): boolean => !book.homepage && Boolean(book.html)
+
 const knownLibraryShelfIds = new Set<string>(libraryShelfConfig.map((shelf) => shelf.id))
 
 const bookShelf = (book: Book): LibraryShelfId =>
@@ -340,10 +346,12 @@ const fragments = [
               :style="{ '--book-accent': book.accent }"
             >
               <component
-                :is="book.homepage || book.html ? 'a' : 'div'"
+                :is="bookPageHref(book) ? 'a' : 'div'"
                 class="book-card__cover"
                 :class="{ 'book-card__cover--image': book.cover }"
-                :href="book.homepage || book.html || undefined"
+                :href="bookPageHref(book)"
+                :target="bookPageNewTab(book) ? '_blank' : undefined"
+                :rel="bookPageNewTab(book) ? 'noopener noreferrer' : undefined"
               >
                 <img v-if="book.cover" :src="book.cover" :alt="`${book.title} cover`" loading="lazy" />
                 <template v-else>
@@ -356,7 +364,13 @@ const fragments = [
                 <div>
                   <p class="book-kicker">{{ book.kicker }}</p>
                   <h3>
-                    <a v-if="book.homepage || book.html" :href="book.homepage || book.html">{{ book.title }}</a>
+                    <a
+                      v-if="bookPageHref(book)"
+                      :href="bookPageHref(book)"
+                      :target="bookPageNewTab(book) ? '_blank' : undefined"
+                      :rel="bookPageNewTab(book) ? 'noopener noreferrer' : undefined"
+                      >{{ book.title }}</a
+                    >
                     <template v-else>{{ book.title }}</template>
                   </h3>
                   <p>{{ book.description }}</p>

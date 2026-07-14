@@ -5,6 +5,40 @@ book-specific source repositories as the authority for manuscripts, metadata,
 versions, and built artifacts; FirstPair owns the public catalog, preview
 pages, and object-storage delivery URLs.
 
+## Rules For Every Participating Repository
+
+These rules apply to FirstPair itself and to every source repository that
+publishes through it. Repo-local `AGENTS.md` files should add only local
+constraints and short pointers back here; they must not weaken or bypass these
+shared rules.
+
+- Verify the real repository root before editing, building, publishing, or
+  reporting status. Do not confuse archival checkouts, generated package
+  directories, sibling repos, or dependency trees with the active source repo.
+- Preserve source ownership. Manuscripts, blog posts, textpacks, covers, vault
+  builders, source metadata, version manifests, and project-specific README
+  files belong in the owning source repo unless the user explicitly grants an
+  exception. FirstPair may hold catalog/readme surfaces, route maps, upload
+  manifests, deployment metadata, and First Pair house content.
+- Keep the detailed deployment contract in the source repo's `FIRSTPAIR.md`
+  whenever that repo participates in the library. Local `AGENTS.md` files should
+  point to `FIRSTPAIR.md` and `~/src/firstpair` instead of duplicating the full
+  publishing workflow.
+- Before regenerating, editing, validating with write-capable tools, zipping, or
+  otherwise programmatically touching any Obsidian vault directory, ask the user
+  to close that vault in Obsidian and wait for confirmation. Do not mutate an
+  open vault; Obsidian can rewrite workspace, plugin, and index files in the
+  background and race generated output.
+- Regenerate derived editions from source, then run the source-owned validators
+  and FirstPair checks before staging, uploading, or publishing. A failed
+  validator is a stop condition, not something to route around.
+- Treat Vercel deployments, Blob uploads, iCloud delivery, and full-edition
+  releases as outward-facing actions. Use dry-runs when the target is unclear,
+  and require explicit user confirmation before replacing a public preview with
+  a full book.
+- Preserve unrelated user or generated worktree changes. Stage, commit, and push
+  only the files that belong to the requested change.
+
 ## Content Ownership
 
 Do not deposit project-owned editorial content in FirstPair unless the user

@@ -224,7 +224,9 @@ function parseKeyValue(text) {
     const key = match[1].trim()
     const scalar = cleanScalar(match[2])
 
-    if (scalar === '>' || scalar === '|') {
+    const blockStyle = /^([>|])(?:[+-])?$/.exec(scalar)
+
+    if (blockStyle) {
       const block = []
       let cursor = index + 1
 
@@ -239,7 +241,7 @@ function parseKeyValue(text) {
       const indent = indents.length ? Math.min(...indents) : 0
       const normalized = block.map((blockLine) => blockLine.slice(indent))
 
-      values[key] = scalar === '|'
+      values[key] = blockStyle[1] === '|'
         ? normalized.join('\n').trim()
         : normalized
             .join('\n')

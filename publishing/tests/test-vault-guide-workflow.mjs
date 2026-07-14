@@ -136,7 +136,7 @@ Open \`Home.md\`, then use [[Book Map|the book map]].
     writeFile(join(harness, 'book-uploads', 'book-package-sources.json'), '{"books":{}}\n'),
     writeFile(
       join(fixtureBook, 'metadata.yaml'),
-      `description: >
+      `description: >-
   A complete fixture book whose folded YAML description
   must survive the preview-to-full transition.
 `,

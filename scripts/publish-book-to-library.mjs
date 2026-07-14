@@ -41,6 +41,7 @@ const booleanFlags = new Set([
   'no-deploy',
   'smoke',
   'full',
+  'vault',
   'verbose',
   'help',
 ])
@@ -56,6 +57,8 @@ const valueFlags = new Set([
   'tag',
   'icloud-dir',
   'tutorial',
+  'vault-dir',
+  'vault-guide',
 ])
 
 function usage() {
@@ -90,6 +93,15 @@ Options:
   --tags <a,b,c>            Catalog tags. Defaults to "finished".
   --tag <tag>               Add one tag. May be repeated.
   --tutorial <file>         Optional tutorial HTML file to upload.
+  --vault                   Deliver a companion editorial vault when one was
+                            built for this edition. Auto-discovers a proper
+                            vault under <book>/dist-obsidian/ (a preview-named
+                            vault for the preview edition, the non-preview
+                            vault for the full edition), zips it to a
+                            versioned name, and copies it to iCloud beside the
+                            book, together with a copy of its guide.
+  --vault-dir <dir>         Explicit vault directory (implies --vault).
+  --vault-guide <file>      Explicit vault guide (default: a docs/*VAULT*.md).
   --icloud-dir <dir>        Defaults to "$HOME/icloud/books".
   --stage-only              Only refresh book-uploads/staging and source map.
   --no-upload               Alias for --stage-only.
@@ -908,6 +920,179 @@ async function writePublicReadme(plan, dryRun) {
   }
 }
 
+// A "proper" editorial vault has a root Home.md and a <book>/_data ledger
+// directory with unit rows. This keeps --vault from shipping a stray folder.
+async function isProperVault(dir) {
+  if (!(await exists(join(dir, 'Home.md')))) {
+    return false
+  }
+  let entries
+  try {
+    entries = await listEntries(dir)
+  } catch {
+    return false
+  }
+  for (const entry of entries) {
+    if (!entry.isDirectory()) {
+      continue
+    }
+    if (await exists(join(dir, entry.name, '_data', 'units.jsonl'))) {
+      return true
+    }
+  }
+  return false
+}
+
+async function discoverVaultDir(bookDir, edition) {
+  const base = join(bookDir, 'dist-obsidian')
+  let entries
+  try {
+    entries = await listEntries(base)
+  } catch {
+    return null
+  }
+  const matches = []
+  for (const entry of entries) {
+    if (!entry.isDirectory()) {
+      continue
+    }
+    const isPreview = /preview/i.test(entry.name)
+    if ((edition === 'preview') !== isPreview) {
+      continue
+    }
+    const dir = join(base, entry.name)
+    if (await isProperVault(dir)) {
+      matches.push(dir)
+    }
+  }
+  if (matches.length === 1) {
+    return matches[0]
+  }
+  if (matches.length > 1) {
+    throw new Error(
+      `multiple ${edition} vaults under ${base}; pass --vault-dir to choose:\n` +
+        matches.map((m) => `  ${m}`).join('\n'),
+    )
+  }
+  return null
+}
+
+async function discoverVaultGuide(inputDir, bookDir) {
+  const explicit = [
+    join(inputDir, 'docs', 'OBSIDIAN-VAULT.md'),
+    join(bookDir, 'docs', 'OBSIDIAN-VAULT.md'),
+  ]
+  for (const candidate of explicit) {
+    if (await exists(candidate)) {
+      return candidate
+    }
+  }
+  for (const dir of [join(inputDir, 'docs'), join(bookDir, 'docs')]) {
+    let entries
+    try {
+      entries = await listEntries(dir)
+    } catch {
+      continue
+    }
+    for (const entry of entries) {
+      if (entry.isFile() && /vault/i.test(entry.name) && entry.name.endsWith('.md')) {
+        return join(dir, entry.name)
+      }
+    }
+  }
+  return null
+}
+
+async function resolveVault(inputDir, distDir, edition, version, slug, options) {
+  const wantVault = Boolean(options.vault || options['vault-dir'])
+  if (!wantVault) {
+    return null
+  }
+  const bookDir = dirname(distDir)
+  const dir = options['vault-dir']
+    ? resolve(isAbsolute(options['vault-dir']) ? options['vault-dir'] : join(inputDir, options['vault-dir']))
+    : await discoverVaultDir(bookDir, edition)
+  if (!dir) {
+    throw new Error(
+      `--vault was requested but no proper ${edition} vault was found under ` +
+        `${join(bookDir, 'dist-obsidian')}. Build one first, or pass --vault-dir.`,
+    )
+  }
+  if (options['vault-dir'] && !(await isProperVault(dir))) {
+    throw new Error(`--vault-dir is not a proper editorial vault: ${dir}`)
+  }
+  const stamp = firstValue(version.version_stamp, version.version) ?? 'current'
+  const zipName = `${slug}-${edition}-vault (${stamp}).zip`
+
+  let guideSource = null
+  let guideName = null
+  const guide = options['vault-guide']
+    ? resolve(isAbsolute(options['vault-guide']) ? options['vault-guide'] : join(inputDir, options['vault-guide']))
+    : await discoverVaultGuide(inputDir, bookDir)
+  if (guide && (await exists(guide))) {
+    guideSource = guide
+    guideName = `${slug}-vault-guide (${stamp})${extname(guide)}`
+  }
+
+  return { dir, zipName, guideSource, guideName }
+}
+
+// Zip the vault directory into destinationZip. Uses the system `zip` so the
+// archive opens as a plain folder; volatile Obsidian state is excluded.
+async function zipVault(vaultDir, destinationZip) {
+  await rm(destinationZip, { force: true })
+  await mkdir(dirname(destinationZip), { recursive: true })
+  const { code } = await runProcess(
+    'zip',
+    [
+      '-r',
+      '-q',
+      '-X',
+      destinationZip,
+      basename(vaultDir),
+      '-x',
+      '*.DS_Store',
+      '-x',
+      '*/.git/*',
+      '-x',
+      '*/workspace.json',
+    ],
+    { cwd: dirname(vaultDir), stdio: 'inherit' },
+  )
+  if (code !== 0) {
+    throw new Error(`zip failed (${code}) for vault: ${vaultDir}`)
+  }
+}
+
+async function deliverVault(plan, dryRun) {
+  if (!plan.vault) {
+    return []
+  }
+  const stagedZip = join(plan.stageDir, plan.vault.zipName)
+  const delivered = [{ role: 'vault', path: join(plan.icloudDir, plan.vault.zipName) }]
+  if (plan.vault.guideName) {
+    delivered.push({ role: 'guide', path: join(plan.icloudDir, plan.vault.guideName) })
+  }
+  if (dryRun) {
+    return delivered
+  }
+  if (plan.copyIcloud && !(await exists(plan.icloudDir))) {
+    throw new Error(`iCloud Books destination does not exist: ${plan.icloudDir}`)
+  }
+  await zipVault(plan.vault.dir, stagedZip)
+  if (plan.copyIcloud) {
+    await copyFile(stagedZip, join(plan.icloudDir, plan.vault.zipName))
+  }
+  if (plan.vault.guideName) {
+    const stagedGuide = join(plan.stageDir, plan.vault.guideName)
+    await copyFile(plan.vault.guideSource, stagedGuide)
+    if (plan.copyIcloud) {
+      await copyFile(stagedGuide, join(plan.icloudDir, plan.vault.guideName))
+    }
+  }
+  return delivered
+}
+
 async function copyIcloud(plan, dryRun) {
   if (!plan.copyIcloud) {
     return []
@@ -1123,6 +1308,7 @@ async function buildPlan(inputDir, options) {
   })
   const chapters = await resolveChaptersDir(distDir, version, slug)
   const tutorial = await resolveTutorial(inputDir, distDir, options.tutorial ?? version.tutorial_file)
+  const vault = await resolveVault(inputDir, distDir, edition, version, slug, options)
 
   return {
     inputDir,
@@ -1143,6 +1329,7 @@ async function buildPlan(inputDir, options) {
     html,
     chapters,
     tutorial,
+    vault,
     stageDir: join(root, 'book-uploads', 'staging', slug),
     publicDir: join(root, 'public', slug),
     icloudDir: resolve(options['icloud-dir'] ?? join(homedir(), 'icloud', 'books')),
@@ -1165,7 +1352,7 @@ async function buildPlan(inputDir, options) {
   }
 }
 
-function printablePlan(plan, sourceMap = null, icloudCopies = []) {
+function printablePlan(plan, sourceMap = null, icloudCopies = [], vaultCopies = []) {
   return {
     slug: plan.slug,
     shelf: plan.shelf,
@@ -1200,13 +1387,22 @@ function printablePlan(plan, sourceMap = null, icloudCopies = []) {
             staged: repoRelative(join(plan.stageDir, plan.tutorial.stableName)),
           }
         : null,
+      vault: plan.vault
+        ? {
+            source: plan.vault.dir,
+            zip: plan.vault.zipName,
+            guide: plan.vault.guideName,
+          }
+        : null,
     },
     sourceMap,
     icloudCopies: icloudCopies.map((copy) => copy.path),
+    vaultCopies: vaultCopies.map((copy) => copy.path),
     actions: {
       stageOnly: plan.stageOnly,
       upload: !plan.stageOnly,
       copyIcloud: plan.copyIcloud && !plan.stageOnly,
+      deliverVault: Boolean(plan.vault) && !plan.stageOnly,
       checkCatalog: plan.runCheck && !plan.stageOnly,
       prodBuild: plan.runBuild && !plan.stageOnly,
       smoke: plan.runSmoke && !plan.stageOnly,
@@ -1268,7 +1464,8 @@ async function main() {
   await refreshCatalog(plan, dryRun)
 
   if (dryRun) {
-    console.log(JSON.stringify(printablePlan(plan, sourceMap), null, 2))
+    const vaultPreview = await deliverVault(plan, dryRun)
+    console.log(JSON.stringify(printablePlan(plan, sourceMap, [], vaultPreview), null, 2))
     return
   }
 
@@ -1282,6 +1479,7 @@ async function main() {
   await runChecked(process.execPath, ['scripts/sync-reader-routes.mjs'])
   await writePublicReadme(plan, dryRun)
   const icloudCopies = await copyIcloud(plan, dryRun)
+  const vaultCopies = await deliverVault(plan, dryRun)
 
   if (plan.runCheck) {
     await runChecked('npm', ['run', 'check:catalog'])
@@ -1299,7 +1497,7 @@ async function main() {
     await deployProduction(plan)
   }
 
-  console.log(JSON.stringify(printablePlan(plan, sourceMap, icloudCopies), null, 2))
+  console.log(JSON.stringify(printablePlan(plan, sourceMap, icloudCopies, vaultCopies), null, 2))
 }
 
 main().catch((error) => {

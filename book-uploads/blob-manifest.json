@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-11T18:42:12.878Z",
+  "updatedAt": "2026-07-14T07:51:33.070Z",
   "books": {
     "typesec": {
       "updatedAt": "2026-07-10T03:46:00.383Z",
@@ -1928,285 +1928,510 @@
       }
     },
     "lighthouse-republics": {
-      "updatedAt": "2026-07-10T06:21:53.911Z",
+      "updatedAt": "2026-07-14T07:51:33.069Z",
       "dryRun": false,
       "units": {
         "pdf": {
           "kind": "pdf",
-          "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview.pdf",
-          "sha256": "7cf617ce3b7f4ef80bb9d51b525680c27dbca013bc273a932f9eb226d4df422c",
-          "size": 13773493,
-          "pathname": "books/lighthouse-republics/pdf/7cf617ce3b7f4ef8-lighthouse-republics-preview.pdf",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/pdf/7cf617ce3b7f4ef8-lighthouse-republics-preview.pdf",
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview.pdf",
+          "sha256": "9633908ce749be05bcfc6e21928afa2251984caa8b0cf761a33772d580b63b0b",
+          "size": 17995281,
+          "pathname": "books/lighthouse-republics/pdf/9633908ce749be05-lighthouse-republics-preview.pdf",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/pdf/9633908ce749be05-lighthouse-republics-preview.pdf",
           "skipped": true
         },
         "epub": {
           "kind": "epub",
-          "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview.epub",
-          "sha256": "aa43a743ae396b1c86dd27d8ed05c7790cddc252194d93239e3232c9ade0e2fc",
-          "size": 17007100,
-          "pathname": "books/lighthouse-republics/epub/aa43a743ae396b1c-lighthouse-republics-preview.epub",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/epub/aa43a743ae396b1c-lighthouse-republics-preview.epub",
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview.epub",
+          "sha256": "44bec6bfcdcd9ef703f6ce1bb46ae74c7e5b9fe70a41d49bc2be991e63da1596",
+          "size": 17016811,
+          "pathname": "books/lighthouse-republics/epub/44bec6bfcdcd9ef7-lighthouse-republics-preview.epub",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/epub/44bec6bfcdcd9ef7-lighthouse-republics-preview.epub",
           "skipped": true
         },
         "html": {
           "kind": "html",
-          "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview.html",
-          "sha256": "89cb3abb1265fc366ca5bfd12c666e2dc7e5512a346e643db88256a0d019e1f1",
-          "size": 22892813,
-          "pathname": "books/lighthouse-republics/html/89cb3abb1265fc36-lighthouse-republics-preview.html",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/html/89cb3abb1265fc36-lighthouse-republics-preview.html",
-          "skipped": false
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview.html",
+          "sha256": "67d4949da86b206566362aae6ba77f15047703889ff859f37e1ad7162a7088b8",
+          "size": 19879346,
+          "pathname": "books/lighthouse-republics/html/67d4949da86b2065-lighthouse-republics-preview.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/html/67d4949da86b2065-lighthouse-republics-preview.html",
+          "skipped": true
+        },
+        "cover": {
+          "kind": "cover",
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-cover.png",
+          "sha256": "4150691fc877ad04290867a1837cfa0109e439b92c1ea6554a994db35c8525d6",
+          "size": 2201721,
+          "pathname": "books/lighthouse-republics/cover/4150691fc877ad04-lighthouse-republics-cover.png",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/cover/4150691fc877ad04-lighthouse-republics-cover.png",
+          "skipped": true
+        },
+        "vault": {
+          "kind": "vault",
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-vault (4.0.0-deb590f3).zip",
+          "sha256": "619ef92912a8bb54537a8c78d9cf11b8239163773a29cfaaf844c8f34bce689c",
+          "size": 17219080,
+          "pathname": "books/lighthouse-republics/vault/619ef92912a8bb54-lighthouse-republics-preview-vault (4.0.0-deb590f3).zip",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/vault/619ef92912a8bb54-lighthouse-republics-preview-vault%20%284.0.0-deb590f3%29.zip",
+          "skipped": true
+        },
+        "vaultGuide": {
+          "kind": "vault-guide",
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-vault-guide (4.0.0-deb590f3).md",
+          "sha256": "6aeb8914a482954ccd61f6cea0e9ebee167ef47cc96329ac6fdc2b91f0441b54",
+          "size": 58405,
+          "pathname": "books/lighthouse-republics/vault-guide/6aeb8914a482954c-lighthouse-republics-vault-guide (4.0.0-deb590f3).md",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/vault-guide/6aeb8914a482954c-lighthouse-republics-vault-guide%20%284.0.0-deb590f3%29.md",
+          "skipped": true
         },
         "htmlChapters": {
           "kind": "htmlChapters",
-          "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters",
-          "sha256": "cb7c8c983f7eb6206cbfcc24ce26ea0ea5e1df54034319fe5eefce08f17e92b4",
-          "pathnamePrefix": "books/lighthouse-republics/chapters/cb7c8c983f7eb620",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/index.html",
-          "skipped": false,
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters",
+          "sha256": "0ed998be056c002e59c107794acdee8b79c4fd564435519eb825c2017e98fbac",
+          "pathnamePrefix": "books/lighthouse-republics/chapters/0ed998be056c002e",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/index.html",
+          "skipped": true,
           "files": [
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/chapter-001.html",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/book.css",
+              "relativePath": "book.css",
+              "sha256": "6283e962c5a4570783d7874d5a27e63193ca4be4f166b30424f6d4d19e99a894",
+              "size": 461,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/book.css",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/book.css",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-001.html",
               "relativePath": "chapter-001.html",
-              "sha256": "ee3e7ab985aa23b8df45a97d2a719fcd05fcbc96e49ddc640f2de7412193fcdd",
-              "size": 5330,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/chapter-001.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/chapter-001.html",
+              "sha256": "4db7bbd9880871d333e9ec6679be3e5436b1c25f49156ca4da761959c2509546",
+              "size": 2184,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-001.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-001.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/chapter-002.html",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-002.html",
               "relativePath": "chapter-002.html",
-              "sha256": "c39bd52ae73dd8eec121549941226e9578149363b959d736d94460565791a51f",
-              "size": 163296,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/chapter-002.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/chapter-002.html",
+              "sha256": "7500d7d9e53b8e3d8a0a992dd485983c314d65385b58f81a35cb472ca3c9b20c",
+              "size": 16352,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-002.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-002.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/chapter-003.html",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-003.html",
               "relativePath": "chapter-003.html",
-              "sha256": "0f9d016d9f6b311b4b55f03ba8bea96e068bdcbb741dc6e16bf2684c200724cf",
-              "size": 4855,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/chapter-003.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/chapter-003.html",
+              "sha256": "5563224bd77d19efc2c54671926cc985265d351ad968a47bd83af2aa9fd69935",
+              "size": 2221,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-003.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-003.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/chapter-004.html",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-004.html",
               "relativePath": "chapter-004.html",
-              "sha256": "1ee3ee5f3f572526f12b355185d51d9c369aeea18170943f2343eaf8c229d687",
-              "size": 5194,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/chapter-004.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/chapter-004.html",
+              "sha256": "8fe6d5c630112d3404ec1f49a5569d2028c709d3a295e261f4cab056b35a8109",
+              "size": 6147,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-004.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-004.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/chapter-005.html",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-005.html",
               "relativePath": "chapter-005.html",
-              "sha256": "ef42e325fcf5ac435be10896da1697ee5a4d5599138c3b8eb35c21d7e4f53766",
-              "size": 4850,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/chapter-005.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/chapter-005.html",
+              "sha256": "1ebd97d18a24e5f4f5cd2607a96310343ea297354d638d04209b041f804137fc",
+              "size": 6187,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-005.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-005.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/chapter-006.html",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-006.html",
               "relativePath": "chapter-006.html",
-              "sha256": "a23f8b0920b9385865d487731dc8abacd2a59d847316472d65eebc66113d3882",
-              "size": 5194,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/chapter-006.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/chapter-006.html",
+              "sha256": "6c0a071132c568e614ba2b1c9d37fa22e10538f3843f8d700f18056c9f03b83e",
+              "size": 2321,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-006.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-006.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/chapter-007.html",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-007.html",
               "relativePath": "chapter-007.html",
-              "sha256": "6c69566d713acd244b8396b26c3217520cddbdde8cfdbfdf97ed5c1394915461",
-              "size": 4850,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/chapter-007.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/chapter-007.html",
+              "sha256": "681ac406fa6e613ad3719be4817d30bbf0223b879fc371b8cea8c5a918ba47f9",
+              "size": 6432,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-007.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-007.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/chapter-008.html",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-008.html",
               "relativePath": "chapter-008.html",
-              "sha256": "0632036d51c8b4e6f2dc8c6c95a45af645e56e4f5728bd5d1774cde0e8973914",
-              "size": 5194,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/chapter-008.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/chapter-008.html",
+              "sha256": "e5061d0b407362c4b6c22e5d1431f6bcb765bf5463a3e5ba498a7c6f1279dba3",
+              "size": 12712,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-008.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-008.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/chapter-009.html",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-009.html",
               "relativePath": "chapter-009.html",
-              "sha256": "9fca6476d88fcc531ce2e9a7d0b5af2ff999c51f5706a64d234969e71a35a380",
-              "size": 4850,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/chapter-009.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/chapter-009.html",
+              "sha256": "0a900d480fb637bc55347535ff92ce0b33a1077a3bb2286d26daf3bfcd71894a",
+              "size": 4489,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-009.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-009.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/chapter-010.html",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-010.html",
               "relativePath": "chapter-010.html",
-              "sha256": "bb38c77455513270a85b23531068273beb0085424fa6d40c4974d603f46d9bce",
-              "size": 5060,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/chapter-010.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/chapter-010.html",
+              "sha256": "d6adce6dce4d3df677452e7f03adae5d35df78d341bbc77e4199b793e0e18ed1",
+              "size": 4759,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-010.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-010.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/index.html",
-              "relativePath": "index.html",
-              "sha256": "69aea5839ff3aedb965387f8186ec0bba03d736abc6d608d89827a1006f754b3",
-              "size": 7106,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/index.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/index.html",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-011.html",
+              "relativePath": "chapter-011.html",
+              "sha256": "adfff9f17e948d48187b560b99237d45858f308ca34d32530b080387f9b8af5e",
+              "size": 5556,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-011.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-011.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/media/file0.jpg",
-              "relativePath": "media/file0.jpg",
-              "sha256": "93053efa696ea0ebf14c2baee82393ca8316a3125caf3d68530c6ef50f3bd83b",
-              "size": 862872,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file0.jpg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file0.jpg",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-012.html",
+              "relativePath": "chapter-012.html",
+              "sha256": "983a2abbb2da52afc7e980bd55889f47959f6eee153bc0a9c5993f6825c251da",
+              "size": 5520,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-012.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-012.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/media/file1.jpg",
-              "relativePath": "media/file1.jpg",
-              "sha256": "feea5799645a2ed56309f2b98137ade561f554713145f147e6ba9cd3545e2b6b",
-              "size": 648008,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file1.jpg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file1.jpg",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-013.html",
+              "relativePath": "chapter-013.html",
+              "sha256": "cfde4f4111bb5820ad2c36afb25aaa8dc2adb648bb69cd991dfc2017f75cadd1",
+              "size": 4820,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-013.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-013.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/media/file10.jpg",
-              "relativePath": "media/file10.jpg",
-              "sha256": "61b6b59db58d9da443efb19d705e59d0b87b60a4f78a4f9345ab43c9b2999b3e",
-              "size": 581056,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file10.jpg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file10.jpg",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-014.html",
+              "relativePath": "chapter-014.html",
+              "sha256": "6c580a2ddf8930ccc037580f3beb394b39fb79768b0d34f1d6558b8943ce31af",
+              "size": 5637,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-014.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-014.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/media/file11.png",
-              "relativePath": "media/file11.png",
-              "sha256": "1a861d47a4c9d2d4deed2f31f86d06e156549138cf71d699d4851819b7a0bc06",
-              "size": 62295,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file11.png",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file11.png",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-015.html",
+              "relativePath": "chapter-015.html",
+              "sha256": "db3e6b61d290182c219979b1bccc20606df1441b7ca99a045947d177580f64b0",
+              "size": 5376,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-015.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-015.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/media/file12.png",
-              "relativePath": "media/file12.png",
-              "sha256": "387eaf3e1026fca89b9d13b1a6fc7f4e33be2ce57726936022af6b529e3590a1",
-              "size": 165372,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file12.png",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file12.png",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-016.html",
+              "relativePath": "chapter-016.html",
+              "sha256": "5ca99d0205c428f5f4dd59bfb42cdc18ae023edc1952e14548c68de65de8f291",
+              "size": 5006,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-016.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-016.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/media/file13.jpg",
-              "relativePath": "media/file13.jpg",
-              "sha256": "cf498dc4ea976740fa6c355f8be32109302c5dd4816c536d808287cfbed1200a",
-              "size": 1365957,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file13.jpg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file13.jpg",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-017.html",
+              "relativePath": "chapter-017.html",
+              "sha256": "53df08c7d25324992165068c72d465d08878ef6cc58c3c723f3837705a125f29",
+              "size": 4562,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-017.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-017.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/media/file2.jpg",
-              "relativePath": "media/file2.jpg",
-              "sha256": "d6e32049d24a8b75f15ffc063e8374cc4d4164bb1c5ab271b4fc793a78d867da",
-              "size": 555483,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file2.jpg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file2.jpg",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-018.html",
+              "relativePath": "chapter-018.html",
+              "sha256": "58234d5238aa7d0f62b20bd3610603c5020ca37ceb0a54b66ec092c4fca7615c",
+              "size": 4566,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-018.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-018.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/media/file3.jpg",
-              "relativePath": "media/file3.jpg",
-              "sha256": "28edf167877ba06b2593532f9f6a1173d33a247c3d5f32277409d3a0cac22c1e",
-              "size": 4044459,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file3.jpg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file3.jpg",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-019.html",
+              "relativePath": "chapter-019.html",
+              "sha256": "3ebcd3430e46145ca45bd4a18b0213b0c7f0304c9baa2979fb01a6de7221b764",
+              "size": 5719,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-019.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-019.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/media/file4.png",
-              "relativePath": "media/file4.png",
-              "sha256": "27c37247e4bf6e676a2c1097d25775e5d10ee6d26d33fdbbe925d33f189a3e2a",
-              "size": 118114,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file4.png",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file4.png",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-020.html",
+              "relativePath": "chapter-020.html",
+              "sha256": "9929cef54621a284b2d1a50d7e61f9d8a59f3208346377476747f3b6c187c052",
+              "size": 5554,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-020.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-020.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/media/file5.jpg",
-              "relativePath": "media/file5.jpg",
-              "sha256": "d9f61ea0b32c291f501123644acd2ae5807ea346c86d6eebe7fe80ac57c07707",
-              "size": 4961313,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file5.jpg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file5.jpg",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-021.html",
+              "relativePath": "chapter-021.html",
+              "sha256": "1508e7dbdef53fe334723c229ac749ead3cf30aa07c8e738e617d761b73b4a62",
+              "size": 4605,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-021.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-021.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/media/file6.jpg",
-              "relativePath": "media/file6.jpg",
-              "sha256": "71f95476fd1f3dc12eba84aa7b04170346bce23d513a91bbedfa9b74a3493fe2",
-              "size": 597994,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file6.jpg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file6.jpg",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-022.html",
+              "relativePath": "chapter-022.html",
+              "sha256": "72f14752e8b9be7a609f49c2ef9ea78850b2a859a679efc61b4b378443fa615f",
+              "size": 2322,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-022.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-022.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/media/file7.png",
-              "relativePath": "media/file7.png",
-              "sha256": "ae9993ac02e80fb6cccc6153210ad9d210aade7e1bc8af2b0357df82c7b3389d",
-              "size": 42056,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file7.png",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file7.png",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-023.html",
+              "relativePath": "chapter-023.html",
+              "sha256": "8417724c47d0a044a3bbb86e545b2173657adc22401adf146cba2dbcc26d82da",
+              "size": 16763,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-023.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-023.html",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/media/file8.png",
-              "relativePath": "media/file8.png",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-024.html",
+              "relativePath": "chapter-024.html",
+              "sha256": "12ddea2ab51bd9dd8f87cbe3dec6f7485a80ae69f48f1d2235908cbece21d3fe",
+              "size": 17809,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-024.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-024.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-025.html",
+              "relativePath": "chapter-025.html",
+              "sha256": "876ec133bbb64a9d9e61f164874654428836e4d7addd79aff830962ed157e226",
+              "size": 12473,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-025.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-025.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-026.html",
+              "relativePath": "chapter-026.html",
+              "sha256": "ad2b2714aa93d5b3c497896deaccb59a64aa9e959ff4d5c9fc548c10f41e9c6f",
+              "size": 12308,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-026.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-026.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-027.html",
+              "relativePath": "chapter-027.html",
+              "sha256": "97377d41098246be1c63ff7ab6cf6226e2e8ec91ff4bdadd45bf7798b5a653b7",
+              "size": 8302,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-027.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-027.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-028.html",
+              "relativePath": "chapter-028.html",
+              "sha256": "e35965893292b457e0fe99e79e1d07506ea08666fc34069d581ec5cbbc2ef5af",
+              "size": 8219,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-028.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-028.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-029.html",
+              "relativePath": "chapter-029.html",
+              "sha256": "db4a7545aaae02f08f38db35de71d3a2b8f2a7072df5d82cb48983d2d2f19c6d",
+              "size": 19206,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-029.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-029.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-030.html",
+              "relativePath": "chapter-030.html",
+              "sha256": "6eec38db88ba045a2c11cb610adfb5fbe41416469b59962c5a4661c5dab7b326",
+              "size": 12084,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-030.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-030.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-031.html",
+              "relativePath": "chapter-031.html",
+              "sha256": "07fe6d22bf2eeb7ba15fb81607d5e69a84f6fd3290941eca51bc66a338e916f5",
+              "size": 5843,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-031.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-031.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-032.html",
+              "relativePath": "chapter-032.html",
+              "sha256": "89b23631c4334ac53e2f08e9633abef0f98d1ef4b17ad9fa10b3f85169bbf033",
+              "size": 2277,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-032.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-032.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/diagrams/founder-travel-routes.png",
+              "relativePath": "diagrams/founder-travel-routes.png",
+              "sha256": "32bd443c22088839683d683f666b38b27ed40c321987cbc942a664bc84ba468a",
+              "size": 49428,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/diagrams/founder-travel-routes.png",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/diagrams/founder-travel-routes.png",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/diagrams/winds-currents-trade-routes.png",
+              "relativePath": "diagrams/winds-currents-trade-routes.png",
               "sha256": "b8f9e40610e303ce46200f890b5067c91af557781edcaab0caaab52fcb4d5b5d",
               "size": 138974,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file8.png",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file8.png",
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/diagrams/winds-currents-trade-routes.png",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/diagrams/winds-currents-trade-routes.png",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/media/file9.jpg",
-              "relativePath": "media/file9.jpg",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/diagrams/world-pressure-1776-1797.png",
+              "relativePath": "diagrams/world-pressure-1776-1797.png",
+              "sha256": "b25c23c405fc91d09a7aaa755df36bb43ae95511df2525b35441101ac710b65b",
+              "size": 79272,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/diagrams/world-pressure-1776-1797.png",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/diagrams/world-pressure-1776-1797.png",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/figures/arsenal-porta-magna.jpg",
+              "relativePath": "figures/arsenal-porta-magna.jpg",
               "sha256": "2ee254d95a14bc6391add93227f62c29c1847b45e65048803c0b1ee96b1a1afc",
               "size": 607566,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file9.jpg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file9.jpg",
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/figures/arsenal-porta-magna.jpg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/figures/arsenal-porta-magna.jpg",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/media/file95.png",
-              "relativePath": "media/file95.png",
-              "sha256": "bfd1d6042eb7226d06bfdff5712c779e496680f1367e957ade03f64b8de15c38",
-              "size": 2290938,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file95.png",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/media/file95.png",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/figures/birch-philadelphia-second-street.jpg",
+              "relativePath": "figures/birch-philadelphia-second-street.jpg",
+              "sha256": "d6e32049d24a8b75f15ffc063e8374cc4d4164bb1c5ab271b4fc793a78d867da",
+              "size": 555483,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/figures/birch-philadelphia-second-street.jpg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/figures/birch-philadelphia-second-street.jpg",
               "skipped": false
             },
             {
-              "localPath": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters/sitemap.json",
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/figures/franklin-duplessis.jpg",
+              "relativePath": "figures/franklin-duplessis.jpg",
+              "sha256": "93053efa696ea0ebf14c2baee82393ca8316a3125caf3d68530c6ef50f3bd83b",
+              "size": 862872,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/figures/franklin-duplessis.jpg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/figures/franklin-duplessis.jpg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/figures/guardi-san-marco.jpg",
+              "relativePath": "figures/guardi-san-marco.jpg",
+              "sha256": "feea5799645a2ed56309f2b98137ade561f554713145f147e6ba9cd3545e2b6b",
+              "size": 648008,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/figures/guardi-san-marco.jpg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/figures/guardi-san-marco.jpg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/figures/new-york-1797-view.jpg",
+              "relativePath": "figures/new-york-1797-view.jpg",
+              "sha256": "61b6b59db58d9da443efb19d705e59d0b87b60a4f78a4f9345ab43c9b2999b3e",
+              "size": 581056,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/figures/new-york-1797-view.jpg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/figures/new-york-1797-view.jpg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/figures/venice-lagoon-map-1764.jpg",
+              "relativePath": "figures/venice-lagoon-map-1764.jpg",
+              "sha256": "71f95476fd1f3dc12eba84aa7b04170346bce23d513a91bbedfa9b74a3493fe2",
+              "size": 597994,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/figures/venice-lagoon-map-1764.jpg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/figures/venice-lagoon-map-1764.jpg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/index.html",
+              "relativePath": "index.html",
+              "sha256": "69a623be9c31996d7f818d8811cfb5452c90abe52eadc9c3b0b26cd6b66092fa",
+              "size": 6185,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/index.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/index.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/maps/abel-buell-united-states-1784.jpg",
+              "relativePath": "maps/abel-buell-united-states-1784.jpg",
+              "sha256": "28edf167877ba06b2593532f9f6a1173d33a247c3d5f32277409d3a0cac22c1e",
+              "size": 4044459,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/maps/abel-buell-united-states-1784.jpg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/maps/abel-buell-united-states-1784.jpg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/maps/republic-of-venice-1796.png",
+              "relativePath": "maps/republic-of-venice-1796.png",
+              "sha256": "27c37247e4bf6e676a2c1097d25775e5d10ee6d26d33fdbbe925d33f189a3e2a",
+              "size": 118114,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/maps/republic-of-venice-1796.png",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/maps/republic-of-venice-1796.png",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/maps/thomson-venetian-states-1814.jpg",
+              "relativePath": "maps/thomson-venetian-states-1814.jpg",
+              "sha256": "cf498dc4ea976740fa6c355f8be32109302c5dd4816c536d808287cfbed1200a",
+              "size": 1365957,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/maps/thomson-venetian-states-1814.jpg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/maps/thomson-venetian-states-1814.jpg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/maps/ughi-venice-1729.jpg",
+              "relativePath": "maps/ughi-venice-1729.jpg",
+              "sha256": "d9f61ea0b32c291f501123644acd2ae5807ea346c86d6eebe7fe80ac57c07707",
+              "size": 4961313,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/maps/ughi-venice-1729.jpg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/maps/ughi-venice-1729.jpg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/maps/venetian-colonies-stato-da-mar.png",
+              "relativePath": "maps/venetian-colonies-stato-da-mar.png",
+              "sha256": "387eaf3e1026fca89b9d13b1a6fc7f4e33be2ce57726936022af6b529e3590a1",
+              "size": 165372,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/maps/venetian-colonies-stato-da-mar.png",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/maps/venetian-colonies-stato-da-mar.png",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/sitemap.json",
               "relativePath": "sitemap.json",
-              "sha256": "cd6d73c2eef3a7771ad600226949fcff86c6ec598cd3247d21a6e49c87278feb",
-              "size": 7090,
-              "pathname": "books/lighthouse-republics/chapters/cb7c8c983f7eb620/sitemap.json",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/sitemap.json",
+              "sha256": "2008516a2e8fd84fc9f7dc32dd8c517a32e5b59b6b5532bcfab7fccda3253cbc",
+              "size": 5743,
+              "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/sitemap.json",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/sitemap.json",
               "skipped": false
             }
           ]
@@ -2214,420 +2439,420 @@
       }
     },
     "invented-enemy": {
-      "updatedAt": "2026-07-11T18:42:12.876Z",
+      "updatedAt": "2026-07-12T01:41:15.637Z",
       "dryRun": false,
       "units": {
         "pdf": {
           "kind": "pdf",
           "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview.pdf",
-          "sha256": "845cde2d828806a4222ca7f79bfe382d3eae911803d675aabbee8e700929a37f",
-          "size": 301257,
-          "pathname": "books/invented-enemy/pdf/845cde2d828806a4-invented-enemy-preview.pdf",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/pdf/845cde2d828806a4-invented-enemy-preview.pdf",
+          "sha256": "685f8693d81b03b1675d7ae37cddd703b4ab7e846c4ac9e47b93fba3c719775e",
+          "size": 3367906,
+          "pathname": "books/invented-enemy/pdf/685f8693d81b03b1-invented-enemy-preview.pdf",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/pdf/685f8693d81b03b1-invented-enemy-preview.pdf",
           "skipped": false
         },
         "epub": {
           "kind": "epub",
           "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview.epub",
-          "sha256": "0e757b5d5acb3a9eb2faba8c24f96c6e847c491e9409c2d80553450f504dc09e",
-          "size": 224463,
-          "pathname": "books/invented-enemy/epub/0e757b5d5acb3a9e-invented-enemy-preview.epub",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/epub/0e757b5d5acb3a9e-invented-enemy-preview.epub",
+          "sha256": "171724983ea32f2eedc459af54533e988376629760cde19bd79b3e584dde7a1d",
+          "size": 2726076,
+          "pathname": "books/invented-enemy/epub/171724983ea32f2e-invented-enemy-preview.epub",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/epub/171724983ea32f2e-invented-enemy-preview.epub",
           "skipped": false
         },
         "html": {
           "kind": "html",
           "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview.html",
-          "sha256": "72bb171e5b06cc8f01db2fb860885c4737c647ad174538b83c98b4c88b77e7e5",
+          "sha256": "8bcb997841d2f120b2ca968160d975b65accf1eb82a29fea0b94d2474eb8dea0",
           "size": 41418,
-          "pathname": "books/invented-enemy/html/72bb171e5b06cc8f-invented-enemy-preview.html",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/html/72bb171e5b06cc8f-invented-enemy-preview.html",
+          "pathname": "books/invented-enemy/html/8bcb997841d2f120-invented-enemy-preview.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/html/8bcb997841d2f120-invented-enemy-preview.html",
           "skipped": false
         },
         "htmlChapters": {
           "kind": "htmlChapters",
           "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters",
-          "sha256": "52e6d555f81b7ff93f10a6f509978ca7839186c4a9dedecce5e87b337c9e5ef8",
-          "pathnamePrefix": "books/invented-enemy/chapters/52e6d555f81b7ff9",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/index.html",
+          "sha256": "8284f9293ac6a5c4f41bfe6d7caa4847e367ba38ef5969b1dca6b42de77c2c70",
+          "pathnamePrefix": "books/invented-enemy/chapters/8284f9293ac6a5c4",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/index.html",
           "skipped": false,
           "files": [
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-001.html",
               "relativePath": "chapter-001.html",
-              "sha256": "1b0eda03af51c4a38047058930a0c94a8bb5012dab81f1e04c5f534e1461ce1a",
+              "sha256": "11291002138f0b035496a3d0d2b838398439afa7123395e21ab34b909b9c692c",
               "size": 10591,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-001.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-001.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-001.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-001.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-002.html",
               "relativePath": "chapter-002.html",
-              "sha256": "da3016bf73b232cfbb9f4e0d3efddefdb99525e41f1276ef19764f701367f511",
+              "sha256": "3feae595a22e3d174c0e2c5a27be4e9dbbe3932b2eaa02356f5d101245497d0e",
               "size": 5777,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-002.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-002.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-002.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-002.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-003.html",
               "relativePath": "chapter-003.html",
-              "sha256": "c1104d9b57959c22b14fd72eef0a35f1e171e248bfbe737d9ead039e58b669db",
+              "sha256": "49d137e86a445c5fbf4c4861c63032a7bd54ca66b8d232a61cca4b33868b8829",
               "size": 5250,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-003.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-003.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-003.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-003.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-004.html",
               "relativePath": "chapter-004.html",
-              "sha256": "716fe94bd859ca89df2c9b65e205ce570ce65f6d780c628adfa1863d19ec48ea",
+              "sha256": "369b0a049b1e8f6038234e4a2fc98fb2d6490f5306b038d5f0967f4ed0cc872c",
               "size": 20295,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-004.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-004.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-004.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-004.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-005.html",
               "relativePath": "chapter-005.html",
-              "sha256": "0e9f41db49991a79111aa0235cc36e203b74a2d7dc6c2e9b0a6be05393394f6f",
+              "sha256": "f21896fe54b19c8001aa77484199b9793df8e9924bea25e777f8c065d24dc5da",
               "size": 5335,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-005.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-005.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-005.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-005.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-006.html",
               "relativePath": "chapter-006.html",
-              "sha256": "fb0721f9bfb7036b67b202386e3f1051ca23f75fd58e302fd3b9577410be50fb",
+              "sha256": "28b489576bc6ff3c56993ca407651ad312bd1b68ac7c2e348b5be6b43a329254",
               "size": 5497,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-006.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-006.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-006.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-006.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-007.html",
               "relativePath": "chapter-007.html",
-              "sha256": "5cd93ae64e054baf5dd0c13c3fc741b1f6f8372a943e5140278fa26a9e43c05f",
+              "sha256": "946decceb34ec5b375ab3570b0dcaaef4f28d9308ec7ae5d16f555a01a10baea",
               "size": 5407,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-007.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-007.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-007.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-007.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-008.html",
               "relativePath": "chapter-008.html",
-              "sha256": "b4a3b3aae52e8643bc7457415b41ad4b7250c8482d50c52616e79b31015c1a61",
+              "sha256": "8688578247a20115f301cff5a447780bea37a518df7177ebc5c5910f294986f7",
               "size": 5583,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-008.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-008.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-008.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-008.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-009.html",
               "relativePath": "chapter-009.html",
-              "sha256": "cb4cef8ee463b0a4637532b1f19b1df743a6f01fbaa41c5f56e3f3452f2b103b",
+              "sha256": "0e1c753c70ca32b21f6afeabce197746e74db0c03d93d50bf401a2a8e0c71d26",
               "size": 5438,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-009.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-009.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-009.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-009.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-010.html",
               "relativePath": "chapter-010.html",
-              "sha256": "77ef809a9321836b419a06d8dfb86fb0fc5f29f71f0e042ed746e3e68d3d92d2",
+              "sha256": "67b4e54eba984914ae015b651cf13c1907cdd55b86d7925fa14290adf601e674",
               "size": 5597,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-010.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-010.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-010.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-010.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-011.html",
               "relativePath": "chapter-011.html",
-              "sha256": "c800612932f7fbc75f291a154157221e52c910424bf7c4ffe2624e4720d2e26b",
+              "sha256": "300b9ce5da253abcad2bd13357057daf770922760e5c88228e0d42b43d65b768",
               "size": 5442,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-011.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-011.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-011.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-011.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-012.html",
               "relativePath": "chapter-012.html",
-              "sha256": "ff9fd6060495ed00d5e5e938daeb5b6637f13e349deb927d60dee24ab4a984c0",
+              "sha256": "5af040d2c1affa1999c881716bd83d5d813a0b184818e6d2c9fd7674f5a506a6",
               "size": 5594,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-012.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-012.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-012.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-012.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-013.html",
               "relativePath": "chapter-013.html",
-              "sha256": "7408a8f3ccce20b5384a23e4926d45ff01c579efd032353e0a734f3a8a0413f7",
+              "sha256": "2ca52aadc8015e67412dc60b1a9e542e7314e01ac7550b4b58a187dc11c193e2",
               "size": 5430,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-013.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-013.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-013.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-013.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-014.html",
               "relativePath": "chapter-014.html",
-              "sha256": "7f6dd5dac99d2454be73fcc29610c2c70c46086b3414d8bdb57bce0b5667ce6f",
+              "sha256": "dfdf4487696a1c7dc5cba9d646f1778e7e9946ab86dec48df09cf49cb7ad09dc",
               "size": 5604,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-014.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-014.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-014.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-014.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-015.html",
               "relativePath": "chapter-015.html",
-              "sha256": "ac3036c02f58e38a2cfbbb81f3dc2428f066fa3457fed53c676f58ce13b55f81",
+              "sha256": "3320b1959081646eaba6d3a981d104189e064df213b4d1b007422c73e5170715",
               "size": 5527,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-015.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-015.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-015.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-015.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-016.html",
               "relativePath": "chapter-016.html",
-              "sha256": "51dd437e0275197621c116e4a8b5dfee3d3fb4c9b075976ea307d27ae7512a68",
+              "sha256": "9ecff2d69b6dd731db369d90917aba0b5d9c3b2dd7f66fbc50faec85d16e6306",
               "size": 5413,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-016.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-016.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-016.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-016.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-017.html",
               "relativePath": "chapter-017.html",
-              "sha256": "f1dbaf7d8a2623951ac573f3496a467a358da59b7f5f49e7faaf5b2a49604ebf",
+              "sha256": "058c16f0ec341b3f260fd5b7f8053e6a0b71ec9ad8614d94413a16061d7be441",
               "size": 5517,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-017.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-017.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-017.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-017.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-018.html",
               "relativePath": "chapter-018.html",
-              "sha256": "6751d46a7cd955636b377678e55ddeb10b23d6d39d4668b3b190ac1cdbb7fcad",
+              "sha256": "9fc32dd816d2458b9a4e896eaa5d15d9be69806068cac37247ddb2f29ca65491",
               "size": 5406,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-018.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-018.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-018.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-018.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-019.html",
               "relativePath": "chapter-019.html",
-              "sha256": "5935a6c973a186aa204a78071fec135d22f11e461cab45e616987508e41ee2da",
+              "sha256": "48ba188267013cf1a7cf4563f30c642db31d481fa69a93ab6e48e31f925bd481",
               "size": 5601,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-019.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-019.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-019.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-019.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-020.html",
               "relativePath": "chapter-020.html",
-              "sha256": "392b6e2e0ff88e2de26babd771b68be2745d721e07a8b3a3b2b0090c87e52a8d",
+              "sha256": "5427413159e7fc2526b3ea044b0feeaf27cbec55340ec8f49f663d634f400183",
               "size": 5431,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-020.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-020.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-020.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-020.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-021.html",
               "relativePath": "chapter-021.html",
-              "sha256": "5f5d3e48c985bfc9b4c7689cf8abe3f841fd24300a97b3dfdb640c66a03261f1",
+              "sha256": "e7e72ccd59901377d7568ce8bb3d996ec55d1cd68384b1f9e13221929b7641d0",
               "size": 5562,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-021.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-021.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-021.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-021.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-022.html",
               "relativePath": "chapter-022.html",
-              "sha256": "46e7297100e625e6034030cd8810739d05119664f73c507f98e703365c6def72",
+              "sha256": "8f9d517bc488f23ba06373e2cb4cd8799b6e6226edc2b4c63a31ae27e1f785ab",
               "size": 5499,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-022.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-022.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-022.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-022.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-023.html",
               "relativePath": "chapter-023.html",
-              "sha256": "90034f77fc8ceaca8704f2bfbd0c2d3bdd32cd253c41f8df11bdcfb9f6a92c6f",
+              "sha256": "32088aabf095d287f77d7513a80e67b2e4973c549d216df023674c41d18ea300",
               "size": 5329,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-023.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-023.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-023.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-023.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-024.html",
               "relativePath": "chapter-024.html",
-              "sha256": "a6c1fa82165d2820d84cce083997c8833b60824001a8fd35436565192d05162b",
+              "sha256": "cb800fbdfec7bd7686ccc12336c6af11f9c12862c7ced5fbdf83396e892bcaf7",
               "size": 5483,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-024.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-024.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-024.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-024.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-025.html",
               "relativePath": "chapter-025.html",
-              "sha256": "9bb067bb460378dc874d1ace1e07d8fba04bb28b77eeb13de260a132245c67f8",
+              "sha256": "d2f946e70e5e89ba35ca1613d66028a34e22a5cbce295d2ed6382533f10cbf7b",
               "size": 5305,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-025.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-025.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-025.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-025.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-026.html",
               "relativePath": "chapter-026.html",
-              "sha256": "7966757a85e255db14620e33490dd6fbc0d1875dadf95ad65a2283232f88bc32",
+              "sha256": "c9c1088ef3c3c2d7b9007b8091471e9e5a5c60f98ace505c1579b6457b5de39c",
               "size": 5457,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-026.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-026.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-026.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-026.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-027.html",
               "relativePath": "chapter-027.html",
-              "sha256": "ab5c1962f7156c212c93d23789b0851489781f13178a9800e8e59ec426bc9968",
+              "sha256": "73ddb5d2db32cc223add79ad78601891579c707fc97ea5343eca23a3556344d8",
               "size": 5335,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-027.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-027.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-027.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-027.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-028.html",
               "relativePath": "chapter-028.html",
-              "sha256": "14e52c851516fd96f37fd7a75115559a789d2c81b1bdd5ede964a561e7e8200e",
+              "sha256": "9532c861c9f663288da9dcb3e0d04b13e79d96dec6014a7dc48c46a156293aea",
               "size": 5556,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-028.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-028.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-028.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-028.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-029.html",
               "relativePath": "chapter-029.html",
-              "sha256": "e4d734a5f41eb82898b32f64511b763c4cabf9f796e87f54b3252f2478084600",
+              "sha256": "78ede79da48a41daa56105682e7bc3573317ba05530645c98331936a8e37bf93",
               "size": 5637,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-029.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-029.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-029.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-029.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-030.html",
               "relativePath": "chapter-030.html",
-              "sha256": "0ac6158ebdb801407cddcfdf324ad610dbeffb60c6bfda770dd9865bc33c557f",
+              "sha256": "d62597f76a51a9bcb96a41f463ab92d3bd735e94ca6611ce060dc9679d0fab6d",
               "size": 5653,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-030.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-030.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-030.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-030.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-031.html",
               "relativePath": "chapter-031.html",
-              "sha256": "a8e3edbf8dd146cf6b5f387f7fbd328774f0e6dd0dc277b71680df2587bbb13d",
+              "sha256": "bee672611d15c1ce95ecfa85149ba741a4c893fc0d56dca315e33d7b6c889c3f",
               "size": 5631,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-031.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-031.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-031.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-031.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-032.html",
               "relativePath": "chapter-032.html",
-              "sha256": "71ad297dc47e8256b869b29ec6934a310021724757ab21397177d44f3b84cfa0",
+              "sha256": "ad1520963bf75fdcc91806af58c3f0694d2086388e82bac7977274720f1a1dab",
               "size": 5645,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-032.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-032.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-032.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-032.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-033.html",
               "relativePath": "chapter-033.html",
-              "sha256": "b5bd4b59f0b602cbe6ef42cc602987680c568cdaba8310d349194a87bf37bcd3",
+              "sha256": "16127ebd9ac8fe33839b5209ebf033e8e9a8d69ed46a46252346905ae16a05b7",
               "size": 5361,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-033.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-033.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-033.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-033.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-034.html",
               "relativePath": "chapter-034.html",
-              "sha256": "97c89e288cee29ebe53f88d8e4ffc1a0faf6c1ecd70487be81ea4060af452363",
+              "sha256": "49dee3c5b93b0291a6c73d9b3822f0e74e5ef6628beec2686951dcbbc9d8d69e",
               "size": 5481,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-034.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-034.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-034.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-034.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-035.html",
               "relativePath": "chapter-035.html",
-              "sha256": "3a0886ca2b3206d43a974509d4d6c72e67225d0b411234f83182718eab1f49e4",
+              "sha256": "3f2894a361a3dfee41595cd06ba244f3526110334cb318002d5c96e0c76984b7",
               "size": 5556,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-035.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-035.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-035.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-035.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-036.html",
               "relativePath": "chapter-036.html",
-              "sha256": "dc8368f7390c7c72cb2390ec382549897c010f5c749dac44be3bfde378a9f386",
+              "sha256": "6d0390e1a9681d08c650e8d02e55a1462a9bc1930217f1ce6f90dbfb83b3fab0",
               "size": 5334,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-036.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-036.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-036.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-036.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-037.html",
               "relativePath": "chapter-037.html",
-              "sha256": "9a413d12d6d53087926e7060a03f2deca2ed7ce063f41a9f0f0b30e0a7b4405d",
+              "sha256": "ba4c4cb1a843a76af2d9e9e47142b3fdaa94beef3e61625cea4ffb31d18d5431",
               "size": 5499,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-037.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-037.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-037.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-037.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-038.html",
               "relativePath": "chapter-038.html",
-              "sha256": "fa5448e5b9fec8571098fd3778fca8bcf510388e20d85742016b032ad343315e",
+              "sha256": "1a030b290e3f30979cb556c8b835a1a3fe564647288105aed71a72d9931e4548",
               "size": 5526,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-038.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-038.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-038.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-038.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-039.html",
               "relativePath": "chapter-039.html",
-              "sha256": "b97ad33ca3081d6be526f5c74cbaa987c97ae2630c8935508bd2343d81fcfebe",
+              "sha256": "a865dfb3cf8d2372f10588cd91068a3c61ce94d8e2530bd6a863ffb47a992f14",
               "size": 5541,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-039.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-039.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-039.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-039.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-040.html",
               "relativePath": "chapter-040.html",
-              "sha256": "03907f8404b44b6e2c90271e2bcc49d0a94b9698130f036818061c559adb5484",
+              "sha256": "2f697b7999b8c80b4136532e24111b207777151b6838569999ad0280e57879c6",
               "size": 5419,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-040.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-040.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-040.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-040.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-041.html",
               "relativePath": "chapter-041.html",
-              "sha256": "7939bc044835f07aac226d334ee2fe9be6af24a659803ba371d42c5c9150c168",
+              "sha256": "378b3010ff9447494c90ba7a4c11a00e8ecd0cf9aaad116846cdbed8577375e8",
               "size": 5338,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-041.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/chapter-041.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-041.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-041.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/index.html",
               "relativePath": "index.html",
-              "sha256": "129efd2f3af83c83a4ee5d853be633037c14fc9ee8a924f752817313c59e48ba",
+              "sha256": "8c76fe7e78e76b4889514f2d79e9f3bec46d3d32df105aaf6c3220950d14b5b5",
               "size": 14190,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/index.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/index.html",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/index.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/index.html",
               "skipped": false
             },
             {
@@ -2635,8 +2860,8 @@
               "relativePath": "sitemap.json",
               "sha256": "532c9364339745cc5a8c7e854274017bc1ff47cc4a68627e80c849c034d79b22",
               "size": 11068,
-              "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/sitemap.json",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/sitemap.json",
+              "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/sitemap.json",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/sitemap.json",
               "skipped": false
             }
           ]
@@ -4102,6 +4327,51 @@
       "pathname": "books/invented-enemy/html/72bb171e5b06cc8f-invented-enemy-preview.html",
       "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/html/72bb171e5b06cc8f-invented-enemy-preview.html",
       "size": 41418
+    },
+    "685f8693d81b03b1675d7ae37cddd703b4ab7e846c4ac9e47b93fba3c719775e:3367906": {
+      "pathname": "books/invented-enemy/pdf/685f8693d81b03b1-invented-enemy-preview.pdf",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/pdf/685f8693d81b03b1-invented-enemy-preview.pdf",
+      "size": 3367906
+    },
+    "171724983ea32f2eedc459af54533e988376629760cde19bd79b3e584dde7a1d:2726076": {
+      "pathname": "books/invented-enemy/epub/171724983ea32f2e-invented-enemy-preview.epub",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/epub/171724983ea32f2e-invented-enemy-preview.epub",
+      "size": 2726076
+    },
+    "8bcb997841d2f120b2ca968160d975b65accf1eb82a29fea0b94d2474eb8dea0:41418": {
+      "pathname": "books/invented-enemy/html/8bcb997841d2f120-invented-enemy-preview.html",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/html/8bcb997841d2f120-invented-enemy-preview.html",
+      "size": 41418
+    },
+    "9633908ce749be05bcfc6e21928afa2251984caa8b0cf761a33772d580b63b0b:17995281": {
+      "pathname": "books/lighthouse-republics/pdf/9633908ce749be05-lighthouse-republics-preview.pdf",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/pdf/9633908ce749be05-lighthouse-republics-preview.pdf",
+      "size": 17995281
+    },
+    "44bec6bfcdcd9ef703f6ce1bb46ae74c7e5b9fe70a41d49bc2be991e63da1596:17016811": {
+      "pathname": "books/lighthouse-republics/epub/44bec6bfcdcd9ef7-lighthouse-republics-preview.epub",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/epub/44bec6bfcdcd9ef7-lighthouse-republics-preview.epub",
+      "size": 17016811
+    },
+    "67d4949da86b206566362aae6ba77f15047703889ff859f37e1ad7162a7088b8:19879346": {
+      "pathname": "books/lighthouse-republics/html/67d4949da86b2065-lighthouse-republics-preview.html",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/html/67d4949da86b2065-lighthouse-republics-preview.html",
+      "size": 19879346
+    },
+    "4150691fc877ad04290867a1837cfa0109e439b92c1ea6554a994db35c8525d6:2201721": {
+      "pathname": "books/lighthouse-republics/cover/4150691fc877ad04-lighthouse-republics-cover.png",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/cover/4150691fc877ad04-lighthouse-republics-cover.png",
+      "size": 2201721
+    },
+    "619ef92912a8bb54537a8c78d9cf11b8239163773a29cfaaf844c8f34bce689c:17219080": {
+      "pathname": "books/lighthouse-republics/vault/619ef92912a8bb54-lighthouse-republics-preview-vault (4.0.0-deb590f3).zip",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/vault/619ef92912a8bb54-lighthouse-republics-preview-vault%20%284.0.0-deb590f3%29.zip",
+      "size": 17219080
+    },
+    "6aeb8914a482954ccd61f6cea0e9ebee167ef47cc96329ac6fdc2b91f0441b54:58405": {
+      "pathname": "books/lighthouse-republics/vault-guide/6aeb8914a482954c-lighthouse-republics-vault-guide (4.0.0-deb590f3).md",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/vault-guide/6aeb8914a482954c-lighthouse-republics-vault-guide%20%284.0.0-deb590f3%29.md",
+      "size": 58405
     }
   },
   "chapterPackages": {
@@ -9108,6 +9378,846 @@
           "size": 11068,
           "pathname": "books/invented-enemy/chapters/52e6d555f81b7ff9/sitemap.json",
           "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/sitemap.json",
+          "skipped": false
+        }
+      ]
+    },
+    "8284f9293ac6a5c4f41bfe6d7caa4847e367ba38ef5969b1dca6b42de77c2c70": {
+      "pathnamePrefix": "books/invented-enemy/chapters/8284f9293ac6a5c4",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/index.html",
+      "files": [
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-001.html",
+          "relativePath": "chapter-001.html",
+          "sha256": "11291002138f0b035496a3d0d2b838398439afa7123395e21ab34b909b9c692c",
+          "size": 10591,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-001.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-001.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-002.html",
+          "relativePath": "chapter-002.html",
+          "sha256": "3feae595a22e3d174c0e2c5a27be4e9dbbe3932b2eaa02356f5d101245497d0e",
+          "size": 5777,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-002.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-002.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-003.html",
+          "relativePath": "chapter-003.html",
+          "sha256": "49d137e86a445c5fbf4c4861c63032a7bd54ca66b8d232a61cca4b33868b8829",
+          "size": 5250,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-003.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-003.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-004.html",
+          "relativePath": "chapter-004.html",
+          "sha256": "369b0a049b1e8f6038234e4a2fc98fb2d6490f5306b038d5f0967f4ed0cc872c",
+          "size": 20295,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-004.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-004.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-005.html",
+          "relativePath": "chapter-005.html",
+          "sha256": "f21896fe54b19c8001aa77484199b9793df8e9924bea25e777f8c065d24dc5da",
+          "size": 5335,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-005.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-005.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-006.html",
+          "relativePath": "chapter-006.html",
+          "sha256": "28b489576bc6ff3c56993ca407651ad312bd1b68ac7c2e348b5be6b43a329254",
+          "size": 5497,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-006.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-006.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-007.html",
+          "relativePath": "chapter-007.html",
+          "sha256": "946decceb34ec5b375ab3570b0dcaaef4f28d9308ec7ae5d16f555a01a10baea",
+          "size": 5407,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-007.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-007.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-008.html",
+          "relativePath": "chapter-008.html",
+          "sha256": "8688578247a20115f301cff5a447780bea37a518df7177ebc5c5910f294986f7",
+          "size": 5583,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-008.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-008.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-009.html",
+          "relativePath": "chapter-009.html",
+          "sha256": "0e1c753c70ca32b21f6afeabce197746e74db0c03d93d50bf401a2a8e0c71d26",
+          "size": 5438,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-009.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-009.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-010.html",
+          "relativePath": "chapter-010.html",
+          "sha256": "67b4e54eba984914ae015b651cf13c1907cdd55b86d7925fa14290adf601e674",
+          "size": 5597,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-010.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-010.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-011.html",
+          "relativePath": "chapter-011.html",
+          "sha256": "300b9ce5da253abcad2bd13357057daf770922760e5c88228e0d42b43d65b768",
+          "size": 5442,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-011.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-011.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-012.html",
+          "relativePath": "chapter-012.html",
+          "sha256": "5af040d2c1affa1999c881716bd83d5d813a0b184818e6d2c9fd7674f5a506a6",
+          "size": 5594,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-012.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-012.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-013.html",
+          "relativePath": "chapter-013.html",
+          "sha256": "2ca52aadc8015e67412dc60b1a9e542e7314e01ac7550b4b58a187dc11c193e2",
+          "size": 5430,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-013.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-013.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-014.html",
+          "relativePath": "chapter-014.html",
+          "sha256": "dfdf4487696a1c7dc5cba9d646f1778e7e9946ab86dec48df09cf49cb7ad09dc",
+          "size": 5604,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-014.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-014.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-015.html",
+          "relativePath": "chapter-015.html",
+          "sha256": "3320b1959081646eaba6d3a981d104189e064df213b4d1b007422c73e5170715",
+          "size": 5527,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-015.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-015.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-016.html",
+          "relativePath": "chapter-016.html",
+          "sha256": "9ecff2d69b6dd731db369d90917aba0b5d9c3b2dd7f66fbc50faec85d16e6306",
+          "size": 5413,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-016.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-016.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-017.html",
+          "relativePath": "chapter-017.html",
+          "sha256": "058c16f0ec341b3f260fd5b7f8053e6a0b71ec9ad8614d94413a16061d7be441",
+          "size": 5517,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-017.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-017.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-018.html",
+          "relativePath": "chapter-018.html",
+          "sha256": "9fc32dd816d2458b9a4e896eaa5d15d9be69806068cac37247ddb2f29ca65491",
+          "size": 5406,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-018.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-018.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-019.html",
+          "relativePath": "chapter-019.html",
+          "sha256": "48ba188267013cf1a7cf4563f30c642db31d481fa69a93ab6e48e31f925bd481",
+          "size": 5601,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-019.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-019.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-020.html",
+          "relativePath": "chapter-020.html",
+          "sha256": "5427413159e7fc2526b3ea044b0feeaf27cbec55340ec8f49f663d634f400183",
+          "size": 5431,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-020.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-020.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-021.html",
+          "relativePath": "chapter-021.html",
+          "sha256": "e7e72ccd59901377d7568ce8bb3d996ec55d1cd68384b1f9e13221929b7641d0",
+          "size": 5562,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-021.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-021.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-022.html",
+          "relativePath": "chapter-022.html",
+          "sha256": "8f9d517bc488f23ba06373e2cb4cd8799b6e6226edc2b4c63a31ae27e1f785ab",
+          "size": 5499,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-022.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-022.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-023.html",
+          "relativePath": "chapter-023.html",
+          "sha256": "32088aabf095d287f77d7513a80e67b2e4973c549d216df023674c41d18ea300",
+          "size": 5329,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-023.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-023.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-024.html",
+          "relativePath": "chapter-024.html",
+          "sha256": "cb800fbdfec7bd7686ccc12336c6af11f9c12862c7ced5fbdf83396e892bcaf7",
+          "size": 5483,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-024.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-024.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-025.html",
+          "relativePath": "chapter-025.html",
+          "sha256": "d2f946e70e5e89ba35ca1613d66028a34e22a5cbce295d2ed6382533f10cbf7b",
+          "size": 5305,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-025.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-025.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-026.html",
+          "relativePath": "chapter-026.html",
+          "sha256": "c9c1088ef3c3c2d7b9007b8091471e9e5a5c60f98ace505c1579b6457b5de39c",
+          "size": 5457,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-026.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-026.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-027.html",
+          "relativePath": "chapter-027.html",
+          "sha256": "73ddb5d2db32cc223add79ad78601891579c707fc97ea5343eca23a3556344d8",
+          "size": 5335,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-027.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-027.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-028.html",
+          "relativePath": "chapter-028.html",
+          "sha256": "9532c861c9f663288da9dcb3e0d04b13e79d96dec6014a7dc48c46a156293aea",
+          "size": 5556,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-028.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-028.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-029.html",
+          "relativePath": "chapter-029.html",
+          "sha256": "78ede79da48a41daa56105682e7bc3573317ba05530645c98331936a8e37bf93",
+          "size": 5637,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-029.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-029.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-030.html",
+          "relativePath": "chapter-030.html",
+          "sha256": "d62597f76a51a9bcb96a41f463ab92d3bd735e94ca6611ce060dc9679d0fab6d",
+          "size": 5653,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-030.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-030.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-031.html",
+          "relativePath": "chapter-031.html",
+          "sha256": "bee672611d15c1ce95ecfa85149ba741a4c893fc0d56dca315e33d7b6c889c3f",
+          "size": 5631,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-031.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-031.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-032.html",
+          "relativePath": "chapter-032.html",
+          "sha256": "ad1520963bf75fdcc91806af58c3f0694d2086388e82bac7977274720f1a1dab",
+          "size": 5645,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-032.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-032.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-033.html",
+          "relativePath": "chapter-033.html",
+          "sha256": "16127ebd9ac8fe33839b5209ebf033e8e9a8d69ed46a46252346905ae16a05b7",
+          "size": 5361,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-033.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-033.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-034.html",
+          "relativePath": "chapter-034.html",
+          "sha256": "49dee3c5b93b0291a6c73d9b3822f0e74e5ef6628beec2686951dcbbc9d8d69e",
+          "size": 5481,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-034.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-034.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-035.html",
+          "relativePath": "chapter-035.html",
+          "sha256": "3f2894a361a3dfee41595cd06ba244f3526110334cb318002d5c96e0c76984b7",
+          "size": 5556,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-035.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-035.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-036.html",
+          "relativePath": "chapter-036.html",
+          "sha256": "6d0390e1a9681d08c650e8d02e55a1462a9bc1930217f1ce6f90dbfb83b3fab0",
+          "size": 5334,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-036.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-036.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-037.html",
+          "relativePath": "chapter-037.html",
+          "sha256": "ba4c4cb1a843a76af2d9e9e47142b3fdaa94beef3e61625cea4ffb31d18d5431",
+          "size": 5499,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-037.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-037.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-038.html",
+          "relativePath": "chapter-038.html",
+          "sha256": "1a030b290e3f30979cb556c8b835a1a3fe564647288105aed71a72d9931e4548",
+          "size": 5526,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-038.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-038.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-039.html",
+          "relativePath": "chapter-039.html",
+          "sha256": "a865dfb3cf8d2372f10588cd91068a3c61ce94d8e2530bd6a863ffb47a992f14",
+          "size": 5541,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-039.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-039.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-040.html",
+          "relativePath": "chapter-040.html",
+          "sha256": "2f697b7999b8c80b4136532e24111b207777151b6838569999ad0280e57879c6",
+          "size": 5419,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-040.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-040.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/chapter-041.html",
+          "relativePath": "chapter-041.html",
+          "sha256": "378b3010ff9447494c90ba7a4c11a00e8ecd0cf9aaad116846cdbed8577375e8",
+          "size": 5338,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-041.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/chapter-041.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/index.html",
+          "relativePath": "index.html",
+          "sha256": "8c76fe7e78e76b4889514f2d79e9f3bec46d3d32df105aaf6c3220950d14b5b5",
+          "size": 14190,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/index.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/index.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/invented-enemy/invented-enemy-preview-chapters/sitemap.json",
+          "relativePath": "sitemap.json",
+          "sha256": "532c9364339745cc5a8c7e854274017bc1ff47cc4a68627e80c849c034d79b22",
+          "size": 11068,
+          "pathname": "books/invented-enemy/chapters/8284f9293ac6a5c4/sitemap.json",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/sitemap.json",
+          "skipped": false
+        }
+      ]
+    },
+    "0ed998be056c002e59c107794acdee8b79c4fd564435519eb825c2017e98fbac": {
+      "pathnamePrefix": "books/lighthouse-republics/chapters/0ed998be056c002e",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/index.html",
+      "files": [
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/book.css",
+          "relativePath": "book.css",
+          "sha256": "6283e962c5a4570783d7874d5a27e63193ca4be4f166b30424f6d4d19e99a894",
+          "size": 461,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/book.css",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/book.css",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-001.html",
+          "relativePath": "chapter-001.html",
+          "sha256": "4db7bbd9880871d333e9ec6679be3e5436b1c25f49156ca4da761959c2509546",
+          "size": 2184,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-001.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-001.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-002.html",
+          "relativePath": "chapter-002.html",
+          "sha256": "7500d7d9e53b8e3d8a0a992dd485983c314d65385b58f81a35cb472ca3c9b20c",
+          "size": 16352,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-002.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-002.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-003.html",
+          "relativePath": "chapter-003.html",
+          "sha256": "5563224bd77d19efc2c54671926cc985265d351ad968a47bd83af2aa9fd69935",
+          "size": 2221,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-003.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-003.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-004.html",
+          "relativePath": "chapter-004.html",
+          "sha256": "8fe6d5c630112d3404ec1f49a5569d2028c709d3a295e261f4cab056b35a8109",
+          "size": 6147,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-004.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-004.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-005.html",
+          "relativePath": "chapter-005.html",
+          "sha256": "1ebd97d18a24e5f4f5cd2607a96310343ea297354d638d04209b041f804137fc",
+          "size": 6187,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-005.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-005.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-006.html",
+          "relativePath": "chapter-006.html",
+          "sha256": "6c0a071132c568e614ba2b1c9d37fa22e10538f3843f8d700f18056c9f03b83e",
+          "size": 2321,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-006.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-006.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-007.html",
+          "relativePath": "chapter-007.html",
+          "sha256": "681ac406fa6e613ad3719be4817d30bbf0223b879fc371b8cea8c5a918ba47f9",
+          "size": 6432,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-007.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-007.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-008.html",
+          "relativePath": "chapter-008.html",
+          "sha256": "e5061d0b407362c4b6c22e5d1431f6bcb765bf5463a3e5ba498a7c6f1279dba3",
+          "size": 12712,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-008.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-008.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-009.html",
+          "relativePath": "chapter-009.html",
+          "sha256": "0a900d480fb637bc55347535ff92ce0b33a1077a3bb2286d26daf3bfcd71894a",
+          "size": 4489,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-009.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-009.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-010.html",
+          "relativePath": "chapter-010.html",
+          "sha256": "d6adce6dce4d3df677452e7f03adae5d35df78d341bbc77e4199b793e0e18ed1",
+          "size": 4759,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-010.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-010.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-011.html",
+          "relativePath": "chapter-011.html",
+          "sha256": "adfff9f17e948d48187b560b99237d45858f308ca34d32530b080387f9b8af5e",
+          "size": 5556,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-011.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-011.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-012.html",
+          "relativePath": "chapter-012.html",
+          "sha256": "983a2abbb2da52afc7e980bd55889f47959f6eee153bc0a9c5993f6825c251da",
+          "size": 5520,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-012.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-012.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-013.html",
+          "relativePath": "chapter-013.html",
+          "sha256": "cfde4f4111bb5820ad2c36afb25aaa8dc2adb648bb69cd991dfc2017f75cadd1",
+          "size": 4820,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-013.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-013.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-014.html",
+          "relativePath": "chapter-014.html",
+          "sha256": "6c580a2ddf8930ccc037580f3beb394b39fb79768b0d34f1d6558b8943ce31af",
+          "size": 5637,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-014.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-014.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-015.html",
+          "relativePath": "chapter-015.html",
+          "sha256": "db3e6b61d290182c219979b1bccc20606df1441b7ca99a045947d177580f64b0",
+          "size": 5376,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-015.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-015.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-016.html",
+          "relativePath": "chapter-016.html",
+          "sha256": "5ca99d0205c428f5f4dd59bfb42cdc18ae023edc1952e14548c68de65de8f291",
+          "size": 5006,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-016.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-016.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-017.html",
+          "relativePath": "chapter-017.html",
+          "sha256": "53df08c7d25324992165068c72d465d08878ef6cc58c3c723f3837705a125f29",
+          "size": 4562,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-017.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-017.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-018.html",
+          "relativePath": "chapter-018.html",
+          "sha256": "58234d5238aa7d0f62b20bd3610603c5020ca37ceb0a54b66ec092c4fca7615c",
+          "size": 4566,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-018.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-018.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-019.html",
+          "relativePath": "chapter-019.html",
+          "sha256": "3ebcd3430e46145ca45bd4a18b0213b0c7f0304c9baa2979fb01a6de7221b764",
+          "size": 5719,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-019.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-019.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-020.html",
+          "relativePath": "chapter-020.html",
+          "sha256": "9929cef54621a284b2d1a50d7e61f9d8a59f3208346377476747f3b6c187c052",
+          "size": 5554,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-020.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-020.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-021.html",
+          "relativePath": "chapter-021.html",
+          "sha256": "1508e7dbdef53fe334723c229ac749ead3cf30aa07c8e738e617d761b73b4a62",
+          "size": 4605,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-021.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-021.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-022.html",
+          "relativePath": "chapter-022.html",
+          "sha256": "72f14752e8b9be7a609f49c2ef9ea78850b2a859a679efc61b4b378443fa615f",
+          "size": 2322,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-022.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-022.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-023.html",
+          "relativePath": "chapter-023.html",
+          "sha256": "8417724c47d0a044a3bbb86e545b2173657adc22401adf146cba2dbcc26d82da",
+          "size": 16763,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-023.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-023.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-024.html",
+          "relativePath": "chapter-024.html",
+          "sha256": "12ddea2ab51bd9dd8f87cbe3dec6f7485a80ae69f48f1d2235908cbece21d3fe",
+          "size": 17809,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-024.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-024.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-025.html",
+          "relativePath": "chapter-025.html",
+          "sha256": "876ec133bbb64a9d9e61f164874654428836e4d7addd79aff830962ed157e226",
+          "size": 12473,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-025.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-025.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-026.html",
+          "relativePath": "chapter-026.html",
+          "sha256": "ad2b2714aa93d5b3c497896deaccb59a64aa9e959ff4d5c9fc548c10f41e9c6f",
+          "size": 12308,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-026.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-026.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-027.html",
+          "relativePath": "chapter-027.html",
+          "sha256": "97377d41098246be1c63ff7ab6cf6226e2e8ec91ff4bdadd45bf7798b5a653b7",
+          "size": 8302,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-027.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-027.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-028.html",
+          "relativePath": "chapter-028.html",
+          "sha256": "e35965893292b457e0fe99e79e1d07506ea08666fc34069d581ec5cbbc2ef5af",
+          "size": 8219,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-028.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-028.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-029.html",
+          "relativePath": "chapter-029.html",
+          "sha256": "db4a7545aaae02f08f38db35de71d3a2b8f2a7072df5d82cb48983d2d2f19c6d",
+          "size": 19206,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-029.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-029.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-030.html",
+          "relativePath": "chapter-030.html",
+          "sha256": "6eec38db88ba045a2c11cb610adfb5fbe41416469b59962c5a4661c5dab7b326",
+          "size": 12084,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-030.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-030.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-031.html",
+          "relativePath": "chapter-031.html",
+          "sha256": "07fe6d22bf2eeb7ba15fb81607d5e69a84f6fd3290941eca51bc66a338e916f5",
+          "size": 5843,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-031.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-031.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/chapter-032.html",
+          "relativePath": "chapter-032.html",
+          "sha256": "89b23631c4334ac53e2f08e9633abef0f98d1ef4b17ad9fa10b3f85169bbf033",
+          "size": 2277,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/chapter-032.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/chapter-032.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/diagrams/founder-travel-routes.png",
+          "relativePath": "diagrams/founder-travel-routes.png",
+          "sha256": "32bd443c22088839683d683f666b38b27ed40c321987cbc942a664bc84ba468a",
+          "size": 49428,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/diagrams/founder-travel-routes.png",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/diagrams/founder-travel-routes.png",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/diagrams/winds-currents-trade-routes.png",
+          "relativePath": "diagrams/winds-currents-trade-routes.png",
+          "sha256": "b8f9e40610e303ce46200f890b5067c91af557781edcaab0caaab52fcb4d5b5d",
+          "size": 138974,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/diagrams/winds-currents-trade-routes.png",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/diagrams/winds-currents-trade-routes.png",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/diagrams/world-pressure-1776-1797.png",
+          "relativePath": "diagrams/world-pressure-1776-1797.png",
+          "sha256": "b25c23c405fc91d09a7aaa755df36bb43ae95511df2525b35441101ac710b65b",
+          "size": 79272,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/diagrams/world-pressure-1776-1797.png",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/diagrams/world-pressure-1776-1797.png",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/figures/arsenal-porta-magna.jpg",
+          "relativePath": "figures/arsenal-porta-magna.jpg",
+          "sha256": "2ee254d95a14bc6391add93227f62c29c1847b45e65048803c0b1ee96b1a1afc",
+          "size": 607566,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/figures/arsenal-porta-magna.jpg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/figures/arsenal-porta-magna.jpg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/figures/birch-philadelphia-second-street.jpg",
+          "relativePath": "figures/birch-philadelphia-second-street.jpg",
+          "sha256": "d6e32049d24a8b75f15ffc063e8374cc4d4164bb1c5ab271b4fc793a78d867da",
+          "size": 555483,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/figures/birch-philadelphia-second-street.jpg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/figures/birch-philadelphia-second-street.jpg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/figures/franklin-duplessis.jpg",
+          "relativePath": "figures/franklin-duplessis.jpg",
+          "sha256": "93053efa696ea0ebf14c2baee82393ca8316a3125caf3d68530c6ef50f3bd83b",
+          "size": 862872,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/figures/franklin-duplessis.jpg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/figures/franklin-duplessis.jpg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/figures/guardi-san-marco.jpg",
+          "relativePath": "figures/guardi-san-marco.jpg",
+          "sha256": "feea5799645a2ed56309f2b98137ade561f554713145f147e6ba9cd3545e2b6b",
+          "size": 648008,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/figures/guardi-san-marco.jpg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/figures/guardi-san-marco.jpg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/figures/new-york-1797-view.jpg",
+          "relativePath": "figures/new-york-1797-view.jpg",
+          "sha256": "61b6b59db58d9da443efb19d705e59d0b87b60a4f78a4f9345ab43c9b2999b3e",
+          "size": 581056,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/figures/new-york-1797-view.jpg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/figures/new-york-1797-view.jpg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/figures/venice-lagoon-map-1764.jpg",
+          "relativePath": "figures/venice-lagoon-map-1764.jpg",
+          "sha256": "71f95476fd1f3dc12eba84aa7b04170346bce23d513a91bbedfa9b74a3493fe2",
+          "size": 597994,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/figures/venice-lagoon-map-1764.jpg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/figures/venice-lagoon-map-1764.jpg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/index.html",
+          "relativePath": "index.html",
+          "sha256": "69a623be9c31996d7f818d8811cfb5452c90abe52eadc9c3b0b26cd6b66092fa",
+          "size": 6185,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/index.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/index.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/maps/abel-buell-united-states-1784.jpg",
+          "relativePath": "maps/abel-buell-united-states-1784.jpg",
+          "sha256": "28edf167877ba06b2593532f9f6a1173d33a247c3d5f32277409d3a0cac22c1e",
+          "size": 4044459,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/maps/abel-buell-united-states-1784.jpg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/maps/abel-buell-united-states-1784.jpg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/maps/republic-of-venice-1796.png",
+          "relativePath": "maps/republic-of-venice-1796.png",
+          "sha256": "27c37247e4bf6e676a2c1097d25775e5d10ee6d26d33fdbbe925d33f189a3e2a",
+          "size": 118114,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/maps/republic-of-venice-1796.png",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/maps/republic-of-venice-1796.png",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/maps/thomson-venetian-states-1814.jpg",
+          "relativePath": "maps/thomson-venetian-states-1814.jpg",
+          "sha256": "cf498dc4ea976740fa6c355f8be32109302c5dd4816c536d808287cfbed1200a",
+          "size": 1365957,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/maps/thomson-venetian-states-1814.jpg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/maps/thomson-venetian-states-1814.jpg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/maps/ughi-venice-1729.jpg",
+          "relativePath": "maps/ughi-venice-1729.jpg",
+          "sha256": "d9f61ea0b32c291f501123644acd2ae5807ea346c86d6eebe7fe80ac57c07707",
+          "size": 4961313,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/maps/ughi-venice-1729.jpg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/maps/ughi-venice-1729.jpg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/maps/venetian-colonies-stato-da-mar.png",
+          "relativePath": "maps/venetian-colonies-stato-da-mar.png",
+          "sha256": "387eaf3e1026fca89b9d13b1a6fc7f4e33be2ce57726936022af6b529e3590a1",
+          "size": 165372,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/maps/venetian-colonies-stato-da-mar.png",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/maps/venetian-colonies-stato-da-mar.png",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters/sitemap.json",
+          "relativePath": "sitemap.json",
+          "sha256": "2008516a2e8fd84fc9f7dc32dd8c517a32e5b59b6b5532bcfab7fccda3253cbc",
+          "size": 5743,
+          "pathname": "books/lighthouse-republics/chapters/0ed998be056c002e/sitemap.json",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/sitemap.json",
           "skipped": false
         }
       ]

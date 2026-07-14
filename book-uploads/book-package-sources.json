@@ -8,10 +8,13 @@
       "tutorial": "book-uploads/staging/apc40-mk2-ableton-start/apc40-dont-cry-tonight-ableton-animated.html"
     },
     "lighthouse-republics": {
-      "pdf": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview.pdf",
-      "epub": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview.epub",
-      "html": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview.html",
-      "htmlChapters": "book-uploads/staging/lighthouse-republics/preview/artifacts/south/lighthouse-republics-preview-chapters"
+      "pdf": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview.pdf",
+      "epub": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview.epub",
+      "html": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview.html",
+      "htmlChapters": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters",
+      "cover": "book-uploads/staging/lighthouse-republics/lighthouse-republics-cover.png",
+      "vault": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-vault (4.0.0-deb590f3).zip",
+      "vaultGuide": "book-uploads/staging/lighthouse-republics/lighthouse-republics-vault-guide (4.0.0-deb590f3).md"
     },
     "rio-grande": {
       "pdf": "book-uploads/staging/rio-grande/preview/artifacts/alexy/historia_riograndense_brasil-alexy-preview.pdf",

@@ -30,8 +30,8 @@
       "accent": "#7d4e23",
       "shelf": "history",
       "homepage": "/lighthouse-republics/preview/",
-      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/pdf/7cf617ce3b7f4ef8-lighthouse-republics-preview.pdf",
-      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/epub/aa43a743ae396b1c-lighthouse-republics-preview.epub",
+      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/pdf/9633908ce749be05-lighthouse-republics-preview.pdf",
+      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/epub/44bec6bfcdcd9ef7-lighthouse-republics-preview.epub",
       "html": "/read/lighthouse-republics/",
       "htmlChapters": "/read/lighthouse-republics/chapters/",
       "tags": [
@@ -39,8 +39,11 @@
         "history",
         "South"
       ],
-      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/html/89cb3abb1265fc36-lighthouse-republics-preview.html",
-      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/cb7c8c983f7eb620/index.html"
+      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/html/67d4949da86b2065-lighthouse-republics-preview.html",
+      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/chapters/0ed998be056c002e/index.html",
+      "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/cover/4150691fc877ad04-lighthouse-republics-cover.png",
+      "vault": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/vault/619ef92912a8bb54-lighthouse-republics-preview-vault%20%284.0.0-deb590f3%29.zip",
+      "vaultGuide": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lighthouse-republics/vault-guide/6aeb8914a482954c-lighthouse-republics-vault-guide%20%284.0.0-deb590f3%29.md"
     },
     {
       "slug": "rio-grande",
@@ -186,12 +189,12 @@
       "slug": "invented-enemy",
       "title": "The Invented Enemy",
       "kicker": "Preview edition",
-      "description": "A public preview of the history of Russophobia and the anti-Slavic imagination \u2014 front matter, the complete twenty-chapter table of contents, and the opening chapter, as PDF, EPUB, and hosted web readers.",
+      "description": "A public preview of the history of Russophobia and the anti-Slavic imagination — front matter, the complete twenty-chapter table of contents, and the opening chapter, as PDF, EPUB, and hosted web readers.",
       "accent": "#3b4a68",
       "shelf": "history",
       "homepage": "/invented-enemy/preview/",
-      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/pdf/845cde2d828806a4-invented-enemy-preview.pdf",
-      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/epub/0e757b5d5acb3a9e-invented-enemy-preview.epub",
+      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/pdf/685f8693d81b03b1-invented-enemy-preview.pdf",
+      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/epub/171724983ea32f2e-invented-enemy-preview.epub",
       "html": "/read/invented-enemy/",
       "htmlChapters": "/read/invented-enemy/chapters/",
       "tags": [
@@ -199,14 +202,14 @@
         "history",
         "ideas"
       ],
-      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/html/72bb171e5b06cc8f-invented-enemy-preview.html",
-      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/52e6d555f81b7ff9/index.html"
+      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/html/8bcb997841d2f120-invented-enemy-preview.html",
+      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/invented-enemy/chapters/8284f9293ac6a5c4/index.html"
     },
     {
       "slug": "from-1-to-0",
       "title": "From 1 to 0",
       "kicker": "Preview edition",
-      "description": "A public preview of the anti-history of Silicon Valley \u2014 Notes on Startups, or How to Lose the Future \u2014 with the full plan of the book, the Introduction, and the Anti-Naval Ontology of Failure as PDF, EPUB, and hosted web readers.",
+      "description": "A public preview of the anti-history of Silicon Valley — Notes on Startups, or How to Lose the Future — with the full plan of the book, the Introduction, and the Anti-Naval Ontology of Failure as PDF, EPUB, and hosted web readers.",
       "accent": "#8a6d3b",
       "shelf": "technology",
       "homepage": "/from-1-to-0/preview/",

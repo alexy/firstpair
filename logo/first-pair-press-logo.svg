@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 260" role="img" aria-labelledby="title desc">
+  <title id="title">First Pair Press logo</title>
+  <desc id="desc">Three black and white circles with vertical, diagonal, and horizontal divisions, emerging from a dark translucent drawer.</desc>
+  <defs>
+    <clipPath id="left-circle">
+      <circle cx="410" cy="167" r="60"/>
+    </clipPath>
+    <clipPath id="middle-circle">
+      <circle cx="800" cy="167" r="60"/>
+    </clipPath>
+    <clipPath id="right-circle">
+      <circle cx="1190" cy="167" r="60"/>
+    </clipPath>
+  </defs>
+
+  <rect x="7" y="7" width="1586" height="246" rx="34"
+        fill="#090e15" fill-opacity="0.88"
+        stroke="#f4f1e8" stroke-opacity="0.76" stroke-width="3"/>
+
+  <text x="800" y="66" text-anchor="middle"
+        fill="#f7f5ee" font-family="Georgia, 'Times New Roman', serif"
+        font-size="42" letter-spacing="3">firstpair.press</text>
+
+  <!-- The two dimmed marks sit inside a semi-opaque drawer. -->
+  <rect x="455" y="91" width="1095" height="145" rx="38"
+        fill="#010409" fill-opacity="0.74"
+        stroke="#c9ced4" stroke-opacity="0.38" stroke-width="2"/>
+
+  <!-- Bright left mark, divided by a vertical diameter and projecting forward. -->
+  <circle cx="410" cy="167" r="64" fill="#080a0d"
+          stroke="#ffffff" stroke-width="4"/>
+  <rect x="410" y="103" width="64" height="128" fill="#ffffff"
+        clip-path="url(#left-circle)"/>
+  <line x1="410" y1="107" x2="410" y2="227"
+        stroke="#7d858e" stroke-width="2"/>
+
+  <!-- Dimmed middle mark, divided on a 45-degree diagonal. -->
+  <g opacity="0.58">
+    <circle cx="800" cy="167" r="61" fill="#05070a"
+            stroke="#e8e8e5" stroke-width="3"/>
+    <path d="M757.57 209.43 A60 60 0 0 0 842.43 124.57 L757.57 209.43 Z"
+          fill="#f0f0ec" clip-path="url(#middle-circle)"/>
+    <line x1="758" y1="209" x2="842" y2="125"
+          stroke="#979da4" stroke-width="2"/>
+  </g>
+
+  <!-- Dimmed right mark, divided by a horizontal diameter. -->
+  <g opacity="0.46">
+    <circle cx="1190" cy="167" r="61" fill="#05070a"
+            stroke="#e8e8e5" stroke-width="3"/>
+    <rect x="1129" y="106" width="122" height="61" fill="#f0f0ec"
+          clip-path="url(#right-circle)"/>
+    <line x1="1129" y1="167" x2="1251" y2="167"
+          stroke="#979da4" stroke-width="2"/>
+  </g>
+
+  <!-- Drawer lip passes in front of the two recessed marks but behind the first. -->
+  <path d="M455 219 H1550 V236 H455 Q438 236 438 219 Z"
+        fill="#000207" fill-opacity="0.82"/>
+</svg>

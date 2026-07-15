@@ -230,22 +230,23 @@
       "description": "An anti-history of Silicon Valley — the deliberate opposite of Zero to One. The spectacular crashes, the fateful decisions that ripped failure from the jaws of victory, the infighting, the giant egos, and the venture capitalists who financed all of it and then wrote the eulogies as if they had been mere bystanders. Braided in six movements: Genesis, Ascension, Apotheosis, Fissures, Gravity, Ashes.",
       "accent": "#8a6d3b",
       "shelf": "technology",
-      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/pdf/c2dcd50ab18d355d-from-1-to-0.pdf",
-      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/epub/e05794bf48b064e0-from-1-to-0.epub",
+      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/pdf/6dc215e6fa1cdd1e-from-1-to-0.pdf",
+      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/epub/60e4d06ea521ef8a-from-1-to-0.epub",
       "html": "/read/from-1-to-0/",
       "htmlChapters": "/read/from-1-to-0/chapters/",
-      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/html/7fd7d2bd39bfb7d2-from-1-to-0.html",
-      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/1482347fd2ab5940/index.html",
+      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/html/413cd38f89fcc1a9-from-1-to-0.html",
+      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/5428fef07ea89da4/index.html",
       "tags": [
         "finished",
         "startups",
         "Silicon Valley"
       ],
       "source": "https://github.com/firstpair/from-1-to-0/tree/codex/sol",
-      "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/cover/d5006b21184b9b13-from-1-to-0-cover.jpg",
-      "vault": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/vault/55f5e4400fbabb46-from-1-to-0-full-vault%20%281.0.0-35d3afa9%29.zip",
+      "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/cover/e88e46f99e3cbbf5-from-1-to-0-cover.jpg",
+      "vault": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/vault/18626f340f5f826d-from-1-to-0-full-vault%20%281.0.1-6e4c51f9%29.zip",
       "vaultGuide": "/read/from-1-to-0/guide/",
-      "vaultGuideSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/vault-guide/9a6161dceda547da-from-1-to-0-vault-guide%20%281.0.0-35d3afa9%29.html"
+      "vaultGuideSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/vault-guide/1d6d2a0e7eb41739-from-1-to-0-vault-guide%20%281.0.1-6e4c51f9%29.html",
+      "author": "Alexy Khrabrov"
     },
     {
       "slug": "querygraph",

@@ -4,12 +4,12 @@ An anti-history of Silicon Valley — the deliberate opposite of Zero to One. Th
 
 ## Current Public Editions
 
-- [PDF](https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/pdf/c2dcd50ab18d355d-from-1-to-0.pdf)
-- [EPUB](https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/epub/e05794bf48b064e0-from-1-to-0.epub)
+- [PDF](/from-1-to-0/pdf/)
+- [EPUB](/from-1-to-0/epub/)
 - [Read online](/read/from-1-to-0/)
 - [Chapter reader](/read/from-1-to-0/chapters/)
 
-- [Download the Obsidian vault](https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/vault/55f5e4400fbabb46-from-1-to-0-full-vault%20%281.0.0-35d3afa9%29.zip)
+- [Download the Obsidian vault](/from-1-to-0/vault/)
 - [Read the Obsidian vault guide](/read/from-1-to-0/guide/)
 
 

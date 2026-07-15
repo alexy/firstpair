@@ -71,10 +71,10 @@ export const deliverableBooks = [
   {
     "slug": "from-1-to-0",
     "title": "From 1 to 0",
-    "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/pdf/c2dcd50ab18d355d-from-1-to-0.pdf",
-    "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/epub/e05794bf48b064e0-from-1-to-0.epub",
-    "vault": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/vault/55f5e4400fbabb46-from-1-to-0-full-vault%20%281.0.0-35d3afa9%29.zip",
-    "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/cover/d5006b21184b9b13-from-1-to-0-cover.jpg"
+    "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/pdf/6dc215e6fa1cdd1e-from-1-to-0.pdf",
+    "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/epub/60e4d06ea521ef8a-from-1-to-0.epub",
+    "vault": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/vault/18626f340f5f826d-from-1-to-0-full-vault%20%281.0.1-6e4c51f9%29.zip",
+    "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/cover/e88e46f99e3cbbf5-from-1-to-0-cover.jpg"
   },
   {
     "slug": "querygraph",

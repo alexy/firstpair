@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-15T09:09:48.664Z",
+  "updatedAt": "2026-07-15T09:27:32.181Z",
   "books": {
     "typesec": {
       "updatedAt": "2026-07-15T08:19:45.316Z",
@@ -3495,79 +3495,97 @@
       }
     },
     "zucchero": {
-      "updatedAt": "2026-07-11T17:00:03.292Z",
+      "updatedAt": "2026-07-15T09:27:32.180Z",
       "dryRun": false,
       "units": {
         "pdf": {
           "kind": "pdf",
           "localPath": "book-uploads/staging/zucchero/zucchero.pdf",
-          "sha256": "567a8eeefd8e27836b97b2352fb9ba0b173dfa767819490750ab417420df3fb4",
-          "size": 465097,
-          "pathname": "books/zucchero/pdf/567a8eeefd8e2783-zucchero.pdf",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/pdf/567a8eeefd8e2783-zucchero.pdf",
+          "sha256": "9d924ad8ee7095d1f7c5c9958b4c6790161c27bae5fd5922f5373c5842a5f2b3",
+          "size": 9940050,
+          "pathname": "books/zucchero/pdf/9d924ad8ee7095d1-zucchero.pdf",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/pdf/9d924ad8ee7095d1-zucchero.pdf",
           "skipped": false
         },
         "epub": {
           "kind": "epub",
           "localPath": "book-uploads/staging/zucchero/zucchero.epub",
-          "sha256": "37b11169442a5ffdce779a6a89cfbc39ec5cd19f96fa4e340ce4b14a52320e22",
-          "size": 19955,
-          "pathname": "books/zucchero/epub/37b11169442a5ffd-zucchero.epub",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/epub/37b11169442a5ffd-zucchero.epub",
+          "sha256": "5e273a9fb516868e61d4f243e6564cd6442e0ea00bd436674df6a6ce4621cbdc",
+          "size": 5481368,
+          "pathname": "books/zucchero/epub/5e273a9fb516868e-zucchero.epub",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/epub/5e273a9fb516868e-zucchero.epub",
           "skipped": false
         },
         "html": {
           "kind": "html",
           "localPath": "book-uploads/staging/zucchero/zucchero.html",
-          "sha256": "0955de8401b530c2df1d73824b44e05098bbee6251faa0feb6c03b8aefb33fd0",
-          "size": 58462,
-          "pathname": "books/zucchero/html/0955de8401b530c2-zucchero.html",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/html/0955de8401b530c2-zucchero.html",
-          "skipped": false
+          "sha256": "da1a08e1ee56d014ee81e8999a2f1293b74c6a66a351e2c997f2b3e00e5722d5",
+          "size": 17816,
+          "pathname": "books/zucchero/html/da1a08e1ee56d014-zucchero.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/html/da1a08e1ee56d014-zucchero.html",
+          "skipped": true
+        },
+        "cover": {
+          "kind": "cover",
+          "localPath": "book-uploads/staging/zucchero/zucchero-cover.png",
+          "sha256": "27e8d882008c7e0eddac8cda292f3613ef69c28d6a79923464d53c36475f546f",
+          "size": 5471425,
+          "pathname": "books/zucchero/cover/27e8d882008c7e0e-zucchero-cover.png",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/cover/27e8d882008c7e0e-zucchero-cover.png",
+          "skipped": true
+        },
+        "headboard": {
+          "kind": "headboard",
+          "localPath": "book-uploads/staging/zucchero/zucchero-headboard.png",
+          "sha256": "c2b8488254ffce501abafe06480806282e83c339668b52659afcffebfe633c06",
+          "size": 3165900,
+          "pathname": "books/zucchero/headboard/c2b8488254ffce50-zucchero-headboard.png",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/headboard/c2b8488254ffce50-zucchero-headboard.png",
+          "skipped": true
         },
         "htmlChapters": {
           "kind": "htmlChapters",
           "localPath": "book-uploads/staging/zucchero/zucchero-chapters",
-          "sha256": "ae110c5bce5e904254ec14b9a5c49e00427a68c7ee9e53dd15e387c6ef645287",
-          "pathnamePrefix": "books/zucchero/chapters/ae110c5bce5e9042",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/ae110c5bce5e9042/index.html",
-          "skipped": false,
+          "sha256": "bc2a4be38ec2ae3b3a5418eb283e05dcaa3e2c87fd45c1547133475b4d1861cc",
+          "pathnamePrefix": "books/zucchero/chapters/bc2a4be38ec2ae3b",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/bc2a4be38ec2ae3b/index.html",
+          "skipped": true,
           "files": [
             {
               "localPath": "book-uploads/staging/zucchero/zucchero-chapters/book.css",
               "relativePath": "book.css",
               "sha256": "18b1d604878501226442f0a6a8cfff33ba6ceb90764b88efaaf812781927ff7b",
               "size": 702,
-              "pathname": "books/zucchero/chapters/ae110c5bce5e9042/book.css",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/ae110c5bce5e9042/book.css",
-              "skipped": false
+              "pathname": "books/zucchero/chapters/bc2a4be38ec2ae3b/book.css",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/bc2a4be38ec2ae3b/book.css",
+              "skipped": true
             },
             {
               "localPath": "book-uploads/staging/zucchero/zucchero-chapters/chapter-001.html",
               "relativePath": "chapter-001.html",
-              "sha256": "8197aff9d365006d6633b6c4bfb7805b10739a9314c8695d46cbdfd1c8d87a4a",
-              "size": 58113,
-              "pathname": "books/zucchero/chapters/ae110c5bce5e9042/chapter-001.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/ae110c5bce5e9042/chapter-001.html",
-              "skipped": false
+              "sha256": "85f4c1fe0591ce566c7f2103e51b94f408008f84ffd5fd306248ddf3bbb492cf",
+              "size": 17954,
+              "pathname": "books/zucchero/chapters/bc2a4be38ec2ae3b/chapter-001.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/bc2a4be38ec2ae3b/chapter-001.html",
+              "skipped": true
             },
             {
               "localPath": "book-uploads/staging/zucchero/zucchero-chapters/index.html",
               "relativePath": "index.html",
-              "sha256": "a1d6e086cc7c3a1aa1826478cb405b29840616a6c5fd2e924f007fbba2557743",
-              "size": 3418,
-              "pathname": "books/zucchero/chapters/ae110c5bce5e9042/index.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/ae110c5bce5e9042/index.html",
-              "skipped": false
+              "sha256": "1c1a3d60394d7fa1e71f53792b95a0cbd5f2373a40cb96bc4d9ff3ed6cc7139b",
+              "size": 2896,
+              "pathname": "books/zucchero/chapters/bc2a4be38ec2ae3b/index.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/bc2a4be38ec2ae3b/index.html",
+              "skipped": true
             },
             {
               "localPath": "book-uploads/staging/zucchero/zucchero-chapters/sitemap.json",
               "relativePath": "sitemap.json",
-              "sha256": "5665cefa29ed043e3eab29181acf3b0c3d1dcc900bab4e0c653c173670ef5ea3",
-              "size": 3818,
-              "pathname": "books/zucchero/chapters/ae110c5bce5e9042/sitemap.json",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/ae110c5bce5e9042/sitemap.json",
-              "skipped": false
+              "sha256": "9d0f3a8fea37a67c1e6a01f65b24e662d80343a538aa6f5ff491d18ab52b142e",
+              "size": 1003,
+              "pathname": "books/zucchero/chapters/bc2a4be38ec2ae3b/sitemap.json",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/bc2a4be38ec2ae3b/sitemap.json",
+              "skipped": true
             }
           ]
         }
@@ -4855,6 +4873,41 @@
       "pathname": "books/from-1-to-0/vault-guide/1d6d2a0e7eb41739-from-1-to-0-vault-guide (1.0.1-6e4c51f9).html",
       "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/vault-guide/1d6d2a0e7eb41739-from-1-to-0-vault-guide%20%281.0.1-6e4c51f9%29.html",
       "size": 18878
+    },
+    "e40913e26e1d2981b78c2ad75f9a9188d872ddfc286903fdf6ff052cab314cec:9945704": {
+      "pathname": "books/zucchero/pdf/e40913e26e1d2981-zucchero.pdf",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/pdf/e40913e26e1d2981-zucchero.pdf",
+      "size": 9945704
+    },
+    "5cbaaf34a38d4bea62ee78a819c5ff6a16f2eaaeaf5996315871d55b871b9ff0:5481366": {
+      "pathname": "books/zucchero/epub/5cbaaf34a38d4bea-zucchero.epub",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/epub/5cbaaf34a38d4bea-zucchero.epub",
+      "size": 5481366
+    },
+    "da1a08e1ee56d014ee81e8999a2f1293b74c6a66a351e2c997f2b3e00e5722d5:17816": {
+      "pathname": "books/zucchero/html/da1a08e1ee56d014-zucchero.html",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/html/da1a08e1ee56d014-zucchero.html",
+      "size": 17816
+    },
+    "27e8d882008c7e0eddac8cda292f3613ef69c28d6a79923464d53c36475f546f:5471425": {
+      "pathname": "books/zucchero/cover/27e8d882008c7e0e-zucchero-cover.png",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/cover/27e8d882008c7e0e-zucchero-cover.png",
+      "size": 5471425
+    },
+    "c2b8488254ffce501abafe06480806282e83c339668b52659afcffebfe633c06:3165900": {
+      "pathname": "books/zucchero/headboard/c2b8488254ffce50-zucchero-headboard.png",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/headboard/c2b8488254ffce50-zucchero-headboard.png",
+      "size": 3165900
+    },
+    "9d924ad8ee7095d1f7c5c9958b4c6790161c27bae5fd5922f5373c5842a5f2b3:9940050": {
+      "pathname": "books/zucchero/pdf/9d924ad8ee7095d1-zucchero.pdf",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/pdf/9d924ad8ee7095d1-zucchero.pdf",
+      "size": 9940050
+    },
+    "5e273a9fb516868e61d4f243e6564cd6442e0ea00bd436674df6a6ce4621cbdc:5481368": {
+      "pathname": "books/zucchero/epub/5e273a9fb516868e-zucchero.epub",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/epub/5e273a9fb516868e-zucchero.epub",
+      "size": 5481368
     }
   },
   "chapterPackages": {
@@ -13509,6 +13562,48 @@
           "size": 3233,
           "pathname": "books/from-1-to-0/chapters/5428fef07ea89da4/sitemap.json",
           "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/from-1-to-0/chapters/5428fef07ea89da4/sitemap.json",
+          "skipped": true
+        }
+      ]
+    },
+    "bc2a4be38ec2ae3b3a5418eb283e05dcaa3e2c87fd45c1547133475b4d1861cc": {
+      "pathnamePrefix": "books/zucchero/chapters/bc2a4be38ec2ae3b",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/bc2a4be38ec2ae3b/index.html",
+      "files": [
+        {
+          "localPath": "book-uploads/staging/zucchero/zucchero-chapters/book.css",
+          "relativePath": "book.css",
+          "sha256": "18b1d604878501226442f0a6a8cfff33ba6ceb90764b88efaaf812781927ff7b",
+          "size": 702,
+          "pathname": "books/zucchero/chapters/bc2a4be38ec2ae3b/book.css",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/bc2a4be38ec2ae3b/book.css",
+          "skipped": true
+        },
+        {
+          "localPath": "book-uploads/staging/zucchero/zucchero-chapters/chapter-001.html",
+          "relativePath": "chapter-001.html",
+          "sha256": "85f4c1fe0591ce566c7f2103e51b94f408008f84ffd5fd306248ddf3bbb492cf",
+          "size": 17954,
+          "pathname": "books/zucchero/chapters/bc2a4be38ec2ae3b/chapter-001.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/bc2a4be38ec2ae3b/chapter-001.html",
+          "skipped": true
+        },
+        {
+          "localPath": "book-uploads/staging/zucchero/zucchero-chapters/index.html",
+          "relativePath": "index.html",
+          "sha256": "1c1a3d60394d7fa1e71f53792b95a0cbd5f2373a40cb96bc4d9ff3ed6cc7139b",
+          "size": 2896,
+          "pathname": "books/zucchero/chapters/bc2a4be38ec2ae3b/index.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/bc2a4be38ec2ae3b/index.html",
+          "skipped": true
+        },
+        {
+          "localPath": "book-uploads/staging/zucchero/zucchero-chapters/sitemap.json",
+          "relativePath": "sitemap.json",
+          "sha256": "9d0f3a8fea37a67c1e6a01f65b24e662d80343a538aa6f5ff491d18ab52b142e",
+          "size": 1003,
+          "pathname": "books/zucchero/chapters/bc2a4be38ec2ae3b/sitemap.json",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/bc2a4be38ec2ae3b/sitemap.json",
           "skipped": true
         }
       ]

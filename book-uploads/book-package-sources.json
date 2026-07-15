@@ -84,7 +84,9 @@
       "pdf": "book-uploads/staging/zucchero/zucchero.pdf",
       "epub": "book-uploads/staging/zucchero/zucchero.epub",
       "html": "book-uploads/staging/zucchero/zucchero.html",
-      "htmlChapters": "book-uploads/staging/zucchero/zucchero-chapters"
+      "htmlChapters": "book-uploads/staging/zucchero/zucchero-chapters",
+      "cover": "book-uploads/staging/zucchero/zucchero-cover.png",
+      "headboard": "book-uploads/staging/zucchero/zucchero-headboard.png"
     },
     "querygraph": {
       "pdf": "book-uploads/staging/querygraph/querygraph-stack.pdf",

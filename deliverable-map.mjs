@@ -53,8 +53,9 @@ export const deliverableBooks = [
   {
     "slug": "zucchero",
     "title": "Learn Italian with Zucchero",
-    "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/pdf/567a8eeefd8e2783-zucchero.pdf",
-    "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/epub/37b11169442a5ffd-zucchero.epub"
+    "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/pdf/9d924ad8ee7095d1-zucchero.pdf",
+    "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/epub/5e273a9fb516868e-zucchero.epub",
+    "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/cover/27e8d882008c7e0e-zucchero-cover.png"
   },
   {
     "slug": "omnighost",

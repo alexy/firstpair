@@ -167,12 +167,12 @@
       "slug": "zucchero",
       "title": "Learn Italian with Zucchero",
       "kicker": "Finished book",
-      "description": "An Italian study-method article for learning through Zucchero songs, with public-safe song inventory, PDF, EPUB, and hosted web readers.",
+      "description": "A bilingual Italian study-method book by Alexy Khrabrov con Zucchero, with a public-safe song inventory and PDF, EPUB, and hosted web readers.",
       "accent": "#8b2e25",
       "shelf": "music",
       "source": "https://github.com/alexy/zucchero",
-      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/pdf/567a8eeefd8e2783-zucchero.pdf",
-      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/epub/37b11169442a5ffd-zucchero.epub",
+      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/pdf/9d924ad8ee7095d1-zucchero.pdf",
+      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/epub/5e273a9fb516868e-zucchero.epub",
       "html": "/read/zucchero/",
       "htmlChapters": "/read/zucchero/chapters/",
       "tags": [
@@ -180,8 +180,11 @@
         "Italian",
         "music"
       ],
-      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/html/0955de8401b530c2-zucchero.html",
-      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/ae110c5bce5e9042/index.html"
+      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/html/da1a08e1ee56d014-zucchero.html",
+      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/chapters/bc2a4be38ec2ae3b/index.html",
+      "author": "Alexy Khrabrov con Zucchero",
+      "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/cover/27e8d882008c7e0e-zucchero-cover.png",
+      "headboard": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/zucchero/headboard/c2b8488254ffce50-zucchero-headboard.png"
     },
     {
       "slug": "omnighost",

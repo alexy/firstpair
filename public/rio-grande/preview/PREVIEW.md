@@ -24,7 +24,7 @@ contents remain navigable without exposing the complete text.
 
 | Edition | Purpose | PDF | EPUB | Reader | Chapters | Source commit | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Alexy Preview | Revised English reading-edition preview. | [PDF](/rio-grande/pdf/) | [EPUB](/rio-grande/epub/) | [Read](/read/rio-grande/) | [Chapter reader](/read/rio-grande/chapters/) | `de27c4d81cad5dd9c4105ed57df58e151c913a05` | Built from the source manuscript through the unified First Pair builder. |
+| Alexy Preview | Revised English reading-edition preview. | [PDF](/rio-grande/pdf/) | [EPUB](/rio-grande/epub/) | [Read](/read/rio-grande/) | [Chapter reader](/read/rio-grande/chapters/) | `8ddaf0154e9731d32b133c8f2cd9903dcce8ec41` | Built from the source manuscript through the unified First Pair builder. |
 
 ## Style And Rosetta Status
 
@@ -36,8 +36,8 @@ not have corresponding style branches or aligned comparison sources.
 
 | Artifact | Format | Size | SHA-256 |
 | --- | --- | ---: | --- |
-| `/rio-grande/pdf/` | PDF | 1,046,847 bytes | `5d95448bc5795bdcd52457856ddf3ad42aa2f9600c9fea6ec15a86eaf4dcc431` |
-| `/rio-grande/epub/` | EPUB | 536,687 bytes | `b4c2ca36846cb22df384b8972626870400313b329ceae6fd1d811400b43387ee` |
+| `/rio-grande/pdf/` | PDF | 1,049,122 bytes | `d3e6b68469a50db002c755084bc91e935f929b80c68c220c88a6cdbd8f2067fb` |
+| `/rio-grande/epub/` | EPUB | 536,685 bytes | `4685efdf48e1c9211a947198941293c156e4b23d3f0dbc455b625be92ecc953b` |
 | `/read/rio-grande/` | Hosted HTML reader | 719,434 bytes | `23a7a1a0ca5e362161ef55a9030b8a4ca67662b3fbd7c5e8bbf6f0b447bda068` |
 | `/read/rio-grande/chapters/` | Hosted chapter reader | 21 files | Built from the same preview manuscript |
 | `assets/rio-grande-cover.png` | PNG | 520,603 bytes | `9db814bb2ab3f2ed70940174a2396d976b2a2e9f79768f04af2c8405067e9379` |
@@ -50,8 +50,8 @@ package. The stable public routes serve these content-addressed payloads.
 
 | Item | Value |
 | --- | --- |
-| Source commit | `de27c4d81cad5dd9c4105ed57df58e151c913a05` |
-| First Pair workflow commit | `18cdcdd5fc34b2273b997b3c23822ab3638942cc` plus generated publication state |
+| Source commit | `8ddaf0154e9731d32b133c8f2cd9903dcce8ec41` |
+| First Pair publication base | `2a1c2a32cbf341913b5eb5b46b05255a2a715731` plus the bookmark refresh state |
 | Source inputs | Source manuscript, original facsimile PDF title page, deterministic cover renderer, and generated lagoon headboard |
 | Preview package URL | `/rio-grande/preview/` |
 | Production URL | `https://firstpair.org/rio-grande/preview/` |
@@ -65,6 +65,7 @@ package. The stable public routes serve these content-addressed payloads.
 | PDF metadata | Passed: title set to public preview, translator metadata names Alexy Khrabrov and firstpair.press |
 | PDF page count | Passed: 13 pages |
 | PDF page size | Passed: 302.4 x 457.2 pt |
+| PDF bookmark outline | Passed: 43 navigable heading bookmarks with cover-adjusted destinations |
 | PDF text check | Passed: preview ends before Chapter I body text |
 | PDF render check | Passed: overprinted cover, title, preview note, contents, opening text, and final stop note inspected |
 | Cover source check | Passed: renderer extracts page 7 from the original PDF and applies the exact three-line translator mask |

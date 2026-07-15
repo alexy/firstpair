@@ -1,11 +1,13 @@
 {
   "books": {
     "apc40-mk2-ableton-start": {
-      "pdf": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-0.2.0-dd45fa.pdf",
-      "epub": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-0.2.0-dd45fa.epub",
+      "pdf": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start.pdf",
+      "epub": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start.epub",
       "html": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start.html",
       "htmlChapters": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters",
-      "tutorial": "book-uploads/staging/apc40-mk2-ableton-start/apc40-dont-cry-tonight-ableton-animated.html"
+      "tutorial": "book-uploads/staging/apc40-mk2-ableton-start/apc40-dont-cry-tonight-ableton-animated.html",
+      "cover": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-cover.png",
+      "headboard": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-headboard.png"
     },
     "lighthouse-republics": {
       "pdf": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview.pdf",

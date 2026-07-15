@@ -2,8 +2,9 @@ export const deliverableBooks = [
   {
     "slug": "apc40-mk2-ableton-start",
     "title": "APC40 MK2 Ableton Live 12 Getting Started",
-    "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/pdf/215e85aad9ab8cc3-apc40-mk2-ableton-start-0.2.0-dd45fa.pdf",
-    "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/epub/2b277c1dc2a0dc64-apc40-mk2-ableton-start-0.2.0-dd45fa.epub"
+    "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/pdf/9302b822e8b424c7-apc40-mk2-ableton-start.pdf",
+    "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/epub/ba6c3cd6bc11cbf2-apc40-mk2-ableton-start.epub",
+    "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/cover/5d98a4429576e77a-apc40-mk2-ableton-start-cover.png"
   },
   {
     "slug": "lighthouse-republics",

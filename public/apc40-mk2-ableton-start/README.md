@@ -12,8 +12,8 @@ and the Ableton Session grid step by step.
 
 ## Current Public Editions
 
-- [PDF](https://firstpair.org/read/apc40-mk2-ableton-start/) — download link recorded in `public/catalog.json`
-- [EPUB](https://firstpair.org/read/apc40-mk2-ableton-start/) — download link recorded in `public/catalog.json`
+- [PDF](/apc40-mk2-ableton-start/pdf/) — download link recorded in `public/catalog.json`
+- [EPUB](/apc40-mk2-ableton-start/epub/) — download link recorded in `public/catalog.json`
 - [Read online](/read/apc40-mk2-ableton-start/)
 - [Chapter reader](/read/apc40-mk2-ableton-start/chapters/)
 - [Learn (interactive tutorial)](/learn/apc40-mk2-ableton-start/)

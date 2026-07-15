@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-15T08:19:45.317Z",
+  "updatedAt": "2026-07-15T09:02:57.589Z",
   "books": {
     "typesec": {
       "updatedAt": "2026-07-15T08:19:45.316Z",
@@ -3574,34 +3574,34 @@
       }
     },
     "apc40-mk2-ableton-start": {
-      "updatedAt": "2026-07-10T23:40:18.712Z",
+      "updatedAt": "2026-07-15T09:02:57.582Z",
       "dryRun": false,
       "units": {
         "pdf": {
           "kind": "pdf",
-          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-0.2.0-dd45fa.pdf",
-          "sha256": "215e85aad9ab8cc398d5f5a684d992dc4ab378e3c91d7e4e5d70cd46c86db059",
-          "size": 688751,
-          "pathname": "books/apc40-mk2-ableton-start/pdf/215e85aad9ab8cc3-apc40-mk2-ableton-start-0.2.0-dd45fa.pdf",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/pdf/215e85aad9ab8cc3-apc40-mk2-ableton-start-0.2.0-dd45fa.pdf",
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start.pdf",
+          "sha256": "9302b822e8b424c7d187aa784aea58d2498d6f2e0b1877c24b89e139cc9596c1",
+          "size": 10255543,
+          "pathname": "books/apc40-mk2-ableton-start/pdf/9302b822e8b424c7-apc40-mk2-ableton-start.pdf",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/pdf/9302b822e8b424c7-apc40-mk2-ableton-start.pdf",
           "skipped": false
         },
         "epub": {
           "kind": "epub",
-          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-0.2.0-dd45fa.epub",
-          "sha256": "2b277c1dc2a0dc64d25de1f9b3154757c4fc3d3d06413adb45e607346ab23a17",
-          "size": 95202,
-          "pathname": "books/apc40-mk2-ableton-start/epub/2b277c1dc2a0dc64-apc40-mk2-ableton-start-0.2.0-dd45fa.epub",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/epub/2b277c1dc2a0dc64-apc40-mk2-ableton-start-0.2.0-dd45fa.epub",
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start.epub",
+          "sha256": "ba6c3cd6bc11cbf2d8c7988a72ad1ca81493c5ee86c405a1f10ab30952b36d75",
+          "size": 5924158,
+          "pathname": "books/apc40-mk2-ableton-start/epub/ba6c3cd6bc11cbf2-apc40-mk2-ableton-start.epub",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/epub/ba6c3cd6bc11cbf2-apc40-mk2-ableton-start.epub",
           "skipped": false
         },
         "html": {
           "kind": "html",
           "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start.html",
-          "sha256": "5c73b1dd66d47ef03505d91e29d4f903f9a9a404cc3845693241ba8338bb6268",
-          "size": 448369,
-          "pathname": "books/apc40-mk2-ableton-start/html/5c73b1dd66d47ef0-apc40-mk2-ableton-start.html",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/html/5c73b1dd66d47ef0-apc40-mk2-ableton-start.html",
+          "sha256": "209a6f07281f3d9d98c65da9053545ed441838b1b1e04934ed8a4f44c13ac098",
+          "size": 427533,
+          "pathname": "books/apc40-mk2-ableton-start/html/209a6f07281f3d9d-apc40-mk2-ableton-start.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/html/209a6f07281f3d9d-apc40-mk2-ableton-start.html",
           "skipped": false
         },
         "tutorial": {
@@ -3611,743 +3611,509 @@
           "size": 34541,
           "pathname": "books/apc40-mk2-ableton-start/tutorial/6a3fd60da334b81f-apc40-dont-cry-tonight-ableton-animated.html",
           "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/tutorial/6a3fd60da334b81f-apc40-dont-cry-tonight-ableton-animated.html",
+          "skipped": true
+        },
+        "cover": {
+          "kind": "cover",
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-cover.png",
+          "sha256": "5d98a4429576e77abaff82608b9e8173d412f2beb2d17c5fc3432f07ccd7d863",
+          "size": 5829554,
+          "pathname": "books/apc40-mk2-ableton-start/cover/5d98a4429576e77a-apc40-mk2-ableton-start-cover.png",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/cover/5d98a4429576e77a-apc40-mk2-ableton-start-cover.png",
+          "skipped": false
+        },
+        "headboard": {
+          "kind": "headboard",
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-headboard.png",
+          "sha256": "50e41f41c2e2c774ca213c6ee66a69291dc67297eb1f00536c133dbdc74a01d0",
+          "size": 4518965,
+          "pathname": "books/apc40-mk2-ableton-start/headboard/50e41f41c2e2c774-apc40-mk2-ableton-start-headboard.png",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/headboard/50e41f41c2e2c774-apc40-mk2-ableton-start-headboard.png",
           "skipped": false
         },
         "htmlChapters": {
           "kind": "htmlChapters",
           "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters",
-          "sha256": "f985fe4c7d8121bf90b1d87ee5d2c320cc52ede4bf2eb0c4f48c579f0f06481c",
-          "pathnamePrefix": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/index.html",
+          "sha256": "dba850199dbdd05fe8a9d54ccaefc0d13353af0224f32aa51a9799e44f6a00b0",
+          "pathnamePrefix": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/index.html",
           "skipped": false,
           "files": [
             {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-01-live12-midi-settings.svg",
+              "relativePath": "assets/plate-01-live12-midi-settings.svg",
+              "sha256": "3b0d4cc8fa6988012e4df34f9eeab3627a895c5b11544327c657f8cdc02e2c2b",
+              "size": 6965,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-01-live12-midi-settings.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-01-live12-midi-settings.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-02-apc40-surface-overview.svg",
+              "relativePath": "assets/plate-02-apc40-surface-overview.svg",
+              "sha256": "d2b044ed3089badd139db5d676fadfeda3e2502749a0975a5b6541be991397c0",
+              "size": 24557,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-02-apc40-surface-overview.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-02-apc40-surface-overview.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-03-session-template-oh-long-johnson.svg",
+              "relativePath": "assets/plate-03-session-template-oh-long-johnson.svg",
+              "sha256": "ee7eb199605c2316223c4dd7c90c6bed2c412cdf1e4500ae2f844c9c5ef2789d",
+              "size": 10912,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-03-session-template-oh-long-johnson.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-03-session-template-oh-long-johnson.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-04-apc-grid-performance-map.svg",
+              "relativePath": "assets/plate-04-apc-grid-performance-map.svg",
+              "sha256": "988dac32bb1c848d9874f97836f7fa86a16781c923b41350ce474a78bc34b043",
+              "size": 25722,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-04-apc-grid-performance-map.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-04-apc-grid-performance-map.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-05-mixer-and-fader-moves.svg",
+              "relativePath": "assets/plate-05-mixer-and-fader-moves.svg",
+              "sha256": "f15c5ef1b3c062a836cd02790bdb095ec9cfa8c45f55d23a9915d18902d579a7",
+              "size": 25863,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-05-mixer-and-fader-moves.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-05-mixer-and-fader-moves.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-06-device-and-send-controls.svg",
+              "relativePath": "assets/plate-06-device-and-send-controls.svg",
+              "sha256": "a3e482cc078a42d94cf7586c3065d8608ccfbf0f848d0e4dc1ad6cbc622e1355",
+              "size": 25919,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-06-device-and-send-controls.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-06-device-and-send-controls.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-07-clip-launch-states.svg",
+              "relativePath": "assets/plate-07-clip-launch-states.svg",
+              "sha256": "b77d859e6416c48621f9bc3ef91bf60c7afba47a171684ec9d07e60e682aa216",
+              "size": 3959,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-07-clip-launch-states.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-07-clip-launch-states.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-08-record-to-arrangement.svg",
+              "relativePath": "assets/plate-08-record-to-arrangement.svg",
+              "sha256": "2f7b4b5de46858b41d0bb618735905113ebc335775328d44901c4e27c7201ca3",
+              "size": 4686,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-08-record-to-arrangement.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-08-record-to-arrangement.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-09-oh-long-johnson-track-map.svg",
+              "relativePath": "assets/plate-09-oh-long-johnson-track-map.svg",
+              "sha256": "4250bd88a33f4b6524bddec2b2ceb772df173fccb3553930551561f78d373f0e",
+              "size": 3756,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-09-oh-long-johnson-track-map.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-09-oh-long-johnson-track-map.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-10-troubleshooting-flow.svg",
+              "relativePath": "assets/plate-10-troubleshooting-flow.svg",
+              "sha256": "882996acfce8fd78ed12caf2bad476f4e2cba50b8daa66b1ee14b92540514deb",
+              "size": 3504,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-10-troubleshooting-flow.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-10-troubleshooting-flow.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-11-dont-cry-tonight-apc-map.svg",
+              "relativePath": "assets/plate-11-dont-cry-tonight-apc-map.svg",
+              "sha256": "d4cc90c00a3f04655bed3d1548308f2f7b6841f4143ed4a89bcb0c23acd281a8",
+              "size": 16006,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-11-dont-cry-tonight-apc-map.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-11-dont-cry-tonight-apc-map.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-12-ableton-first-launch.svg",
+              "relativePath": "assets/plate-12-ableton-first-launch.svg",
+              "sha256": "8ec2a434f955f4c1000dbba6090260ddf78d4ce557492cb369a1e93cb08e7ac6",
+              "size": 8005,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-12-ableton-first-launch.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-12-ableton-first-launch.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-13-browser-load-instrument.svg",
+              "relativePath": "assets/plate-13-browser-load-instrument.svg",
+              "sha256": "1244f3e3bdde6e90353f9392a3be396559b529e6ea98073d1acc48a46c022e55",
+              "size": 6171,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-13-browser-load-instrument.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-13-browser-load-instrument.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-14-create-midi-clip.svg",
+              "relativePath": "assets/plate-14-create-midi-clip.svg",
+              "sha256": "4350c9eba48b8b23d60a614ca73b91867066bb9ab596c5d82641c46cb5033762",
+              "size": 5428,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-14-create-midi-clip.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-14-create-midi-clip.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-15-drum-patterns.svg",
+              "relativePath": "assets/plate-15-drum-patterns.svg",
+              "sha256": "90a73b5c735e9a6c45ba48481285419ee5c5736dcd7b14ffc045d1744a627611",
+              "size": 11951,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-15-drum-patterns.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-15-drum-patterns.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-16-bass-chords-piano-roll.svg",
+              "relativePath": "assets/plate-16-bass-chords-piano-roll.svg",
+              "sha256": "95e7112222b89691425a46aadbfc1e0c364f9431b8591d04aab26c6a1d550d35",
+              "size": 5876,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-16-bass-chords-piano-roll.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-16-bass-chords-piano-roll.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-17-tempo-warp.svg",
+              "relativePath": "assets/plate-17-tempo-warp.svg",
+              "sha256": "c6fc553bb23ddbcff95f200cea94de0ebec3ef71877b29aa5c83631d8bf8b0dd",
+              "size": 4357,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-17-tempo-warp.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-17-tempo-warp.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-18-apc-scene-navigation.svg",
+              "relativePath": "assets/plate-18-apc-scene-navigation.svg",
+              "sha256": "a898f46286b47f758c1363f5bae01dc13b99649b2369a2e7ec91a7ecfc6c205a",
+              "size": 17979,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-18-apc-scene-navigation.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-18-apc-scene-navigation.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-19-dct-performance-timeline.svg",
+              "relativePath": "assets/plate-19-dct-performance-timeline.svg",
+              "sha256": "ababacde57e2543673afe429a145782ede929aee73fcce9b23f0d2c3b4c9d8ff",
+              "size": 13066,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-19-dct-performance-timeline.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-19-dct-performance-timeline.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-20-video-segment-map.svg",
+              "relativePath": "assets/plate-20-video-segment-map.svg",
+              "sha256": "0af9d0997542de64a1f50c3cfe957b6067ac8f74606f4ba99a476bb713ee4146",
+              "size": 6871,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-20-video-segment-map.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-20-video-segment-map.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-21-export-audio.svg",
+              "relativePath": "assets/plate-21-export-audio.svg",
+              "sha256": "d8fdfdcf1d10a0a3026bbebe588e5d58a0c7052bec04b9ab7a2a0b7c9fdd376a",
+              "size": 5280,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-21-export-audio.svg",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-21-export-audio.svg",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/book.css",
+              "relativePath": "book.css",
+              "sha256": "0c76e90e43c5404bc32cc89cc3550a016022acb3256c8c85eef7b3a6edb24265",
+              "size": 379,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/book.css",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/book.css",
+              "skipped": false
+            },
+            {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-001.html",
               "relativePath": "chapter-001.html",
-              "sha256": "947b321b3ac4d4929f9dce404c6fa41532803c69196096fec5460f00f0fde541",
-              "size": 5181,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-001.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-001.html",
+              "sha256": "8db3480803156658a5aa9ca4583e929ac82c6c484a8b22393d7d0d8cace2d00f",
+              "size": 2570,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-001.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-001.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-002.html",
               "relativePath": "chapter-002.html",
-              "sha256": "c799d130a8d293b3beb26fa2f8d79ad2140a6a2b6bfd546fea152802dae83aff",
-              "size": 5150,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-002.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-002.html",
+              "sha256": "6a507f41b8a3bd8b93172a48b4e4413ae80cae8c9dcf4bc346d533556151c55b",
+              "size": 5407,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-002.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-002.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-003.html",
               "relativePath": "chapter-003.html",
-              "sha256": "1603209f67732ac0ae97357f9ae9f59ceca16470bd6c953d5f99fa0b35d44306",
-              "size": 5020,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-003.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-003.html",
+              "sha256": "65cd70b9b4843feb9213fe79cd7a0b52187922a94169a1c1408f5d2b3557e1d7",
+              "size": 6441,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-003.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-003.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-004.html",
               "relativePath": "chapter-004.html",
-              "sha256": "e1fb595ea4eac7e5ee7678835b50c72d10d5ae66c30487203d662c46e9d32da6",
-              "size": 8413,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-004.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-004.html",
+              "sha256": "ac354e8d3679830f3b640a3f126c20e352d76c9832255a4e1d7b33313a8caa69",
+              "size": 9051,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-004.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-004.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-005.html",
               "relativePath": "chapter-005.html",
-              "sha256": "ec03130e54135f15ee68cc251eff3be6abd7249d3751d94f0bd490fce0df4468",
-              "size": 5044,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-005.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-005.html",
+              "sha256": "8d09d3831a2ebd3fc8af1ab3fde2e1c93a7407517b0a592bc2fc280553495fde",
+              "size": 5369,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-005.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-005.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-006.html",
               "relativePath": "chapter-006.html",
-              "sha256": "66213b1229afc7a1f3182d5705871382399cf3065db3cb7ec54735c135ef730c",
-              "size": 9726,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-006.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-006.html",
+              "sha256": "039485f71a6581324b6cc8da2385bb2d00870aa887bbc51b586909872ac1527f",
+              "size": 3200,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-006.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-006.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-007.html",
               "relativePath": "chapter-007.html",
-              "sha256": "42cfb0754abcb2414c0e1776c8df06613fc07d960d80ed20980fcab371323337",
-              "size": 5051,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-007.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-007.html",
+              "sha256": "54094844f1397cb96ca20c8a42b3a8894e23c14261c01de0aa3a9e07f2b35192",
+              "size": 5532,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-007.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-007.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-008.html",
               "relativePath": "chapter-008.html",
-              "sha256": "acf2982b36ebb6a6ada0d8f3d9a4e4dcf2a6d49b25da1d7dd33afeebdf890009",
-              "size": 12193,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-008.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-008.html",
+              "sha256": "4483b4a5f125223e1883e005f7f5ae5a3d8b370167f0c5c5e34c6c55ac2e748b",
+              "size": 3140,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-008.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-008.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-009.html",
               "relativePath": "chapter-009.html",
-              "sha256": "1713d90e942268dbf3054721b0dad6b9080602d6a88b320ff0ea471d9e2536d7",
-              "size": 5052,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-009.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-009.html",
+              "sha256": "09ed5af22c5f32a708f18b22da16efb63a328a02c4d19fedd8165da3588df589",
+              "size": 4568,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-009.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-009.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-010.html",
               "relativePath": "chapter-010.html",
-              "sha256": "a3ae5179d5a44ee077afc7e155272286df2c5459c78f8b450f3fcbbb6a7c1f1b",
-              "size": 8421,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-010.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-010.html",
+              "sha256": "c95eb745395c4326298d2bf02683c1ef5351b0289a5aad731f9abedf7fd07498",
+              "size": 3377,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-010.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-010.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-011.html",
               "relativePath": "chapter-011.html",
-              "sha256": "e78e1e1f35a9753a73292b96251fddb8d34ae2705285b78aa07bb9498bc5947f",
-              "size": 5050,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-011.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-011.html",
+              "sha256": "5f193ec69ebe10454351fb4df699cc7a200394208f6be757e03e28c780e5acab",
+              "size": 5046,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-011.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-011.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-012.html",
               "relativePath": "chapter-012.html",
-              "sha256": "69a4fa06415677f95e0c729da5478d5f8e0e6114f649dde6d90215b0b87758bd",
-              "size": 6134,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-012.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-012.html",
+              "sha256": "30e57aff25f4ae38839711d8ccf421c9fbfac119ad1fa61a40050eecd770085f",
+              "size": 5154,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-012.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-012.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-013.html",
               "relativePath": "chapter-013.html",
-              "sha256": "7d60b5c8057f2d50e1b6aeed915eff5a05d955661cdb7d5475da10e3a7547f33",
-              "size": 5053,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-013.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-013.html",
+              "sha256": "ea498b0a37460b3003ab48d038102fd1f108b01a7c28b7cdce22709bd9bae7bf",
+              "size": 4399,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-013.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-013.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-014.html",
               "relativePath": "chapter-014.html",
-              "sha256": "272ff1d4a03ea883e317da8d5bfb1430d26ea6c2c6c21e5878644faf5d5be9f3",
-              "size": 8816,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-014.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-014.html",
+              "sha256": "838be63bcd495fe1ffd6959d27e3bb43641f4eb61cb20f453feae09b131d388a",
+              "size": 3775,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-014.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-014.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-015.html",
               "relativePath": "chapter-015.html",
-              "sha256": "55f2df1b4b23a556ad90fb98314a3819a22bbee45d8695c14df52d4da6756406",
-              "size": 5057,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-015.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-015.html",
+              "sha256": "97eea1d5f3ab3600e742ab1bfd15b836887456f05672748b77c4f01c7536c334",
+              "size": 3340,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-015.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-015.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-016.html",
               "relativePath": "chapter-016.html",
-              "sha256": "b7516c1929fa0b460bf10c692aa2f8c0ba2b3c8975f188ba3d0bb122628bb6cd",
-              "size": 6079,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-016.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-016.html",
+              "sha256": "dbc8435686ab193ed58cd07e3c3e59524ec7c158bcc5fbfa880a764d3725f58e",
+              "size": 6831,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-016.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-016.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-017.html",
               "relativePath": "chapter-017.html",
-              "sha256": "66fca4a6dd11d47d114cc1eb6aee2109a845e25b39b3ea50dcefd41c89fed3b6",
-              "size": 5049,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-017.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-017.html",
+              "sha256": "62da105c365b6ca4bf4ce8f1cbd2145da77c9a8fd50ed6be7d14026f9a1b99f2",
+              "size": 3005,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-017.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-017.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-018.html",
               "relativePath": "chapter-018.html",
-              "sha256": "b247fc6be5271706d71e55b946798459e37274c7b105eb219f9843bbbe23fe16",
-              "size": 7719,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-018.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-018.html",
+              "sha256": "7ab9600016adea71f7ed29b263e7b3e61f03d5b61e0b6a0b794a50caccb16aae",
+              "size": 4004,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-018.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-018.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-019.html",
               "relativePath": "chapter-019.html",
-              "sha256": "6648b5041c47189d985b479b780ce1469633242a9f1603ce3113dbdc5c7863a4",
-              "size": 5042,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-019.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-019.html",
+              "sha256": "efbfccd80fbdaadb2f9c87d1f2a26016b08a2c1e54a101a2608a5cfc0a61a68d",
+              "size": 2919,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-019.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-019.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-020.html",
               "relativePath": "chapter-020.html",
-              "sha256": "a4d1e016da406dcaf0ebb0f1c5f1e6bb56b007d5432ff57b4f7e0fa2885230bc",
-              "size": 6541,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-020.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-020.html",
+              "sha256": "56c2ec37106b0e8251e32bb7c0400f83c56062688bcae9adc6dc375d07043966",
+              "size": 3333,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-020.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-020.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-021.html",
               "relativePath": "chapter-021.html",
-              "sha256": "41f451e38b5fe966794103a8792705171530921c50ef30bb1601ed15af2fc394",
-              "size": 5052,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-021.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-021.html",
+              "sha256": "c4e8b6e167a9facebfe9a889aeb05b1a1f69dad7f4b0e18ad87f29eae199375a",
+              "size": 3281,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-021.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-021.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-022.html",
               "relativePath": "chapter-022.html",
-              "sha256": "45fbf28f97f15bad5539f84c211b5ce5f267b8f0c923e90899dae92af349919b",
-              "size": 8419,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-022.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-022.html",
+              "sha256": "b408d968d9953472f9797169b3305f7703d170d9367ca6c1c006b82570049287",
+              "size": 3298,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-022.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-022.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-023.html",
               "relativePath": "chapter-023.html",
-              "sha256": "8dddd47c1a168750b91f7a04df8bd0dc48a25e16abe0f947e47b4e1a9669fa12",
-              "size": 5072,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-023.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-023.html",
+              "sha256": "d17a7a60b9fa450c5fa2cbfa7b70bc329e2c278d46dc1ee93119b42d625ac3b2",
+              "size": 4037,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-023.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-023.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-024.html",
               "relativePath": "chapter-024.html",
-              "sha256": "8a46f88335bca41118522ad3576e09ac35cf42ccef8d991fb89ae036cf5e0392",
-              "size": 8407,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-024.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-024.html",
+              "sha256": "abb9dc09261004915c9479cf92e38ec9a27a07ddc4e20bac85691db666bccc77",
+              "size": 37440,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-024.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-024.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-025.html",
               "relativePath": "chapter-025.html",
-              "sha256": "2f24bcdfea5df12b14b79d99d8b77c1fa720f68a852a9845baf4ff4179485db6",
-              "size": 5067,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-025.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-025.html",
+              "sha256": "129592c9497e60d807b2a426f6dcf944b90322f7a8ba1eac1c3e7ea5483991dd",
+              "size": 4487,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-025.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-025.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-026.html",
               "relativePath": "chapter-026.html",
-              "sha256": "4d3e776a8b469d2abb815b06b99abcd5f4b98bd5083103ffd1605e1f44f12807",
-              "size": 7438,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-026.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-026.html",
+              "sha256": "719a6acc9f2dd46797ace54b10dec63061b2193530e01111ca5207d0bd7772ea",
+              "size": 3617,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-026.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-026.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-027.html",
               "relativePath": "chapter-027.html",
-              "sha256": "9d859bee2941eabe112b2f98b46b2b1faaa36995aa39f3a99dc17db60d64988b",
-              "size": 5063,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-027.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-027.html",
+              "sha256": "40a0fcf09dfbd6a0d7ddb1f6c096623ece269616973d7a325e5d2566180302b0",
+              "size": 5301,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-027.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-027.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-028.html",
               "relativePath": "chapter-028.html",
-              "sha256": "6dd85b1b58e3f59cee2f2e85544c17027c5de791381097dbc84134e662f4a325",
-              "size": 7052,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-028.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-028.html",
+              "sha256": "ac82edd5f43af284515ea8a9f42f1161cf43a358f38eaaed697662ca6b807d81",
+              "size": 2763,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-028.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-028.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-029.html",
               "relativePath": "chapter-029.html",
-              "sha256": "6900dcda8156e2c0c2f14fa0a787eaa3790238ee246cd81c9f764ac6709c2571",
-              "size": 5073,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-029.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-029.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-030.html",
-              "relativePath": "chapter-030.html",
-              "sha256": "b8a7278785bf1cef6155d4d990482311d85472a63ef50f6b0263d9256caa2f7b",
-              "size": 6234,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-030.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-030.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-031.html",
-              "relativePath": "chapter-031.html",
-              "sha256": "2f604504a92ea7a29a2237e20210ca2ee498437d6aaf70f63b37b7936aa529d6",
-              "size": 5077,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-031.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-031.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-032.html",
-              "relativePath": "chapter-032.html",
-              "sha256": "e9b65b7639eb4ee5df450659ad145d0c172e289cd4cf63b7b42df4423eea0873",
-              "size": 10169,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-032.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-032.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-033.html",
-              "relativePath": "chapter-033.html",
-              "sha256": "c759d9ff44df76f10d372d1b30643b524b003a951e30fb76c4fb47e3a9a07575",
-              "size": 5084,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-033.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-033.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-034.html",
-              "relativePath": "chapter-034.html",
-              "sha256": "4262d5df748c752b7028209e4a9a4a836a005ee656b21011917056b436eb18bf",
-              "size": 5926,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-034.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-034.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-035.html",
-              "relativePath": "chapter-035.html",
-              "sha256": "e4684f0207546e7153b045835d939269a8d092e788152cc786835e84f3e2bc17",
-              "size": 5083,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-035.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-035.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-036.html",
-              "relativePath": "chapter-036.html",
-              "sha256": "e55cede85c6a096bc465c43b3dc4e064a5b58da37e4c218834fd1ccbb74fbd1c",
-              "size": 7496,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-036.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-036.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-037.html",
-              "relativePath": "chapter-037.html",
-              "sha256": "daa5dcf8cc49524e81eeb5256aabc1e051fbf97209b0cc3f7bbeb35ab0f11760",
-              "size": 5074,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-037.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-037.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-038.html",
-              "relativePath": "chapter-038.html",
-              "sha256": "4b0bd3efd05506c763fd6ea89b60700e99514ad7d40926a4f67cda91647acae9",
-              "size": 5842,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-038.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-038.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-039.html",
-              "relativePath": "chapter-039.html",
-              "sha256": "edd62efa9321910e53026d0b01d562821f75cdf7580f61824f3c592630d05382",
-              "size": 5073,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-039.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-039.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-040.html",
-              "relativePath": "chapter-040.html",
-              "sha256": "a6cec9ff75d41b311d3374caa5d01e891b83cfaae460b86f923f90533dc5f038",
-              "size": 6484,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-040.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-040.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-041.html",
-              "relativePath": "chapter-041.html",
-              "sha256": "57d75d3f87950486f10e2716284d8b693b0f5266dbe9f8eafe92d2d247f7ae5c",
-              "size": 5078,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-041.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-041.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-042.html",
-              "relativePath": "chapter-042.html",
-              "sha256": "f522fa8f906107f7af0cc9469c5ed8a1f08656bbe6867f9ad5fdca29b0f93833",
-              "size": 6205,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-042.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-042.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-043.html",
-              "relativePath": "chapter-043.html",
-              "sha256": "d9426d4759d457d6891240a166d8883327d2570440f75eaa6639b30626b6abec",
-              "size": 5078,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-043.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-043.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-044.html",
-              "relativePath": "chapter-044.html",
-              "sha256": "9af6e2a2591415f3261bfbb292a82c6984478ee8b3230be904a156b52caaa518",
-              "size": 6221,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-044.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-044.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-045.html",
-              "relativePath": "chapter-045.html",
-              "sha256": "c9c2645004338824396f85075ed47a16dd7f73cf5273ecef88e65f0d235fe3f6",
-              "size": 5071,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-045.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-045.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-046.html",
-              "relativePath": "chapter-046.html",
-              "sha256": "764190f3de98dce7e43095178dd979fb59cf22c823c2428f43f853fe200d586c",
-              "size": 7028,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-046.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-046.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-047.html",
-              "relativePath": "chapter-047.html",
-              "sha256": "34dc489df19c78cbe5dcb123dc6ca023484c3865c7d2314cec0428446650d2e2",
-              "size": 5093,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-047.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-047.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-048.html",
-              "relativePath": "chapter-048.html",
-              "sha256": "c10d7ae17a37014633d001f1d6f2bd843c5b847755366d55bfeaaf58fdc0f0d7",
-              "size": 43021,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-048.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-048.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-049.html",
-              "relativePath": "chapter-049.html",
-              "sha256": "bb25a92b6adddb49916e28fb44c8f37f90ba4fecdd52cce4f6a795e5ef85d2a4",
-              "size": 5086,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-049.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-049.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-050.html",
-              "relativePath": "chapter-050.html",
-              "sha256": "dc8bea48ab7acdad054957b2b0d856ffab3d98df617ae0b53ad32ee6371a6e8b",
-              "size": 7966,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-050.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-050.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-051.html",
-              "relativePath": "chapter-051.html",
-              "sha256": "f8a699468722cdd6320b151c431e7c4a9420f715470c2c59c9fa8d89f959010c",
-              "size": 5062,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-051.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-051.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-052.html",
-              "relativePath": "chapter-052.html",
-              "sha256": "d2d0fbc6e51a2bda17e04eb48190ffa718ca3ebf3fe759c1e2ec3198fd1ee8a2",
-              "size": 6537,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-052.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-052.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-053.html",
-              "relativePath": "chapter-053.html",
-              "sha256": "3f33e77367b0f7e45493788ae4be4f46f6b640edc14ab77d61f9d5566dff1fde",
-              "size": 5058,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-053.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-053.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-054.html",
-              "relativePath": "chapter-054.html",
-              "sha256": "588132684c63971fe1519a14637b13b746867e2cc010a56f2ce88486188d4c19",
-              "size": 8900,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-054.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-054.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-055.html",
-              "relativePath": "chapter-055.html",
-              "sha256": "44dd50b50e4206ec1f4055580242fc3d25de1d1a623af985f656216d2566e9a3",
-              "size": 5053,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-055.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-055.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-056.html",
-              "relativePath": "chapter-056.html",
-              "sha256": "bdd1a286d4c27b5dead5ccd91f5c5661a21568ff42a3e2e30b5785e409619f3e",
-              "size": 5719,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-056.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-056.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-057.html",
-              "relativePath": "chapter-057.html",
-              "sha256": "0f1c23d7c7e7f85d917898584e86e911f3e63029331e26ca21ac1e296747b6a9",
-              "size": 5049,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-057.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-057.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-058.html",
-              "relativePath": "chapter-058.html",
-              "sha256": "79b51154d321a7e4c18c84a4887ebb46d66ec7b490e0c8943e886db1f32c442f",
-              "size": 5770,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-058.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/chapter-058.html",
+              "sha256": "5e4be597da18e5a4a4821e95e853dcef49c574ad92a181dc7c75c18a01e68a99",
+              "size": 2851,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-029.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-029.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/index.html",
               "relativePath": "index.html",
-              "sha256": "ec0b18cf8eb607bcc695192d667f1716662d24653e1b74d8db60cb850c950548",
-              "size": 26283,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/index.html",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/index.html",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file0.svg",
-              "relativePath": "media/file0.svg",
-              "sha256": "cffe3b83a70681dc9c2b08986bb21aa452e5093e71140d5f77a21a8ebb5a8cd8",
-              "size": 6977,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file0.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file0.svg",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file1.svg",
-              "relativePath": "media/file1.svg",
-              "sha256": "f379e92a2c40a5be50e802d786f17a66b3b50c7db8b674b646a8b8ab9250b90f",
-              "size": 8017,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file1.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file1.svg",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file10.svg",
-              "relativePath": "media/file10.svg",
-              "sha256": "1d76d9b8cd877307fc630ab0e1612e7d549b6707737cdf8402dff6fc23345f35",
-              "size": 16018,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file10.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file10.svg",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file11.svg",
-              "relativePath": "media/file11.svg",
-              "sha256": "a898f46286b47f758c1363f5bae01dc13b99649b2369a2e7ec91a7ecfc6c205a",
-              "size": 17979,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file11.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file11.svg",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file12.svg",
-              "relativePath": "media/file12.svg",
-              "sha256": "a1e109f1df3418358a206eb62e5dafa481dce2bd6e849c925e699f3eaf19d6b8",
-              "size": 4369,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file12.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file12.svg",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file13.svg",
-              "relativePath": "media/file13.svg",
-              "sha256": "c75893a672a45d930228d5528a2493e2336e11f9be028f9ea68e60a507b42362",
-              "size": 6183,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file13.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file13.svg",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file14.svg",
-              "relativePath": "media/file14.svg",
-              "sha256": "90a73b5c735e9a6c45ba48481285419ee5c5736dcd7b14ffc045d1744a627611",
-              "size": 11951,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file14.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file14.svg",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file15.svg",
-              "relativePath": "media/file15.svg",
-              "sha256": "6e32aa495fbbbdb026d3f030b2a4efebd21c964cd2d9b5db5607f9b425467a44",
-              "size": 5440,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file15.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file15.svg",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file16.svg",
-              "relativePath": "media/file16.svg",
-              "sha256": "95e7112222b89691425a46aadbfc1e0c364f9431b8591d04aab26c6a1d550d35",
-              "size": 5876,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file16.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file16.svg",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file17.svg",
-              "relativePath": "media/file17.svg",
-              "sha256": "ababacde57e2543673afe429a145782ede929aee73fcce9b23f0d2c3b4c9d8ff",
-              "size": 13066,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file17.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file17.svg",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file18.svg",
-              "relativePath": "media/file18.svg",
-              "sha256": "dff2a2a039f35fb0b90ce00d26cbea31d06b082cb7c085222d30242fd6245c9a",
-              "size": 5292,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file18.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file18.svg",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file19.svg",
-              "relativePath": "media/file19.svg",
-              "sha256": "aab59595eb5cf908c8908fb5b6a9bb33fa7f1579483152bb7c1e3244e104e368",
-              "size": 25726,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file19.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file19.svg",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file2.svg",
-              "relativePath": "media/file2.svg",
-              "sha256": "0af9d0997542de64a1f50c3cfe957b6067ac8f74606f4ba99a476bb713ee4146",
-              "size": 6871,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file2.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file2.svg",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file20.svg",
-              "relativePath": "media/file20.svg",
-              "sha256": "308a3b01901df5558670513f190975d2f18b1446eba6931ff93343e07de27c6e",
-              "size": 3510,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file20.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file20.svg",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file3.svg",
-              "relativePath": "media/file3.svg",
-              "sha256": "0116a610e7aa3d5d85994f590de68e7067c416cd749c2ed5ed1afd8c72ee6af9",
-              "size": 24561,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file3.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file3.svg",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file4.svg",
-              "relativePath": "media/file4.svg",
-              "sha256": "a0d57d3cd1e0f7cc7693b9cdf1a86a3d3b1c42ebdfa70b73b3b342f84fc6aed1",
-              "size": 3971,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file4.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file4.svg",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file5.svg",
-              "relativePath": "media/file5.svg",
-              "sha256": "b5bcc5007cdc7c47ab7544177a73139fe625c663f17b170f602139aae303ba48",
-              "size": 25867,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file5.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file5.svg",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file6.svg",
-              "relativePath": "media/file6.svg",
-              "sha256": "218e5a08136ed1d3ccbe33689fda57c11459d98b7cbb72eed887cdcd8abd73b7",
-              "size": 25923,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file6.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file6.svg",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file7.svg",
-              "relativePath": "media/file7.svg",
-              "sha256": "4250bd88a33f4b6524bddec2b2ceb772df173fccb3553930551561f78d373f0e",
-              "size": 3756,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file7.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file7.svg",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file8.svg",
-              "relativePath": "media/file8.svg",
-              "sha256": "eee3214f678a61e79433dec126265f18556f4c678fc67a2224818b2c0b18efe3",
-              "size": 10924,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file8.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file8.svg",
-              "skipped": false
-            },
-            {
-              "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/media/file9.svg",
-              "relativePath": "media/file9.svg",
-              "sha256": "006a5b87d5a68baf6932e0f2e943a10efc7a913d430d3102f4b520f0d14f1cc6",
-              "size": 4698,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file9.svg",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/media/file9.svg",
+              "sha256": "24ed0a9fd950df85e05e9be77007462a5c9239f75f5b49ab2673fb24ea515ca8",
+              "size": 16801,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/index.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/index.html",
               "skipped": false
             },
             {
               "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/sitemap.json",
               "relativePath": "sitemap.json",
-              "sha256": "3e0ba17e7066828b572b18bf4b7971c8f51a4007e7555b95de4652041c0e4e85",
-              "size": 19972,
-              "pathname": "books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/sitemap.json",
-              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/f985fe4c7d8121bf/sitemap.json",
+              "sha256": "8f64bc9a04181d6967e103510de920cfe50bc14decbdbed283ca274f7c05afb3",
+              "size": 16878,
+              "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/sitemap.json",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/sitemap.json",
               "skipped": false
             }
           ]
@@ -5034,6 +4800,31 @@
       "pathname": "books/typesec/headboard/fc1fc78b9688cacf-typesec-headboard.png",
       "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/typesec/headboard/fc1fc78b9688cacf-typesec-headboard.png",
       "size": 2990639
+    },
+    "9302b822e8b424c7d187aa784aea58d2498d6f2e0b1877c24b89e139cc9596c1:10255543": {
+      "pathname": "books/apc40-mk2-ableton-start/pdf/9302b822e8b424c7-apc40-mk2-ableton-start.pdf",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/pdf/9302b822e8b424c7-apc40-mk2-ableton-start.pdf",
+      "size": 10255543
+    },
+    "ba6c3cd6bc11cbf2d8c7988a72ad1ca81493c5ee86c405a1f10ab30952b36d75:5924158": {
+      "pathname": "books/apc40-mk2-ableton-start/epub/ba6c3cd6bc11cbf2-apc40-mk2-ableton-start.epub",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/epub/ba6c3cd6bc11cbf2-apc40-mk2-ableton-start.epub",
+      "size": 5924158
+    },
+    "209a6f07281f3d9d98c65da9053545ed441838b1b1e04934ed8a4f44c13ac098:427533": {
+      "pathname": "books/apc40-mk2-ableton-start/html/209a6f07281f3d9d-apc40-mk2-ableton-start.html",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/html/209a6f07281f3d9d-apc40-mk2-ableton-start.html",
+      "size": 427533
+    },
+    "5d98a4429576e77abaff82608b9e8173d412f2beb2d17c5fc3432f07ccd7d863:5829554": {
+      "pathname": "books/apc40-mk2-ableton-start/cover/5d98a4429576e77a-apc40-mk2-ableton-start-cover.png",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/cover/5d98a4429576e77a-apc40-mk2-ableton-start-cover.png",
+      "size": 5829554
+    },
+    "50e41f41c2e2c774ca213c6ee66a69291dc67297eb1f00536c133dbdc74a01d0:4518965": {
+      "pathname": "books/apc40-mk2-ableton-start/headboard/50e41f41c2e2c774-apc40-mk2-ableton-start-headboard.png",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/headboard/50e41f41c2e2c774-apc40-mk2-ableton-start-headboard.png",
+      "size": 4518965
     }
   },
   "chapterPackages": {
@@ -13064,6 +12855,489 @@
           "size": 7102,
           "pathname": "books/rio-grande/chapters/2fdb3feefb8c27fd/sitemap.json",
           "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/rio-grande/chapters/2fdb3feefb8c27fd/sitemap.json",
+          "skipped": false
+        }
+      ]
+    },
+    "dba850199dbdd05fe8a9d54ccaefc0d13353af0224f32aa51a9799e44f6a00b0": {
+      "pathnamePrefix": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/index.html",
+      "files": [
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-01-live12-midi-settings.svg",
+          "relativePath": "assets/plate-01-live12-midi-settings.svg",
+          "sha256": "3b0d4cc8fa6988012e4df34f9eeab3627a895c5b11544327c657f8cdc02e2c2b",
+          "size": 6965,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-01-live12-midi-settings.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-01-live12-midi-settings.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-02-apc40-surface-overview.svg",
+          "relativePath": "assets/plate-02-apc40-surface-overview.svg",
+          "sha256": "d2b044ed3089badd139db5d676fadfeda3e2502749a0975a5b6541be991397c0",
+          "size": 24557,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-02-apc40-surface-overview.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-02-apc40-surface-overview.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-03-session-template-oh-long-johnson.svg",
+          "relativePath": "assets/plate-03-session-template-oh-long-johnson.svg",
+          "sha256": "ee7eb199605c2316223c4dd7c90c6bed2c412cdf1e4500ae2f844c9c5ef2789d",
+          "size": 10912,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-03-session-template-oh-long-johnson.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-03-session-template-oh-long-johnson.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-04-apc-grid-performance-map.svg",
+          "relativePath": "assets/plate-04-apc-grid-performance-map.svg",
+          "sha256": "988dac32bb1c848d9874f97836f7fa86a16781c923b41350ce474a78bc34b043",
+          "size": 25722,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-04-apc-grid-performance-map.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-04-apc-grid-performance-map.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-05-mixer-and-fader-moves.svg",
+          "relativePath": "assets/plate-05-mixer-and-fader-moves.svg",
+          "sha256": "f15c5ef1b3c062a836cd02790bdb095ec9cfa8c45f55d23a9915d18902d579a7",
+          "size": 25863,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-05-mixer-and-fader-moves.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-05-mixer-and-fader-moves.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-06-device-and-send-controls.svg",
+          "relativePath": "assets/plate-06-device-and-send-controls.svg",
+          "sha256": "a3e482cc078a42d94cf7586c3065d8608ccfbf0f848d0e4dc1ad6cbc622e1355",
+          "size": 25919,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-06-device-and-send-controls.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-06-device-and-send-controls.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-07-clip-launch-states.svg",
+          "relativePath": "assets/plate-07-clip-launch-states.svg",
+          "sha256": "b77d859e6416c48621f9bc3ef91bf60c7afba47a171684ec9d07e60e682aa216",
+          "size": 3959,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-07-clip-launch-states.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-07-clip-launch-states.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-08-record-to-arrangement.svg",
+          "relativePath": "assets/plate-08-record-to-arrangement.svg",
+          "sha256": "2f7b4b5de46858b41d0bb618735905113ebc335775328d44901c4e27c7201ca3",
+          "size": 4686,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-08-record-to-arrangement.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-08-record-to-arrangement.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-09-oh-long-johnson-track-map.svg",
+          "relativePath": "assets/plate-09-oh-long-johnson-track-map.svg",
+          "sha256": "4250bd88a33f4b6524bddec2b2ceb772df173fccb3553930551561f78d373f0e",
+          "size": 3756,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-09-oh-long-johnson-track-map.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-09-oh-long-johnson-track-map.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-10-troubleshooting-flow.svg",
+          "relativePath": "assets/plate-10-troubleshooting-flow.svg",
+          "sha256": "882996acfce8fd78ed12caf2bad476f4e2cba50b8daa66b1ee14b92540514deb",
+          "size": 3504,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-10-troubleshooting-flow.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-10-troubleshooting-flow.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-11-dont-cry-tonight-apc-map.svg",
+          "relativePath": "assets/plate-11-dont-cry-tonight-apc-map.svg",
+          "sha256": "d4cc90c00a3f04655bed3d1548308f2f7b6841f4143ed4a89bcb0c23acd281a8",
+          "size": 16006,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-11-dont-cry-tonight-apc-map.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-11-dont-cry-tonight-apc-map.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-12-ableton-first-launch.svg",
+          "relativePath": "assets/plate-12-ableton-first-launch.svg",
+          "sha256": "8ec2a434f955f4c1000dbba6090260ddf78d4ce557492cb369a1e93cb08e7ac6",
+          "size": 8005,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-12-ableton-first-launch.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-12-ableton-first-launch.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-13-browser-load-instrument.svg",
+          "relativePath": "assets/plate-13-browser-load-instrument.svg",
+          "sha256": "1244f3e3bdde6e90353f9392a3be396559b529e6ea98073d1acc48a46c022e55",
+          "size": 6171,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-13-browser-load-instrument.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-13-browser-load-instrument.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-14-create-midi-clip.svg",
+          "relativePath": "assets/plate-14-create-midi-clip.svg",
+          "sha256": "4350c9eba48b8b23d60a614ca73b91867066bb9ab596c5d82641c46cb5033762",
+          "size": 5428,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-14-create-midi-clip.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-14-create-midi-clip.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-15-drum-patterns.svg",
+          "relativePath": "assets/plate-15-drum-patterns.svg",
+          "sha256": "90a73b5c735e9a6c45ba48481285419ee5c5736dcd7b14ffc045d1744a627611",
+          "size": 11951,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-15-drum-patterns.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-15-drum-patterns.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-16-bass-chords-piano-roll.svg",
+          "relativePath": "assets/plate-16-bass-chords-piano-roll.svg",
+          "sha256": "95e7112222b89691425a46aadbfc1e0c364f9431b8591d04aab26c6a1d550d35",
+          "size": 5876,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-16-bass-chords-piano-roll.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-16-bass-chords-piano-roll.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-17-tempo-warp.svg",
+          "relativePath": "assets/plate-17-tempo-warp.svg",
+          "sha256": "c6fc553bb23ddbcff95f200cea94de0ebec3ef71877b29aa5c83631d8bf8b0dd",
+          "size": 4357,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-17-tempo-warp.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-17-tempo-warp.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-18-apc-scene-navigation.svg",
+          "relativePath": "assets/plate-18-apc-scene-navigation.svg",
+          "sha256": "a898f46286b47f758c1363f5bae01dc13b99649b2369a2e7ec91a7ecfc6c205a",
+          "size": 17979,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-18-apc-scene-navigation.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-18-apc-scene-navigation.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-19-dct-performance-timeline.svg",
+          "relativePath": "assets/plate-19-dct-performance-timeline.svg",
+          "sha256": "ababacde57e2543673afe429a145782ede929aee73fcce9b23f0d2c3b4c9d8ff",
+          "size": 13066,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-19-dct-performance-timeline.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-19-dct-performance-timeline.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-20-video-segment-map.svg",
+          "relativePath": "assets/plate-20-video-segment-map.svg",
+          "sha256": "0af9d0997542de64a1f50c3cfe957b6067ac8f74606f4ba99a476bb713ee4146",
+          "size": 6871,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-20-video-segment-map.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-20-video-segment-map.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/assets/plate-21-export-audio.svg",
+          "relativePath": "assets/plate-21-export-audio.svg",
+          "sha256": "d8fdfdcf1d10a0a3026bbebe588e5d58a0c7052bec04b9ab7a2a0b7c9fdd376a",
+          "size": 5280,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-21-export-audio.svg",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/assets/plate-21-export-audio.svg",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/book.css",
+          "relativePath": "book.css",
+          "sha256": "0c76e90e43c5404bc32cc89cc3550a016022acb3256c8c85eef7b3a6edb24265",
+          "size": 379,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/book.css",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/book.css",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-001.html",
+          "relativePath": "chapter-001.html",
+          "sha256": "8db3480803156658a5aa9ca4583e929ac82c6c484a8b22393d7d0d8cace2d00f",
+          "size": 2570,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-001.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-001.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-002.html",
+          "relativePath": "chapter-002.html",
+          "sha256": "6a507f41b8a3bd8b93172a48b4e4413ae80cae8c9dcf4bc346d533556151c55b",
+          "size": 5407,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-002.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-002.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-003.html",
+          "relativePath": "chapter-003.html",
+          "sha256": "65cd70b9b4843feb9213fe79cd7a0b52187922a94169a1c1408f5d2b3557e1d7",
+          "size": 6441,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-003.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-003.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-004.html",
+          "relativePath": "chapter-004.html",
+          "sha256": "ac354e8d3679830f3b640a3f126c20e352d76c9832255a4e1d7b33313a8caa69",
+          "size": 9051,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-004.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-004.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-005.html",
+          "relativePath": "chapter-005.html",
+          "sha256": "8d09d3831a2ebd3fc8af1ab3fde2e1c93a7407517b0a592bc2fc280553495fde",
+          "size": 5369,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-005.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-005.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-006.html",
+          "relativePath": "chapter-006.html",
+          "sha256": "039485f71a6581324b6cc8da2385bb2d00870aa887bbc51b586909872ac1527f",
+          "size": 3200,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-006.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-006.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-007.html",
+          "relativePath": "chapter-007.html",
+          "sha256": "54094844f1397cb96ca20c8a42b3a8894e23c14261c01de0aa3a9e07f2b35192",
+          "size": 5532,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-007.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-007.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-008.html",
+          "relativePath": "chapter-008.html",
+          "sha256": "4483b4a5f125223e1883e005f7f5ae5a3d8b370167f0c5c5e34c6c55ac2e748b",
+          "size": 3140,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-008.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-008.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-009.html",
+          "relativePath": "chapter-009.html",
+          "sha256": "09ed5af22c5f32a708f18b22da16efb63a328a02c4d19fedd8165da3588df589",
+          "size": 4568,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-009.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-009.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-010.html",
+          "relativePath": "chapter-010.html",
+          "sha256": "c95eb745395c4326298d2bf02683c1ef5351b0289a5aad731f9abedf7fd07498",
+          "size": 3377,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-010.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-010.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-011.html",
+          "relativePath": "chapter-011.html",
+          "sha256": "5f193ec69ebe10454351fb4df699cc7a200394208f6be757e03e28c780e5acab",
+          "size": 5046,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-011.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-011.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-012.html",
+          "relativePath": "chapter-012.html",
+          "sha256": "30e57aff25f4ae38839711d8ccf421c9fbfac119ad1fa61a40050eecd770085f",
+          "size": 5154,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-012.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-012.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-013.html",
+          "relativePath": "chapter-013.html",
+          "sha256": "ea498b0a37460b3003ab48d038102fd1f108b01a7c28b7cdce22709bd9bae7bf",
+          "size": 4399,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-013.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-013.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-014.html",
+          "relativePath": "chapter-014.html",
+          "sha256": "838be63bcd495fe1ffd6959d27e3bb43641f4eb61cb20f453feae09b131d388a",
+          "size": 3775,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-014.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-014.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-015.html",
+          "relativePath": "chapter-015.html",
+          "sha256": "97eea1d5f3ab3600e742ab1bfd15b836887456f05672748b77c4f01c7536c334",
+          "size": 3340,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-015.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-015.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-016.html",
+          "relativePath": "chapter-016.html",
+          "sha256": "dbc8435686ab193ed58cd07e3c3e59524ec7c158bcc5fbfa880a764d3725f58e",
+          "size": 6831,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-016.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-016.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-017.html",
+          "relativePath": "chapter-017.html",
+          "sha256": "62da105c365b6ca4bf4ce8f1cbd2145da77c9a8fd50ed6be7d14026f9a1b99f2",
+          "size": 3005,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-017.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-017.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-018.html",
+          "relativePath": "chapter-018.html",
+          "sha256": "7ab9600016adea71f7ed29b263e7b3e61f03d5b61e0b6a0b794a50caccb16aae",
+          "size": 4004,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-018.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-018.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-019.html",
+          "relativePath": "chapter-019.html",
+          "sha256": "efbfccd80fbdaadb2f9c87d1f2a26016b08a2c1e54a101a2608a5cfc0a61a68d",
+          "size": 2919,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-019.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-019.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-020.html",
+          "relativePath": "chapter-020.html",
+          "sha256": "56c2ec37106b0e8251e32bb7c0400f83c56062688bcae9adc6dc375d07043966",
+          "size": 3333,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-020.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-020.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-021.html",
+          "relativePath": "chapter-021.html",
+          "sha256": "c4e8b6e167a9facebfe9a889aeb05b1a1f69dad7f4b0e18ad87f29eae199375a",
+          "size": 3281,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-021.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-021.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-022.html",
+          "relativePath": "chapter-022.html",
+          "sha256": "b408d968d9953472f9797169b3305f7703d170d9367ca6c1c006b82570049287",
+          "size": 3298,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-022.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-022.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-023.html",
+          "relativePath": "chapter-023.html",
+          "sha256": "d17a7a60b9fa450c5fa2cbfa7b70bc329e2c278d46dc1ee93119b42d625ac3b2",
+          "size": 4037,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-023.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-023.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-024.html",
+          "relativePath": "chapter-024.html",
+          "sha256": "abb9dc09261004915c9479cf92e38ec9a27a07ddc4e20bac85691db666bccc77",
+          "size": 37440,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-024.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-024.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-025.html",
+          "relativePath": "chapter-025.html",
+          "sha256": "129592c9497e60d807b2a426f6dcf944b90322f7a8ba1eac1c3e7ea5483991dd",
+          "size": 4487,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-025.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-025.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-026.html",
+          "relativePath": "chapter-026.html",
+          "sha256": "719a6acc9f2dd46797ace54b10dec63061b2193530e01111ca5207d0bd7772ea",
+          "size": 3617,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-026.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-026.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-027.html",
+          "relativePath": "chapter-027.html",
+          "sha256": "40a0fcf09dfbd6a0d7ddb1f6c096623ece269616973d7a325e5d2566180302b0",
+          "size": 5301,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-027.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-027.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-028.html",
+          "relativePath": "chapter-028.html",
+          "sha256": "ac82edd5f43af284515ea8a9f42f1161cf43a358f38eaaed697662ca6b807d81",
+          "size": 2763,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-028.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-028.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/chapter-029.html",
+          "relativePath": "chapter-029.html",
+          "sha256": "5e4be597da18e5a4a4821e95e853dcef49c574ad92a181dc7c75c18a01e68a99",
+          "size": 2851,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-029.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/chapter-029.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/index.html",
+          "relativePath": "index.html",
+          "sha256": "24ed0a9fd950df85e05e9be77007462a5c9239f75f5b49ab2673fb24ea515ca8",
+          "size": 16801,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/index.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/index.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/apc40-mk2-ableton-start/apc40-mk2-ableton-start-chapters/sitemap.json",
+          "relativePath": "sitemap.json",
+          "sha256": "8f64bc9a04181d6967e103510de920cfe50bc14decbdbed283ca274f7c05afb3",
+          "size": 16878,
+          "pathname": "books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/sitemap.json",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/apc40-mk2-ableton-start/chapters/dba850199dbdd05f/sitemap.json",
           "skipped": false
         }
       ]

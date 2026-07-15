@@ -4,8 +4,8 @@ The Iceberg-compatible catalog foundation for QueryGraph, delivered as public PD
 
 ## Current Public Editions
 
-- [PDF](https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lakecat/pdf/3a2ea25f6992be8a-lakecat.pdf)
-- [EPUB](https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lakecat/epub/62b42cfb37c667e3-lakecat.epub)
+- [PDF](/lakecat/pdf/)
+- [EPUB](/lakecat/epub/)
 - [Read online](/read/lakecat/)
 - [Chapter reader](/read/lakecat/chapters/)
 

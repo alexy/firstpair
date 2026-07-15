@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-15T00:26:14.903Z",
+  "updatedAt": "2026-07-15T00:30:33.726Z",
   "books": {
     "typesec": {
-      "updatedAt": "2026-07-15T00:17:48.761Z",
+      "updatedAt": "2026-07-15T00:30:30.125Z",
       "dryRun": false,
       "units": {
         "pdf": {
@@ -13,7 +13,7 @@
           "size": 2950748,
           "pathname": "books/typesec/pdf/f9ddeaf07d158937-typesec.pdf",
           "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/typesec/pdf/f9ddeaf07d158937-typesec.pdf",
-          "skipped": false
+          "skipped": true
         },
         "epub": {
           "kind": "epub",
@@ -22,7 +22,7 @@
           "size": 2488105,
           "pathname": "books/typesec/epub/b1a3fa73f4624767-typesec.epub",
           "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/typesec/epub/b1a3fa73f4624767-typesec.epub",
-          "skipped": false
+          "skipped": true
         },
         "html": {
           "kind": "html",
@@ -31,7 +31,7 @@
           "size": 3419511,
           "pathname": "books/typesec/html/af902a44d60c39e3-typesec.html",
           "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/typesec/html/af902a44d60c39e3-typesec.html",
-          "skipped": false
+          "skipped": true
         },
         "cover": {
           "kind": "cover",
@@ -40,7 +40,7 @@
           "size": 2041421,
           "pathname": "books/typesec/cover/6f32ffe53a48c2e0-typesec-cover.png",
           "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/typesec/cover/6f32ffe53a48c2e0-typesec-cover.png",
-          "skipped": false
+          "skipped": true
         },
         "htmlChapters": {
           "kind": "htmlChapters",
@@ -48,7 +48,7 @@
           "sha256": "0a503d3489c8454f9bd1a776ab6e883de2eca6945865b6fce0ab52908288edae",
           "pathnamePrefix": "books/typesec/chapters/0a503d3489c8454f",
           "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/typesec/chapters/0a503d3489c8454f/index.html",
-          "skipped": false,
+          "skipped": true,
           "files": [
             {
               "localPath": "book-uploads/staging/typesec/typesec-chapters/assets/3d747fe2144a-diagram-4.png",
@@ -334,7 +334,7 @@
       }
     },
     "grust": {
-      "updatedAt": "2026-07-15T00:15:54.692Z",
+      "updatedAt": "2026-07-15T00:30:26.233Z",
       "dryRun": false,
       "units": {
         "pdf": {
@@ -344,7 +344,7 @@
           "size": 3505905,
           "pathname": "books/grust/pdf/c15b711e164d8f16-grust.pdf",
           "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/grust/pdf/c15b711e164d8f16-grust.pdf",
-          "skipped": false
+          "skipped": true
         },
         "epub": {
           "kind": "epub",
@@ -353,7 +353,7 @@
           "size": 2841667,
           "pathname": "books/grust/epub/171c4b9ac0919411-grust.epub",
           "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/grust/epub/171c4b9ac0919411-grust.epub",
-          "skipped": false
+          "skipped": true
         },
         "html": {
           "kind": "html",
@@ -362,7 +362,7 @@
           "size": 3907155,
           "pathname": "books/grust/html/737da06dd548cc8c-grust.html",
           "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/grust/html/737da06dd548cc8c-grust.html",
-          "skipped": false
+          "skipped": true
         },
         "cover": {
           "kind": "cover",
@@ -371,7 +371,7 @@
           "size": 2418988,
           "pathname": "books/grust/cover/05f645403201dc06-grust-cover.png",
           "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/grust/cover/05f645403201dc06-grust-cover.png",
-          "skipped": false
+          "skipped": true
         },
         "htmlChapters": {
           "kind": "htmlChapters",
@@ -379,7 +379,7 @@
           "sha256": "63c974047f0085f7365c927c18bde6ebad4cacb83ebd8df992e92d2f0d246d04",
           "pathnamePrefix": "books/grust/chapters/63c974047f0085f7",
           "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/grust/chapters/63c974047f0085f7/index.html",
-          "skipped": false,
+          "skipped": true,
           "files": [
             {
               "localPath": "book-uploads/staging/grust/grust-chapters/assets/05f645403201-grust-cover.png",
@@ -629,7 +629,7 @@
       }
     },
     "lakecat": {
-      "updatedAt": "2026-07-15T00:26:14.902Z",
+      "updatedAt": "2026-07-15T00:30:33.724Z",
       "dryRun": false,
       "units": {
         "pdf": {

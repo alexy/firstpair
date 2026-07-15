@@ -6,8 +6,8 @@ data across in-memory and database-backed stores.
 
 ## Current Public Editions
 
-- [PDF](https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/grust/pdf/c15b711e164d8f16-grust.pdf)
-- [EPUB](https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/grust/epub/171c4b9ac0919411-grust.epub)
+- [PDF](/grust/pdf/)
+- [EPUB](/grust/epub/)
 - [Read online](/read/grust/)
 - [Chapter reader](/read/grust/chapters/)
 

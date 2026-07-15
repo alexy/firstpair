@@ -22,20 +22,23 @@ export const deliverableBooks = [
   {
     "slug": "typesec",
     "title": "TypeSec",
-    "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/typesec/pdf/7a4d8faa319200d7-typesec.pdf",
-    "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/typesec/epub/5cc093e7cb4a19bc-typesec.epub"
+    "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/typesec/pdf/f9ddeaf07d158937-typesec.pdf",
+    "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/typesec/epub/b1a3fa73f4624767-typesec.epub",
+    "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/typesec/cover/6f32ffe53a48c2e0-typesec-cover.png"
   },
   {
     "slug": "grust",
     "title": "Grust",
-    "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/grust/pdf/c650c6689d855509-grust.pdf",
-    "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/grust/epub/35ed2bdf19ef6291-grust.epub"
+    "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/grust/pdf/c15b711e164d8f16-grust.pdf",
+    "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/grust/epub/171c4b9ac0919411-grust.epub",
+    "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/grust/cover/05f645403201dc06-grust-cover.png"
   },
   {
     "slug": "lakecat",
     "title": "LakeCat",
-    "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lakecat/pdf/8ab287a7d35a3843-lakecat.pdf",
-    "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lakecat/epub/f4f9ec050149ffed-lakecat.epub"
+    "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lakecat/pdf/3a2ea25f6992be8a-lakecat.pdf",
+    "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lakecat/epub/62b42cfb37c667e3-lakecat.epub",
+    "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lakecat/cover/703fd6bca355dfb1-lakecat-cover.png"
   },
   {
     "slug": "sail-rust-book",

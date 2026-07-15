@@ -35,6 +35,8 @@ grep -q '^edition: preview$' "$work/dist-preview/VERSION.md"
 grep -q '^edition: full$' "$work/dist-full/VERSION.md"
 grep -q '^tutorial_file: tutorial.html$' "$work/dist-single/VERSION.md"
 cmp -s "$work/tutorial.html" "$work/dist-single/tutorial.html"
+pdfinfo "$work/dist-single/firstpair-build-fixture.pdf" | grep -q '^Title:[[:space:]]*FirstPair Build Fixture$'
+pdfinfo "$work/dist-single/firstpair-build-fixture.pdf" | grep -q '^Author:[[:space:]]*First Pair Press$'
 
 mkdir -p "$work/resolution-book" \
   "$work/resolution-config/nested/sail/book" \

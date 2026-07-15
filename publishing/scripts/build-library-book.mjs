@@ -21,6 +21,7 @@ import { fileURLToPath } from 'node:url'
 
 const scriptDir = dirname(fileURLToPath(import.meta.url))
 const firstpairRoot = dirname(dirname(scriptDir))
+let publishingPython = null
 
 function usage() {
   console.error(`usage: build-library-book.sh [preview|full|both] [options]
@@ -281,6 +282,24 @@ function runPandoc(args, config, context) {
     cwd: join(context.tmpDir, 'pandoc'),
     env: hookEnvironment(config, context),
   })
+}
+
+function setPdfMetadata(pdf, context) {
+  publishingPython ??= commandOutput(
+    join(scriptDir, 'ensure-python-env.sh'),
+    [join(firstpairRoot, 'publishing', 'python')],
+    firstpairRoot,
+  )
+  run(
+    publishingPython,
+    [
+      join(firstpairRoot, 'publishing', 'python', 'set_pdf_metadata.py'),
+      pdf,
+      '--title', context.title,
+      '--author', context.author,
+    ],
+    { cwd: context.repoRoot },
+  )
 }
 
 function buildTypstPdf(variant, config, context) {
@@ -598,6 +617,7 @@ function buildEdition(config, baseContext, distOverride) {
       if (!existsSync(join(preliminary.distDir, `${variant.stem}.pdf`))) {
         throw new Error(`PDF renderer did not create ${variant.stem}.pdf`)
       }
+      setPdfMetadata(join(preliminary.distDir, `${variant.stem}.pdf`), preliminary)
     }
 
     const primaryPdf = join(preliminary.distDir, `${primary.stem}.pdf`)

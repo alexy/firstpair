@@ -1,17 +1,24 @@
 import { chromium } from '@playwright/test'
 
 const target = process.env.FIRSTPAIR_SITE_URL ?? 'http://127.0.0.1:5183/'
+const queryGraphStoryUrl = 'https://firstpair.press/announcing-querygraph-stack'
 
 const browser = await chromium.launch()
 const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } })
 await page.goto(target, { waitUntil: 'networkidle' })
 await page.screenshot({ path: 'dist-prod/firstpair-site-smoke.png', fullPage: true })
 
-const checks = await page.evaluate(() => {
+const checks = await page.evaluate((storyUrl) => {
   const links = [...document.querySelectorAll('a')].map((link) => link.getAttribute('href') ?? '')
   const readerLinks = [...document.querySelectorAll('a[href^="/read/"]')]
   const stage = document.querySelector('.press-stage')?.getBoundingClientRect()
   const cardCount = document.querySelectorAll('.book-card').length
+  const queryGraphCard = [...document.querySelectorAll('.book-card')].find(
+    (card) => card.querySelector('h3')?.textContent?.trim() === 'The QueryGraph Stack',
+  )
+  const queryGraphCardLinks = [...(queryGraphCard?.querySelectorAll('.book-links a') ?? [])].map(
+    (link) => link.getAttribute('href') ?? '',
+  )
 
   return {
     title: document.title,
@@ -40,11 +47,12 @@ const checks = await page.evaluate(() => {
     readerLinksOpenInNewTabs: readerLinks.every(
       (link) => link.target === '_blank' && link.relList.contains('noopener'),
     ),
+    hasQueryGraphStoryCardLink: queryGraphCardLinks.includes(storyUrl),
     cardCount,
     stageWidth: Math.round(stage?.width ?? 0),
     stageHeight: Math.round(stage?.height ?? 0),
   }
-})
+}, queryGraphStoryUrl)
 
 await page.goto(new URL('/books/sail-rust-book/', target).href, { waitUntil: 'networkidle' })
 
@@ -66,6 +74,18 @@ const bookPageChecks = await page.evaluate(() => {
     hasPostLink: links.includes('https://firstpair.press/announcing-sail-rust-book'),
   }
 })
+
+await page.goto(new URL('/books/querygraph/', target).href, { waitUntil: 'networkidle' })
+
+const queryGraphBookPageChecks = await page.evaluate((storyUrl) => {
+  const links = [...document.querySelectorAll('a')].map((link) => link.getAttribute('href') ?? '')
+
+  return {
+    hasBookDetail: Boolean(document.querySelector('.book-detail')),
+    title: document.querySelector('h1')?.textContent?.trim() ?? '',
+    hasPostLink: links.includes(storyUrl),
+  }
+}, queryGraphStoryUrl)
 
 await browser.close()
 
@@ -206,6 +226,10 @@ if (!checks.readerLinksOpenInNewTabs) {
   throw new Error(`HTML reader links should open in new tabs: ${JSON.stringify(checks)}`)
 }
 
+if (!checks.hasQueryGraphStoryCardLink) {
+  throw new Error(`QueryGraph library card is missing its story link: ${JSON.stringify(checks)}`)
+}
+
 if (
   !bookPageChecks.hasBookDetail ||
   bookPageChecks.title !== 'Sail Rust Book' ||
@@ -220,6 +244,16 @@ if (
   !bookPageChecks.hasPostLink
 ) {
   throw new Error(`Book detail page smoke failed: ${JSON.stringify(bookPageChecks)}`)
+}
+
+if (
+  !queryGraphBookPageChecks.hasBookDetail ||
+  queryGraphBookPageChecks.title !== 'The QueryGraph Stack' ||
+  !queryGraphBookPageChecks.hasPostLink
+) {
+  throw new Error(
+    `QueryGraph book detail page smoke failed: ${JSON.stringify(queryGraphBookPageChecks)}`,
+  )
 }
 
 if (catalogChecks.hostedVaultGuideCount > 0 && !checks.hasHostedVaultGuideLink) {
@@ -248,4 +282,6 @@ if (catalogChecks.failedReaderBodies.length > 0) {
   )
 }
 
-console.log(JSON.stringify({ ...checks, bookPageChecks, ...catalogChecks }, null, 2))
+console.log(
+  JSON.stringify({ ...checks, bookPageChecks, queryGraphBookPageChecks, ...catalogChecks }, null, 2),
+)

@@ -348,7 +348,7 @@ const fragments = [
               target="_blank"
               rel="noreferrer"
             >
-              FirstPair.press post
+              Story
               <ExternalLink :size="14" />
             </a>
             <a
@@ -585,6 +585,10 @@ const fragments = [
                     <a :href="book.htmlChapters" target="_blank" rel="noopener noreferrer">Chapters</a>
                     <a v-if="book.vault" :href="stableDeliverableHref(book, 'vault')" download>Vault</a>
                     <a v-if="book.vaultGuide" :href="book.vaultGuide" target="_blank" rel="noopener noreferrer">Vault guide</a>
+                    <a v-if="book.post" :href="book.post" target="_blank" rel="noreferrer">
+                      Story
+                      <ExternalLink :size="14" />
+                    </a>
                     <a
                       v-if="book.tutorial"
                       class="book-link--learn"

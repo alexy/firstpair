@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-15T08:09:05.493Z",
+  "updatedAt": "2026-07-15T08:16:14.366Z",
   "books": {
     "typesec": {
       "updatedAt": "2026-07-15T00:30:30.125Z",
@@ -1930,7 +1930,7 @@
       }
     },
     "rio-grande": {
-      "updatedAt": "2026-07-15T08:09:05.492Z",
+      "updatedAt": "2026-07-15T08:16:14.365Z",
       "dryRun": false,
       "units": {
         "pdf": {
@@ -1940,15 +1940,15 @@
           "size": 1049122,
           "pathname": "books/rio-grande/pdf/d3e6b68469a50db0-historia_riograndense_brasil-alexy-preview.pdf",
           "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/rio-grande/pdf/d3e6b68469a50db0-historia_riograndense_brasil-alexy-preview.pdf",
-          "skipped": false
+          "skipped": true
         },
         "epub": {
           "kind": "epub",
           "localPath": "book-uploads/staging/rio-grande/historia_riograndense_brasil-alexy-preview.epub",
-          "sha256": "4685efdf48e1c9211a947198941293c156e4b23d3f0dbc455b625be92ecc953b",
-          "size": 536685,
-          "pathname": "books/rio-grande/epub/4685efdf48e1c921-historia_riograndense_brasil-alexy-preview.epub",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/rio-grande/epub/4685efdf48e1c921-historia_riograndense_brasil-alexy-preview.epub",
+          "sha256": "514491d02c636d4db52ce7c03e41ec5855e5af3a69e7a335180ee49ed63bb9b3",
+          "size": 536665,
+          "pathname": "books/rio-grande/epub/514491d02c636d4d-historia_riograndense_brasil-alexy-preview.epub",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/rio-grande/epub/514491d02c636d4d-historia_riograndense_brasil-alexy-preview.epub",
           "skipped": false
         },
         "html": {
@@ -5005,6 +5005,11 @@
       "pathname": "books/rio-grande/epub/4685efdf48e1c921-historia_riograndense_brasil-alexy-preview.epub",
       "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/rio-grande/epub/4685efdf48e1c921-historia_riograndense_brasil-alexy-preview.epub",
       "size": 536685
+    },
+    "514491d02c636d4db52ce7c03e41ec5855e5af3a69e7a335180ee49ed63bb9b3:536665": {
+      "pathname": "books/rio-grande/epub/514491d02c636d4d-historia_riograndense_brasil-alexy-preview.epub",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/rio-grande/epub/514491d02c636d4d-historia_riograndense_brasil-alexy-preview.epub",
+      "size": 536665
     }
   },
   "chapterPackages": {

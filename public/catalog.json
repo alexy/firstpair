@@ -270,6 +270,32 @@
       "shelf": "querygraph",
       "source": "https://github.com/querygraph/qg-rust",
       "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/querygraph/cover/d56a81bcbdca6dfd-querygraph-cover.png"
+    },
+    {
+      "slug": "sail-iggy",
+      "title": "Sail-Iggy Connector",
+      "author": "Alexy Khrabrov",
+      "kicker": "Work in progress",
+      "description": "A work-in-progress guide to streaming Iggy topics through Sail, permanent Delta mirroring, and Buf-compatible Protobuf schema interoperability.",
+      "accent": "#52734d",
+      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/pdf/767926d9bf53fe18-sail-iggy-connector.pdf",
+      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/epub/d85cc0737025c019-sail-iggy-connector.epub",
+      "html": "/read/sail-iggy/",
+      "htmlChapters": "/read/sail-iggy/chapters/",
+      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/html/b8c32286e2573ebe-sail-iggy-connector.html",
+      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/chapters/5349761fc2537370/index.html",
+      "tags": [
+        "work-in-progress",
+        "Sail",
+        "Iggy",
+        "Delta",
+        "Protobuf",
+        "schema-registry"
+      ],
+      "shelf": "querygraph",
+      "source": "https://github.com/lakehq/sail",
+      "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/cover/8459d3ce676a70d4-sail-iggy-cover.png",
+      "headboard": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/headboard/cdf2d50e3ab7e7af-sail-iggy-headboard.png"
     }
   ]
 }

@@ -94,6 +94,14 @@
       "html": "book-uploads/staging/querygraph/querygraph-stack.html",
       "htmlChapters": "book-uploads/staging/querygraph/querygraph-stack-chapters",
       "cover": "book-uploads/staging/querygraph/querygraph-cover.png"
+    },
+    "sail-iggy": {
+      "pdf": "book-uploads/staging/sail-iggy/sail-iggy-connector.pdf",
+      "epub": "book-uploads/staging/sail-iggy/sail-iggy-connector.epub",
+      "html": "book-uploads/staging/sail-iggy/sail-iggy-connector.html",
+      "htmlChapters": "book-uploads/staging/sail-iggy/sail-iggy-connector-chapters",
+      "cover": "book-uploads/staging/sail-iggy/sail-iggy-cover.png",
+      "headboard": "book-uploads/staging/sail-iggy/sail-iggy-headboard.png"
     }
   }
 }

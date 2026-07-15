@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-15T09:27:32.181Z",
+  "updatedAt": "2026-07-15T15:20:47.985Z",
   "books": {
     "typesec": {
       "updatedAt": "2026-07-15T08:19:45.316Z",
@@ -4306,6 +4306,121 @@
           ]
         }
       }
+    },
+    "sail-iggy": {
+      "updatedAt": "2026-07-15T15:20:47.984Z",
+      "dryRun": false,
+      "units": {
+        "pdf": {
+          "kind": "pdf",
+          "localPath": "book-uploads/staging/sail-iggy/sail-iggy-connector.pdf",
+          "sha256": "767926d9bf53fe18bd9e57c7134f80157b84b12cef71b59a9957fb5697742679",
+          "size": 3855453,
+          "pathname": "books/sail-iggy/pdf/767926d9bf53fe18-sail-iggy-connector.pdf",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/pdf/767926d9bf53fe18-sail-iggy-connector.pdf",
+          "skipped": false
+        },
+        "epub": {
+          "kind": "epub",
+          "localPath": "book-uploads/staging/sail-iggy/sail-iggy-connector.epub",
+          "sha256": "d85cc0737025c0197a6b9994f95804417bfe9e64eaf259c6e7d18c0f97c28448",
+          "size": 2543498,
+          "pathname": "books/sail-iggy/epub/d85cc0737025c019-sail-iggy-connector.epub",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/epub/d85cc0737025c019-sail-iggy-connector.epub",
+          "skipped": false
+        },
+        "html": {
+          "kind": "html",
+          "localPath": "book-uploads/staging/sail-iggy/sail-iggy-connector.html",
+          "sha256": "b8c32286e2573ebe06ef0c96da72f434e322686bfb825d46c47c9aed19710765",
+          "size": 3510178,
+          "pathname": "books/sail-iggy/html/b8c32286e2573ebe-sail-iggy-connector.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/html/b8c32286e2573ebe-sail-iggy-connector.html",
+          "skipped": false
+        },
+        "cover": {
+          "kind": "cover",
+          "localPath": "book-uploads/staging/sail-iggy/sail-iggy-cover.png",
+          "sha256": "8459d3ce676a70d4fa179c62bc0effa88a430c598c218d79e7bba0f0874ba681",
+          "size": 2578183,
+          "pathname": "books/sail-iggy/cover/8459d3ce676a70d4-sail-iggy-cover.png",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/cover/8459d3ce676a70d4-sail-iggy-cover.png",
+          "skipped": false
+        },
+        "headboard": {
+          "kind": "headboard",
+          "localPath": "book-uploads/staging/sail-iggy/sail-iggy-headboard.png",
+          "sha256": "cdf2d50e3ab7e7af99558e2411d521d8aad40deee89f6a91996806ea77368e7f",
+          "size": 2497194,
+          "pathname": "books/sail-iggy/headboard/cdf2d50e3ab7e7af-sail-iggy-headboard.png",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/headboard/cdf2d50e3ab7e7af-sail-iggy-headboard.png",
+          "skipped": false
+        },
+        "htmlChapters": {
+          "kind": "htmlChapters",
+          "localPath": "book-uploads/staging/sail-iggy/sail-iggy-connector-chapters",
+          "sha256": "5349761fc25373704cbb17ba7650b572af0cbfcd26e6ac68e25ab999f3f00863",
+          "pathnamePrefix": "books/sail-iggy/chapters/5349761fc2537370",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/chapters/5349761fc2537370/index.html",
+          "skipped": false,
+          "files": [
+            {
+              "localPath": "book-uploads/staging/sail-iggy/sail-iggy-connector-chapters/assets/8459d3ce676a-sail-iggy-book-cover.png",
+              "relativePath": "assets/8459d3ce676a-sail-iggy-book-cover.png",
+              "sha256": "8459d3ce676a70d4fa179c62bc0effa88a430c598c218d79e7bba0f0874ba681",
+              "size": 2578183,
+              "pathname": "books/sail-iggy/chapters/5349761fc2537370/assets/8459d3ce676a-sail-iggy-book-cover.png",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/chapters/5349761fc2537370/assets/8459d3ce676a-sail-iggy-book-cover.png",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/sail-iggy/sail-iggy-connector-chapters/book.css",
+              "relativePath": "book.css",
+              "sha256": "ee96d5ecf76e33fa2224134904f0dc2de5ad2125e2ad81e8de50379f4a404c71",
+              "size": 412,
+              "pathname": "books/sail-iggy/chapters/5349761fc2537370/book.css",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/chapters/5349761fc2537370/book.css",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/sail-iggy/sail-iggy-connector-chapters/chapter-001.html",
+              "relativePath": "chapter-001.html",
+              "sha256": "3c79801faa68ec314c767ffa2bcbd1b1001df67a548e4694f983a3b7d18f83a3",
+              "size": 2595,
+              "pathname": "books/sail-iggy/chapters/5349761fc2537370/chapter-001.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/chapters/5349761fc2537370/chapter-001.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/sail-iggy/sail-iggy-connector-chapters/chapter-002.html",
+              "relativePath": "chapter-002.html",
+              "sha256": "bfa615392d18216336afa89870022d34457b89d428cd129a8e2e21488ad9aac9",
+              "size": 71190,
+              "pathname": "books/sail-iggy/chapters/5349761fc2537370/chapter-002.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/chapters/5349761fc2537370/chapter-002.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/sail-iggy/sail-iggy-connector-chapters/index.html",
+              "relativePath": "index.html",
+              "sha256": "e3e890c908e549d9136328ab56376e185d8b2e684e51247105c7e91d9c9cf6e1",
+              "size": 4559,
+              "pathname": "books/sail-iggy/chapters/5349761fc2537370/index.html",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/chapters/5349761fc2537370/index.html",
+              "skipped": false
+            },
+            {
+              "localPath": "book-uploads/staging/sail-iggy/sail-iggy-connector-chapters/sitemap.json",
+              "relativePath": "sitemap.json",
+              "sha256": "53ffd4527e265a4c35265af6fe2a4604af7e73a7b01b33e938e21b2bae382557",
+              "size": 6753,
+              "pathname": "books/sail-iggy/chapters/5349761fc2537370/sitemap.json",
+              "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/chapters/5349761fc2537370/sitemap.json",
+              "skipped": false
+            }
+          ]
+        }
+      }
     }
   },
   "objects": {
@@ -4928,6 +5043,31 @@
       "pathname": "books/lakecat/cover/d8061182e9ec10fb-lakecat-cover.png",
       "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lakecat/cover/d8061182e9ec10fb-lakecat-cover.png",
       "size": 2424279
+    },
+    "767926d9bf53fe18bd9e57c7134f80157b84b12cef71b59a9957fb5697742679:3855453": {
+      "pathname": "books/sail-iggy/pdf/767926d9bf53fe18-sail-iggy-connector.pdf",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/pdf/767926d9bf53fe18-sail-iggy-connector.pdf",
+      "size": 3855453
+    },
+    "d85cc0737025c0197a6b9994f95804417bfe9e64eaf259c6e7d18c0f97c28448:2543498": {
+      "pathname": "books/sail-iggy/epub/d85cc0737025c019-sail-iggy-connector.epub",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/epub/d85cc0737025c019-sail-iggy-connector.epub",
+      "size": 2543498
+    },
+    "b8c32286e2573ebe06ef0c96da72f434e322686bfb825d46c47c9aed19710765:3510178": {
+      "pathname": "books/sail-iggy/html/b8c32286e2573ebe-sail-iggy-connector.html",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/html/b8c32286e2573ebe-sail-iggy-connector.html",
+      "size": 3510178
+    },
+    "8459d3ce676a70d4fa179c62bc0effa88a430c598c218d79e7bba0f0874ba681:2578183": {
+      "pathname": "books/sail-iggy/cover/8459d3ce676a70d4-sail-iggy-cover.png",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/cover/8459d3ce676a70d4-sail-iggy-cover.png",
+      "size": 2578183
+    },
+    "cdf2d50e3ab7e7af99558e2411d521d8aad40deee89f6a91996806ea77368e7f:2497194": {
+      "pathname": "books/sail-iggy/headboard/cdf2d50e3ab7e7af-sail-iggy-headboard.png",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/headboard/cdf2d50e3ab7e7af-sail-iggy-headboard.png",
+      "size": 2497194
     }
   },
   "chapterPackages": {
@@ -13909,6 +14049,66 @@
           "size": 11573,
           "pathname": "books/lakecat/chapters/e47deab42d9c2ac3/sitemap.json",
           "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/lakecat/chapters/e47deab42d9c2ac3/sitemap.json",
+          "skipped": false
+        }
+      ]
+    },
+    "5349761fc25373704cbb17ba7650b572af0cbfcd26e6ac68e25ab999f3f00863": {
+      "pathnamePrefix": "books/sail-iggy/chapters/5349761fc2537370",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/chapters/5349761fc2537370/index.html",
+      "files": [
+        {
+          "localPath": "book-uploads/staging/sail-iggy/sail-iggy-connector-chapters/assets/8459d3ce676a-sail-iggy-book-cover.png",
+          "relativePath": "assets/8459d3ce676a-sail-iggy-book-cover.png",
+          "sha256": "8459d3ce676a70d4fa179c62bc0effa88a430c598c218d79e7bba0f0874ba681",
+          "size": 2578183,
+          "pathname": "books/sail-iggy/chapters/5349761fc2537370/assets/8459d3ce676a-sail-iggy-book-cover.png",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/chapters/5349761fc2537370/assets/8459d3ce676a-sail-iggy-book-cover.png",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/sail-iggy/sail-iggy-connector-chapters/book.css",
+          "relativePath": "book.css",
+          "sha256": "ee96d5ecf76e33fa2224134904f0dc2de5ad2125e2ad81e8de50379f4a404c71",
+          "size": 412,
+          "pathname": "books/sail-iggy/chapters/5349761fc2537370/book.css",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/chapters/5349761fc2537370/book.css",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/sail-iggy/sail-iggy-connector-chapters/chapter-001.html",
+          "relativePath": "chapter-001.html",
+          "sha256": "3c79801faa68ec314c767ffa2bcbd1b1001df67a548e4694f983a3b7d18f83a3",
+          "size": 2595,
+          "pathname": "books/sail-iggy/chapters/5349761fc2537370/chapter-001.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/chapters/5349761fc2537370/chapter-001.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/sail-iggy/sail-iggy-connector-chapters/chapter-002.html",
+          "relativePath": "chapter-002.html",
+          "sha256": "bfa615392d18216336afa89870022d34457b89d428cd129a8e2e21488ad9aac9",
+          "size": 71190,
+          "pathname": "books/sail-iggy/chapters/5349761fc2537370/chapter-002.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/chapters/5349761fc2537370/chapter-002.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/sail-iggy/sail-iggy-connector-chapters/index.html",
+          "relativePath": "index.html",
+          "sha256": "e3e890c908e549d9136328ab56376e185d8b2e684e51247105c7e91d9c9cf6e1",
+          "size": 4559,
+          "pathname": "books/sail-iggy/chapters/5349761fc2537370/index.html",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/chapters/5349761fc2537370/index.html",
+          "skipped": false
+        },
+        {
+          "localPath": "book-uploads/staging/sail-iggy/sail-iggy-connector-chapters/sitemap.json",
+          "relativePath": "sitemap.json",
+          "sha256": "53ffd4527e265a4c35265af6fe2a4604af7e73a7b01b33e938e21b2bae382557",
+          "size": 6753,
+          "pathname": "books/sail-iggy/chapters/5349761fc2537370/sitemap.json",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/chapters/5349761fc2537370/sitemap.json",
           "skipped": false
         }
       ]

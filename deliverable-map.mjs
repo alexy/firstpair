@@ -83,5 +83,12 @@ export const deliverableBooks = [
     "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/querygraph/pdf/02c983636be0c471-querygraph-stack.pdf",
     "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/querygraph/epub/367634aa816ebecb-querygraph-stack.epub",
     "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/querygraph/cover/d56a81bcbdca6dfd-querygraph-cover.png"
+  },
+  {
+    "slug": "sail-iggy",
+    "title": "Sail-Iggy Connector",
+    "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/pdf/767926d9bf53fe18-sail-iggy-connector.pdf",
+    "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/epub/d85cc0737025c019-sail-iggy-connector.epub",
+    "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/cover/8459d3ce676a70d4-sail-iggy-cover.png"
   }
 ]

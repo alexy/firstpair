@@ -73,5 +73,11 @@ export const readerBooks = [
     "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/querygraph/html/79e412b36cc52a12-querygraph-stack.html",
     "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/querygraph/chapters/7dcdc8af985c4e42/index.html",
     "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/querygraph/chapters/7dcdc8af985c4e42"
+  },
+  {
+    "slug": "sail-iggy",
+    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/html/b8c32286e2573ebe-sail-iggy-connector.html",
+    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/chapters/5349761fc2537370/index.html",
+    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/sail-iggy/chapters/5349761fc2537370"
   }
 ]

@@ -157,6 +157,18 @@ derivative with Pandoc for Blob upload. Store `/read/<book-stem>/guide/` in the
 catalog's `vaultGuide` field and the backing HTML Blob URL in
 `vaultGuideSource`; do not expose the raw Markdown Blob as the reader link.
 
+Vault archives never carry a `workspace.json` or `workspace-mobile.json` from
+any source folder, nor the generated vault's `.obsidian/workspaces.json` saved
+layouts; those files are volatile user state. A source-owned vault may instead
+provide the exact helper `.obsidian/workspace-first-open.json` containing only
+`{"lastOpenFiles":["Home.md"]}`. When root `Home.md` exists, the archiver omits
+the helper and injects its identical bytes as both canonical workspace files so
+current Obsidian can use the same Home landing hint on a fresh desktop or mobile
+extraction. Any other helper payload is a hard failure. Seedless vaults ship no
+workspace state, and this convention does not enable an optional community
+plugin. Keep the source guide's manual instruction to open `Home.md` as the
+fallback when Obsidian ignores the hint.
+
 Before regenerating, editing, validating with write-capable tools, zipping, or
 otherwise programmatically touching an Obsidian vault directory, ask the user to
 close that vault in Obsidian and wait for confirmation. Obsidian may keep

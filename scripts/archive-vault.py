@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import shutil
 import stat
@@ -13,6 +14,11 @@ from pathlib import Path, PurePosixPath
 
 
 ARCHIVE_TIMESTAMP = (1980, 1, 1, 0, 0, 0)
+FIRST_OPEN_HELPER = PurePosixPath(".obsidian/workspace-first-open.json")
+DESKTOP_WORKSPACE = PurePosixPath(".obsidian/workspace.json")
+MOBILE_WORKSPACE = PurePosixPath(".obsidian/workspace-mobile.json")
+SAVED_WORKSPACES = PurePosixPath(".obsidian/workspaces.json")
+FIRST_OPEN_PAYLOAD = {"lastOpenFiles": ["Home.md"]}
 
 
 def excluded(relative: PurePosixPath) -> bool:
@@ -21,8 +27,35 @@ def excluded(relative: PurePosixPath) -> bool:
     return (
         relative.name == ".DS_Store"
         or ".git" in relative.parts
-        or relative.name == "workspace.json"
+        or relative.name in {DESKTOP_WORKSPACE.name, MOBILE_WORKSPACE.name}
+        or relative in {FIRST_OPEN_HELPER, SAVED_WORKSPACES}
     )
+
+
+def first_open_workspace(vault: Path) -> bytes | None:
+    """Validate and return the source-owned first-open seed, when present."""
+
+    helper = vault / FIRST_OPEN_HELPER
+    if not helper.exists() and not helper.is_symlink():
+        return None
+    if helper.is_symlink() or not helper.is_file():
+        raise ValueError(f"first-open workspace helper must be a regular file: {FIRST_OPEN_HELPER}")
+
+    raw = helper.read_bytes()
+    try:
+        payload = json.loads(raw.decode("utf-8"))
+    except (UnicodeDecodeError, json.JSONDecodeError) as error:
+        raise ValueError(f"invalid first-open workspace helper: {error}") from error
+    if payload != FIRST_OPEN_PAYLOAD:
+        raise ValueError(
+            "first-open workspace helper must be exactly "
+            f"{FIRST_OPEN_PAYLOAD!r}: {FIRST_OPEN_HELPER}"
+        )
+
+    home = vault / "Home.md"
+    if home.is_symlink() or not home.is_file():
+        raise ValueError("first-open workspace helper requires a regular root Home.md")
+    return raw
 
 
 def archive_info(name: str, *, directory: bool) -> zipfile.ZipInfo:
@@ -68,12 +101,20 @@ def build_archive(vault: Path, output: Path, guide: Path | None) -> None:
     if guide is not None and not guide.is_file():
         raise ValueError(f"vault guide is not a regular file: {guide}")
 
-    members = publication_members(vault)
+    members: list[tuple[PurePosixPath, Path | bytes]] = publication_members(vault)
+    workspace = first_open_workspace(vault)
+    if workspace is not None:
+        members.extend(
+            [
+                (PurePosixPath(vault.name) / DESKTOP_WORKSPACE, workspace),
+                (PurePosixPath(vault.name) / MOBILE_WORKSPACE, workspace),
+            ]
+        )
     guide_name = PurePosixPath(vault.name, "README.md") if guide else None
     if guide_name is not None and guide is not None:
         members = [member for member in members if member[0] != guide_name]
         members.append((guide_name, guide))
-        members.sort(key=lambda member: member[0].as_posix())
+    members.sort(key=lambda member: member[0].as_posix())
     output.parent.mkdir(parents=True, exist_ok=True)
     descriptor, temporary_name = tempfile.mkstemp(
         prefix=f".{output.name}.", suffix=".tmp", dir=output.parent
@@ -89,7 +130,11 @@ def build_archive(vault: Path, output: Path, guide: Path | None) -> None:
             strict_timestamps=True,
         ) as archive:
             for archive_path, source in members:
-                if source.is_dir():
+                if isinstance(source, bytes):
+                    info = archive_info(archive_path.as_posix(), directory=False)
+                    info.file_size = len(source)
+                    archive.writestr(info, source)
+                elif source.is_dir():
                     archive.writestr(archive_info(archive_path.as_posix(), directory=True), b"")
                 else:
                     info = archive_info(archive_path.as_posix(), directory=False)

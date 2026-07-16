@@ -86,6 +86,12 @@ Open \`Home.md\`, then use [[Book Map|the book map]].
   const cover = join(fixtureBook, 'assets', 'cover.png')
   const headboard = join(fixtureBook, 'assets', 'headboard.png')
   const stageDir = join(harness, 'book-uploads', 'staging', 'fixture-book')
+  const firstOpenWorkspace = '{"lastOpenFiles":["Home.md"]}\n'
+  const personalDesktopWorkspace = '{"private":"desktop workspace must not ship"}\n'
+  const personalMobileWorkspace = '{"private":"mobile workspace must not ship"}\n'
+  const nestedWorkspace = '{"private":"nested workspace must not ship"}\n'
+  const nestedMobileWorkspace = '{"private":"nested mobile workspace must not ship"}\n'
+  const savedWorkspaces = '{"private":"saved layouts must not ship"}\n'
 
   await Promise.all([
     mkdir(join(harness, 'scripts'), { recursive: true }),
@@ -97,6 +103,7 @@ Open \`Home.md\`, then use [[Book Map|the book map]].
     mkdir(vaultData, { recursive: true }),
     mkdir(join(vault, '.git'), { recursive: true }),
     mkdir(join(vault, '.obsidian'), { recursive: true }),
+    mkdir(join(vault, 'Nested'), { recursive: true }),
     mkdir(dirname(guide), { recursive: true }),
     mkdir(dirname(validator), { recursive: true }),
     mkdir(dirname(cover), { recursive: true }),
@@ -190,7 +197,15 @@ html_chapters_dir: fixture-book-chapters
     writeFile(join(vault, 'Cicero’s résumé.md'), '# Unicode filename fixture\n'),
     writeFile(join(vault, '.DS_Store'), 'volatile finder state\n'),
     writeFile(join(vault, '.git', 'config'), 'private repository state\n'),
-    writeFile(join(vault, '.obsidian', 'workspace.json'), '{"volatile":true}\n'),
+    writeFile(join(vault, '.obsidian', 'workspace.json'), personalDesktopWorkspace),
+    writeFile(join(vault, '.obsidian', 'workspace-mobile.json'), personalMobileWorkspace),
+    writeFile(join(vault, '.obsidian', 'workspaces.json'), savedWorkspaces),
+    writeFile(join(vault, 'Nested', 'workspace.json'), nestedWorkspace),
+    writeFile(join(vault, 'Nested', 'workspace-mobile.json'), nestedMobileWorkspace),
+    writeFile(
+      join(vault, '.obsidian', 'workspace-first-open.json'),
+      firstOpenWorkspace,
+    ),
     writeFile(join(vaultData, 'units.jsonl'), '{"id":"fixture-1"}\n'),
     writeFile(guide, '# Fixture Book Vault\n\nOpen `Home.md`.\n'),
     writeFile(
@@ -291,7 +306,27 @@ print("fixture source-owned vault validation passed")
   assert(archiveEntries.every((entry) => entry.date_time.join('-') === '1980-1-1-0-0-0'))
   assert(!archiveEntries.some((entry) => entry.name.endsWith('/.DS_Store')))
   assert(!archiveEntries.some((entry) => entry.name.includes('/.git/')))
-  assert(!archiveEntries.some((entry) => entry.name.endsWith('/workspace.json')))
+  assert(!archiveEntries.some((entry) => entry.name.endsWith('/workspace-first-open.json')))
+  assert(!archiveEntries.some((entry) => entry.name.endsWith('/Nested/workspace.json')))
+  assert(!archiveEntries.some((entry) => entry.name.endsWith('/Nested/workspace-mobile.json')))
+  assert(!archiveEntries.some((entry) => entry.name.endsWith('/.obsidian/workspaces.json')))
+  assert(archiveEntries.some((entry) => entry.name.endsWith('/.obsidian/workspace.json')))
+  assert(archiveEntries.some((entry) => entry.name.endsWith('/.obsidian/workspace-mobile.json')))
+
+  const [archivedDesktopWorkspace, archivedMobileWorkspace] = await Promise.all([
+    run('unzip', ['-p', vaultZip, 'Fixture Book Vault/.obsidian/workspace.json']),
+    run('unzip', ['-p', vaultZip, 'Fixture Book Vault/.obsidian/workspace-mobile.json']),
+  ])
+  assert.deepEqual(archivedDesktopWorkspace.stdout, Buffer.from(firstOpenWorkspace))
+  assert.deepEqual(archivedMobileWorkspace.stdout, Buffer.from(firstOpenWorkspace))
+  assert.notDeepEqual(archivedDesktopWorkspace.stdout, Buffer.from(personalDesktopWorkspace))
+  assert.notDeepEqual(archivedMobileWorkspace.stdout, Buffer.from(personalMobileWorkspace))
+  const archivedPayloads = (await run('unzip', ['-p', vaultZip])).stdout.toString('utf8')
+  assert.doesNotMatch(archivedPayloads, /desktop workspace must not ship/)
+  assert.doesNotMatch(archivedPayloads, /mobile workspace must not ship/)
+  assert.doesNotMatch(archivedPayloads, /nested workspace must not ship/)
+  assert.doesNotMatch(archivedPayloads, /nested mobile workspace must not ship/)
+  assert.doesNotMatch(archivedPayloads, /saved layouts must not ship/)
 
   const repeatedVaultZip = join(work, 'fixture-vault-repeat.zip')
   await run('python3', [
@@ -304,6 +339,75 @@ print("fixture source-owned vault validation passed")
     guide,
   ])
   assert.deepEqual(await readFile(repeatedVaultZip), await readFile(vaultZip))
+
+  const seedlessVault = join(work, 'Seedless Vault')
+  const seedlessArchive = join(work, 'seedless-vault.zip')
+  await mkdir(join(seedlessVault, '.obsidian'), { recursive: true })
+  await Promise.all([
+    writeFile(join(seedlessVault, 'Home.md'), '# Seedless fixture\n'),
+    writeFile(
+      join(seedlessVault, '.obsidian', 'workspace.json'),
+      personalDesktopWorkspace,
+    ),
+    writeFile(
+      join(seedlessVault, '.obsidian', 'workspace-mobile.json'),
+      personalMobileWorkspace,
+    ),
+  ])
+  await run('python3', [
+    join(harness, 'scripts', 'archive-vault.py'),
+    '--vault',
+    seedlessVault,
+    '--output',
+    seedlessArchive,
+  ])
+  const seedlessEntries = JSON.parse(
+    (
+      await run('python3', [
+        '-c',
+        'import json,sys,zipfile; z=zipfile.ZipFile(sys.argv[1]); print(json.dumps(z.namelist()))',
+        seedlessArchive,
+      ])
+    ).stdout.toString('utf8'),
+  )
+  assert(!seedlessEntries.some((entry) => entry.endsWith('/workspace.json')))
+  assert(!seedlessEntries.some((entry) => entry.endsWith('/workspace-mobile.json')))
+  assert(!seedlessEntries.some((entry) => entry.endsWith('/workspace-first-open.json')))
+  const seedlessPayloads = (await run('unzip', ['-p', seedlessArchive])).stdout.toString('utf8')
+  assert.doesNotMatch(seedlessPayloads, /desktop workspace must not ship/)
+  assert.doesNotMatch(seedlessPayloads, /mobile workspace must not ship/)
+
+  await writeFile(
+    join(seedlessVault, '.obsidian', 'workspace-first-open.json'),
+    '{"lastOpenFiles":["Not Home.md"]}\n',
+  )
+  await assert.rejects(
+    run('python3', [
+      join(harness, 'scripts', 'archive-vault.py'),
+      '--vault',
+      seedlessVault,
+      '--output',
+      join(work, 'invalid-seed-vault.zip'),
+    ]),
+    /first-open workspace helper must be exactly/,
+  )
+
+  const missingHomeVault = join(work, 'Missing Home Vault')
+  await mkdir(join(missingHomeVault, '.obsidian'), { recursive: true })
+  await writeFile(
+    join(missingHomeVault, '.obsidian', 'workspace-first-open.json'),
+    firstOpenWorkspace,
+  )
+  await assert.rejects(
+    run('python3', [
+      join(harness, 'scripts', 'archive-vault.py'),
+      '--vault',
+      missingHomeVault,
+      '--output',
+      join(work, 'missing-home-vault.zip'),
+    ]),
+    /first-open workspace helper requires a regular root Home\.md/,
+  )
 
   await symlink(join(repoRoot, 'node_modules'), join(harness, 'node_modules'), 'dir')
   await mkdir(join(harness, 'public', 'fixture-book'), { recursive: true })

@@ -18,7 +18,125 @@ FIRST_OPEN_HELPER = PurePosixPath(".obsidian/workspace-first-open.json")
 DESKTOP_WORKSPACE = PurePosixPath(".obsidian/workspace.json")
 MOBILE_WORKSPACE = PurePosixPath(".obsidian/workspace-mobile.json")
 SAVED_WORKSPACES = PurePosixPath(".obsidian/workspaces.json")
-FIRST_OPEN_PAYLOAD = {"lastOpenFiles": ["Home.md"]}
+VOLATILE_WORKSPACE_NAMES = frozenset(
+    {DESKTOP_WORKSPACE.name, MOBILE_WORKSPACE.name}
+)
+FIRST_OPEN_PAYLOAD = {
+    "main": {
+        "id": "0531043c990df55e",
+        "type": "split",
+        "children": [
+            {
+                "id": "9999cbdea50fbe72",
+                "type": "tabs",
+                "children": [
+                    {
+                        "id": "fb59b2571954a561",
+                        "type": "leaf",
+                        "state": {
+                            "type": "markdown",
+                            "state": {
+                                "file": "Home.md",
+                                "mode": "preview",
+                                "source": False,
+                            },
+                            "icon": "lucide-file",
+                            "title": "Home",
+                        },
+                    }
+                ],
+            }
+        ],
+        "direction": "vertical",
+    },
+    "left": {
+        "id": "fbb039bb5e18d3b2",
+        "type": "split",
+        "children": [
+            {
+                "id": "f52d68d4d1bea7f2",
+                "type": "tabs",
+                "children": [
+                    {
+                        "id": "a900cdd0c196c7e8",
+                        "type": "leaf",
+                        "state": {
+                            "type": "file-explorer",
+                            "state": {
+                                "sortOrder": "alphabetical",
+                                "autoReveal": False,
+                            },
+                            "icon": "lucide-folder-closed",
+                            "title": "Files",
+                        },
+                    },
+                    {
+                        "id": "cea44760eccde1a3",
+                        "type": "leaf",
+                        "state": {
+                            "type": "search",
+                            "state": {
+                                "query": "",
+                                "matchingCase": False,
+                                "explainSearch": False,
+                                "collapseAll": False,
+                                "extraContext": False,
+                                "sortOrder": "alphabetical",
+                            },
+                            "icon": "lucide-search",
+                            "title": "Search",
+                        },
+                    },
+                    {
+                        "id": "630f9c4a9ac0b16b",
+                        "type": "leaf",
+                        "state": {
+                            "type": "bookmarks",
+                            "state": {},
+                            "icon": "lucide-bookmark",
+                            "title": "Bookmarks",
+                        },
+                    },
+                ],
+            }
+        ],
+        "direction": "horizontal",
+        "width": 300,
+    },
+    "right": {
+        "id": "1b7c9dc5a4742406",
+        "type": "split",
+        "children": [
+            {
+                "id": "7da908430128da70",
+                "type": "tabs",
+                "children": [
+                    {
+                        "id": "40b875ecfdd371ed",
+                        "type": "leaf",
+                        "state": {
+                            "type": "outline",
+                            "state": {
+                                "file": "Home.md",
+                                "followCursor": False,
+                                "showSearch": False,
+                                "searchQuery": "",
+                            },
+                            "icon": "lucide-list",
+                            "title": "Outline of Home",
+                        },
+                    }
+                ],
+            }
+        ],
+        "direction": "horizontal",
+        "width": 300,
+        "collapsed": True,
+    },
+    "active": "fb59b2571954a561",
+    "lastOpenFiles": ["Home.md"],
+}
+FIRST_OPEN_BYTES = (json.dumps(FIRST_OPEN_PAYLOAD, indent=2) + "\n").encode("utf-8")
 
 
 def excluded(relative: PurePosixPath) -> bool:
@@ -27,7 +145,7 @@ def excluded(relative: PurePosixPath) -> bool:
     return (
         relative.name == ".DS_Store"
         or ".git" in relative.parts
-        or relative.name in {DESKTOP_WORKSPACE.name, MOBILE_WORKSPACE.name}
+        or any(part in VOLATILE_WORKSPACE_NAMES for part in relative.parts)
         or relative in {FIRST_OPEN_HELPER, SAVED_WORKSPACES}
     )
 
@@ -46,10 +164,10 @@ def first_open_workspace(vault: Path) -> bytes | None:
         payload = json.loads(raw.decode("utf-8"))
     except (UnicodeDecodeError, json.JSONDecodeError) as error:
         raise ValueError(f"invalid first-open workspace helper: {error}") from error
-    if payload != FIRST_OPEN_PAYLOAD:
+    if payload != FIRST_OPEN_PAYLOAD or raw != FIRST_OPEN_BYTES:
         raise ValueError(
-            "first-open workspace helper must be exactly "
-            f"{FIRST_OPEN_PAYLOAD!r}: {FIRST_OPEN_HELPER}"
+            "first-open workspace helper must be exactly the canonical complete "
+            f"Home workspace: {FIRST_OPEN_HELPER}"
         )
 
     home = vault / "Home.md"

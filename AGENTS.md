@@ -159,15 +159,152 @@ catalog's `vaultGuide` field and the backing HTML Blob URL in
 
 Vault archives never carry a `workspace.json` or `workspace-mobile.json` from
 any source folder, nor the generated vault's `.obsidian/workspaces.json` saved
-layouts; those files are volatile user state. A source-owned vault may instead
-provide the exact helper `.obsidian/workspace-first-open.json` containing only
-`{"lastOpenFiles":["Home.md"]}`. When root `Home.md` exists, the archiver omits
-the helper and injects its identical bytes as both canonical workspace files so
-current Obsidian can use the same Home landing hint on a fresh desktop or mobile
-extraction. Any other helper payload is a hard failure. Seedless vaults ship no
-workspace state, and this convention does not enable an optional community
-plugin. Keep the source guide's manual instruction to open `Home.md` as the
-fallback when Obsidian ignores the hint.
+layouts; those files are volatile user state. This exclusion applies at every
+depth and to the entire subtree below any path component named `workspace.json`
+or `workspace-mobile.json`. A directory-shaped alias and every one of its
+descendants are therefore private and cannot collide with the regular workspace
+files injected into the ZIP. A source-owned vault may instead provide the exact
+helper `.obsidian/workspace-first-open.json`. Its complete deterministic schema
+is:
+
+```json
+{
+  "main": {
+    "id": "0531043c990df55e",
+    "type": "split",
+    "children": [
+      {
+        "id": "9999cbdea50fbe72",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fb59b2571954a561",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Home.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Home"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fbb039bb5e18d3b2",
+    "type": "split",
+    "children": [
+      {
+        "id": "f52d68d4d1bea7f2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a900cdd0c196c7e8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "cea44760eccde1a3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "630f9c4a9ac0b16b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1b7c9dc5a4742406",
+    "type": "split",
+    "children": [
+      {
+        "id": "7da908430128da70",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "40b875ecfdd371ed",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Home.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Home"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "fb59b2571954a561",
+  "lastOpenFiles": [
+    "Home.md"
+  ]
+}
+```
+
+Serialize it with Python `json.dumps(payload, indent=2) + "\n"`: the canonical
+UTF-8 result is 2,751 bytes with SHA-256
+`a651c5e6434ee35446e0fd51a064063b3169c1f7b4e49b1b3213e8d933483fb6`.
+The schema opens root `Home.md` in reading view, places Files before Search and
+Bookmarks so File Explorer is selected, and supplies a collapsed Home outline.
+The source vault must explicitly enable those core plugins.
+
+The archiver requires both this exact value and its canonical bytes, requires a
+regular root `Home.md`, omits the helper, and injects the helper bytes unchanged
+as both `.obsidian/workspace.json` and `.obsidian/workspace-mobile.json`. The
+two aliases must therefore be byte-identical while every source or nested
+personal workspace remains excluded. Current mobile Obsidian uses the same
+Home leaf while constructing its own mobile drawers from the side panes.
+Seedless vaults ship no workspace state, and this convention does not enable an
+optional community plugin. Once extracted, Obsidian may update the reader's
+workspace normally; no later pane state is published back. Keep the source
+guide's manual instruction to open `Home.md` as the fallback when Obsidian
+ignores the initial workspace.
 
 Before regenerating, editing, validating with write-capable tools, zipping, or
 otherwise programmatically touching an Obsidian vault directory, ask the user to

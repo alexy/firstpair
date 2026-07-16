@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict'
 import { spawn } from 'node:child_process'
+import { createHash } from 'node:crypto'
 import {
   access,
   copyFile,
@@ -86,7 +87,120 @@ Open \`Home.md\`, then use [[Book Map|the book map]].
   const cover = join(fixtureBook, 'assets', 'cover.png')
   const headboard = join(fixtureBook, 'assets', 'headboard.png')
   const stageDir = join(harness, 'book-uploads', 'staging', 'fixture-book')
-  const firstOpenWorkspace = '{"lastOpenFiles":["Home.md"]}\n'
+  const firstOpenPayload = {
+    main: {
+      id: '0531043c990df55e',
+      type: 'split',
+      children: [
+        {
+          id: '9999cbdea50fbe72',
+          type: 'tabs',
+          children: [
+            {
+              id: 'fb59b2571954a561',
+              type: 'leaf',
+              state: {
+                type: 'markdown',
+                state: { file: 'Home.md', mode: 'preview', source: false },
+                icon: 'lucide-file',
+                title: 'Home',
+              },
+            },
+          ],
+        },
+      ],
+      direction: 'vertical',
+    },
+    left: {
+      id: 'fbb039bb5e18d3b2',
+      type: 'split',
+      children: [
+        {
+          id: 'f52d68d4d1bea7f2',
+          type: 'tabs',
+          children: [
+            {
+              id: 'a900cdd0c196c7e8',
+              type: 'leaf',
+              state: {
+                type: 'file-explorer',
+                state: { sortOrder: 'alphabetical', autoReveal: false },
+                icon: 'lucide-folder-closed',
+                title: 'Files',
+              },
+            },
+            {
+              id: 'cea44760eccde1a3',
+              type: 'leaf',
+              state: {
+                type: 'search',
+                state: {
+                  query: '',
+                  matchingCase: false,
+                  explainSearch: false,
+                  collapseAll: false,
+                  extraContext: false,
+                  sortOrder: 'alphabetical',
+                },
+                icon: 'lucide-search',
+                title: 'Search',
+              },
+            },
+            {
+              id: '630f9c4a9ac0b16b',
+              type: 'leaf',
+              state: {
+                type: 'bookmarks',
+                state: {},
+                icon: 'lucide-bookmark',
+                title: 'Bookmarks',
+              },
+            },
+          ],
+        },
+      ],
+      direction: 'horizontal',
+      width: 300,
+    },
+    right: {
+      id: '1b7c9dc5a4742406',
+      type: 'split',
+      children: [
+        {
+          id: '7da908430128da70',
+          type: 'tabs',
+          children: [
+            {
+              id: '40b875ecfdd371ed',
+              type: 'leaf',
+              state: {
+                type: 'outline',
+                state: {
+                  file: 'Home.md',
+                  followCursor: false,
+                  showSearch: false,
+                  searchQuery: '',
+                },
+                icon: 'lucide-list',
+                title: 'Outline of Home',
+              },
+            },
+          ],
+        },
+      ],
+      direction: 'horizontal',
+      width: 300,
+      collapsed: true,
+    },
+    active: 'fb59b2571954a561',
+    lastOpenFiles: ['Home.md'],
+  }
+  const firstOpenWorkspace = `${JSON.stringify(firstOpenPayload, null, 2)}\n`
+  assert.equal(Buffer.byteLength(firstOpenWorkspace), 2751)
+  assert.equal(
+    createHash('sha256').update(firstOpenWorkspace).digest('hex'),
+    'a651c5e6434ee35446e0fd51a064063b3169c1f7b4e49b1b3213e8d933483fb6',
+  )
   const personalDesktopWorkspace = '{"private":"desktop workspace must not ship"}\n'
   const personalMobileWorkspace = '{"private":"mobile workspace must not ship"}\n'
   const nestedWorkspace = '{"private":"nested workspace must not ship"}\n'
@@ -317,8 +431,25 @@ print("fixture source-owned vault validation passed")
     run('unzip', ['-p', vaultZip, 'Fixture Book Vault/.obsidian/workspace.json']),
     run('unzip', ['-p', vaultZip, 'Fixture Book Vault/.obsidian/workspace-mobile.json']),
   ])
+  assert.deepEqual(archivedDesktopWorkspace.stdout, archivedMobileWorkspace.stdout)
   assert.deepEqual(archivedDesktopWorkspace.stdout, Buffer.from(firstOpenWorkspace))
   assert.deepEqual(archivedMobileWorkspace.stdout, Buffer.from(firstOpenWorkspace))
+  const archivedFirstOpenPayload = JSON.parse(archivedDesktopWorkspace.stdout.toString('utf8'))
+  assert.deepEqual(archivedFirstOpenPayload, firstOpenPayload)
+  assert.equal(archivedFirstOpenPayload.main.children[0].children[0].state.type, 'markdown')
+  assert.deepEqual(archivedFirstOpenPayload.main.children[0].children[0].state.state, {
+    file: 'Home.md',
+    mode: 'preview',
+    source: false,
+  })
+  assert.deepEqual(
+    archivedFirstOpenPayload.left.children[0].children.map((leaf) => leaf.state.type),
+    ['file-explorer', 'search', 'bookmarks'],
+  )
+  assert.equal(archivedFirstOpenPayload.right.children[0].children[0].state.type, 'outline')
+  assert.equal(archivedFirstOpenPayload.right.collapsed, true)
+  assert.equal(archivedFirstOpenPayload.active, 'fb59b2571954a561')
+  assert.deepEqual(archivedFirstOpenPayload.lastOpenFiles, ['Home.md'])
   assert.notDeepEqual(archivedDesktopWorkspace.stdout, Buffer.from(personalDesktopWorkspace))
   assert.notDeepEqual(archivedMobileWorkspace.stdout, Buffer.from(personalMobileWorkspace))
   const archivedPayloads = (await run('unzip', ['-p', vaultZip])).stdout.toString('utf8')
@@ -377,6 +508,97 @@ print("fixture source-owned vault validation passed")
   assert.doesNotMatch(seedlessPayloads, /desktop workspace must not ship/)
   assert.doesNotMatch(seedlessPayloads, /mobile workspace must not ship/)
 
+  const directoryAliasVault = join(work, 'Directory Alias Vault')
+  const directoryAliasArchive = join(work, 'directory-alias-vault.zip')
+  const directoryAliasObsidian = join(directoryAliasVault, '.obsidian')
+  await Promise.all([
+    mkdir(join(directoryAliasObsidian, 'workspace.json', 'private', 'deep'), {
+      recursive: true,
+    }),
+    mkdir(join(directoryAliasObsidian, 'workspace-mobile.json', 'private'), {
+      recursive: true,
+    }),
+    mkdir(join(directoryAliasVault, 'Nested', 'workspace.json', 'private'), {
+      recursive: true,
+    }),
+    mkdir(join(directoryAliasVault, 'Nested', 'workspace-mobile.json', 'private', 'deep'), {
+      recursive: true,
+    }),
+  ])
+  await Promise.all([
+    writeFile(join(directoryAliasVault, 'Home.md'), '# Directory alias fixture\n'),
+    writeFile(join(directoryAliasVault, 'ordinary.md'), '# This file must remain\n'),
+    writeFile(
+      join(directoryAliasObsidian, 'workspace-first-open.json'),
+      firstOpenWorkspace,
+    ),
+    writeFile(
+      join(directoryAliasObsidian, 'workspace.json', 'private', 'deep', 'desktop.txt'),
+      'directory-shaped desktop workspace descendant must not ship\n',
+    ),
+    writeFile(
+      join(directoryAliasObsidian, 'workspace-mobile.json', 'private', 'mobile.txt'),
+      'directory-shaped mobile workspace descendant must not ship\n',
+    ),
+    writeFile(
+      join(directoryAliasVault, 'Nested', 'workspace.json', 'private', 'desktop.txt'),
+      'nested directory-shaped desktop workspace descendant must not ship\n',
+    ),
+    writeFile(
+      join(
+        directoryAliasVault,
+        'Nested',
+        'workspace-mobile.json',
+        'private',
+        'deep',
+        'mobile.txt',
+      ),
+      'nested directory-shaped mobile workspace descendant must not ship\n',
+    ),
+  ])
+  await run('python3', [
+    join(harness, 'scripts', 'archive-vault.py'),
+    '--vault',
+    directoryAliasVault,
+    '--output',
+    directoryAliasArchive,
+  ])
+  const directoryAliasEntries = JSON.parse(
+    (
+      await run('python3', [
+        '-c',
+        'import json,sys,zipfile; z=zipfile.ZipFile(sys.argv[1]); print(json.dumps(z.namelist()))',
+        directoryAliasArchive,
+      ])
+    ).stdout.toString('utf8'),
+  )
+  const canonicalDesktopAlias =
+    'Directory Alias Vault/.obsidian/workspace.json'
+  const canonicalMobileAlias =
+    'Directory Alias Vault/.obsidian/workspace-mobile.json'
+  assert.equal(
+    directoryAliasEntries.filter((entry) => entry === canonicalDesktopAlias).length,
+    1,
+  )
+  assert.equal(
+    directoryAliasEntries.filter((entry) => entry === canonicalMobileAlias).length,
+    1,
+  )
+  assert(!directoryAliasEntries.some((entry) => entry.includes('/workspace.json/')))
+  assert(!directoryAliasEntries.some((entry) => entry.includes('/workspace-mobile.json/')))
+  assert(directoryAliasEntries.includes('Directory Alias Vault/ordinary.md'))
+  const [directoryAliasDesktop, directoryAliasMobile] = await Promise.all([
+    run('unzip', ['-p', directoryAliasArchive, canonicalDesktopAlias]),
+    run('unzip', ['-p', directoryAliasArchive, canonicalMobileAlias]),
+  ])
+  assert.deepEqual(directoryAliasDesktop.stdout, Buffer.from(firstOpenWorkspace))
+  assert.deepEqual(directoryAliasMobile.stdout, Buffer.from(firstOpenWorkspace))
+  assert.deepEqual(directoryAliasDesktop.stdout, directoryAliasMobile.stdout)
+  const directoryAliasPayloads = (await run('unzip', ['-p', directoryAliasArchive])).stdout.toString(
+    'utf8',
+  )
+  assert.doesNotMatch(directoryAliasPayloads, /workspace descendant must not ship/)
+
   await writeFile(
     join(seedlessVault, '.obsidian', 'workspace-first-open.json'),
     '{"lastOpenFiles":["Not Home.md"]}\n',
@@ -389,7 +611,22 @@ print("fixture source-owned vault validation passed")
       '--output',
       join(work, 'invalid-seed-vault.zip'),
     ]),
-    /first-open workspace helper must be exactly/,
+    /first-open workspace helper must be exactly the canonical complete Home workspace/,
+  )
+
+  await writeFile(
+    join(seedlessVault, '.obsidian', 'workspace-first-open.json'),
+    `${JSON.stringify(firstOpenPayload)}\n`,
+  )
+  await assert.rejects(
+    run('python3', [
+      join(harness, 'scripts', 'archive-vault.py'),
+      '--vault',
+      seedlessVault,
+      '--output',
+      join(work, 'noncanonical-seed-vault.zip'),
+    ]),
+    /first-open workspace helper must be exactly the canonical complete Home workspace/,
   )
 
   const missingHomeVault = join(work, 'Missing Home Vault')

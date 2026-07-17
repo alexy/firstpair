@@ -104,8 +104,8 @@ export const deliverableBooks = [
   {
     "slug": "suffix",
     "title": "Suffix",
-    "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/pdf/5830ff52eb81358c-suffix.pdf",
-    "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/epub/09dc6f9314b7a7ba-suffix.epub",
+    "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/pdf/342b4581766335d8-suffix.pdf",
+    "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/epub/b174f23d186b9790-suffix.epub",
     "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/cover/b5928afb6181382a-suffix-cover.png"
   }
 ]

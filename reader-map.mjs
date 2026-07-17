@@ -89,8 +89,8 @@ export const readerBooks = [
   },
   {
     "slug": "suffix",
-    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/html/52bc0836e42c5c55-suffix.html",
-    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/chapters/50af90579f59779a/index.html",
-    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/chapters/50af90579f59779a"
+    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/html/5443c5fe25f92425-suffix.html",
+    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/chapters/97f8c399cdb42e1e/index.html",
+    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/chapters/97f8c399cdb42e1e"
   }
 ]

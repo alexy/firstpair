@@ -327,6 +327,30 @@
       "vault": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/cicero-on-himself/vault/f4bc85faeddf8d1f-cicero-on-himself-preview-vault%20%282.0.0-sol-2996266c%29.zip",
       "vaultGuide": "/read/cicero-on-himself/guide/",
       "vaultGuideSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/cicero-on-himself/vault-guide/61fd021b30fc554a-cicero-on-himself-vault-guide%20%282.0.0-sol-2996266c%29.html"
+    },
+    {
+      "slug": "suffix",
+      "title": "Suffix",
+      "author": "Alexy Khrabrov",
+      "kicker": "Finished book",
+      "description": "A practical guide to durable short links on domains you own.",
+      "accent": "#7c5147",
+      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/pdf/f897115d15613759-suffix.pdf",
+      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/epub/75431f1d7c6a5185-suffix.epub",
+      "html": "/read/suffix/",
+      "htmlChapters": "/read/suffix/chapters/",
+      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/html/5443c5fe25f92425-suffix.html",
+      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/chapters/97f8c399cdb42e1e/index.html",
+      "tags": [
+        "suffix",
+        "links",
+        "cli",
+        "technology"
+      ],
+      "shelf": "technology",
+      "source": "https://github.com/alexy/curtail",
+      "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/cover/b5928afb6181382a-suffix-cover.png",
+      "headboard": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/headboard/6a6f7553eac6d02d-suffix-headboard.png"
     }
   ]
 }

@@ -100,5 +100,12 @@ export const deliverableBooks = [
     "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/cicero-on-himself/epub/381b67f42b56c426-cicero-on-himself-preview.epub",
     "vault": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/cicero-on-himself/vault/f4bc85faeddf8d1f-cicero-on-himself-preview-vault%20%282.0.0-sol-2996266c%29.zip",
     "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/cicero-on-himself/cover/2eabf238ba3ca67f-cicero-on-himself-cover.png"
+  },
+  {
+    "slug": "suffix",
+    "title": "Suffix",
+    "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/pdf/f897115d15613759-suffix.pdf",
+    "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/epub/75431f1d7c6a5185-suffix.epub",
+    "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/cover/b5928afb6181382a-suffix-cover.png"
   }
 ]

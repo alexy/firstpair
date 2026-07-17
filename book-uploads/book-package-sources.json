@@ -116,6 +116,14 @@
       "vault": "book-uploads/staging/cicero-on-himself/cicero-on-himself-preview-vault (2.0.0-sol-2996266c).zip",
       "vaultGuideMarkdown": "book-uploads/staging/cicero-on-himself/cicero-on-himself-vault-guide (2.0.0-sol-2996266c).md",
       "vaultGuideHtml": "book-uploads/staging/cicero-on-himself/cicero-on-himself-vault-guide (2.0.0-sol-2996266c).html"
+    },
+    "suffix": {
+      "pdf": "book-uploads/staging/suffix/suffix.pdf",
+      "epub": "book-uploads/staging/suffix/suffix.epub",
+      "html": "book-uploads/staging/suffix/suffix.html",
+      "htmlChapters": "book-uploads/staging/suffix/suffix-chapters",
+      "cover": "book-uploads/staging/suffix/suffix-cover.png",
+      "headboard": "book-uploads/staging/suffix/suffix-headboard.png"
     }
   }
 }

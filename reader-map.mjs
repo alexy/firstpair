@@ -86,5 +86,11 @@ export const readerBooks = [
     "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/cicero-on-himself/chapters/2fd6ec59bb0a4478/index.html",
     "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/cicero-on-himself/chapters/2fd6ec59bb0a4478",
     "vaultGuideSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/cicero-on-himself/vault-guide/61fd021b30fc554a-cicero-on-himself-vault-guide%20%282.0.0-sol-2996266c%29.html"
+  },
+  {
+    "slug": "suffix",
+    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/html/5443c5fe25f92425-suffix.html",
+    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/chapters/97f8c399cdb42e1e/index.html",
+    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/chapters/97f8c399cdb42e1e"
   }
 ]

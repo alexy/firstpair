@@ -104,11 +104,11 @@ export const deliverableBooks = [
   {
     "slug": "verdun",
     "title": "Verdun",
-    "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/pdf/ffa0bdc1cd2d4df4-verdun.pdf",
-    "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/epub/d9acc30506578a54-verdun.epub",
+    "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/pdf/c9f974e193f4fac2-verdun.pdf",
+    "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/epub/f6ffe72842b3881a-verdun.epub",
     "vault": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/vault/88903346d14ce31c-verdun-full-vault%20%280.1.0-verdun-0ba88210%29.zip",
     "mobileVault": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/mobile-vault/8eee5ff304ca6587-verdun-full-mobile-vault%20%280.1.0-verdun-0ba88210%29.zip",
-    "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/cover/7bfa504c7d93472d-verdun-cover.png"
+    "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/cover/f6d1e79923147a17-verdun-cover.png"
   },
   {
     "slug": "suffix",

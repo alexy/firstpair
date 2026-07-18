@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-18T04:56:32.505Z",
+  "updatedAt": "2026-07-18T16:59:21.142Z",
   "books": {
     "typesec": {
       "updatedAt": "2026-07-15T08:19:45.316Z",
@@ -4655,26 +4655,26 @@
       }
     },
     "verdun": {
-      "updatedAt": "2026-07-18T04:32:10.964Z",
+      "updatedAt": "2026-07-18T16:59:21.142Z",
       "dryRun": false,
       "units": {
         "pdf": {
           "kind": "pdf",
           "localPath": "book-uploads/staging/verdun/verdun.pdf",
-          "sha256": "ffa0bdc1cd2d4df49d7eb2ba326c50b492d777dd2f5c89f2ae344e3fdeeac34f",
-          "size": 3717334,
-          "pathname": "books/verdun/pdf/ffa0bdc1cd2d4df4-verdun.pdf",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/pdf/ffa0bdc1cd2d4df4-verdun.pdf",
-          "skipped": true
+          "sha256": "c9f974e193f4fac21519d3a66c6b4cde732e24c0d127caef707fadd83fb8aa28",
+          "size": 3709522,
+          "pathname": "books/verdun/pdf/c9f974e193f4fac2-verdun.pdf",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/pdf/c9f974e193f4fac2-verdun.pdf",
+          "skipped": false
         },
         "epub": {
           "kind": "epub",
           "localPath": "book-uploads/staging/verdun/verdun.epub",
-          "sha256": "d9acc30506578a54baa6841cca680c4cfc3b984278018c283c555a14559c5fc8",
-          "size": 3248001,
-          "pathname": "books/verdun/epub/d9acc30506578a54-verdun.epub",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/epub/d9acc30506578a54-verdun.epub",
-          "skipped": true
+          "sha256": "f6ffe72842b3881a96f0f57fe621930b2dc0fa410b2eae8cc0430385f58fa6f2",
+          "size": 2983535,
+          "pathname": "books/verdun/epub/f6ffe72842b3881a-verdun.epub",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/epub/f6ffe72842b3881a-verdun.epub",
+          "skipped": false
         },
         "html": {
           "kind": "html",
@@ -4688,11 +4688,11 @@
         "cover": {
           "kind": "cover",
           "localPath": "book-uploads/staging/verdun/verdun-cover.png",
-          "sha256": "7bfa504c7d93472da3d346d053bbb4b1266a6a633b6a6219efcf039507c14694",
-          "size": 3330803,
-          "pathname": "books/verdun/cover/7bfa504c7d93472d-verdun-cover.png",
-          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/cover/7bfa504c7d93472d-verdun-cover.png",
-          "skipped": true
+          "sha256": "f6d1e79923147a175af417a114338252079fd5cdcf14ea2b3cfc771047325296",
+          "size": 3037414,
+          "pathname": "books/verdun/cover/f6d1e79923147a17-verdun-cover.png",
+          "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/cover/f6d1e79923147a17-verdun-cover.png",
+          "skipped": false
         },
         "headboard": {
           "kind": "headboard",
@@ -5873,6 +5873,21 @@
       "pathname": "books/suffix/headboard/6a6f7553eac6d02d-suffix-headboard.png",
       "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/suffix/headboard/6a6f7553eac6d02d-suffix-headboard.png",
       "size": 2057154
+    },
+    "c9f974e193f4fac21519d3a66c6b4cde732e24c0d127caef707fadd83fb8aa28:3709522": {
+      "pathname": "books/verdun/pdf/c9f974e193f4fac2-verdun.pdf",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/pdf/c9f974e193f4fac2-verdun.pdf",
+      "size": 3709522
+    },
+    "f6ffe72842b3881a96f0f57fe621930b2dc0fa410b2eae8cc0430385f58fa6f2:2983535": {
+      "pathname": "books/verdun/epub/f6ffe72842b3881a-verdun.epub",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/epub/f6ffe72842b3881a-verdun.epub",
+      "size": 2983535
+    },
+    "f6d1e79923147a175af417a114338252079fd5cdcf14ea2b3cfc771047325296:3037414": {
+      "pathname": "books/verdun/cover/f6d1e79923147a17-verdun-cover.png",
+      "url": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/cover/f6d1e79923147a17-verdun-cover.png",
+      "size": 3037414
     }
   },
   "chapterPackages": {

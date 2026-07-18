@@ -1083,6 +1083,26 @@ async function isProperVault(dir) {
   return false
 }
 
+// A compact Reader vault keeps its own index rather than the desktop unit
+// ledger. It remains a distinct product, so require its source-owned manifest
+// instead of treating it as a reduced desktop vault.
+async function isProperMobileVault(dir) {
+  if (!(await exists(join(dir, 'Home.md'))) || !(await exists(join(dir, 'MOBILE-VAULT.json')))) {
+    return false
+  }
+  let entries
+  try {
+    entries = await listEntries(dir)
+  } catch {
+    return false
+  }
+  for (const entry of entries) {
+    if (!entry.isDirectory()) continue
+    if (await exists(join(dir, entry.name, '_data', 'mobile-library.json'))) return true
+  }
+  return false
+}
+
 function ancestorCandidates(path, limit = 6) {
   const candidates = []
   let current = resolve(path)
@@ -1140,9 +1160,14 @@ async function sourceRepositoryRoot(inputDir, distDir, vaultDir) {
   return resolve(inputDir)
 }
 
-async function validateSourceOwnedVault(inputDir, distDir, vaultDir) {
+async function validateSourceOwnedVault(
+  inputDir,
+  distDir,
+  vaultDir,
+  validatorName = 'check-obsidian-vault.py',
+) {
   const sourceRoot = await sourceRepositoryRoot(inputDir, distDir, vaultDir)
-  const validator = join(sourceRoot, 'scripts', 'check-obsidian-vault.py')
+  const validator = join(sourceRoot, 'scripts', validatorName)
   const validatorStat = await stat(validator).catch(() => null)
 
   if (!validatorStat) {
@@ -1330,13 +1355,24 @@ async function resolveMobileVault(inputDir, distDir, edition, version, slug, opt
   if (!options['mobile-vault-dir']) {
     return null
   }
-  const vault = await resolveVault(inputDir, distDir, edition, version, slug, {
-    vault: true,
-    'vault-dir': options['mobile-vault-dir'],
-  })
+  const dir = resolve(
+    isAbsolute(options['mobile-vault-dir'])
+      ? options['mobile-vault-dir']
+      : join(inputDir, options['mobile-vault-dir']),
+  )
+  if (!(await isProperMobileVault(dir))) {
+    throw new Error(`--mobile-vault-dir is not a proper mobile Reader vault: ${dir}`)
+  }
+  const validation = await validateSourceOwnedVault(
+    inputDir,
+    distDir,
+    dir,
+    'check-obsidian-mobile-vault.py',
+  )
   const stamp = firstValue(version.version_stamp, version.version) ?? 'current'
   return {
-    ...vault,
+    dir,
+    validation,
     zipName: `${slug}-${edition}-mobile-vault (${stamp}).zip`,
     guideSource: null,
     guideName: null,

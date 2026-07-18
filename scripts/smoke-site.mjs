@@ -149,6 +149,7 @@ const paths = catalog.books.flatMap((book) => {
         `/${book.slug}/pdf/`,
         `/${book.slug}/epub/`,
         book.vault ? `/${book.slug}/vault/` : null,
+        book.mobileVault ? `/${book.slug}/mobile-vault/` : null,
         book.cover ? `/${book.slug}/cover/` : null,
       ].filter(Boolean)
 
@@ -161,6 +162,7 @@ const paths = catalog.books.flatMap((book) => {
     book.cover,
     book.headboard,
     book.vault,
+    book.mobileVault,
     guidePath,
     ...stableDeliverables,
   ].filter(Boolean)

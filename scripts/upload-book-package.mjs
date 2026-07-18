@@ -409,6 +409,12 @@ if (vaultSource) {
   units.vault = await uploadFileUnit(manifest, 'vault', vaultSource)
 }
 
+const mobileVaultSource = sourcePath(sourceBook.mobileVault)
+
+if (mobileVaultSource) {
+  units.mobileVault = await uploadFileUnit(manifest, 'mobile-vault', mobileVaultSource)
+}
+
 const vaultGuideHtmlSource = sourcePath(sourceBook.vaultGuideHtml)
 const vaultGuideMarkdownSource = sourcePath(sourceBook.vaultGuideMarkdown)
 const legacyVaultGuideSource = sourcePath(sourceBook.vaultGuide)
@@ -473,6 +479,10 @@ if (!dryRun) {
 
   if (units.vault) {
     book.vault = units.vault.url
+  }
+
+  if (units.mobileVault) {
+    book.mobileVault = units.mobileVault.url
   }
 
   if (units.vaultGuide) {

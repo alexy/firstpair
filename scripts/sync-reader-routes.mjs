@@ -37,7 +37,7 @@ function readerRoutes() {
       dest: '/api/reader?path=$1&area=tutorial',
     },
     {
-      src: '^/([A-Za-z0-9-]+)/(pdf|epub|vault|cover)/?$',
+      src: '^/([A-Za-z0-9-]+)/(pdf|epub|vault|mobile-vault|cover)/?$',
       dest: '/api/deliverable?slug=$1&format=$2',
     },
     {
@@ -82,6 +82,10 @@ function deliverableMap(books) {
 
     if (book.vault) {
       entry.vault = book.vault
+    }
+
+    if (book.mobileVault) {
+      entry.mobileVault = book.mobileVault
     }
 
     if (book.cover) {

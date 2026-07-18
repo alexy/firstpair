@@ -116,6 +116,18 @@
       "vault": "book-uploads/staging/cicero-on-himself/cicero-on-himself-preview-vault (2.0.0-sol-2996266c).zip",
       "vaultGuideMarkdown": "book-uploads/staging/cicero-on-himself/cicero-on-himself-vault-guide (2.0.0-sol-2996266c).md",
       "vaultGuideHtml": "book-uploads/staging/cicero-on-himself/cicero-on-himself-vault-guide (2.0.0-sol-2996266c).html"
+    },
+    "verdun": {
+      "pdf": "book-uploads/staging/verdun/verdun.pdf",
+      "epub": "book-uploads/staging/verdun/verdun.epub",
+      "html": "book-uploads/staging/verdun/verdun.html",
+      "htmlChapters": "book-uploads/staging/verdun/verdun-chapters",
+      "cover": "book-uploads/staging/verdun/verdun-cover.png",
+      "headboard": "book-uploads/staging/verdun/verdun-headboard.png",
+      "vault": "book-uploads/staging/verdun/verdun-full-vault (0.1.0-verdun-0ba88210).zip",
+      "vaultGuideMarkdown": "book-uploads/staging/verdun/verdun-vault-guide (0.1.0-verdun-0ba88210).md",
+      "vaultGuideHtml": "book-uploads/staging/verdun/verdun-vault-guide (0.1.0-verdun-0ba88210).html",
+      "mobileVault": "book-uploads/staging/verdun/verdun-full-mobile-vault (0.1.0-verdun-0ba88210).zip"
     }
   }
 }

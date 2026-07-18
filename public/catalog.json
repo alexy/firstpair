@@ -327,6 +327,35 @@
       "vault": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/cicero-on-himself/vault/f4bc85faeddf8d1f-cicero-on-himself-preview-vault%20%282.0.0-sol-2996266c%29.zip",
       "vaultGuide": "/read/cicero-on-himself/guide/",
       "vaultGuideSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/cicero-on-himself/vault-guide/61fd021b30fc554a-cicero-on-himself-vault-guide%20%282.0.0-sol-2996266c%29.html"
+    },
+    {
+      "slug": "verdun",
+      "title": "Verdun",
+      "author": "Alexy Khrabrov",
+      "kicker": "Finished book",
+      "description": "A framework for shared work: multi-user workspaces, unified accounts, Rust collection engines, Neon persistence, and Vercel delivery.",
+      "accent": "#b08a4e",
+      "pdf": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/pdf/ffa0bdc1cd2d4df4-verdun.pdf",
+      "epub": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/epub/d9acc30506578a54-verdun.epub",
+      "html": "/read/verdun/",
+      "htmlChapters": "/read/verdun/chapters/",
+      "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/html/468298039c8a7cca-verdun.html",
+      "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/chapters/1a9de6b75724ddbc/index.html",
+      "tags": [
+        "verdun",
+        "workspaces",
+        "rust",
+        "neon",
+        "vercel"
+      ],
+      "shelf": "publishing",
+      "source": "https://github.com/QueryGraph/verdun",
+      "cover": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/cover/7bfa504c7d93472d-verdun-cover.png",
+      "headboard": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/headboard/b41da44bc1edf5a2-verdun-headboard.png",
+      "vault": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/vault/88903346d14ce31c-verdun-full-vault%20%280.1.0-verdun-0ba88210%29.zip",
+      "mobileVault": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/mobile-vault/8eee5ff304ca6587-verdun-full-mobile-vault%20%280.1.0-verdun-0ba88210%29.zip",
+      "vaultGuide": "/read/verdun/guide/",
+      "vaultGuideSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/verdun/vault-guide/2aeec38f675014d8-verdun-vault-guide%20%280.1.0-verdun-0ba88210%29.html"
     }
   ]
 }

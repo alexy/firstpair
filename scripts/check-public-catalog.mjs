@@ -15,7 +15,7 @@ const hasReaderProxyRoute = routeDestinations.get('^/read(?:/(.*))?$') === '/api
 const hasTutorialProxyRoute =
   routeDestinations.get('^/learn(?:/(.*))?$') === '/api/reader?path=$1&area=tutorial'
 const hasDeliverableProxyRoute =
-  routeDestinations.get('^/([A-Za-z0-9-]+)/(pdf|epub|vault|cover)/?$') ===
+  routeDestinations.get('^/([A-Za-z0-9-]+)/(pdf|epub|vault|mobile-vault|cover)/?$') ===
   '/api/deliverable?slug=$1&format=$2'
 const hasFilesystemRoute = (vercel.routes ?? []).some((route) => route.handle === 'filesystem')
 const hasAppFallbackRoute = routeDestinations.get('^/(.*)$') === '/index.html'
@@ -134,6 +134,10 @@ for (const book of catalog.books) {
     invalidSourceUrls.push({ slug: book.slug, field: 'vault', url: book.vault })
   }
 
+  if (book.mobileVault && !book.mobileVault.startsWith('https://')) {
+    invalidSourceUrls.push({ slug: book.slug, field: 'mobileVault', url: book.mobileVault })
+  }
+
   if (book.headboard) {
     if (book.headboard.startsWith('/')) {
       const publicPath = join(publicDir, book.headboard.replace(/^\/+/, ''))
@@ -193,6 +197,7 @@ for (const book of catalog.books) {
     pdf: book.pdf,
     epub: book.epub,
     ...(book.vault ? { vault: book.vault } : {}),
+    ...(book.mobileVault ? { mobileVault: book.mobileVault } : {}),
     ...(book.cover ? { cover: book.cover } : {}),
   }
 

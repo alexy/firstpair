@@ -74,6 +74,7 @@ type Book = {
   headboard?: string
   post?: string
   vault?: string
+  mobileVault?: string
   vaultGuide?: string
   vaultGuideSource?: string
   tags: string[]
@@ -105,7 +106,7 @@ const filters = computed(() => [
 
 const bookDetailHref = (book: Book): string => `/books/${book.slug}/`
 const bookPageHref = (book: Book): string => bookDetailHref(book)
-const stableDeliverableHref = (book: Book, format: 'pdf' | 'epub' | 'vault' | 'cover'): string =>
+const stableDeliverableHref = (book: Book, format: 'pdf' | 'epub' | 'vault' | 'mobile-vault' | 'cover'): string =>
   `/${book.slug}/${format}/`
 const bookHeroImage = (book: Book): string => book.headboard ?? book.cover ?? ''
 
@@ -309,6 +310,13 @@ const fragments = [
               download
             >
               Obsidian Vault
+            </a>
+            <a
+              v-if="selectedBook.mobileVault"
+              :href="stableDeliverableHref(selectedBook, 'mobile-vault')"
+              download
+            >
+              Mobile Obsidian Vault
             </a>
             <a
               v-if="selectedBook.vaultGuide"
@@ -585,6 +593,7 @@ const fragments = [
                     <a :href="book.html" target="_blank" rel="noopener noreferrer">Read</a>
                     <a :href="book.htmlChapters" target="_blank" rel="noopener noreferrer">Chapters</a>
                     <a v-if="book.vault" :href="stableDeliverableHref(book, 'vault')" download>Vault</a>
+                    <a v-if="book.mobileVault" :href="stableDeliverableHref(book, 'mobile-vault')" download>Mobile Vault</a>
                     <a v-if="book.vaultGuide" :href="book.vaultGuide" target="_blank" rel="noopener noreferrer">Vault guide</a>
                     <a v-if="book.post" :href="book.post" target="_blank" rel="noreferrer">
                       Story

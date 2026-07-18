@@ -391,6 +391,24 @@ The imported workflow cards live under:
 publishing/skills/
 ```
 
+The Obsidian workflow cards are:
+
+- [`obsidian-full-vault.md`](skills/obsidian-full-vault.md) for building and
+  publishing the complete desktop Reader plus rights-safe evidence archive,
+  deterministic first-open workspace, machine ledgers, and strict validator;
+- [`obsidian-mobile-vault.md`](skills/obsidian-mobile-vault.md) for deriving a
+  compact, separately synced Reader product with bounded files, compact images,
+  exact bilingual sources, and mobile verification;
+- [`obsidian-reader-plugin-delivery.md`](skills/obsidian-reader-plugin-delivery.md)
+  for the shared Reader and source-navigation contract, first-open and Sync
+  setup, mobile interaction, versioned runtime delivery, watched narrow
+  refreshes, and full quit/relaunch verification.
+
+Mobile-vault builders and Reader plugins remain source-owned. FirstPair records
+and enforces the reusable publication contract; it does not copy a title's
+research graph into a compact vault or mutate a connected Sync vault during
+normal library publication.
+
 The older environment-configured `build-book.sh` remains a compatibility path
 for repositories not yet migrated. New and migrated library books use
 `book.build.json` plus `build-library-book.sh`.

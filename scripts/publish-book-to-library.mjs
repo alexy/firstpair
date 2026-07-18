@@ -62,6 +62,7 @@ const valueFlags = new Set([
   'tutorial',
   'vault-dir',
   'vault-guide',
+  'mobile-vault-dir',
 ])
 
 function usage() {
@@ -109,6 +110,7 @@ Options:
                             including for --dry-run, when the source provides it.
   --vault-dir <dir>         Explicit vault directory (implies --vault).
   --vault-guide <file>      Explicit vault guide (default: a docs/*VAULT*.md).
+  --mobile-vault-dir <dir>  Deliver a separately validated mobile vault archive.
   --icloud-dir <dir>        Defaults to "$HOME/icloud/books".
   --stage-only              Only refresh book-uploads/staging and source map.
   --no-upload               Alias for --stage-only.
@@ -877,8 +879,8 @@ function stableDeliverablePath(slug, format) {
 function readmeFor(plan, catalogEntry) {
   const source = catalogEntry.source ?? plan.source
   const vaultLinks =
-    catalogEntry.vault || catalogEntry.vaultGuide
-      ? `${catalogEntry.vault ? `- [Download the Obsidian vault](${stableDeliverablePath(plan.slug, 'vault')})\n` : ''}${catalogEntry.vaultGuide ? `- [Read the Obsidian vault guide](${catalogEntry.vaultGuide})\n` : ''}`
+    catalogEntry.vault || catalogEntry.mobileVault || catalogEntry.vaultGuide
+      ? `${catalogEntry.vault ? `- [Download the Obsidian vault](${stableDeliverablePath(plan.slug, 'vault')})\n` : ''}${catalogEntry.mobileVault ? `- [Download the Mobile Obsidian vault](${stableDeliverablePath(plan.slug, 'mobile-vault')})\n` : ''}${catalogEntry.vaultGuide ? `- [Read the Obsidian vault guide](${catalogEntry.vaultGuide})\n` : ''}`
       : ''
   const sourceText = source
     ? `\nThe source repository owns the manuscript, metadata, version manifest, build\npipeline, and canonical generated artifacts:\n\n[${source}](${source})\n`
@@ -925,6 +927,9 @@ function readmeWithUpdatedLinks(plan, catalogEntry, existingText) {
   const vaultLinks = []
   if (catalogEntry.vault) {
     vaultLinks.push(`- [Download the Obsidian vault](${stableDeliverablePath(plan.slug, 'vault')})`)
+  }
+  if (catalogEntry.mobileVault) {
+    vaultLinks.push(`- [Download the Mobile Obsidian vault](${stableDeliverablePath(plan.slug, 'mobile-vault')})`)
   }
   if (catalogEntry.vaultGuide) {
     vaultLinks.push(`- [Read the Obsidian vault guide](${catalogEntry.vaultGuide})`)
@@ -1003,6 +1008,12 @@ async function refreshSourceMap(plan, dryRun) {
         join(plan.stageDir, plan.vault.guideHtmlName),
       )
     }
+  }
+
+  if (plan.mobileVault) {
+    sources.books[plan.slug].mobileVault = repoRelative(
+      join(plan.stageDir, plan.mobileVault.zipName),
+    )
   }
 
   if (!dryRun) {
@@ -1310,6 +1321,24 @@ async function resolveVault(inputDir, distDir, edition, version, slug, options) 
   return { dir, zipName, guideSource, guideName, guideHtmlName, validation }
 }
 
+async function resolveMobileVault(inputDir, distDir, edition, version, slug, options) {
+  if (!options['mobile-vault-dir']) {
+    return null
+  }
+  const vault = await resolveVault(inputDir, distDir, edition, version, slug, {
+    vault: true,
+    'vault-dir': options['mobile-vault-dir'],
+  })
+  const stamp = firstValue(version.version_stamp, version.version) ?? 'current'
+  return {
+    ...vault,
+    zipName: `${slug}-${edition}-mobile-vault (${stamp}).zip`,
+    guideSource: null,
+    guideName: null,
+    guideHtmlName: null,
+  }
+}
+
 // Archive the vault through Python's standard library. Apple /usr/bin/zip does
 // not consistently support its documented UTF-8 switch; the helper writes a
 // stable root, sorted members, fixed metadata, and UTF-8 flags while preserving
@@ -1382,19 +1411,15 @@ async function stageCompanions(plan, dryRun) {
   if (plan.headboard) {
     await copyFile(plan.headboard.sourcePath, join(plan.stageDir, plan.headboard.stableName))
   }
-  if (plan.vault) {
-    await zipVault(
-      plan.vault.dir,
-      join(plan.stageDir, plan.vault.zipName),
-      plan.vault.guideSource,
-    )
-    if (plan.vault.guideName) {
-      await copyFile(plan.vault.guideSource, join(plan.stageDir, plan.vault.guideName))
+  for (const vault of [plan.vault, plan.mobileVault].filter(Boolean)) {
+    await zipVault(vault.dir, join(plan.stageDir, vault.zipName), vault.guideSource)
+    if (vault.guideName) {
+      await copyFile(vault.guideSource, join(plan.stageDir, vault.guideName))
       await renderVaultGuide({
-        source: plan.vault.guideSource,
-        destination: join(plan.stageDir, plan.vault.guideHtmlName),
+        source: vault.guideSource,
+        destination: join(plan.stageDir, vault.guideHtmlName),
         title: `${plan.title} — Obsidian Vault Guide`,
-        resourcePaths: [plan.vault.dir],
+        resourcePaths: [vault.dir],
       })
     }
   }
@@ -1416,6 +1441,13 @@ async function copyCompanionsToIcloud(plan, dryRun) {
         path: join(plan.icloudDir, plan.vault.guideName),
       })
     }
+  }
+  if (plan.mobileVault) {
+    delivered.push({
+      role: 'mobile-vault',
+      source: join(plan.stageDir, plan.mobileVault.zipName),
+      path: join(plan.icloudDir, plan.mobileVault.zipName),
+    })
   }
   if (dryRun || !plan.copyIcloud) {
     return delivered
@@ -1654,6 +1686,7 @@ async function runLiveCatalogCheck(plan) {
     'cover',
     'headboard',
     'vault',
+    'mobileVault',
     'vaultGuide',
     'vaultGuideSource',
   ]
@@ -1794,6 +1827,7 @@ async function buildPlan(inputDir, options) {
   const chapters = await resolveChaptersDir(distDir, version, slug)
   const tutorial = await resolveTutorial(inputDir, distDir, options.tutorial ?? version.tutorial_file)
   const vault = await resolveVault(inputDir, distDir, edition, version, slug, options)
+  const mobileVault = await resolveMobileVault(inputDir, distDir, edition, version, slug, options)
   const cover = await resolveCover(inputDir, distDir, metadata, slug)
   const headboard = await resolveHeadboard(inputDir, distDir, metadata, slug)
 
@@ -1818,6 +1852,7 @@ async function buildPlan(inputDir, options) {
     chapters,
     tutorial,
     vault,
+    mobileVault,
     cover,
     headboard,
     stageDir: join(root, 'book-uploads', 'staging', slug),
@@ -1896,6 +1931,13 @@ function printablePlan(
             validation: plan.vault.validation,
           }
         : null,
+      mobileVault: plan.mobileVault
+        ? {
+            source: plan.mobileVault.dir,
+            zip: plan.mobileVault.zipName,
+            validation: plan.mobileVault.validation,
+          }
+        : null,
       cover: plan.cover
         ? {
             source: plan.cover.sourcePath,
@@ -1916,7 +1958,7 @@ function printablePlan(
       stageOnly: plan.stageOnly,
       upload: !dryRun && !plan.stageOnly,
       copyIcloud: !dryRun && plan.copyIcloud && !plan.stageOnly,
-      deliverVault: !dryRun && Boolean(plan.vault) && !plan.stageOnly,
+      deliverVault: !dryRun && Boolean(plan.vault || plan.mobileVault) && !plan.stageOnly,
       checkCatalog: !dryRun && plan.runCheck && !plan.stageOnly,
       prodBuild: !dryRun && plan.runBuild && !plan.stageOnly,
       smoke: !dryRun && plan.runSmoke && !plan.stageOnly,

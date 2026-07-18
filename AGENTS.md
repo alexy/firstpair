@@ -53,6 +53,86 @@ or book source repository that owns the work. FirstPair may hold First Pair
 house content, public catalog/readme surfaces, upload manifests, reader route
 maps, and generated deployment metadata needed to publish or host those sources.
 
+## Git-Versioned Blog Textpacks
+
+The current Omnighost textpack format is `omnighost-textpack-v1`. A conforming
+pack records a portable payload SHA-256 and, when the source can be committed
+safely, the full Git commit in `info.json` under `omnighost.provenance`. An
+untouched imported note inherits that commit through publication; its next sync
+can report `Unchanged` without rotating the version.
+
+Creating this Git-stamped format is permission-sensitive because the builder
+may make a real commit in the project that owns the post:
+
+1. Work from the owning project's real repository, not from FirstPair or an
+   archive checkout. Identify the Markdown post and every referenced local
+   image or asset that will enter the pack.
+2. Before running either textpack command, ask the project owner explicitly for
+   permission to commit those exact source contents so the pack can be stamped
+   with their Git hash. List the paths or clearly describe their scope. A request
+   to build, refresh, copy, or deliver a textpack does not by itself authorize
+   this source commit; wait for an affirmative answer.
+3. Explain that the builder commits only the post and referenced assets,
+   preserves unrelated staged changes, and never pushes. Permission to make the
+   source commit does not authorize a push or an iCloud/public delivery; those
+   actions still require their own authorization.
+4. Once authorized, run the current builder from the owning repository. For
+   the standard `docs/blog/<slug>/post.md` layout:
+
+```sh
+cd /absolute/path/to/project
+python3 ~/src/firstpair/publishing/scripts/textpack.py \
+  docs/blog/<slug> \
+  --blog example.com \
+  --slug <slug> \
+  --tags tag-one,tag-two \
+  --excerpt "Short summary"
+```
+
+This writes `docs/blog/<slug>/dist/<slug>.textpack`. If the owner has also
+authorized delivery to iCloud, use the centralized versioned-delivery wrapper
+instead:
+
+```sh
+cd /absolute/path/to/project
+REPO_ROOT="$PWD" \
+BLOG_DOMAIN=example.com \
+BLOG_TAGS=tag-one,tag-two \
+BLOG_EXCERPT="Short summary" \
+~/src/firstpair/publishing/scripts/publish-versioned-blog.sh \
+  docs/blog/<slug> "$HOME/icloud/blogs"
+```
+
+Both commands invoke `~/src/firstpair/publishing/scripts/textpack.py`, which
+commits the exact source inputs when needed, embeds the resulting full commit
+plus the payload SHA-256, and writes the archive atomically. The delivery
+wrapper derives the versioned filename only after that commit, so the filename's
+short hash and the pack's full `gitCommit` describe the same repository state.
+If Git is unavailable or unsafe, the pack remains verifiable through its
+payload digest but is hash-only and must not be described as Git-versioned.
+
+After building, verify the source commit, provenance block, archive, and
+repository state:
+
+```sh
+git show --stat --oneline HEAD
+unzip -p docs/blog/<slug>/dist/<slug>.textpack '*/info.json'
+unzip -t docs/blog/<slug>/dist/<slug>.textpack
+git status --short
+```
+
+When delivery was authorized, also compare the stable pack with the delivered
+versioned copy:
+
+```sh
+cmp -s docs/blog/<slug>/dist/<slug>.textpack \
+  "$HOME/icloud/blogs/<versioned-textpack-name>.textpack"
+```
+
+Confirm that the provenance schema is `omnighost-textpack-v1`, `payloadSha256`
+is present, `gitCommit` is a full commit when Git stamping was authorized and
+successful, and unrelated worktree/index state remains intact.
+
 ## Public Book Delivery
 
 Public books have one lightweight metadata directory under `public/`. Use the
@@ -306,6 +386,15 @@ workspace normally; no later pane state is published back. Keep the source
 guide's manual instruction to open `Home.md` as the fallback when Obsidian
 ignores the initial workspace.
 
+For complete desktop evidence editions, follow
+`publishing/skills/obsidian-full-vault.md`. Keep the chapter-scale Reader and
+fine-grained audit graph as separate routes, enforce rights-safe attachment
+policy, preserve explicit bilingual gaps, bind generated notes and derivatives
+to source identity, ship the optional plugin disabled by default, and require
+the source-owned validator before FirstPair transforms or archives the vault.
+Do not connect the full evidence vault to a phone; derive the mobile product
+directly from canonical source instead.
+
 Before regenerating, editing, validating with write-capable tools, zipping, or
 otherwise programmatically touching an Obsidian vault directory, ask the user to
 close that vault in Obsidian and wait for confirmation. Obsidian may keep
@@ -313,6 +402,45 @@ workspace, plugin, and index files open or rewrite them in the background;
 writing the vault while it is open can race those writes and poison the
 generated edition. Once confirmed closed, regenerate the vault from source, then
 validate it before staging or publishing.
+
+For compact device editions, follow
+`publishing/skills/obsidian-mobile-vault.md`. Treat the mobile vault as a
+separate, source-derived Reader product with its own local vault, Sync remote,
+manifest, file and byte ceilings, exact cited sources, compact illustrations,
+and static Markdown fallback. The source repository owns its builder,
+validator, Reader sequence, quote map, and plugin bundle.
+
+For Reader runtime changes, follow
+`publishing/skills/obsidian-reader-plugin-delivery.md`. The sole open-vault
+write exception is a source-owned plugin-only refresh command whose documented
+write set is limited to an allowlisted plugin package and product manifest,
+preserves `data.json` and vault state, and exists so an active Obsidian Sync
+watcher can upload new versioned bytes. General builds, recursive copies,
+formatting, staging, zipping, and publication still require the vault to be
+closed. Verify the upload in Sync activity, then fully quit and relaunch
+Obsidian and compare the installed plugin version and hashes with the source
+manifest.
+
+The shared Reader contract is one rail, bottom by default and movable to top,
+ordered **Previous | Up | Back | Top | TOC | Next**. Previous and Next own the
+wide outside tracks on phones; the middle controls remain compact and
+touch-sized. Back returns to the last ordinary non-Reader note in the same leaf
+and uses Obsidian's fixed-size `rotate-ccw` icon even when disabled. Top targets
+the true page start, including cover-first and plate-first pages. The canonical
+cover, reviewed bilingual quote rails, exact inline source links, and complete
+static Markdown fallback are required deliverables. The plugin should ignore
+unrelated file-open events and must not subscribe to create or modify events in
+order to rebuild its indexes. Strip renderer-only Pandoc heading attributes
+such as `{.unnumbered}` and `{.unnumbered .unlisted}` from derived Reader notes
+and embedded Reader-index Markdown while preserving the canonical manuscript
+and ordinary prose braces.
+
+When a book project discovers a reusable improvement to full-vault structure,
+mobile derivation, Reader interaction, first-open behavior, source navigation,
+or Sync delivery, update the corresponding `publishing/skills/obsidian-*.md`
+card in the same work tranche. Keep title-specific counts and paths labeled as
+examples; keep the reusable contract here instead of letting it live only in a
+single source repository or chat history.
 
 Before resolving even a dry-run vault plan, look for the source repository's
 `scripts/check-obsidian-vault.py`. If present, `library:publish` must run it

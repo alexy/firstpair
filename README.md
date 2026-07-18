@@ -67,6 +67,16 @@ planning, staging, or ZIP creation, using the repository's locked uv project
 when available. Validation failure stops publication; packages without that
 script retain the lightweight structural compatibility check.
 
+Reusable operational guidance for complete desktop evidence editions lives in
+[`publishing/skills/obsidian-full-vault.md`](publishing/skills/obsidian-full-vault.md).
+Compact device editions follow
+[`publishing/skills/obsidian-mobile-vault.md`](publishing/skills/obsidian-mobile-vault.md).
+The shared Reader, source-navigation, first-open, Sync setup, and runtime update
+contract lives in
+[`publishing/skills/obsidian-reader-plugin-delivery.md`](publishing/skills/obsidian-reader-plugin-delivery.md),
+including version/hash binding, watched narrow refreshes, Sync activity checks,
+and full quit/relaunch verification.
+
 ## The Method
 
 First Pair treats a book as a living system rather than a frozen file.

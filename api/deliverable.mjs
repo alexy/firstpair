@@ -5,6 +5,7 @@ const fieldByFormat = {
   pdf: 'pdf',
   epub: 'epub',
   vault: 'vault',
+  'mobile-vault': 'mobileVault',
   cover: 'cover',
 }
 
@@ -38,7 +39,7 @@ export default async function handler(request, response) {
 
   if (!slug || !field) {
     response.statusCode = 400
-    response.end('Expected /<book-slug>/(pdf|epub|vault|cover)/')
+    response.end('Expected /<book-slug>/(pdf|epub|vault|mobile-vault|cover)/')
     return
   }
 

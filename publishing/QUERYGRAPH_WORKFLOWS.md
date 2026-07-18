@@ -30,6 +30,9 @@ local conventions.
 | `~/src/firstpair/publishing/scripts/publish-versioned-artifacts.sh` | Book artifact copy to `~/icloud/books` | Ad hoc repo-local copy steps |
 | `~/src/firstpair/publishing/scripts/publish-versioned-blog.sh` | Blog textpack build + versioned copy to `~/icloud/blogs` | Emerging centralized blog delivery workflow |
 | `~/src/firstpair/publishing/scripts/check-version-marker.sh` | `VERSION.md` stable/versioned artifact check | Repeated manual `readlink`, `cmp`, and filename checks |
+| `~/src/firstpair/publishing/skills/obsidian-full-vault.md` | Complete desktop Reader plus rights-safe evidence-vault workflow | Cicero full-vault Reader, provenance graph, source policy, workspace, and validator findings |
+| `~/src/firstpair/publishing/skills/obsidian-mobile-vault.md` | Compact, separately synced mobile Reader vault workflow | Cicero mobile-vault size, source, image, startup, and selective-sync findings |
+| `~/src/firstpair/publishing/skills/obsidian-reader-plugin-delivery.md` | Reader, bilingual navigation, first-open setup, and versioned Sync delivery | Cicero one-rail mobile Reader, source rails, Back visibility, performance, stale-runtime recovery, and quit/relaunch findings |
 
 ## Book Layout Differences
 

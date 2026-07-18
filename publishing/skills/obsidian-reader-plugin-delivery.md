@@ -97,6 +97,12 @@ unreadable in Restricted mode.
    directly; close matches should open a chooser showing both languages, work,
    citation, and confidence. Never make a network search when local evidence is
    absent.
+7. Compose witness bibliography from structured title, edition, editor,
+   translator, publisher, and date fields. Before appending an editor or
+   translator credit, detect whether the title already contains that same role
+   and contributor. Reject repeated semicolon segments and repeated contributor
+   credits in the canonical corpus, generated JSON indexes, full notes, and
+   compact mobile notes; do not repair only the visible Markdown.
 
 ## Plugin Package And Performance
 

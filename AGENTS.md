@@ -441,6 +441,13 @@ Reader-index Markdown while preserving the canonical manuscript and ordinary
 prose braces. Phone-width visual QA is valid only when the fixture serves the
 real plugin stylesheet and every asset without 404s.
 
+Bilingual witness metadata is structured provenance, not display-ready prose.
+When composing edition descriptions, do not append an editor or translator
+credit already embedded in the title. Source-owned tests and validators must
+reject repeated semicolon segments and repeated role-plus-contributor credits
+across canonical passage rows, plugin JSON, full notes, and compact mobile
+notes.
+
 When a book project discovers a reusable improvement to full-vault structure,
 mobile derivation, Reader interaction, first-open behavior, source navigation,
 or Sync delivery, update the corresponding `publishing/skills/obsidian-*.md`

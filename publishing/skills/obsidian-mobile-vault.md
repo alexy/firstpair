@@ -44,6 +44,9 @@ package.
    WebP plates require **Sync images**. A count that matches the Markdown-only
    payload is not evidence that Sync has stalled; inspect both selective-sync
    and configuration-sync settings before rebuilding.
+   A **Fully synced** badge is scoped to the categories enabled on that device.
+   Recheck all required switches after restart on both the upload and download
+   devices; one correctly configured device does not compensate for the other.
 10. Open only `Home.md` on first Sync. The plugin must not subscribe to vault
     create or modify events, and its file-open handler should return before
     loading Reader data unless the opened note belongs to the Reader surface.
@@ -56,16 +59,27 @@ package.
     line, put Next at the far right, hide page-progress text, and contain wide
     tables and images inside the reading column. Do not create page-level
     horizontal overflow.
-13. Make Back return in the same leaf to the last ordinary vault note opened
-    before the Reader. Exclude Reader notes from that history. Use Obsidian's
-    fixed-size `rotate-ccw` Lucide icon and keep it recognizable while disabled.
-    Static Markdown omits Back because it has no safe prior-note context.
+13. Make Back restore the prior position inside the Reader after ordinary
+    footnote, Top, TOC, Up, Previous, and Next jumps. Keep a bounded history of
+    Reader state and scroll offsets, including the exact footnote reference
+    when applicable. Push immediately before each jump; pop without recording
+    during Back restoration. Store stable locators rather than rendered DOM
+    nodes, resolve them after any rerender, and clear stale history when a new
+    Reader session begins. Use Obsidian's fixed-size `rotate-ccw` Lucide icon and
+    keep it recognizable while disabled. Static Markdown omits Back because it
+    has no runtime navigation history.
 14. Point Top at the true beginning of the Reader page, including pages that
     begin with a cover or plate, rather than only at the first heading.
 15. Validate at phone width: all six controls, 44-pixel touch targets, visible
     enabled and disabled states, readable titles, contained tables and images,
     touch-sized source citations, clickable quote rails, independent Reader
-    scrolling, and no viewport overflow.
+    scrolling, and no viewport overflow. Test a reviewed bilingual marker and
+    an ordinary footnote separately: the first opens the aligned source, while
+    the second scrolls to, focuses, and visibly marks its local note target.
+    Back must restore the exact marker and prior Top, TOC, Up, Previous, and
+    Next positions without adding a seventh control. Serve the fixture from its
+    plugin root and require the linked stylesheet and every visual asset to load
+    successfully before accepting screenshots or pixel checks.
 16. Keep two explicit validation modes. The default closed-build gate requires
     deterministic first-open workspace aliases and exact aggregate package
     bytes. A separate live mode may tolerate only Obsidian's rewrites of
@@ -90,7 +104,8 @@ FirstPair must not infer mobile completeness from a ZIP listing.
 3. Before the first Mac transfer, enable **Sync images**, **Sync all other
    types**, **Active community plugin list**, and **Installed community plugin
    list**. Restart Obsidian when the device-specific Sync settings require it,
-   resume, and wait for **Fully synced**.
+   reopen the same vault, confirm those four switches remain enabled, resume,
+   and wait for **Fully synced**.
 4. On iOS, connect a fresh local vault to the mobile remote. Set the same four
    options before starting, then force-quit and reopen when required. Wait for
    transfer and indexing to settle on `Home.md`.
@@ -100,6 +115,14 @@ FirstPair must not infer mobile completeness from a ZIP listing.
 6. Fully quit and relaunch Obsidian, reopen the same mobile vault, rerun the live
    validator, and inspect the changed behavior. A source test, build message, or
    **Fully synced** badge alone is not deployment evidence.
+7. Verify the remote configuration plane through **Settings version history**.
+   Inspect the remote plugin manifest and runtime, then compare the copied
+   `main.js` hash with the product manifest. Configuration files may not appear
+   in the ordinary activity log even when their remote revisions exist.
+8. If restart downloads an older remote runtime over the local package, let the
+   watcher and required configuration categories settle, rerun only the narrow
+   watched plugin refresh, and verify the remote hash again. The conflict is not
+   resolved until the refreshed bytes survive a full quit/relaunch.
 
 The source build never creates, deletes, connects, or modifies a remote. It may
 preserve Sync configuration in an already connected local vault, but remote
@@ -125,6 +148,9 @@ Pitfalls:
 - do not confuse Obsidian Sync with iCloud filesystem synchronization;
 - do not enable a community plugin before its runtime and configuration have
   finished syncing;
+- do not preserve Reader history as DOM nodes or push a new entry while Back is
+  restoring an old one;
+- do not accept mobile screenshots from an unstyled fixture with asset 404s;
 - do not use a file count alone as a transfer-health signal.
 
 Validated Cicero profile: 24 Reader pages, 33 cited bilingual passages, 33

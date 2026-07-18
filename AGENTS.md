@@ -424,16 +424,22 @@ manifest.
 The shared Reader contract is one rail, bottom by default and movable to top,
 ordered **Previous | Up | Back | Top | TOC | Next**. Previous and Next own the
 wide outside tracks on phones; the middle controls remain compact and
-touch-sized. Back returns to the last ordinary non-Reader note in the same leaf
-and uses Obsidian's fixed-size `rotate-ccw` icon even when disabled. Top targets
-the true page start, including cover-first and plate-first pages. The canonical
-cover, reviewed bilingual quote rails, exact inline source links, and complete
-static Markdown fallback are required deliverables. The plugin should ignore
-unrelated file-open events and must not subscribe to create or modify events in
-order to rebuild its indexes. Strip renderer-only Pandoc heading attributes
-such as `{.unnumbered}` and `{.unnumbered .unlisted}` from derived Reader notes
-and embedded Reader-index Markdown while preserving the canonical manuscript
-and ordinary prose braces.
+touch-sized. Back restores bounded internal Reader continuation after an
+ordinary footnote, Top, TOC, Up, Previous, or Next jump; it never exits to a
+non-Reader note. Capture stable Reader identities, scroll offsets, and exact
+footnote locators before each jump, then pop without recording while Back
+restores. Use Obsidian's fixed-size `rotate-ccw` icon even when disabled. Top
+targets the true page start, including cover-first and plate-first pages. The
+canonical cover, reviewed bilingual quote rails, exact inline source links, and
+complete static Markdown fallback are required deliverables. Ordinary
+footnotes scroll, focus, and visibly mark their local targets inside the
+ItemView's own scroll pane. The plugin should ignore unrelated file-open events
+and must not subscribe to create or modify events in order to rebuild its
+indexes. Strip renderer-only Pandoc heading attributes such as `{.unnumbered}`
+and `{.unnumbered .unlisted}` from derived Reader notes and embedded
+Reader-index Markdown while preserving the canonical manuscript and ordinary
+prose braces. Phone-width visual QA is valid only when the fixture serves the
+real plugin stylesheet and every asset without 404s.
 
 When a book project discovers a reusable improvement to full-vault structure,
 mobile derivation, Reader interaction, first-open behavior, source navigation,

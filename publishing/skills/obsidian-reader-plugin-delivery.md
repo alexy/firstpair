@@ -34,17 +34,24 @@ unreadable in Restricted mode.
    ```
 
    Previous and Next traverse bounded canonical order and name the destination.
-   Up opens the containing Part, or contents from a Part. Back returns to the
-   last ordinary note opened before the Reader. Top returns to the true page
-   start. TOC opens grouped contents and marks the current page.
+   Up opens the containing Part, or contents from a Part. Back restores the
+   prior Reader position after footnote, Top, TOC, Up, Previous, and Next
+   jumps. Top returns to the true page start. TOC opens grouped contents and
+   marks the current page.
 7. Keep first and last boundaries explicit, not circular. Use native buttons,
    accessible labels, visible keyboard focus, fixed dimensions, and clear
    disabled states. Add command-palette actions for opening the Reader,
    Previous, Next, Back, and Contents.
-8. Track the previous ordinary note only. Exclude launcher, contents, Part, and
-   Reader-page notes from Back history, then reopen the previous note in the
-   same leaf. Back is plugin-only because static Markdown has no safe access to
-   prior-note context.
+8. Treat Back as bounded internal Reader continuation history, not an exit to
+   the Markdown note open before the Reader. Before every jump, capture mode,
+   page or Part identity, scroll offset, and the exact ordinary-footnote
+   reference when applicable. Store stable serializable locators rather than DOM
+   elements, because a page or Part render invalidates old nodes. Restore
+   snapshots last-in-first-out, including repeated Back actions, without pushing
+   a new snapshot during restoration. Keep the stack bounded, clear it when a
+   new external Reader launch or index identity starts a session, and disable
+   Back only while the stack is empty. Back is plugin-only because static
+   Markdown has no runtime position history.
 9. Use Obsidian's `setIcon` and Lucide names for visibility-critical controls.
    The Back control uses a fixed-size `rotate-ccw` icon that stays recognizable
    while disabled; do not depend on a Unicode circular arrow or inherited font.
@@ -76,10 +83,16 @@ unreadable in Restricted mode.
 3. Turn reviewed standalone quotations into colored source rails. Clicking the
    rail, quotation, or adjacent citation marker opens the exact bilingual
    block. Make reviewed quotations embedded in prose visible inline links.
-4. Preserve the same exact quotation links in static Markdown. Runtime fuzzy
+4. Do not classify every numbered citation as a bilingual source marker. For
+   every ordinary footnote left after reviewed source decoration, resolve its
+   local hash target inside the custom Reader, scroll that target into the
+   Reader's own viewport, focus it, and mark it visibly. Browser-native page
+   hash behavior is not sufficient when the ItemView owns an independent
+   scroll container.
+5. Preserve the same exact quotation links in static Markdown. Runtime fuzzy
    matching is an explicit selection or cursor command, not a substitute for
    reviewed provenance.
-5. Normalize punctuation, quantity marks, common Latin `i/j` and `u/v`
+6. Normalize punctuation, quantity marks, common Latin `i/j` and `u/v`
    differences, and ligatures only for matching. Strong unique matches may open
    directly; close matches should open a chooser showing both languages, work,
    citation, and confidence. Never make a network search when local evidence is
@@ -103,9 +116,11 @@ unreadable in Restricted mode.
 3. Make no network requests and collect no telemetry. Read only generated local
    Reader and quote indexes and local Markdown source notes.
 4. Do not subscribe to vault create or modify events merely to keep the Reader
-   current. On `file-open`, record ordinary-note history, then return before
-   loading Reader data unless the path belongs to the Reader surface. Load and
-   normalize indexes once and cache them until the configured path changes.
+   current. On `file-open`, return before loading Reader data unless the path
+   belongs to the Reader surface. Ordinary notes do not enter Back history;
+   internal Reader actions capture continuation snapshots immediately before
+   their jumps. Load and normalize indexes once and cache them until the
+   configured path changes.
 5. Provide settings for Reader rail position, quote-index path, minimum fuzzy
    confidence, and opening a source in the same leaf or a new tab. Preserve the
    Reader's `data.json` across generated-vault refreshes.
@@ -125,6 +140,8 @@ unreadable in Restricted mode.
    list, and installed community-plugin list on every device. JSON indexes,
    WebP images, plugin installation, and plugin activation are separate Sync
    planes. A Markdown-only file count can represent a completed selective pass.
+   These controls are device-specific, and **Fully synced** covers only enabled
+   categories. Recheck every required control on both devices after restart.
 4. Keep community plugins disabled through first Sync. Enable the Reader only
    after content, images, JSON indexes, plugin files, and configuration reach
    the device and the vault is responsive.
@@ -144,16 +161,28 @@ node --check main.js
 
 Also run the source-owned full, preview, and mobile vault validators. Exercise
 the Reader at desktop and phone widths, including first and last pages, a page
-beginning with an image, all enabled and disabled controls, Back before and
-after opening an ordinary note, top and bottom rail settings, source rails,
-inline source links, long titles, wide tables, illustrations, and pixel-level
-icon visibility. A DOM node or passing click test is not proof that an icon is
-visible; use a screenshot or pixel check for visibility regressions.
+beginning with an image, all enabled and disabled controls, empty and populated
+Back history, top and bottom rail settings, source rails, inline source links,
+long titles, wide tables, illustrations, and pixel-level icon visibility. A DOM
+node or passing click test is not proof that an icon is visible; use a
+screenshot or pixel check for visibility regressions.
 
 Reader tests should include a heading with multiple Pandoc classes, a normal
 heading with prose braces that must survive, and a generated-vault scan proving
 that no renderer-only heading attribute remains in either Markdown or the
-Reader JSON index.
+Reader JSON index. They should also render one reviewed bilingual citation and
+one ordinary footnote in the same page, click both, and prove that the first
+opens the source navigator while the second scrolls, focuses, and visibly marks
+its local note target at phone width. Then verify Back restores the exact
+footnote marker and prior positions after Top, TOC, Up, Previous, and Next.
+Exercise repeated LIFO returns, the history bound, cross-page rerenders, and the
+invariant that Back restoration does not create another history entry.
+
+Serve visual fixtures from the plugin root, not from a nested test directory,
+so relative assets such as `../styles.css` resolve exactly as they do in the
+vault. Before accepting a phone screenshot or pixel check, require successful
+responses for the stylesheet, fonts, icons, and images and reject any visual QA
+run with asset 404s. An unstyled fixture is not Reader evidence.
 
 Use the strict validator before first opening the generated vault. After live
 Obsidian has evolved its workspace, use a separately named live mode that
@@ -176,13 +205,19 @@ checks merely to make a live vault pass.
    and update the product manifest. It must preserve `data.json`, plugin
    consent, core-plugin state, Reader text, sources, illustrations, and
    workspace.
-5. Inspect Sync activity. Require uploads of the new `main.js`, `styles.css`,
-   and `manifest.json`; a **Fully synced** label alone does not prove that the
-   new runtime won the conflict.
+5. Inspect both Sync evidence planes. Use ordinary activity for Reader JSON,
+   Markdown, and images. Use **Settings -> Sync -> Settings version history**
+   for `.obsidian` configuration: inspect the remote `manifest.json`, copy the
+   remote `main.js`, and compare its SHA-256 with the product manifest. A
+   **Fully synced** label or matching version string alone does not prove that
+   the new runtime won the conflict.
 6. Quit Obsidian completely, relaunch the vault, and compare installed version
    and hashes with the source manifest. Closing a window is not a full quit. If
-   the old runtime returns, repeat the watched narrow refresh and inspect
-   whether Sync downloaded stale remote bytes over the local build.
+   the old runtime returns, inspect whether Sync downloaded stale remote bytes
+   over the local build, wait until the watcher and every required configuration
+   category are active, then repeat the watched narrow refresh. Recheck the
+   remote runtime hash and perform another full quit/relaunch; do not declare a
+   conflict won from the upload event alone.
 7. On iOS, wait for the same plugin version and files before enabling or
    reloading the plugin. Verify the changed behavior, not merely the settings
    toggle.
@@ -210,6 +245,12 @@ Pitfalls:
   silently restore an older runtime at the next launch;
 - `manifest.json` version text without matching runtime hashes is insufficient;
 - a disabled Back control can be logically present yet visually absent;
+- raw DOM nodes in history become stale after rerendering; store stable Reader
+  identities, offsets, and footnote locators and resolve them after restoration;
+- pushing history while Back is restoring creates a two-state loop instead of
+  continuation backtracking;
+- screenshots from a fixture whose stylesheet or assets failed to load are not
+  visual QA;
 - changing plugin `data.json` during delivery can overwrite reader preferences;
 - loading the full index on every file arrival recreates the mobile freeze the
   compact vault is meant to avoid;

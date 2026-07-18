@@ -24,7 +24,9 @@ Audit graph -> edition -> part -> chapter -> sense unit
 ```
 
 The Reader is the default human route. The fine-grained graph is an audit route,
-not the reading interface.
+not the reading interface. Back is internal Reader continuation history: it
+restores the preceding footnote, Top, TOC, Up, Previous, or Next position rather
+than leaving the Reader for a previously open note.
 
 ## Build Workflow
 
@@ -107,6 +109,8 @@ The source-owned validator should fail closed on:
 - missing root, Reader, guide, audit, index, or manifest notes;
 - Reader order drift, broken boundaries, missing static navigation, missing
   cover, or disagreement between ItemView data and Markdown;
+- Back history that records outside notes, stores stale DOM nodes, pushes while
+  restoring, or fails to restore exact footnote and scroll continuation;
 - missing or malformed source, claim, attachment, derivative, visual,
   bilingual, gap, quote, or research joins;
 - unreviewed quote targets, missing anchors, or fuzzy links presented as exact;

@@ -15,8 +15,7 @@
       "html": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview.html",
       "htmlChapters": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-chapters",
       "cover": "book-uploads/staging/lighthouse-republics/lighthouse-republics-cover.png",
-      "vault": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-vault (4.0.0-deb590f3).zip",
-      "vaultGuide": "book-uploads/staging/lighthouse-republics/lighthouse-republics-vault-guide (4.0.0-deb590f3).md"
+      "mobileVault": "book-uploads/staging/lighthouse-republics/lighthouse-republics-preview-mobile-vault (4.0.0-deb590f3).zip"
     },
     "rio-grande": {
       "pdf": "book-uploads/staging/rio-grande/historia_riograndense_brasil-alexy-preview.pdf",

@@ -51,9 +51,9 @@ export const readerBooks = [
   },
   {
     "slug": "omnighost",
-    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/omnighost/html/68f40c6e035a98bf-omnighost.html",
-    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/omnighost/chapters/50baf0e39202b36d/index.html",
-    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/omnighost/chapters/50baf0e39202b36d"
+    "htmlSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/omnighost/html/63c3053a3f8af6ea-omnighost.html",
+    "htmlChaptersSource": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/omnighost/chapters/6efcf2f231ff33de/index.html",
+    "htmlChaptersBase": "https://fl6nu3o2c1oqqnum.public.blob.vercel-storage.com/books/omnighost/chapters/6efcf2f231ff33de"
   },
   {
     "slug": "invented-enemy",

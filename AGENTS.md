@@ -191,6 +191,25 @@ The general delivery command is:
 npm run library:publish -- /absolute/path/to/book-or-dist --slug <book-stem>
 ```
 
+For remote publishing without a trusted local press workstation, use the
+manually dispatched GitHub Actions workflow **Publish Library Book** in this
+repository. Supply the source repository as `owner/name`, the exact branch,
+tag, or commit as `ref`, and set `full` only after the mandatory full-edition
+confirmation below. The workflow checks out the already-built source package,
+runs `library:publish` with `--no-deploy`, uploads heavy artifacts using the
+encrypted repository secret `BLOB_READ_WRITE_TOKEN`, validates and builds the
+catalog, and commits only FirstPair-owned publication metadata to `main`. The
+existing Vercel Git integration deploys that commit.
+
+The workflow publishes only artifacts the source repository has already built
+and committed. It invokes FirstPair's publisher directly and never executes
+source-owned build hooks while holding the Blob credential; the build performed
+by the publisher is the FirstPair catalog/site build. Keep
+`BLOB_READ_WRITE_TOKEN` solely in GitHub Actions secrets; never print it, place
+it in workflow inputs, commit it, or copy it into source metadata. The
+workflow's `contents: write` permission exists only so its final metadata commit
+can reach this repository's `main` branch.
+
 The command accepts a dist directory or a book/repository directory containing a
 known dist layout, refreshes `book-uploads/staging/<book-stem>/`, updates the
 upload source map and catalog entry, uploads that single book package, syncs the

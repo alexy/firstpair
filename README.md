@@ -126,6 +126,13 @@ The general command is:
 npm run library:publish -- /absolute/path/to/book-or-dist --slug <book-stem>
 ```
 
+The repository also provides a manual GitHub Actions workflow named
+**Publish Library Book**. It accepts a source repository, source ref, and an
+explicit full-edition authorization flag. The workflow publishes committed
+build artifacts with the encrypted `BLOB_READ_WRITE_TOKEN`, updates the
+catalog and reader routes, and commits the resulting lightweight publication
+metadata to `main`; the Vercel Git integration then deploys the site.
+
 Use `--dry-run` to inspect artifact resolution, `--stage-only` to refresh only
 local staging and the source map, and `--no-deploy` when the package should be
 uploaded without changing production.

@@ -1,0 +1,90 @@
+name: Publish Library Book
+
+on:
+  workflow_dispatch:
+    inputs:
+      repository:
+        description: Source repository in owner/name form
+        required: true
+        type: string
+      ref:
+        description: Source branch, tag, or commit
+        required: true
+        default: main
+        type: string
+      full:
+        description: Authorize replacing a preview with the complete full edition
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-library-book
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out FirstPair
+        uses: actions/checkout@v4
+        with:
+          path: firstpair
+
+      - name: Check out source repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ inputs.repository }}
+          ref: ${{ inputs.ref }}
+          path: source
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: firstpair/package-lock.json
+
+      - name: Install publisher dependencies
+        working-directory: firstpair
+        run: npm ci
+        env:
+          PUPPETEER_SKIP_DOWNLOAD: "true"
+
+      - name: Upload and prepare production catalog
+        working-directory: firstpair
+        env:
+          BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+          PUBLISH_FULL: ${{ inputs.full }}
+        run: |
+          args=(
+            "$GITHUB_WORKSPACE/source"
+            --no-icloud
+            --no-smoke
+            --no-deploy
+          )
+          if [[ "$PUBLISH_FULL" == "true" ]]; then
+            args+=(--full)
+          fi
+          npm run library:publish -- "${args[@]}"
+
+      - name: Commit publication metadata
+        working-directory: firstpair
+        run: |
+          git config user.name "First Pair Publisher"
+          git config user.email "publisher@firstpair.org"
+          git add \
+            public \
+            reader-map.mjs \
+            book-uploads/blob-manifest.json \
+            book-uploads/book-package-sources.json
+          if git diff --cached --quiet; then
+            echo "Publication metadata already current."
+          else
+            git commit -m "Publish Library book from ${{ inputs.repository }}"
+            git push origin HEAD:main
+          fi

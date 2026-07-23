@@ -208,7 +208,9 @@ by the publisher is the FirstPair catalog/site build. Keep
 `BLOB_READ_WRITE_TOKEN` solely in GitHub Actions secrets; never print it, place
 it in workflow inputs, commit it, or copy it into source metadata. The
 workflow's `contents: write` permission exists only so its final metadata commit
-can reach this repository's `main` branch.
+can reach this repository's `main` branch. Before pushing, the workflow rebases
+its generated metadata commit onto the current `main`; this makes a rerun safe
+when an earlier attempt or another completed publication advanced the branch.
 
 The command accepts a dist directory or a book/repository directory containing a
 known dist layout, refreshes `book-uploads/staging/<book-stem>/`, updates the

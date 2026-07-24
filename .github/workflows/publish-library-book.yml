@@ -86,6 +86,11 @@ jobs:
             echo "Publication metadata already current."
           else
             git commit -m "Publish Library book from ${{ inputs.repository }}"
+            # Catalog/site builds may update tracked compiler state outside the
+            # publication allowlist. The publication metadata is already
+            # committed above; discard only that unstaged build residue before
+            # rebasing the scoped commit.
+            git restore --worktree -- .
             git pull --rebase origin main
             git push origin HEAD:main
           fi
